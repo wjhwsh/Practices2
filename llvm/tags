@@ -1,0 +1,120 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Args	/home/modcarl/Practices/llvm/toy.cpp	/^  std::vector<ExprAST*> Args;$/;"	m	class:CallExprAST	file:
+Args	/home/modcarl/Practices/llvm/toy.cpp	/^  std::vector<std::string> Args;$/;"	m	class:PrototypeAST	file:
+BinaryExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^  BinaryExprAST(char op, ExprAST *lhs, ExprAST *rhs) $/;"	f	class:BinaryExprAST
+BinaryExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^class BinaryExprAST : public ExprAST {$/;"	c	file:
+BinopPrecedence	/home/modcarl/Practices/llvm/toy.cpp	/^static std::map<char, int> BinopPrecedence;$/;"	v	file:
+Body	/home/modcarl/Practices/llvm/toy.cpp	/^  ExprAST *Body;$/;"	m	class:FunctionAST	file:
+Body	/home/modcarl/Practices/llvm/toy.cpp	/^  ExprAST *Body;$/;"	m	class:VarExprAST	file:
+Body	/home/modcarl/Practices/llvm/toy.cpp	/^  ExprAST *Start, *End, *Step, *Body;$/;"	m	class:ForExprAST	file:
+CallExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^  CallExprAST(const std::string &callee, std::vector<ExprAST*> &args)$/;"	f	class:CallExprAST
+CallExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^class CallExprAST : public ExprAST {$/;"	c	file:
+Callee	/home/modcarl/Practices/llvm/toy.cpp	/^  std::string Callee;$/;"	m	class:CallExprAST	file:
+Codegen	/home/modcarl/Practices/llvm/toy.cpp	/^Function *FunctionAST::Codegen() {$/;"	f	class:FunctionAST
+Codegen	/home/modcarl/Practices/llvm/toy.cpp	/^Function *PrototypeAST::Codegen() {$/;"	f	class:PrototypeAST
+Codegen	/home/modcarl/Practices/llvm/toy.cpp	/^Value *BinaryExprAST::Codegen() {$/;"	f	class:BinaryExprAST
+Codegen	/home/modcarl/Practices/llvm/toy.cpp	/^Value *CallExprAST::Codegen() {$/;"	f	class:CallExprAST
+Codegen	/home/modcarl/Practices/llvm/toy.cpp	/^Value *ForExprAST::Codegen() {$/;"	f	class:ForExprAST
+Codegen	/home/modcarl/Practices/llvm/toy.cpp	/^Value *IfExprAST::Codegen() {$/;"	f	class:IfExprAST
+Codegen	/home/modcarl/Practices/llvm/toy.cpp	/^Value *NumberExprAST::Codegen() {$/;"	f	class:NumberExprAST
+Codegen	/home/modcarl/Practices/llvm/toy.cpp	/^Value *UnaryExprAST::Codegen() {$/;"	f	class:UnaryExprAST
+Codegen	/home/modcarl/Practices/llvm/toy.cpp	/^Value *VarExprAST::Codegen() {$/;"	f	class:VarExprAST
+Codegen	/home/modcarl/Practices/llvm/toy.cpp	/^Value *VariableExprAST::Codegen() {$/;"	f	class:VariableExprAST
+Cond	/home/modcarl/Practices/llvm/toy.cpp	/^  ExprAST *Cond, *Then, *Else;$/;"	m	class:IfExprAST	file:
+CreateArgumentAllocas	/home/modcarl/Practices/llvm/toy.cpp	/^void PrototypeAST::CreateArgumentAllocas(Function *F) {$/;"	f	class:PrototypeAST
+CreateEntryBlockAlloca	/home/modcarl/Practices/llvm/toy.cpp	/^static AllocaInst *CreateEntryBlockAlloca(Function *TheFunction,$/;"	f	file:
+CurTok	/home/modcarl/Practices/llvm/toy.cpp	/^static int CurTok;$/;"	v	file:
+Else	/home/modcarl/Practices/llvm/toy.cpp	/^  ExprAST *Cond, *Then, *Else;$/;"	m	class:IfExprAST	file:
+End	/home/modcarl/Practices/llvm/toy.cpp	/^  ExprAST *Start, *End, *Step, *Body;$/;"	m	class:ForExprAST	file:
+Error	/home/modcarl/Practices/llvm/toy.cpp	/^ExprAST *Error(const char *Str) { fprintf(stderr, "Error: %s\\n", Str);return 0;}$/;"	f
+ErrorF	/home/modcarl/Practices/llvm/toy.cpp	/^FunctionAST *ErrorF(const char *Str) { Error(Str); return 0; }$/;"	f
+ErrorP	/home/modcarl/Practices/llvm/toy.cpp	/^PrototypeAST *ErrorP(const char *Str) { Error(Str); return 0; }$/;"	f
+ErrorV	/home/modcarl/Practices/llvm/toy.cpp	/^Value *ErrorV(const char *Str) { Error(Str); return 0; }$/;"	f
+ExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^class ExprAST {$/;"	c	file:
+ForExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^  ForExprAST(const std::string &varname, ExprAST *start, ExprAST *end,$/;"	f	class:ForExprAST
+ForExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^class ForExprAST : public ExprAST {$/;"	c	file:
+FunctionAST	/home/modcarl/Practices/llvm/toy.cpp	/^  FunctionAST(PrototypeAST *proto, ExprAST *body)$/;"	f	class:FunctionAST
+FunctionAST	/home/modcarl/Practices/llvm/toy.cpp	/^class FunctionAST {$/;"	c	file:
+GetTokPrecedence	/home/modcarl/Practices/llvm/toy.cpp	/^static int GetTokPrecedence() {$/;"	f	file:
+HandleDefinition	/home/modcarl/Practices/llvm/toy.cpp	/^static void HandleDefinition() {$/;"	f	file:
+HandleExtern	/home/modcarl/Practices/llvm/toy.cpp	/^static void HandleExtern() {$/;"	f	file:
+HandleTopLevelExpression	/home/modcarl/Practices/llvm/toy.cpp	/^static void HandleTopLevelExpression() {$/;"	f	file:
+IdentifierStr	/home/modcarl/Practices/llvm/toy.cpp	/^static std::string IdentifierStr;  \/\/ Filled in if tok_identifier$/;"	v	file:
+IfExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^  IfExprAST(ExprAST *cond, ExprAST *then, ExprAST *_else)$/;"	f	class:IfExprAST
+IfExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^class IfExprAST : public ExprAST {$/;"	c	file:
+LHS	/home/modcarl/Practices/llvm/toy.cpp	/^  ExprAST *LHS, *RHS;$/;"	m	class:BinaryExprAST	file:
+MainLoop	/home/modcarl/Practices/llvm/toy.cpp	/^static void MainLoop() {$/;"	f	file:
+Name	/home/modcarl/Practices/llvm/toy.cpp	/^  std::string Name;$/;"	m	class:PrototypeAST	file:
+Name	/home/modcarl/Practices/llvm/toy.cpp	/^  std::string Name;$/;"	m	class:VariableExprAST	file:
+NamedValues	/home/modcarl/Practices/llvm/toy.cpp	/^static std::map<std::string, AllocaInst*> NamedValues;$/;"	v	file:
+NumVal	/home/modcarl/Practices/llvm/toy.cpp	/^static double NumVal;              \/\/ Filled in if tok_number$/;"	v	file:
+NumberExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^  NumberExprAST(double val) : Val(val) {}$/;"	f	class:NumberExprAST
+NumberExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^class NumberExprAST : public ExprAST {$/;"	c	file:
+Op	/home/modcarl/Practices/llvm/toy.cpp	/^  char Op;$/;"	m	class:BinaryExprAST	file:
+Opcode	/home/modcarl/Practices/llvm/toy.cpp	/^  char Opcode;$/;"	m	class:UnaryExprAST	file:
+Operand	/home/modcarl/Practices/llvm/toy.cpp	/^  ExprAST *Operand;$/;"	m	class:UnaryExprAST	file:
+ParseBinOpRHS	/home/modcarl/Practices/llvm/toy.cpp	/^static ExprAST *ParseBinOpRHS(int ExprPrec, ExprAST *LHS) {$/;"	f	file:
+ParseDefinition	/home/modcarl/Practices/llvm/toy.cpp	/^static FunctionAST *ParseDefinition() {$/;"	f	file:
+ParseExpression	/home/modcarl/Practices/llvm/toy.cpp	/^static ExprAST *ParseExpression() {$/;"	f	file:
+ParseExtern	/home/modcarl/Practices/llvm/toy.cpp	/^static PrototypeAST *ParseExtern() {$/;"	f	file:
+ParseForExpr	/home/modcarl/Practices/llvm/toy.cpp	/^static ExprAST *ParseForExpr() {$/;"	f	file:
+ParseIdentifierExpr	/home/modcarl/Practices/llvm/toy.cpp	/^static ExprAST *ParseIdentifierExpr() {$/;"	f	file:
+ParseIfExpr	/home/modcarl/Practices/llvm/toy.cpp	/^static ExprAST *ParseIfExpr() {$/;"	f	file:
+ParseNumberExpr	/home/modcarl/Practices/llvm/toy.cpp	/^static ExprAST *ParseNumberExpr() {$/;"	f	file:
+ParseParenExpr	/home/modcarl/Practices/llvm/toy.cpp	/^static ExprAST *ParseParenExpr() {$/;"	f	file:
+ParsePrimary	/home/modcarl/Practices/llvm/toy.cpp	/^static ExprAST *ParsePrimary() {$/;"	f	file:
+ParsePrototype	/home/modcarl/Practices/llvm/toy.cpp	/^static PrototypeAST *ParsePrototype() {$/;"	f	file:
+ParseTopLevelExpr	/home/modcarl/Practices/llvm/toy.cpp	/^static FunctionAST *ParseTopLevelExpr() {$/;"	f	file:
+ParseUnary	/home/modcarl/Practices/llvm/toy.cpp	/^static ExprAST *ParseUnary() {$/;"	f	file:
+ParseVarExpr	/home/modcarl/Practices/llvm/toy.cpp	/^static ExprAST *ParseVarExpr() {$/;"	f	file:
+Precedence	/home/modcarl/Practices/llvm/toy.cpp	/^  unsigned Precedence;  \/\/ Precedence if a binary op.$/;"	m	class:PrototypeAST	file:
+Proto	/home/modcarl/Practices/llvm/toy.cpp	/^  PrototypeAST *Proto;$/;"	m	class:FunctionAST	file:
+PrototypeAST	/home/modcarl/Practices/llvm/toy.cpp	/^  PrototypeAST(const std::string &name, const std::vector<std::string> &args,$/;"	f	class:PrototypeAST
+PrototypeAST	/home/modcarl/Practices/llvm/toy.cpp	/^class PrototypeAST {$/;"	c	file:
+RHS	/home/modcarl/Practices/llvm/toy.cpp	/^  ExprAST *LHS, *RHS;$/;"	m	class:BinaryExprAST	file:
+Start	/home/modcarl/Practices/llvm/toy.cpp	/^  ExprAST *Start, *End, *Step, *Body;$/;"	m	class:ForExprAST	file:
+Step	/home/modcarl/Practices/llvm/toy.cpp	/^  ExprAST *Start, *End, *Step, *Body;$/;"	m	class:ForExprAST	file:
+TheExecutionEngine	/home/modcarl/Practices/llvm/toy.cpp	/^static ExecutionEngine *TheExecutionEngine;$/;"	v	file:
+TheFPM	/home/modcarl/Practices/llvm/toy.cpp	/^static FunctionPassManager *TheFPM;$/;"	v	file:
+TheModule	/home/modcarl/Practices/llvm/toy.cpp	/^static Module *TheModule;$/;"	v	file:
+Then	/home/modcarl/Practices/llvm/toy.cpp	/^  ExprAST *Cond, *Then, *Else;$/;"	m	class:IfExprAST	file:
+Token	/home/modcarl/Practices/llvm/toy.cpp	/^enum Token {$/;"	g	file:
+UnaryExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^  UnaryExprAST(char opcode, ExprAST *operand) $/;"	f	class:UnaryExprAST
+UnaryExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^class UnaryExprAST : public ExprAST {$/;"	c	file:
+Val	/home/modcarl/Practices/llvm/toy.cpp	/^  double Val;$/;"	m	class:NumberExprAST	file:
+VarExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^  VarExprAST(const std::vector<std::pair<std::string, ExprAST*> > &varnames,$/;"	f	class:VarExprAST
+VarExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^class VarExprAST : public ExprAST {$/;"	c	file:
+VarName	/home/modcarl/Practices/llvm/toy.cpp	/^  std::string VarName;$/;"	m	class:ForExprAST	file:
+VarNames	/home/modcarl/Practices/llvm/toy.cpp	/^  std::vector<std::pair<std::string, ExprAST*> > VarNames;$/;"	m	class:VarExprAST	file:
+VariableExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^  VariableExprAST(const std::string &name) : Name(name) {}$/;"	f	class:VariableExprAST
+VariableExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^class VariableExprAST : public ExprAST {$/;"	c	file:
+getBinaryPrecedence	/home/modcarl/Practices/llvm/toy.cpp	/^  unsigned getBinaryPrecedence() const { return Precedence; }$/;"	f	class:PrototypeAST
+getName	/home/modcarl/Practices/llvm/toy.cpp	/^  const std::string &getName() const { return Name; }$/;"	f	class:VariableExprAST
+getNextToken	/home/modcarl/Practices/llvm/toy.cpp	/^static int getNextToken() {$/;"	f	file:
+getOperatorName	/home/modcarl/Practices/llvm/toy.cpp	/^  char getOperatorName() const {$/;"	f	class:PrototypeAST
+gettok	/home/modcarl/Practices/llvm/toy.cpp	/^static int gettok() {$/;"	f	file:
+isBinaryOp	/home/modcarl/Practices/llvm/toy.cpp	/^  bool isBinaryOp() const { return isOperator && Args.size() == 2; }$/;"	f	class:PrototypeAST
+isOperator	/home/modcarl/Practices/llvm/toy.cpp	/^  bool isOperator;$/;"	m	class:PrototypeAST	file:
+isUnaryOp	/home/modcarl/Practices/llvm/toy.cpp	/^  bool isUnaryOp() const { return isOperator && Args.size() == 1; }$/;"	f	class:PrototypeAST
+main	/home/modcarl/Practices/llvm/toy.cpp	/^int main() {$/;"	f
+printd	/home/modcarl/Practices/llvm/toy.cpp	/^double printd(double X) {$/;"	f
+putchard	/home/modcarl/Practices/llvm/toy.cpp	/^double putchard(double X) {$/;"	f
+tok_binary	/home/modcarl/Practices/llvm/toy.cpp	/^  tok_binary = -11, tok_unary = -12,$/;"	e	enum:Token	file:
+tok_def	/home/modcarl/Practices/llvm/toy.cpp	/^  tok_def = -2, tok_extern = -3,$/;"	e	enum:Token	file:
+tok_else	/home/modcarl/Practices/llvm/toy.cpp	/^  tok_if = -6, tok_then = -7, tok_else = -8,$/;"	e	enum:Token	file:
+tok_eof	/home/modcarl/Practices/llvm/toy.cpp	/^  tok_eof = -1,$/;"	e	enum:Token	file:
+tok_extern	/home/modcarl/Practices/llvm/toy.cpp	/^  tok_def = -2, tok_extern = -3,$/;"	e	enum:Token	file:
+tok_for	/home/modcarl/Practices/llvm/toy.cpp	/^  tok_for = -9, tok_in = -10,$/;"	e	enum:Token	file:
+tok_identifier	/home/modcarl/Practices/llvm/toy.cpp	/^  tok_identifier = -4, tok_number = -5,$/;"	e	enum:Token	file:
+tok_if	/home/modcarl/Practices/llvm/toy.cpp	/^  tok_if = -6, tok_then = -7, tok_else = -8,$/;"	e	enum:Token	file:
+tok_in	/home/modcarl/Practices/llvm/toy.cpp	/^  tok_for = -9, tok_in = -10,$/;"	e	enum:Token	file:
+tok_number	/home/modcarl/Practices/llvm/toy.cpp	/^  tok_identifier = -4, tok_number = -5,$/;"	e	enum:Token	file:
+tok_then	/home/modcarl/Practices/llvm/toy.cpp	/^  tok_if = -6, tok_then = -7, tok_else = -8,$/;"	e	enum:Token	file:
+tok_unary	/home/modcarl/Practices/llvm/toy.cpp	/^  tok_binary = -11, tok_unary = -12,$/;"	e	enum:Token	file:
+tok_var	/home/modcarl/Practices/llvm/toy.cpp	/^  tok_var = -13$/;"	e	enum:Token	file:
+~ExprAST	/home/modcarl/Practices/llvm/toy.cpp	/^  virtual ~ExprAST() {}$/;"	f	class:ExprAST

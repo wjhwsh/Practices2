@@ -1,0 +1,37 @@
+#LLVM_HOME = /home/modcarl/llvm-2.8
+#LLVM_HOME = /home/modcarl/clang-2.6/llvm+clang-2.6-i686-linux
+#LLVM_HOME = /home/modcarl/clang-2.6/llvm-2.7/clang+llvm-2.7-i686-linux
+LLVMHOME = /home/modcarl/clang-2.6/src/llvm-2.6
+LINK_LIB = $(LLVMHOME)/Release/lib
+LLVMCONFIG = $(LLVMHOME)/Release/bin/llvm-config
+CXXFLAGS = -I$(LLVMHOME)/tools/clang/include  -I$(LLVMHOME)/include \
+		 -g -fno-rtti \
+		 `$(LLVMCONFIG) --cxxflags`
+
+LDFLAGS= `$(LLVMCONFIG) --ldflags`
+#LIBS= -lclangBasic -lclangLex -lclangDriver -lclangFrontend -lclangParse \
+#		-lclangAST -lclangSema -lclangAnalysis
+LIBS=  -lclangDriver -lclangFrontend -lclangAnalysis \
+		-lclangIndex -lclangSema -lclangAST -lclangParse \
+		 -lclangLex -lclangBasic
+#	-lclangFrontend -lclangSema -lclangAST -lclangParse -lclangLex \
+#	-lclangBasic
+#	Driver, Frontend, Analysis,
+#	Index, Sema, AST, Parse, Lex, Basic
+
+CPP = clang++
+all:
+	$(CPP) tut1.cpp $(CXXFLAGS) $(LDFLAGS) -o tut1 $(LIBS)
+old:
+	$(CPP) tut1.cpp -g -fno-rtti -I$(HEADER) -L$(LINK_LIB) `$(LLVMCONFIG_PREFIX)/llvm-config --cxxflags --ldflags --libs` \
+	-lclangBasic -lclangLex -lclangDriver -lclangFrontend -lclangParse \
+	-lclangAST -lclangSema -lclangAnalysis
+easy:
+	$(CPP) easy.cpp $(CXXFLAGS) $(LDFLAGS) -o tut1 $(LIBS)
+
+easy2:
+	clang++ easy.cpp -I/home/modcarl/clang-2.6/src/llvm-2.6/include -I$(LLVMHOME)/tools/clang/include \
+	-L/home/modcarl/clang-2.6/src/llvm-2.6/Release/lib -g -fno-rtti `/home/modcarl/clang-2.6/src/llvm-2.6/Release/bin/llvm-config --cxxflags` \
+	-o tut1 `$(LLVMCONFIG) --cxxflags --ldflags --libs all` $(LIBS)
+
+

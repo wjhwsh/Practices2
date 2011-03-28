@@ -1,0 +1,6 @@
+all:
+	javac HelloWorld.java
+	javah -jni HelloWorld
+	gcc -fPIC HelloWorld.c -c -I/usr/local/java_sdk/include -I/usr/local/java_sdk/include/linux
+	gcc HelloWorld.o -shared -o libhello.so 
+	
