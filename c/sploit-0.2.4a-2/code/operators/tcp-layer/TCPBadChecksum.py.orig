@@ -1,0 +1,72 @@
+#**********************************************************************
+#*                      Sploit Mutation Engine                        *
+#**********************************************************************
+#* Copyright (C) 2006 Davide Balzarotti                               *
+#*                                                                    *
+#* This program is free software; you can redistribute it and/or      *
+#* modify it under the terms of the GNU General Public License        *
+#* as published by the Free Software Foundation; either               *
+#* version 2 of the License, or (at your option) any later            *
+#* version.                                                           *
+#*                                                                    *
+#* This program is distributed in the hope that it will be useful,    *
+#* but WITHOUT ANY WARRANTY; without even the implied warranty of     *
+#* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.               *
+#* See the GNU General Public License for more details.               *
+#*                                                                    *
+#* You should have received a copy of the GNU General Public License  *
+#* along with this program; if not, write to the Free Software        *
+#* Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.          *
+#*********************************************************************/
+
+# Author: Andrea Beretta and Riccardo Bianchi
+# $Id$
+'''
+TCPBadChecksum
+ It insert a new packet with random payload and wrong checksum 
+ It is possible the position in which the new packet must be inserted
+'''
+
+from TCPLayerOperator import TCPLayerOperator
+from interfaces.hasparameters import IntParam
+from interfaces.hasparameters import KeyListParam
+import scapy.scapy as scapy
+import utils
+
+class TCPBadCheksum(TCPLayerOperator):
+	isa_operator      = True  
+	
+	def __init__(self):
+		TCPLayerOperator.__init__(self,'TCPBadChecksum','TCP segment with bad checksum & payload')	
+		self.add_param(IntParam('numseg',2,'Segment with bad checksum & payload',1))
+		pos_list = ["before", "after", "last"]
+		self.add_param(KeyListParam('position',pos_list[0], pos_list, 'position of overlapping fragment => before | after | last'))		
+		
+	def mutate(self, packets):
+		numseg = self.numseg
+		position = self.position
+		#Not enough segments, Syn or Ack, return
+		if utils.check_length(numseg, packets) or utils.check_syn(packets[numseg-1]) or utils.check_ack(packets[numseg-1]):
+			return packets
+
+		forged = packets[numseg-1].copy()
+		forged = utils.tcp_bad_payload(forged)
+		#calculate and modify chksum
+		forged.chksum = scapy.checksum(forged)+1
+
+		'''il frammento manipolato dovrebbe essere preso per buono da 
+		snort -k notcp ma scartato da host vittima. '''
+
+		#insert forged segment
+		if position == "after":
+			packets.insert(numseg, forged)
+		elif position == "before":	
+			packets.insert(numseg-1, forged)
+		#last position is for original packet, not the forged one!!!!	
+		elif position == "last":
+			packets.append(packets[numseg-1])
+			del(packets[numseg-1])
+			packets.insert(numseg-1, forged)	
+		
+		return packets
+

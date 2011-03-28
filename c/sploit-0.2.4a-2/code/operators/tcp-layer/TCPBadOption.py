@@ -1,0 +1,96 @@
+#**********************************************************************
+#*                      Sploit Mutation Engine                        *
+#**********************************************************************
+#* Copyright (C) 2004-2007 Davide Balzarotti                          *
+#*                                                                    *
+#* This program is free software; you can redistribute it and/or      *
+#* modify it under the terms of the GNU General Public License        *
+#* version 2.                                                         *
+#*                                                                    *
+#* This program is distributed in the hope that it will be useful,    *
+#* but WITHOUT ANY WARRANTY; without even the implied warranty of     *
+#* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.               *
+#* See the GNU General Public License for more details.               *
+#*                                                                    *
+#* You should have received a copy of the GNU General Public License  *
+#* along with this program; if not, write to the Free Software        *
+#* Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.          *
+#*********************************************************************/
+
+# Author: Andrea Beretta and Riccardo Bianchi
+# $Id$
+
+'''
+TCPBadOption
+ The operator adds a new packet with random payload and a wrong value for one
+ of the TCP option
+'''
+
+from TCPLayerOperator import TCPLayerOperator
+from interfaces.hasparameters import IntParam
+from interfaces.hasparameters import KeyListParam
+import utils
+import scapy.scapy as scapy
+
+class TCPBadOption(TCPLayerOperator):	
+	isa_operator      = True  
+
+	def __init__(self):
+		TCPLayerOperator.__init__(self,'TCPBadOption','TCP packet with wrong option and payload')
+		self.add_param(IntParam('numseg',2,'Segmnent with wrong option and payload',1))
+		
+		options = [ "mss", "wscale", "timestamp", "sackok" ]
+		p = KeyListParam('opt', options[3], options, 'Option to set mss | wscale | timestamp | sackok')
+		#p.set_multiple_values(options)
+		self.add_param(p)
+		#self.add_param(KeyListParam('opt', options[0], options, 'Option to set mss | wscale | timestamp | sackok'))
+		
+		pos_list = ["before", "after", "last"]
+		self.add_param(KeyListParam('position',pos_list[2], pos_list, 'position of overlapping segment => before | after | last'))
+
+	def mutate(self, packets):
+		numseg = self.numseg
+		position = self.position
+		option = self.opt
+		#Not enough segments, Syn or Ack, return
+		if utils.check_length(numseg, packets) or utils.check_syn(packets[numseg-1]) or utils.check_ack(packets[numseg-1]):
+			return packets
+					
+		if option == "mss":
+			forged=scapy.TCP(options=[("MSS",144)])/packets[numseg-1].load
+		elif option == "timestamp":
+			forged=scapy.TCP(options=[("Timestamp",(0,-1))])/packets[numseg-1].load
+		elif option == "wscale":
+			forged=scapy.TCP(options=[("WScale", 10)])/packets[numseg-1].load
+		elif option == "sackok":
+			forged=scapy.TCP(options=[("SAckOK", 1)])/packets[numseg-1].load
+		
+		
+		forged.sport = packets[numseg-1].sport
+		forged.dport = packets[numseg-1].dport
+		forged.seq = packets[numseg-1].seq
+		forged.ack = packets[numseg-1].ack
+		forged.dataofs = packets[numseg-1].dataofs
+		forged.reserverd = packets[numseg-1].reserved
+		forged.flags = packets[numseg-1].flags
+		if option =="timestamp":
+			#disable ACK flag
+			forged.flags = 0		
+		forged.window = packets[numseg-1].window
+		forged.urgptr = packets[numseg-1].urgptr
+		'''nell elenco in __init__.py, mettere TCPBadOption prima di TCPFakeReset
+		per non rischiare che operatore precedente abbia cancellato il payload'''
+		forged = utils.tcp_bad_payload(forged)
+
+		if position == "after":
+			packets.insert(numseg, forged)
+		elif position == "before":	
+			packets.insert(numseg-1, forged)
+		else:
+			packets.append(packets[numseg-1])
+			del(packets[numseg-1])
+			packets.insert(numseg-1, forged)	
+		
+		return packets
+
+

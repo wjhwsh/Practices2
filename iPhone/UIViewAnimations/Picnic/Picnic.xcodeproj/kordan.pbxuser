@@ -1,0 +1,200 @@
+// !$*UTF8*$!
+{
+	1461872D12EEC40C00596724 /* Picnic */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Picnic;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	1461873E12EEC47F00596724 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	1461873F12EEC47F00596724 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	146187A312EECC7B00596724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* PicnicAppDelegate.m */;
+		name = "PicnicAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 307;
+		vrLoc = 0;
+	};
+	146187A412EECC7B00596724 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E147A7C512AFF9710008B4AF /* fabric_top.png */;
+	};
+	146187A512EECC7B00596724 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E147A7C412AFF9710008B4AF /* fabric_bottom.png */;
+	};
+	146187A612EECC7B00596724 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E147A7C312AFF9710008B4AF /* door_top.png */;
+	};
+	146187A712EECC7B00596724 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E147A7C212AFF9710008B4AF /* door_bottom.png */;
+	};
+	146187A812EECC7B00596724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* PicnicViewController.h */;
+		name = "PicnicViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 512;
+		vrLoc = 0;
+	};
+	146187A912EECC7B00596724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* PicnicViewController.m */;
+		name = "PicnicViewController.m: 205";
+		rLen = 307;
+		rLoc = 7630;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 7354;
+	};
+	146187AA12EECC7B00596724 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* PicnicViewController.m */;
+		name = "PicnicViewController.m: 217";
+		rLen = 0;
+		rLoc = 8045;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 7354;
+	};
+	1D3623250D0F684500981E51 /* PicnicAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {810, 1358}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 307}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Picnic */ = {
+		activeExec = 0;
+		executables = (
+			1461872D12EEC40C00596724 /* Picnic */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* PicnicViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {961, 616}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 512}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* PicnicViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1219, 3822}}";
+			sepNavSelRange = "{7896, 0}";
+			sepNavVisRange = "{7605, 788}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 1461872D12EEC40C00596724 /* Picnic */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Picnic */;
+		codeSenseManager = 1461873F12EEC47F00596724 /* Code sense */;
+		executables = (
+			1461872D12EEC40C00596724 /* Picnic */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					783,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					301,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 317637644;
+			PBXWorkspaceStateSaveDate = 317637644;
+		};
+		perUserProjectItems = {
+			146187A312EECC7B00596724 /* PBXTextBookmark */ = 146187A312EECC7B00596724 /* PBXTextBookmark */;
+			146187A412EECC7B00596724 /* PBXBookmark */ = 146187A412EECC7B00596724 /* PBXBookmark */;
+			146187A512EECC7B00596724 /* PBXBookmark */ = 146187A512EECC7B00596724 /* PBXBookmark */;
+			146187A612EECC7B00596724 /* PBXBookmark */ = 146187A612EECC7B00596724 /* PBXBookmark */;
+			146187A712EECC7B00596724 /* PBXBookmark */ = 146187A712EECC7B00596724 /* PBXBookmark */;
+			146187A812EECC7B00596724 /* PBXTextBookmark */ = 146187A812EECC7B00596724 /* PBXTextBookmark */;
+			146187A912EECC7B00596724 /* PBXTextBookmark */ = 146187A912EECC7B00596724 /* PBXTextBookmark */;
+			146187AA12EECC7B00596724 /* PBXTextBookmark */ = 146187AA12EECC7B00596724 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 1461873E12EEC47F00596724 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+}

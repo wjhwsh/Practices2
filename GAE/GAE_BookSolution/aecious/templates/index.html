@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h3>最近新增的書籤</h3>
+{% if latests.get %}
+<ul>
+    {% for bookmark in latests %}
+    <li><h4><a href="{{bookmark.url}}" target="_blank">{{bookmark.title}}</a></h4>
+        <div class="desc">{{bookmark.desc}}</div>
+        <div class="tags">
+            標籤:
+            <small>
+            {% for tag in bookmark.tags %}
+            <a href="/tag/{{tag}}">{{tag}}</a>
+            {% endfor %}
+            </small>            
+        </div>
+        <div class="owner">由<a href="/user/{{bookmark.user.name}}">{{bookmark.user.name}}</a>所儲存</div>
+</li>
+    {% endfor %}
+</ul>
+{% else %}
+還沒有書籤資料
+{% endif %}
+{% endblock %}

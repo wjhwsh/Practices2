@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div id="title">
+    <img src="/avatar/{{user.name}}" alt="">
+    Hi, {{user.name}}
+</div>
+<hr>
+<p><a href="/post">儲存新書籤</a></p>
+<h3>儲存的書籤：</h3>
+{% if user.bookmarks.get %}
+<ul class="bookmarks">
+    {% for bookmark in user.bookmarks %}
+    <li><h4><a href="{{bookmark.url}}" target="_blank">{{bookmark.title}}</a></h4>
+        <div class="desc">{{ bookmark.desc }}</div>
+        <div class="tags">
+            標籤:
+            <small>
+            {% for tag in bookmark.tags %}
+            <a href="/tag/{{tag}}">{{tag}}</a>
+            {% endfor %}
+            </small>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+還沒有儲存書籤
+{% endif %}
+{% endblock %}

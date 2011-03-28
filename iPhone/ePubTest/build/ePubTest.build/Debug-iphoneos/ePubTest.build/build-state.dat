@@ -1,0 +1,375 @@
+TePubTest
+v7
+r0
+t291985118.507415
+cCheck dependencies
+cCpResource build/Debug-iphoneos/ePubTest.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/Info.plist ePubTest-Info.plist
+cCompileXIB /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/MainWindow.xib
+cCompileXIB /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/ePubTestViewController.xib
+cProcessPCH /var/folders/6x/6x6yiJAuHHCslOXGzkumIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ePubTest_Prefix-fwcahespprtgsvhdzodnavnnjenq/ePubTest_Prefix.pch.gch ePubTest_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/main.o /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/ePubTestAppDelegate.o /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/ePubTestViewController.o /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ePubTest normal armv6
+cGenerateDSYMFile /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app.dSYM /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ePubTest
+cProcessProductPackaging "/Users/coolyu/Library/MobileDevice/Provisioning Profiles/7E673C96-6EB1-4B65-A194-F5FFDC407BF8.mobileprovision" /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/embedded.mobileprovision
+cTouch /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/Entitlements.plist /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest.xcent
+cCodeSign /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk
+c000000004B47D7B70000000000000110
+t1262999479
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/Entitlements.plist
+c000000004ABDB88400000000000000DD
+t1253947524
+s221
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/ResourceRules.plist
+c000000004ABDB88400000000000001E5
+t1253947524
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004ABDBA1300000000005F4900
+t1253947923
+s6244608
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004ABDBDCF0000000000501370
+t1253948879
+s5247856
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004ABDBDA40000000000001355
+t1253948836
+s4949
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004ABDD0D10000000000000788
+t1253953745
+s1928
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004ABDD2250000000001B3F450
+t1253954085
+s28570704
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk
+c000000004B7F9C7F0000000000000110
+t1266654335
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist
+c000000004B7C99D000000000000000DD
+t1266457040
+s221
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+c000000004B7C99D000000000000001E5
+t1266457040
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004B7D0F6D00000000003B4B70
+t1266487149
+s3885936
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B7D0FBE000000000036A580
+t1266487230
+s3581312
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B7D0F9B0000000000001355
+t1266487195
+s4949
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B7E2A02000000000000098F
+t1266559490
+s2447
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B7E2AAA00000000026E4750
+t1266559658
+s40781648
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestAppDelegate.h
+c000000004BB6177D00000000000001D7
+t1270224765
+s471
+i<UIKit/UIKit.h>
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestAppDelegate.m
+c000000004BB71A900000000000000332
+t1270291088
+s818
+i"ePubTestAppDelegate.h"
+i"ePubTestViewController.h"
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestViewController.h
+c000000004BB71CB80000000000000150
+t1270291640
+s336
+i<UIKit/UIKit.h>
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestViewController.m
+c000000004BB71F5C000000000000083A
+t1270292316
+s2106
+i"ePubTestViewController.h"
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/MainWindow.xib
+c000000004BB6177D0000000000002657
+t1270224765
+s9815
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app
+t1270292318
+s374
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app.dSYM
+t1270292318
+s102
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/Info.plist
+t1270224903
+s661
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/MainWindow.nib
+t1270224907
+s1512
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/PkgInfo
+t1270224903
+s8
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ResourceRules.plist
+t1270224903
+s485
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ePubTest
+t1270292318
+s17152
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ePubTestViewController.nib
+t1270291778
+s1867
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/embedded.mobileprovision
+t1270224918
+s7216
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/ePubTest.LinkFileList
+c000000004BB6180700000000000001A1
+t1270224903
+s417
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/ePubTestAppDelegate.o
+t1270291778
+s40016
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/ePubTestViewController.o
+t1270292318
+s35964
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/main.o
+t1270224916
+s6468
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest.xcent
+t1270224918
+s321
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/ePubTestViewController.xib
+c000000004BB71CE90000000000005844
+t1270291689
+s22596
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/ePubTest_Prefix.pch
+c000000004BB6177D00000000000000B9
+t1270224765
+s185
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/main.m
+c000000004BB6177D000000000000015C
+t1270224765
+s348
+i<UIKit/UIKit.h>
+
+N/Users/coolyu/Library/MobileDevice/Provisioning Profiles/7E673C96-6EB1-4B65-A194-F5FFDC407BF8.mobileprovision
+c000000004B9F50620000000000001C30
+t1268732002
+s7216
+
+N/var/folders/6x/6x6yiJAuHHCslOXGzkumIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ePubTest_Prefix-fbefuizzhyjhndgkhixiwgpdvebi/ePubTest_Prefix.pch.gch
+t1269593593
+s8962708
+
+N/var/folders/6x/6x6yiJAuHHCslOXGzkumIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ePubTest_Prefix-fwcahespprtgsvhdzodnavnnjenq/ePubTest_Prefix.pch.gch
+t1270224915
+s8388792
+
+NePubTest-Info.plist
+c000000004BB6177D000000000000038D
+t1270224765
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies291985117#291985117#0(0"0(0#1#0"4300907800#0"0#
+
+CCodeSign /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app
+s291985118.268208
+e291985118.507371
+r1
+xCodeSign
+x/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app
+lSLF07#2@42"CodeSign build/Debug-iphoneos/ePubTest.app291985118#291985118#0(0"0(0#0#82"/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app4300907800#710"    cd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest    setenv IGNORE_CODESIGN_ALLOCATE_RADAR_7181968 /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign -f -s "iPhone Developer: Ju Chun Ko (59G6MQ6X2U)" --resource-rules=/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ResourceRules.plist --entitlements /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest.xcent /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app0#
+
+CCompileC build/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/ePubTestAppDelegate.o /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s291984578.730740
+e291984578.852474
+r1
+xCompileC
+xbuild/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/ePubTestAppDelegate.o
+x/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestAppDelegate.m291984578#291984578#0(0"0(0#0#78"/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestAppDelegate.m4300907800#1896"    cd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.2 -iquote /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-generated-files.hmap -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-own-target-headers.hmap -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-all-target-headers.hmap -iquote /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-project-headers.hmap -F/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/include -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/DerivedSources/armv6 -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/DerivedSources -include /var/folders/6x/6x6yiJAuHHCslOXGzkumIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ePubTest_Prefix-fwcahespprtgsvhdzodnavnnjenq/ePubTest_Prefix.pch -c /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestAppDelegate.m -o /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/ePubTestAppDelegate.o0#
+
+CCompileC build/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/ePubTestViewController.o /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s291985117.921619
+e291985118.082134
+r1
+xCompileC
+xbuild/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/ePubTestViewController.o
+x/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestViewController.m291985117#291985118#0(0"0(0#0#81"/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestViewController.m4300907800#1902"    cd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.2 -iquote /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-generated-files.hmap -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-own-target-headers.hmap -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-all-target-headers.hmap -iquote /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-project-headers.hmap -F/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/include -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/DerivedSources/armv6 -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/DerivedSources -include /var/folders/6x/6x6yiJAuHHCslOXGzkumIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ePubTest_Prefix-fwcahespprtgsvhdzodnavnnjenq/ePubTest_Prefix.pch -c /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/Classes/ePubTestViewController.m -o /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/ePubTestViewController.o0#
+
+CCompileC build/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/main.o /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s291917716.003531
+e291917716.160724
+r1
+xCompileC
+xbuild/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/main.o
+x/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/main.m291917716#291917716#0(0"0(0#0#55"/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/main.m4300907800#1858"    cd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.2 -iquote /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-generated-files.hmap -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-own-target-headers.hmap -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-all-target-headers.hmap -iquote /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-project-headers.hmap -F/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/include -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/DerivedSources/armv6 -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/DerivedSources -include /var/folders/6x/6x6yiJAuHHCslOXGzkumIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ePubTest_Prefix-fwcahespprtgsvhdzodnavnnjenq/ePubTest_Prefix.pch -c /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/main.m -o /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/main.o0#
+
+CCompileXIB /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/MainWindow.xib
+s291917703.610787
+e291917707.835274
+r1
+xCompileXIB
+x/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib291917703#291917707#0(0"0(0#0#63"/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/MainWindow.xib4300907800#499"    cd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/MainWindow.nib /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/MainWindow.xib0#
+
+CCompileXIB /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/ePubTestViewController.xib
+s291984576.964833
+e291984578.730341
+r1
+xCompileXIB
+x/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/ePubTestViewController.xib
+lSLF07#2@37"CompileXIB ePubTestViewController.xib291984576#291984578#0(0"0(0#0#75"/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/ePubTestViewController.xib4300907800#523"    cd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ePubTestViewController.nib /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/ePubTestViewController.xib0#
+
+CCpResource build/Debug-iphoneos/ePubTest.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/ResourceRules.plist
+s291917703.530265
+e291917703.610691
+r1
+xCpResource
+xbuild/Debug-iphoneos/ePubTest.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/ResourceRules.plist
+lSLF07#2@96"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/ResourceRules.plist291917703#291917703#0(0"0(0#0#91"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/ResourceRules.plist8101813437696656384#503"    cd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/ResourceRules.plist /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app0#
+
+CCpResource build/Debug-iphoneos/ePubTest.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+r0
+
+CGenerateDSYMFile /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app.dSYM /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ePubTest
+s291985118.186518
+e291985118.265011
+r1
+xGenerateDSYMFile
+x/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app.dSYM
+x/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ePubTest
+lSLF07#2@98"GenerateDSYMFile build/Debug-iphoneos/ePubTest.app.dSYM build/Debug-iphoneos/ePubTest.app/ePubTest291985118#291985118#0(0"0(0#0#91"/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ePubTest4300907800#395"    cd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ePubTest -o /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app.dSYM0#
+
+CLd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ePubTest normal armv6
+s291985118.082236
+e291985118.186412
+r1
+xLd
+x/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ePubTest
+xnormal
+xarmv6
+lSLF07#2@96"Link /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ePubTest291985118#291985118#0(0"0(0#0#0"4300907800#883"    cd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk -L/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos -F/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos -filelist /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/Objects-normal/armv6/ePubTest.LinkFileList -dead_strip -miphoneos-version-min=3.1.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ePubTest0#
+
+CProcessInfoPlistFile /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/Info.plist ePubTest-Info.plist
+s291917703.561392
+e291917703.588334
+r1
+xProcessInfoPlistFile
+x/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/Info.plist
+xePubTest-Info.plist
+lSLF07#2@27"Process ePubTest-Info.plist291917703#291917703#0(0"0(0#0#68"/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/ePubTest-Info.plist4300907800#606"    cd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ePubTest-Info.plist -genpkginfo /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/ResourceRules.plist -o /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/Info.plist0#
+
+CProcessPCH /var/folders/6x/6x6yiJAuHHCslOXGzkumIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ePubTest_Prefix-fbefuizzhyjhndgkhixiwgpdvebi/ePubTest_Prefix.pch.gch ePubTest_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/6x/6x6yiJAuHHCslOXGzkumIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ePubTest_Prefix-fwcahespprtgsvhdzodnavnnjenq/ePubTest_Prefix.pch.gch ePubTest_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s291917709.142593
+e291917716.003227
+r1
+xProcessPCH
+x/var/folders/6x/6x6yiJAuHHCslOXGzkumIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ePubTest_Prefix-fwcahespprtgsvhdzodnavnnjenq/ePubTest_Prefix.pch.gch
+xePubTest_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile ePubTest_Prefix.pch291917709#291917716#0(0"0(0#0#68"/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/ePubTest_Prefix.pch4300907800#1745"    cd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.2 -iquote /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-generated-files.hmap -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-own-target-headers.hmap -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-all-target-headers.hmap -iquote /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest-project-headers.hmap -F/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/include -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/DerivedSources/armv6 -I/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/DerivedSources -c /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/ePubTest_Prefix.pch -o /var/folders/6x/6x6yiJAuHHCslOXGzkumIE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ePubTest_Prefix-fwcahespprtgsvhdzodnavnnjenq/ePubTest_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/coolyu/Library/MobileDevice/Provisioning Profiles/7E673C96-6EB1-4B65-A194-F5FFDC407BF8.mobileprovision" /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/embedded.mobileprovision
+s291917718.753868
+e291917718.849249
+r1
+xProcessProductPackaging
+x/Users/coolyu/Library/MobileDevice/Provisioning Profiles/7E673C96-6EB1-4B65-A194-F5FFDC407BF8.mobileprovision
+x/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/embedded.mobileprovision
+lSLF07#2@194"ProcessProductPackaging "/Users/coolyu/Library/MobileDevice/Provisioning Profiles/7E673C96-6EB1-4B65-A194-F5FFDC407BF8.mobileprovision" build/Debug-iphoneos/ePubTest.app/embedded.mobileprovision291917718#291917718#0(0"0(0#0#107"/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/embedded.mobileprovision4300907800#445"    cd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/coolyu/Library/MobileDevice/Provisioning Profiles/7E673C96-6EB1-4B65-A194-F5FFDC407BF8.mobileprovision" -o /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app/embedded.mobileprovision0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/Entitlements.plist /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest.xcent
+s291917718.922650
+e291917718.949585
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/Entitlements.plist
+x/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest.xcent
+lSLF07#2@180"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/Entitlements.plist build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest.xcent291917718#291917718#0(0"0(0#0#114"/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest.xcent4300907800#457"    cd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest.xcent0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/ePubTest.build/Debug-iphoneos/ePubTest.build/ePubTest.xcent
+r0
+
+CTouch /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app
+s291985118.265221
+e291985118.268019
+r1
+xTouch
+x/Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app
+lSLF07#2@88"Touch /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app291985118#291985118#0(0"0(0#0#0"4300907800#285"    cd /Users/coolyu/Documents/iPhoneWorkspace/ePubTest    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/coolyu/Documents/iPhoneWorkspace/ePubTest/build/Debug-iphoneos/ePubTest.app0#
+

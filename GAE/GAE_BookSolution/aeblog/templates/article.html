@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="article">
+  <h2>{{article.title}}</h2>
+  <div class="content">
+  {{article.content}}
+  </div>
+  <div class="tags">標籤:
+  {% for tag in article.tags %}
+    <a href="/tag/{{tag}}">{{tag}}</a>
+  {% endfor %}
+  </div>
+</div>
+<hr>
+<div class="comments">
+  <h3>文章留言</h3>
+  {% for comment in article.comments %}
+  <div class="comment">
+    <div class="cite">{{comment.user}}</div>
+    <div class="message">{{comment.comment}}</div>
+    <div class="created">{{comment.created|date:"Y/m/d H:i:s"}}</div>
+  </div>
+  {% endfor %}
+</div>
+<hr>
+<h3>回應文章</h3>
+<form method="post" action="/comment">
+  <fieldset>
+    <input type="hidden" name="key" value="{{article.key}}">
+    <p>
+      <label>名稱:</label><br>
+      <input type="text" name="username">
+    </p>
+    <p>
+      <label>留言內容:</label><br>
+      <textarea name="comment" rows="5" cols="40"></textarea>
+    </p>
+    <p><input type="submit" value="留言"></p>
+  </fieldset>
+</form>
+{% endblock %}

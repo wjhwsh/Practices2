@@ -1,0 +1,12 @@
+application: hello
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /
+  script: main.py
+- url: /now
+  script: now.py
+- url: /s
+  static_dir: static

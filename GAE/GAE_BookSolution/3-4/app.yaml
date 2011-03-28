@@ -1,0 +1,13 @@
+application: hello
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /
+  script: main.py
+- url: /reg
+  script: reg.py
+- url: /register.html
+  static_files: register.html
+  upload: register.html

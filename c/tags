@@ -1,0 +1,2 @@
+MBinaryToInt	BinaryToInt.c	/^int main (int argc, char ** argv) $/
+printBinary	BinaryToInt.c	/^void printBinary(int x) {$/

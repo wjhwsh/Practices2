@@ -1,0 +1,39 @@
+-------------------------[ Sploit Mutation Engine ]-----------------------
+
+Sploit is a framework initially designed for testing network intrusion
+detection systems. It is based on a mutation engine that can
+automatically apply a number of transformation techniques to an
+exploit script.  Using Sploit, it is possible to generate an high
+number of mutations of a certain attack that can then be executed
+against a real target in a testbed network to test the detection
+capabilities of NIDSs.  
+
+It also represents the perfect environment to design, develop and try
+new evasion techniques.
+
+Before using Sploit, please read the documentation in the "doc"
+directory.  To run sploit, you can use either the command line
+interface ("code/sploit") or the graphical interface
+("code/sploit-gui").
+
+Have Fun !!
+
+----------------------[ Notes on the Current State ]---------------------
+
+Sploit is still in development and far far away from a stable
+release. Changes are made daily and the intrinsic distributed 
+nature of the project heavily complicates any testing attempts:
+in other words, you can expect to find bugs in this release.
+
+------------------------------[ Contact ]--------------------------------
+
+The web site for Sploit is:
+  http://www.cs.ucsb.edu/~rsg/projects/sploit
+
+Feel free to report bugs, comments, or suggestions to: 
+  sploit@lists.cs.ucsb.edu
+
+For any feedback on the functionality and discussion with 
+other users, please write to:
+   sploit-users@lists.cs.ucsb.edu
+

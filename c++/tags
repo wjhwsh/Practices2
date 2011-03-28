@@ -1,0 +1,2 @@
+MPointer.cpp	Pointer.cpp	/^int main (int argc, char **argv)$/
+execute	Pointer.cpp	/^void execute (string input)$/

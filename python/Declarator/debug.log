@@ -1,0 +1,2 @@
+Calling print_func: ('Hello1', 'Hello2', 'Hello3', 'Hello4'), {}
+print_func returned 0

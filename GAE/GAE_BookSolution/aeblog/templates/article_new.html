@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h2>{{status|capfirst}} Article</h2>
+<form method="post" action="/admin/article">
+  <fieldset>
+    <input type="hidden" name="status" value="{{status}}">
+    <input type="hidden" name="action" value="save">
+    {% if article %}
+    <input type="hidden" name="key" value="{{article.key}}">
+    {% endif %}
+    <p>
+      <label>文章標題:</label><br>
+      <input type="text" name="title" size="30" {% if article %}value="{{article.title}}"{% endif %}>
+    </p>
+    <p>
+      <label>文章內容:</label><br>
+      <textarea name="content" rows="10" cols="30">{% if article %}{{article.content}}{% endif %}</textarea>
+    </p>
+    <p>
+      <label>標籤:</label><br>
+      <input type="text" name="tags" {% if article %}value="{{tags}}"{% endif %}>
+    </p>
+    <p><input type="submit" value="儲存"></p>
+  </fieldset>
+</form>
+{% endblock %}

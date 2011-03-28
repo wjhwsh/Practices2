@@ -1,0 +1,358 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALL_ENTITIES	/Users/wclab/Practices/python/BeautifulSoup.py	/^    ALL_ENTITIES = XHTML_ENTITIES$/;"	v	class:BeautifulStoneSoup
+BARE_AMPERSAND_OR_BRACKET	/Users/wclab/Practices/python/BeautifulSoup.py	/^    BARE_AMPERSAND_OR_BRACKET = re.compile("([<>]|"$/;"	v	class:Tag
+BeautifulSOAP	/Users/wclab/Practices/python/BeautifulSoup.py	/^class BeautifulSOAP(BeautifulStoneSoup):$/;"	c
+BeautifulSoup	/Users/wclab/Practices/python/BeautifulSoup.py	/^class BeautifulSoup(BeautifulStoneSoup):$/;"	c
+BeautifulSoup	/Users/wclab/Practices/python/pydic.py	/^from BeautifulSoup import BeautifulSoup          # For processing HTML$/;"	i
+BeautifulSoup	/Users/wclab/Practices/python/weather_week.py	/^from BeautifulSoup import BeautifulSoup          # For processing HTML$/;"	i
+BeautifulStoneSoup	/Users/wclab/Practices/python/BeautifulSoup.py	/^class BeautifulStoneSoup(Tag, SGMLParser):$/;"	c
+CData	/Users/wclab/Practices/python/BeautifulSoup.py	/^class CData(NavigableString):$/;"	c
+CHARSET_ALIASES	/Users/wclab/Practices/python/BeautifulSoup.py	/^    CHARSET_ALIASES = { "macintosh" : "mac-roman",$/;"	v	class:UnicodeDammit
+CHARSET_RE	/Users/wclab/Practices/python/BeautifulSoup.py	/^    CHARSET_RE = re.compile("((^|;)\\s*charset=)([^;]*)", re.M)$/;"	v	class:BeautifulSoup
+Comment	/Users/wclab/Practices/python/BeautifulSoup.py	/^class Comment(NavigableString):$/;"	c
+DEFAULT_OUTPUT_ENCODING	/Users/wclab/Practices/python/BeautifulSoup.py	/^DEFAULT_OUTPUT_ENCODING = "utf-8"$/;"	v
+Declaration	/Users/wclab/Practices/python/BeautifulSoup.py	/^class Declaration(NavigableString):$/;"	c
+EBCDIC_TO_ASCII_MAP	/Users/wclab/Practices/python/BeautifulSoup.py	/^    EBCDIC_TO_ASCII_MAP = None$/;"	v	class:UnicodeDammit
+FILENAME	/Users/wclab/Practices/python/get-google-files	/^FILENAME="gapps-passion-FRF91-signed.zip"$/;"	v
+For	/Users/wclab/Practices/python/pydic.py	/^from BeautifulSoup import BeautifulSoup          # For processing HTML$/;"	i
+For	/Users/wclab/Practices/python/weather_week.py	/^from BeautifulSoup import BeautifulSoup          # For processing HTML$/;"	i
+HTML	/Users/wclab/Practices/python/pydic.py	/^from BeautifulSoup import BeautifulSoup          # For processing HTML$/;"	i
+HTML	/Users/wclab/Practices/python/weather_week.py	/^from BeautifulSoup import BeautifulSoup          # For processing HTML$/;"	i
+HTMLParser	/Users/wclab/Practices/python/weather.py	/^import HTMLParser  $/;"	i
+HTMLParser	/Users/wclab/Practices/python/weather_all_today.py	/^import HTMLParser  $/;"	i
+HTMLParser	/Users/wclab/Practices/python/weather_step.py	/^import HTMLParser  $/;"	i
+HTML_ENTITIES	/Users/wclab/Practices/python/BeautifulSoup.py	/^    HTML_ENTITIES = "html"$/;"	v	class:BeautifulStoneSoup
+ICantBelieveItsBeautifulSoup	/Users/wclab/Practices/python/BeautifulSoup.py	/^class ICantBelieveItsBeautifulSoup(BeautifulSoup):$/;"	c
+I_CANT_BELIEVE_THEYRE_NESTABLE_BLOCK_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    I_CANT_BELIEVE_THEYRE_NESTABLE_BLOCK_TAGS = ('noscript',)$/;"	v	class:ICantBelieveItsBeautifulSoup
+I_CANT_BELIEVE_THEYRE_NESTABLE_INLINE_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^     ('em', 'big', 'i', 'small', 'tt', 'abbr', 'acronym', 'strong',$/;"	v	class:ICantBelieveItsBeautifulSoup
+MARKUP_MASSAGE	/Users/wclab/Practices/python/BeautifulSoup.py	/^    MARKUP_MASSAGE = [(re.compile('(<[^<>]*)\/>'),$/;"	v	class:BeautifulStoneSoup
+MIRRORS	/Users/wclab/Practices/python/get-google-files	/^MIRRORS=["http:\/\/www.kanged.net\/mirror\/gapps\/",]$/;"	v
+MS_CHARS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    MS_CHARS = { '\\x80' : ('euro', '20AC'),$/;"	v	class:UnicodeDammit
+MinimalSoup	/Users/wclab/Practices/python/BeautifulSoup.py	/^class MinimalSoup(BeautifulSoup):$/;"	c
+NESTABLE_BLOCK_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    NESTABLE_BLOCK_TAGS = ('blockquote', 'div', 'fieldset', 'ins', 'del')$/;"	v	class:BeautifulSoup
+NESTABLE_INLINE_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    NESTABLE_INLINE_TAGS = ('span', 'font', 'q', 'object', 'bdo', 'sub', 'sup',$/;"	v	class:BeautifulSoup
+NESTABLE_LIST_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    NESTABLE_LIST_TAGS = { 'ol' : [],$/;"	v	class:BeautifulSoup
+NESTABLE_TABLE_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    NESTABLE_TABLE_TAGS = {'table' : [],$/;"	v	class:BeautifulSoup
+NESTABLE_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    NESTABLE_TAGS = buildTagMap([], BeautifulSoup.NESTABLE_TAGS,$/;"	v	class:ICantBelieveItsBeautifulSoup
+NESTABLE_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    NESTABLE_TAGS = buildTagMap([], NESTABLE_INLINE_TAGS, NESTABLE_BLOCK_TAGS,$/;"	v	class:BeautifulSoup
+NESTABLE_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    NESTABLE_TAGS = {}$/;"	v	class:BeautifulStoneSoup
+NESTABLE_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    NESTABLE_TAGS = {}$/;"	v	class:MinimalSoup
+NON_NESTABLE_BLOCK_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    NON_NESTABLE_BLOCK_TAGS = ('address', 'form', 'p', 'pre')$/;"	v	class:BeautifulSoup
+NavigableString	/Users/wclab/Practices/python/BeautifulSoup.py	/^class NavigableString(unicode, PageElement):$/;"	c
+OptionParser	/Users/wclab/Practices/python/get-google-files	/^from optparse import OptionParser$/;"	i
+PRESERVE_WHITESPACE_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    PRESERVE_WHITESPACE_TAGS = []$/;"	v	class:BeautifulStoneSoup
+PRESERVE_WHITESPACE_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    PRESERVE_WHITESPACE_TAGS = set(['pre', 'textarea'])$/;"	v	class:BeautifulSoup
+PageElement	/Users/wclab/Practices/python/BeautifulSoup.py	/^class PageElement(object):$/;"	c
+Parser	/Users/wclab/Practices/python/weather.py	/^Parser = WeaterHTMLParser()  $/;"	v
+Parser	/Users/wclab/Practices/python/weather_all_today.py	/^Parser = WeaterHTMLParser()  $/;"	v
+Parser	/Users/wclab/Practices/python/weather_step.py	/^Parser = WeaterHTMLParser()  $/;"	v
+ProcessingInstruction	/Users/wclab/Practices/python/BeautifulSoup.py	/^class ProcessingInstruction(NavigableString):$/;"	c
+QUOTE_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    QUOTE_TAGS = {'script' : None, 'textarea' : None}$/;"	v	class:BeautifulSoup
+QUOTE_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    QUOTE_TAGS = {}$/;"	v	class:BeautifulStoneSoup
+RESET_NESTING_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    RESET_NESTING_TAGS = buildTagMap('noscript')$/;"	v	class:MinimalSoup
+RESET_NESTING_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    RESET_NESTING_TAGS = buildTagMap(None, NESTABLE_BLOCK_TAGS, 'noscript',$/;"	v	class:BeautifulSoup
+RESET_NESTING_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    RESET_NESTING_TAGS = {}$/;"	v	class:BeautifulStoneSoup
+ROOT_TAG_NAME	/Users/wclab/Practices/python/BeautifulSoup.py	/^    ROOT_TAG_NAME = u'[document]'$/;"	v	class:BeautifulStoneSoup
+ResultSet	/Users/wclab/Practices/python/BeautifulSoup.py	/^class ResultSet(list):$/;"	c
+RobustHTMLParser	/Users/wclab/Practices/python/BeautifulSoup.py	/^class RobustHTMLParser(BeautifulSoup):$/;"	c
+RobustInsanelyWackAssHTMLParser	/Users/wclab/Practices/python/BeautifulSoup.py	/^class RobustInsanelyWackAssHTMLParser(MinimalSoup):$/;"	c
+RobustWackAssHTMLParser	/Users/wclab/Practices/python/BeautifulSoup.py	/^class RobustWackAssHTMLParser(ICantBelieveItsBeautifulSoup):$/;"	c
+RobustXMLParser	/Users/wclab/Practices/python/BeautifulSoup.py	/^class RobustXMLParser(BeautifulStoneSoup):$/;"	c
+SELF_CLOSING_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    SELF_CLOSING_TAGS = buildTagMap(None,$/;"	v	class:BeautifulSoup
+SELF_CLOSING_TAGS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    SELF_CLOSING_TAGS = {}$/;"	v	class:BeautifulStoneSoup
+SGMLParseError	/Users/wclab/Practices/python/BeautifulSoup.py	/^from sgmllib import SGMLParser, SGMLParseError$/;"	i
+SGMLParser	/Users/wclab/Practices/python/BeautifulSoup.py	/^from sgmllib import SGMLParser, SGMLParseError$/;"	i
+STRIP_ASCII_SPACES	/Users/wclab/Practices/python/BeautifulSoup.py	/^    STRIP_ASCII_SPACES = { 9: None, 10: None, 12: None, 13: None, 32: None, }$/;"	v	class:BeautifulStoneSoup
+SimplifyingSOAPParser	/Users/wclab/Practices/python/BeautifulSoup.py	/^class SimplifyingSOAPParser(BeautifulSOAP):$/;"	c
+SoupStrainer	/Users/wclab/Practices/python/BeautifulSoup.py	/^class SoupStrainer:$/;"	c
+StopParsing	/Users/wclab/Practices/python/BeautifulSoup.py	/^class StopParsing(Exception):$/;"	c
+StringIO	/Users/wclab/Practices/python/get-google-files	/^import sys, random, urllib2, zipfile, StringIO, os$/;"	i
+Tag	/Users/wclab/Practices/python/BeautifulSoup.py	/^class Tag(PageElement):$/;"	c
+UnicodeDammit	/Users/wclab/Practices/python/BeautifulSoup.py	/^class UnicodeDammit:$/;"	c
+WeaterHTMLParser	/Users/wclab/Practices/python/weather.py	/^class WeaterHTMLParser(HTMLParser.HTMLParser):  $/;"	c
+WeaterHTMLParser	/Users/wclab/Practices/python/weather_all_today.py	/^class WeaterHTMLParser(HTMLParser.HTMLParser):    $/;"	c
+WeaterHTMLParser	/Users/wclab/Practices/python/weather_step.py	/^class WeaterHTMLParser(HTMLParser.HTMLParser):  $/;"	c
+XHTML_ENTITIES	/Users/wclab/Practices/python/BeautifulSoup.py	/^    XHTML_ENTITIES = "xhtml"$/;"	v	class:BeautifulStoneSoup
+XML_ENTITIES	/Users/wclab/Practices/python/BeautifulSoup.py	/^    XML_ENTITIES = "xml"$/;"	v	class:BeautifulStoneSoup
+XML_ENTITIES_TO_SPECIAL_CHARS	/Users/wclab/Practices/python/BeautifulSoup.py	/^    XML_ENTITIES_TO_SPECIAL_CHARS = { "apos" : "'",$/;"	v	class:Tag
+XML_SPECIAL_CHARS_TO_ENTITIES	/Users/wclab/Practices/python/BeautifulSoup.py	/^    XML_SPECIAL_CHARS_TO_ENTITIES = _invert(XML_ENTITIES_TO_SPECIAL_CHARS)$/;"	v	class:Tag
+__author__	/Users/wclab/Practices/python/BeautifulSoup.py	/^__author__ = "Leonard Richardson (leonardr@segfault.org)"$/;"	v
+__call__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __call__(self, *args, **kwargs):$/;"	m	class:Tag	file:
+__contains__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __contains__(self, x):$/;"	m	class:Tag	file:
+__copyright__	/Users/wclab/Practices/python/BeautifulSoup.py	/^__copyright__ = "Copyright (c) 2004-2010 Leonard Richardson"$/;"	v
+__delitem__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __delitem__(self, key):$/;"	m	class:Tag	file:
+__eq__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __eq__(self, other):$/;"	m	class:Tag	file:
+__getattr__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __getattr__(self, attr):$/;"	m	class:NavigableString	file:
+__getattr__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __getattr__(self, methodName):$/;"	m	class:BeautifulStoneSoup	file:
+__getattr__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __getattr__(self, tag):$/;"	m	class:Tag	file:
+__getitem__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __getitem__(self, key):$/;"	m	class:Tag	file:
+__getnewargs__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __getnewargs__(self):$/;"	m	class:NavigableString	file:
+__init__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:BeautifulSoup
+__init__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __init__(self, markup, overrideEncodings=[],$/;"	m	class:UnicodeDammit
+__init__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __init__(self, markup="", parseOnlyThese=None, fromEncoding=None,$/;"	m	class:BeautifulStoneSoup
+__init__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __init__(self, name=None, attrs={}, text=None, **kwargs):$/;"	m	class:SoupStrainer
+__init__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __init__(self, parser, name, attrs=None, parent=None,$/;"	m	class:Tag
+__init__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __init__(self, source):$/;"	m	class:ResultSet
+__iter__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __iter__(self):$/;"	m	class:Tag	file:
+__len__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __len__(self):$/;"	m	class:Tag	file:
+__license__	/Users/wclab/Practices/python/BeautifulSoup.py	/^__license__ = "New-style BSD"$/;"	v
+__ne__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __ne__(self, other):$/;"	m	class:Tag	file:
+__new__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __new__(cls, value):$/;"	m	class:NavigableString	file:
+__nonzero__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __nonzero__(self):$/;"	m	class:Tag	file:
+__repr__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __repr__(self, encoding=DEFAULT_OUTPUT_ENCODING):$/;"	m	class:Tag	file:
+__setitem__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __setitem__(self, key, value):$/;"	m	class:Tag	file:
+__str__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __str__(self):$/;"	m	class:SoupStrainer	file:
+__str__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __str__(self, encoding=DEFAULT_OUTPUT_ENCODING):$/;"	m	class:CData	file:
+__str__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __str__(self, encoding=DEFAULT_OUTPUT_ENCODING):$/;"	m	class:Comment	file:
+__str__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __str__(self, encoding=DEFAULT_OUTPUT_ENCODING):$/;"	m	class:Declaration	file:
+__str__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __str__(self, encoding=DEFAULT_OUTPUT_ENCODING):$/;"	m	class:NavigableString	file:
+__str__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __str__(self, encoding=DEFAULT_OUTPUT_ENCODING):$/;"	m	class:ProcessingInstruction	file:
+__str__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __str__(self, encoding=DEFAULT_OUTPUT_ENCODING,$/;"	m	class:Tag	file:
+__unicode__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __unicode__(self):$/;"	m	class:NavigableString	file:
+__unicode__	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def __unicode__(self):$/;"	m	class:Tag	file:
+__version__	/Users/wclab/Practices/python/BeautifulSoup.py	/^__version__ = "3.0.8.1"$/;"	v
+_codec	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _codec(self, charset):$/;"	m	class:UnicodeDammit
+_convertEntities	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _convertEntities(self, match):$/;"	m	class:Tag
+_convertFrom	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _convertFrom(self, proposed):$/;"	m	class:UnicodeDammit
+_detectEncoding	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _detectEncoding(self, xml_data, isHTML=False):$/;"	m	class:UnicodeDammit
+_ebcdic_to_ascii	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _ebcdic_to_ascii(self, s):$/;"	m	class:UnicodeDammit
+_feed	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _feed(self, inDocumentEncoding=None, isHTML=False):$/;"	m	class:BeautifulStoneSoup
+_findAll	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _findAll(self, name, attrs, text, limit, generator, **kwargs):$/;"	m	class:PageElement
+_findOne	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _findOne(self, method, name, attrs, text, **kwargs):$/;"	m	class:PageElement
+_getAttrMap	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _getAttrMap(self):$/;"	m	class:Tag
+_invert	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _invert(h):$/;"	m	class:Tag
+_lastRecursiveChild	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _lastRecursiveChild(self):$/;"	m	class:PageElement
+_match_css_class	/Users/wclab/Practices/python/BeautifulSoup.py	/^def _match_css_class(str):$/;"	f
+_matches	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _matches(self, markup, matchAgainst):$/;"	m	class:SoupStrainer
+_popToTag	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _popToTag(self, name, inclusivePop=True):$/;"	m	class:BeautifulStoneSoup
+_smartPop	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _smartPop(self, name):$/;"	m	class:BeautifulStoneSoup
+_subMSChar	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _subMSChar(self, orig):$/;"	m	class:UnicodeDammit
+_sub_entity	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _sub_entity(self, x):$/;"	m	class:Tag
+_toStringSubclass	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _toStringSubclass(self, text, subclass):$/;"	m	class:BeautifulStoneSoup
+_toUnicode	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def _toUnicode(self, data, encoding):$/;"	m	class:UnicodeDammit
+addOneCol_bound	/Users/wclab/Practices/python/3-5m.py	/^def addOneCol_bound():$/;"	f
+addOneCol_normal	/Users/wclab/Practices/python/3-5m.py	/^def addOneCol_normal():$/;"	f
+addOneRowEntity	/Users/wclab/Practices/python/3-5m.py	/^def addOneRowEntity(size): #u-shape$/;"	f
+aliases	/Users/wclab/Practices/python/BeautifulSoup.py	/^    import cjkcodecs.aliases$/;"	i
+append	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def append(self, tag):$/;"	m	class:PageElement
+arealist	/Users/wclab/Practices/python/weather_week.py	/^arealist = []$/;"	v
+areas	/Users/wclab/Practices/python/weather_all_today.py	/^areas = [u'台北市', u'基隆北海岸', u'台北地區', u'桃園地區', u'新竹地區', u'苗栗地區', u'台中地區', u'彰化地區', u'南投地區', u'雲林地區',$/;"	v
+authenticate_url	/Users/wclab/Practices/python/google_login.py	/^authenticate_url = 'https:\/\/www.google.com\/accounts\/ServiceLoginAuth'$/;"	v
+authenticate_url	/Users/wclab/Practices/python/xxx.py	/^authenticate_url = 'https:\/\/www.google.com\/accounts\/ServiceLoginAuth'$/;"	v
+body	/Users/wclab/Practices/python/httplib2_googlelogin.py	/^body = {'USERNAME': 'name','PASSWORD': 'passwd'} $/;"	v
+buildTagMap	/Users/wclab/Practices/python/BeautifulSoup.py	/^def buildTagMap(default, *args):$/;"	f
+chardet	/Users/wclab/Practices/python/BeautifulSoup.py	/^    chardet = None$/;"	v	class:SimplifyingSOAPParser
+chardet	/Users/wclab/Practices/python/BeautifulSoup.py	/^    import chardet$/;"	i
+check_fermat	/Users/wclab/Practices/python/5-1.py	/^def check_fermat(a, b, c, n):$/;"	f
+childGenerator	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def childGenerator(self):$/;"	m	class:Tag
+chilkat	/Users/wclab/Practices/python/login.py	/^import chilkat$/;"	i
+cjkcodecs	/Users/wclab/Practices/python/BeautifulSoup.py	/^    import cjkcodecs.aliases$/;"	i
+clear	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def clear(self):$/;"	m	class:Tag
+codecs	/Users/wclab/Practices/python/BeautifulSoup.py	/^import codecs$/;"	i
+convert_charref	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def convert_charref(self, name):$/;"	m	class:BeautifulStoneSoup
+countdown	/Users/wclab/Practices/python/countdown.py	/^def countdown(n):$/;"	f
+datelist	/Users/wclab/Practices/python/weather_week.py	/^datelist = []$/;"	v
+debug_print	/Users/wclab/Practices/python/stock.py	/^def debug_print( s, msg = None ):$/;"	f
+decompose	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def decompose(self):$/;"	m	class:Tag
+device	/Users/wclab/Practices/python/get-google-files	/^def device():$/;"	f
+do_four	/Users/wclab/Practices/python/3-4.py	/^def do_four(func, argument):$/;"	f
+do_four	/Users/wclab/Practices/python/3-5m.py	/^def do_four(func, size):$/;"	f
+do_two	/Users/wclab/Practices/python/3-5m.py	/^def do_two(func, size):$/;"	f
+domain	/Users/wclab/Practices/python/login.py	/^domain = "secure.del.icio.us"$/;"	v
+download	/Users/wclab/Practices/python/get-google-files	/^def download():$/;"	f
+e	/Users/wclab/Practices/python/stock.py	/^e = ".*>\\d+" + r'(.+)<\/a><br><a href="\/pf\/pfsel\\?stocklist=.*'$/;"	v
+email	/Users/wclab/Practices/python/google_login.py	/^email = raw_input("Enter your Google username: ")$/;"	v
+email	/Users/wclab/Practices/python/xxx.py	/^email = raw_input("Enter your Google username: ")$/;"	v
+endData	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def endData(self, containerClass=NavigableString):$/;"	m	class:BeautifulStoneSoup
+exception_data	/Users/wclab/Practices/python/weather_all_today.py	/^exception_data = [u'地區名稱', u'天氣預測', u'氣溫', u'降雨機率']$/;"	v
+extract	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def extract(self):$/;"	m	class:PageElement
+fetch	/Users/wclab/Practices/python/BeautifulSoup.py	/^    fetch = findAll$/;"	v	class:Tag
+fetchNextSiblings	/Users/wclab/Practices/python/BeautifulSoup.py	/^    fetchNextSiblings = findNextSiblings # Compatibility with pre-3.x$/;"	v	class:PageElement
+fetchParents	/Users/wclab/Practices/python/BeautifulSoup.py	/^    fetchParents = findParents # Compatibility with pre-3.x$/;"	v	class:PageElement
+fetchPrevious	/Users/wclab/Practices/python/BeautifulSoup.py	/^    fetchPrevious = findAllPrevious # Compatibility with pre-3.x$/;"	v	class:PageElement
+fetchPreviousSiblings	/Users/wclab/Practices/python/BeautifulSoup.py	/^    fetchPreviousSiblings = findPreviousSiblings # Compatibility with pre-3.x$/;"	v	class:PageElement
+fetchText	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def fetchText(self, text=None, recursive=True, limit=None):$/;"	m	class:Tag
+find	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def find(self, name=None, attrs={}, recursive=True, text=None,$/;"	m	class:Tag
+findAll	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def findAll(self, name=None, attrs={}, recursive=True, text=None,$/;"	m	class:Tag
+findAllNext	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def findAllNext(self, name=None, attrs={}, text=None, limit=None,$/;"	m	class:PageElement
+findAllPrevious	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def findAllPrevious(self, name=None, attrs={}, text=None, limit=None,$/;"	m	class:PageElement
+findChild	/Users/wclab/Practices/python/BeautifulSoup.py	/^    findChild = find$/;"	v	class:Tag
+findChildren	/Users/wclab/Practices/python/BeautifulSoup.py	/^    findChildren = findAll$/;"	v	class:Tag
+findNext	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def findNext(self, name=None, attrs={}, text=None, **kwargs):$/;"	m	class:PageElement
+findNextSibling	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def findNextSibling(self, name=None, attrs={}, text=None, **kwargs):$/;"	m	class:PageElement
+findNextSiblings	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def findNextSiblings(self, name=None, attrs={}, text=None, limit=None,$/;"	m	class:PageElement
+findParent	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def findParent(self, name=None, attrs={}, **kwargs):$/;"	m	class:PageElement
+findParents	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def findParents(self, name=None, attrs={}, limit=None, **kwargs):$/;"	m	class:PageElement
+findPrevious	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def findPrevious(self, name=None, attrs={}, text=None, **kwargs):$/;"	m	class:PageElement
+findPreviousSibling	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def findPreviousSibling(self, name=None, attrs={}, text=None, **kwargs):$/;"	m	class:PageElement
+findPreviousSiblings	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def findPreviousSiblings(self, name=None, attrs={}, text=None,$/;"	m	class:PageElement
+find_codec	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def find_codec(self, charset):$/;"	m	class:UnicodeDammit
+first	/Users/wclab/Practices/python/BeautifulSoup.py	/^    first = find$/;"	v	class:Tag
+firstText	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def firstText(self, text=None, recursive=True):$/;"	m	class:Tag
+galx_match_obj	/Users/wclab/Practices/python/google_login.py	/^galx_match_obj = re.search(r'name="GALX"\\s*value="([^"]+)"', login_page_contents, re.IGNORECASE)$/;"	v
+galx_match_obj	/Users/wclab/Practices/python/xxx.py	/^galx_match_obj = re.search(r'name="GALX"\\s*value="([^"]+)"', login_page_contents, re.IGNORECASE)$/;"	v
+galx_value	/Users/wclab/Practices/python/google_login.py	/^galx_value = galx_match_obj.group(1) if galx_match_obj.group(1) is not None else ''$/;"	v
+galx_value	/Users/wclab/Practices/python/xxx.py	/^galx_value = galx_match_obj.group(1) if galx_match_obj.group(1) is not None else ''$/;"	v
+generators	/Users/wclab/Practices/python/BeautifulSoup.py	/^from __future__ import generators$/;"	i
+get	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def get(self, key, default=None):$/;"	m	class:Tag
+getMeaning	/Users/wclab/Practices/python/pydic.py	/^def getMeaning(word):$/;"	f
+getString	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def getString(self):$/;"	m	class:Tag
+getText	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def getText(self, separator=u""):$/;"	m	class:Tag
+getWordList	/Users/wclab/Practices/python/pydic.py	/^def getWordList():$/;"	f
+getpass	/Users/wclab/Practices/python/google_login.py	/^import getpass$/;"	i
+getpass	/Users/wclab/Practices/python/xxx.py	/^import getpass$/;"	i
+gv_home_page_contents	/Users/wclab/Practices/python/google_login.py	/^gv_home_page_contents = opener.open(gv_home_page_url).read()$/;"	v
+gv_home_page_contents	/Users/wclab/Practices/python/xxx.py	/^gv_home_page_contents = opener.open(gv_home_page_url).read()$/;"	v
+gv_home_page_url	/Users/wclab/Practices/python/xxx.py	/^gv_home_page_url = 'https:\/\/www.google.com\/voice\/#inbox'$/;"	v
+handle_charref	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def handle_charref(self, ref):$/;"	m	class:BeautifulStoneSoup
+handle_comment	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def handle_comment(self, text):$/;"	m	class:BeautifulStoneSoup
+handle_comment	/Users/wclab/Practices/python/weather_step.py	/^    def handle_comment(self, data):  $/;"	m	class:WeaterHTMLParser
+handle_data	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def handle_data(self, data):$/;"	m	class:BeautifulStoneSoup
+handle_data	/Users/wclab/Practices/python/weather.py	/^    def handle_data(self, data):  $/;"	m	class:WeaterHTMLParser
+handle_data	/Users/wclab/Practices/python/weather_all_today.py	/^    def handle_data(self, data):    $/;"	m	class:WeaterHTMLParser
+handle_data	/Users/wclab/Practices/python/weather_step.py	/^    def handle_data(self, data):  $/;"	m	class:WeaterHTMLParser
+handle_decl	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def handle_decl(self, data):$/;"	m	class:BeautifulStoneSoup
+handle_endtag	/Users/wclab/Practices/python/weather_step.py	/^    def handle_endtag(self, tag):  $/;"	m	class:WeaterHTMLParser
+handle_entityref	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def handle_entityref(self, ref):$/;"	m	class:BeautifulStoneSoup
+handle_pi	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def handle_pi(self, text):$/;"	m	class:BeautifulStoneSoup
+handle_startendtag	/Users/wclab/Practices/python/weather_step.py	/^    def handle_startendtag(self, tag, attrs):  $/;"	m	class:WeaterHTMLParser
+handle_starttag	/Users/wclab/Practices/python/weather_step.py	/^    def handle_starttag(self, tag, attrs):  $/;"	m	class:WeaterHTMLParser
+has_key	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def has_key(self, key):$/;"	m	class:Tag
+has_match	/Users/wclab/Practices/python/tupple_comparison.py	/^def has_match(t1,t2):$/;"	f
+headers	/Users/wclab/Practices/python/httplib2_googlelogin.py	/^headers = {'Content-type': 'application\/x-www-form-urlencoded', 'User-agent': 'Mozilla\/5.0'}$/;"	v
+headers	/Users/wclab/Practices/python/httplib2_googlelogin.py	/^headers = {'Cookie': response['set-cookie'], 'User-agent': 'Mozilla\/5.0'} $/;"	v
+html	/Users/wclab/Practices/python/login.py	/^        html = http.quickGetStr(resp.getHeaderField("Location"))$/;"	v
+html	/Users/wclab/Practices/python/login.py	/^        html = resp.bodyStr()$/;"	v
+html	/Users/wclab/Practices/python/login.py	/^html = http.quickGetStr("https:\/\/secure.del.icio.us\/login")$/;"	v
+http	/Users/wclab/Practices/python/httplib2_googlelogin.py	/^http = httplib2.Http() $/;"	v
+http	/Users/wclab/Practices/python/login.py	/^http = chilkat.CkHttp()$/;"	v
+httplib	/Users/wclab/Practices/python/stock.py	/^import httplib$/;"	i
+httplib2	/Users/wclab/Practices/python/httplib2_googlelogin.py	/^import httplib2 $/;"	i
+iRE_name	/Users/wclab/Practices/python/stock.py	/^iRE_name = re.compile( e, re.I | re.U | re.M | re.S )$/;"	v
+iRE_price	/Users/wclab/Practices/python/stock.py	/^                        re.I | re.U | re.M | re.S )$/;"	v
+iconv_codec	/Users/wclab/Practices/python/BeautifulSoup.py	/^    import iconv_codec$/;"	i
+index	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def index(self, element):$/;"	m	class:Tag
+insert	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def insert(self, position, newChild):$/;"	m	class:PageElement
+isSelfClosingTag	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def isSelfClosingTag(self, name):$/;"	m	class:BeautifulStoneSoup
+is_Triangle	/Users/wclab/Practices/python/5-2.py	/^def is_Triangle(a, b, c):$/;"	f
+key	/Users/wclab/Practices/python/google_login.py	/^key = re.search('name="_rnr_se".*?value="(.*?)"', gv_home_page_contents)$/;"	v
+key	/Users/wclab/Practices/python/xxx.py	/^   key = key.group(1)$/;"	v
+key	/Users/wclab/Practices/python/xxx.py	/^key = re.search('name="_rnr_se".*?value="(.*?)"', gv_home_page_contents)$/;"	v
+learning	/Users/wclab/Practices/python/pydic.py	/^def learning():$/;"	f
+logged_in	/Users/wclab/Practices/python/xxx.py	/^   logged_in = False$/;"	v
+logged_in	/Users/wclab/Practices/python/xxx.py	/^   logged_in = True$/;"	v
+login_page_contents	/Users/wclab/Practices/python/google_login.py	/^login_page_contents = opener.open(loing_page_url).read()$/;"	v
+login_page_contents	/Users/wclab/Practices/python/xxx.py	/^login_page_contents = opener.open(loing_page_url).read()$/;"	v
+login_params	/Users/wclab/Practices/python/google_login.py	/^login_params = urllib.urlencode( {$/;"	v
+login_params	/Users/wclab/Practices/python/xxx.py	/^login_params = urllib.urlencode( {$/;"	v
+loing_page_url	/Users/wclab/Practices/python/google_login.py	/^loing_page_url = 'https:\/\/www.google.com\/accounts\/ServiceLogin'$/;"	v
+loing_page_url	/Users/wclab/Practices/python/xxx.py	/^loing_page_url = 'https:\/\/www.google.com\/accounts\/Login'$/;"	v
+main	/Users/wclab/Practices/python/get-google-files	/^def main():$/;"	f
+markupbase	/Users/wclab/Practices/python/BeautifulSoup.py	/^import markupbase$/;"	i
+math	/Users/wclab/Practices/python/3-3.py	/^import math$/;"	i
+name2codepoint	/Users/wclab/Practices/python/BeautifulSoup.py	/^  from htmlentitydefs import name2codepoint$/;"	i
+name2codepoint	/Users/wclab/Practices/python/BeautifulSoup.py	/^  name2codepoint = {}$/;"	v
+nextGenerator	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def nextGenerator(self):$/;"	m	class:PageElement
+nextSiblingGenerator	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def nextSiblingGenerator(self):$/;"	m	class:PageElement
+opener	/Users/wclab/Practices/python/google_login.py	/^opener = urllib2.build_opener(urllib2.HTTPCookieProcessor())$/;"	v
+opener	/Users/wclab/Practices/python/stock.py	/^opener = urllib2.build_opener()$/;"	v
+opener	/Users/wclab/Practices/python/xxx.py	/^opener = urllib2.build_opener(urllib2.HTTPCookieProcessor())$/;"	v
+os	/Users/wclab/Practices/python/get-google-files	/^import sys, random, urllib2, zipfile, StringIO, os$/;"	i
+parentGenerator	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def parentGenerator(self):$/;"	m	class:PageElement
+parse_declaration	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def parse_declaration(self, i):$/;"	m	class:BeautifulStoneSoup
+password	/Users/wclab/Practices/python/google_login.py	/^password = getpass.getpass("Enter your password: ")$/;"	v
+password	/Users/wclab/Practices/python/xxx.py	/^password = getpass.getpass("Enter your password: ")$/;"	v
+popTag	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def popTag(self):$/;"	m	class:BeautifulSOAP
+popTag	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def popTag(self):$/;"	m	class:BeautifulStoneSoup
+port	/Users/wclab/Practices/python/login.py	/^port = 443$/;"	v
+prettify	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def prettify(self, encoding=DEFAULT_OUTPUT_ENCODING):$/;"	m	class:Tag
+previousGenerator	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def previousGenerator(self):$/;"	m	class:PageElement
+previousSiblingGenerator	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def previousSiblingGenerator(self):$/;"	m	class:PageElement
+printOneBound	/Users/wclab/Practices/python/3-5m.py	/^def printOneBound(size): #+---+---+$/;"	f
+printOneNormal	/Users/wclab/Practices/python/3-5m.py	/^def printOneNormal(size):#|   |   |$/;"	f
+printOneRowElement	/Users/wclab/Practices/python/3-5m.py	/^def printOneRowElement(size): #|  |  |*4$/;"	f
+print_four	/Users/wclab/Practices/python/3-5m.py	/^def print_four(s):$/;"	f
+print_grid	/Users/wclab/Practices/python/3-5m.py	/^def print_grid(size):$/;"	f
+print_twice	/Users/wclab/Practices/python/3-4.py	/^def print_twice(s):$/;"	f
+print_two	/Users/wclab/Practices/python/3-5m.py	/^def print_two(s):$/;"	f
+processing	/Users/wclab/Practices/python/pydic.py	/^from BeautifulSoup import BeautifulSoup          # For processing HTML$/;"	i
+processing	/Users/wclab/Practices/python/weather_week.py	/^from BeautifulSoup import BeautifulSoup          # For processing HTML$/;"	i
+pushTag	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def pushTag(self, tag):$/;"	m	class:BeautifulStoneSoup
+random	/Users/wclab/Practices/python/get-google-files	/^import sys, random, urllib2, zipfile, StringIO, os$/;"	i
+random	/Users/wclab/Practices/python/pydic.py	/^import random$/;"	i
+raw_arealist	/Users/wclab/Practices/python/weather_week.py	/^raw_arealist = soup.findAll("td", { "height" : "70" })#solved$/;"	v
+raw_datelist	/Users/wclab/Practices/python/weather_week.py	/^raw_datelist = soup.findAll("td", { "class" : "sbody1" })$/;"	v
+raw_tlist	/Users/wclab/Practices/python/weather_week.py	/^raw_tlist = soup.findAll("td", { "class" : "t" })$/;"	v
+re	/Users/wclab/Practices/python/BeautifulSoup.py	/^import re$/;"	i
+re	/Users/wclab/Practices/python/google_login.py	/^import re$/;"	i
+re	/Users/wclab/Practices/python/stock.py	/^import re$/;"	i
+re	/Users/wclab/Practices/python/xxx.py	/^import re$/;"	i
+recursiveChildGenerator	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def recursiveChildGenerator(self):$/;"	m	class:Tag
+renderContents	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def renderContents(self, encoding=DEFAULT_OUTPUT_ENCODING,$/;"	m	class:Tag
+replaceWith	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def replaceWith(self, replaceWith):$/;"	m	class:PageElement
+replaceWithChildren	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def replaceWithChildren(self):$/;"	m	class:PageElement
+req	/Users/wclab/Practices/python/login.py	/^req = chilkat.CkHttpRequest()$/;"	v
+reset	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def reset(self):$/;"	m	class:BeautifulStoneSoup
+resp	/Users/wclab/Practices/python/login.py	/^resp = http.SynchronousRequest(domain,port,ssl,req)$/;"	v
+responseStatus	/Users/wclab/Practices/python/login.py	/^    responseStatus = resp.get_StatusCode()$/;"	v
+rewrite	/Users/wclab/Practices/python/BeautifulSoup.py	/^                    def rewrite(match):$/;"	f	function:BeautifulSoup.start_meta
+right_justify	/Users/wclab/Practices/python/3-3.py	/^def right_justify(s):$/;"	f
+search	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def search(self, markup):$/;"	m	class:SoupStrainer
+searchTag	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def searchTag(self, markupName=None, markupAttrs={}):$/;"	m	class:SoupStrainer
+set	/Users/wclab/Practices/python/BeautifulSoup.py	/^    from sets import Set as set$/;"	i
+setString	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def setString(self, string):$/;"	m	class:Tag
+setup	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def setup(self, parent=None, previous=None):$/;"	m	class:PageElement
+sgmllib	/Users/wclab/Practices/python/BeautifulSoup.py	/^import sgmllib$/;"	i
+size	/Users/wclab/Practices/python/3-5m.py	/^size = int(raw_input("Please enter the size AxA rectangle: A="));$/;"	v
+soup	/Users/wclab/Practices/python/BeautifulSoup.py	/^    soup = BeautifulSoup(sys.stdin)$/;"	v
+soup	/Users/wclab/Practices/python/weather_week.py	/^    soup = BeautifulSoup(str(raw_datelist[i]))$/;"	v
+soup	/Users/wclab/Practices/python/weather_week.py	/^    soup = BeautifulSoup(str(raw_tlist[i]))$/;"	v
+soup	/Users/wclab/Practices/python/weather_week.py	/^soup = BeautifulSoup(webContent)$/;"	v
+ssl	/Users/wclab/Practices/python/login.py	/^ssl = True$/;"	v
+start_meta	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def start_meta(self, attrs):$/;"	m	class:BeautifulSoup
+stock_ids	/Users/wclab/Practices/python/stock.py	/^stock_ids = ( 2324, 8078, 2311, 2330, 2891, 8926 )$/;"	v
+string	/Users/wclab/Practices/python/BeautifulSoup.py	/^            import string$/;"	i
+string	/Users/wclab/Practices/python/BeautifulSoup.py	/^    string = property(getString, setString)$/;"	v	class:Tag
+substituteEncoding	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def substituteEncoding(self, str, encoding=None):$/;"	m	class:PageElement
+success	/Users/wclab/Practices/python/login.py	/^success = http.UnlockComponent("Anything for 30-day trial")$/;"	v
+sys	/Users/wclab/Practices/python/BeautifulSoup.py	/^    import sys$/;"	i
+sys	/Users/wclab/Practices/python/get-google-files	/^import sys, random, urllib2, zipfile, StringIO, os$/;"	i
+sys	/Users/wclab/Practices/python/login.py	/^import sys$/;"	i
+testing	/Users/wclab/Practices/python/pydic.py	/^def testing():$/;"	f
+text	/Users/wclab/Practices/python/BeautifulSoup.py	/^    text = property(getText)$/;"	v	class:Tag
+tlist	/Users/wclab/Practices/python/weather_week.py	/^tlist = []$/;"	v
+toEncoding	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def toEncoding(self, s, encoding=None):$/;"	m	class:PageElement
+types	/Users/wclab/Practices/python/BeautifulSoup.py	/^import types$/;"	i
+unknown_decl	/Users/wclab/Practices/python/weather.py	/^    def unknown_decl(self, data):  $/;"	m	class:WeaterHTMLParser
+unknown_decl	/Users/wclab/Practices/python/weather_all_today.py	/^    def unknown_decl(self, data):  $/;"	m	class:WeaterHTMLParser
+unknown_decl	/Users/wclab/Practices/python/weather_step.py	/^    def unknown_decl(self, data):  $/;"	m	class:WeaterHTMLParser
+unknown_endtag	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def unknown_endtag(self, name):$/;"	m	class:BeautifulStoneSoup
+unknown_starttag	/Users/wclab/Practices/python/BeautifulSoup.py	/^    def unknown_starttag(self, name, attrs, selfClosing=0):$/;"	m	class:BeautifulStoneSoup
+urllib	/Users/wclab/Practices/python/google_login.py	/^import urllib$/;"	i
+urllib	/Users/wclab/Practices/python/httplib2_googlelogin.py	/^import urllib $/;"	i
+urllib	/Users/wclab/Practices/python/pydic.py	/^import urllib$/;"	i
+urllib	/Users/wclab/Practices/python/weather.py	/^import urllib  $/;"	i
+urllib	/Users/wclab/Practices/python/weather_all_today.py	/^import urllib  $/;"	i
+urllib	/Users/wclab/Practices/python/weather_step.py	/^import urllib  $/;"	i
+urllib	/Users/wclab/Practices/python/weather_week.py	/^import urllib  $/;"	i
+urllib	/Users/wclab/Practices/python/xxx.py	/^import urllib$/;"	i
+urllib2	/Users/wclab/Practices/python/get-google-files	/^import sys, random, urllib2, zipfile, StringIO, os$/;"	i
+urllib2	/Users/wclab/Practices/python/google_login.py	/^import urllib2$/;"	i
+urllib2	/Users/wclab/Practices/python/stock.py	/^import urllib2$/;"	i
+urllib2	/Users/wclab/Practices/python/xxx.py	/^import urllib2$/;"	i
+weather	/Users/wclab/Practices/python/weather_all_today.py	/^weather = []  $/;"	v
+weatherWeb	/Users/wclab/Practices/python/weather.py	/^weatherWeb = urllib.urlopen("http:\/\/tw.weather.yahoo.com\/today.html")  $/;"	v
+weatherWeb	/Users/wclab/Practices/python/weather_all_today.py	/^weatherWeb = urllib.urlopen("http:\/\/tw.weather.yahoo.com\/today.html")  $/;"	v
+weatherWeb	/Users/wclab/Practices/python/weather_step.py	/^weatherWeb = urllib.urlopen("http:\/\/tw.weather.yahoo.com\/today.html")  $/;"	v
+weatherWeb	/Users/wclab/Practices/python/weather_week.py	/^weatherWeb = urllib.urlopen("http:\/\/tw.weather.yahoo.com\/week.html")$/;"	v
+weatherlist	/Users/wclab/Practices/python/weather_week.py	/^weatherlist = soup.findAll("img", { "width" : "35" })#needn't to change   OK$/;"	v
+webContent	/Users/wclab/Practices/python/weather.py	/^webContent = weatherWeb.read().decode('utf_8')  $/;"	v
+webContent	/Users/wclab/Practices/python/weather_all_today.py	/^webContent = weatherWeb.read().decode('utf_8')  $/;"	v
+webContent	/Users/wclab/Practices/python/weather_step.py	/^webContent = weatherWeb.read().decode('utf_8')  $/;"	v
+webContent	/Users/wclab/Practices/python/weather_week.py	/^webContent = weatherWeb.read().decode('utf_8')  $/;"	v
+zipfile	/Users/wclab/Practices/python/get-google-files	/^import sys, random, urllib2, zipfile, StringIO, os$/;"	i

@@ -1,0 +1,178 @@
+#!/usr/bin/python
+
+#**********************************************************************
+#*                      Sploit Mutation Engine                        *
+#**********************************************************************
+#* Copyright (C) 2006 Davide Balzarotti                               *
+#*                                                                    *
+#* This program is free software; you can redistribute it and/or      *
+#* modify it under the terms of the GNU General Public License        *
+#* as published by the Free Software Foundation; either               *
+#* version 2 of the License, or (at your option) any later            *
+#* version.                                                           *
+#*                                                                    *
+#* This program is distributed in the hope that it will be useful,    *
+#* but WITHOUT ANY WARRANTY; without even the implied warranty of     *
+#* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.               *
+#* See the GNU General Public License for more details.               *
+#*                                                                    *
+#* You should have received a copy of the GNU General Public License  *
+#* along with this program; if not, write to the Free Software        *
+#* Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.          *
+#*********************************************************************/
+
+# Author: Davide Balzarotti
+# $Id: sploit-gui 112 2006-03-02 10:13:28Z balzarot $
+
+
+import sys
+try:
+	from qt import *
+except:
+	print "ERROR: python qt3 library is required to run the graphical interface"
+	sys.exit(-1)
+
+sys.path.append("gui")
+
+from hosts_w import HostsWidget
+from exploit_w import ExploitWidget
+from mutation_w import MutationWidget
+from execute_w import ExecuteWidget
+from ids_w import IDSWidget
+
+import engine
+import random
+from managers import tcp
+
+class MainW(QWidget):
+	def __init__( self, parent, engine):
+		QWidget.__init__( self, parent, None )
+		self.engine = engine
+		
+		self.layout  = QHBoxLayout(self,2,5)
+				
+		self.iv = QIconView(self)
+		self.iv.setSpacing(15)
+		self.iv.setItemsMovable(True)
+		self.iv.setCursor(QCursor(13))
+		self.iv.setFixedWidth(120)
+		self.iv.setPaletteBackgroundColor(QColor(200,200,200))
+		self.connect( self.iv, SIGNAL( 'clicked( QIconViewItem* )' ), self.change_widget )
+		
+		exploit_ico = QIconViewItem(self.iv, " Exploit", QPixmap( "gui/icons/exploit.png" ) )
+		exploit_ico.setDragEnabled(False)
+		exploit_ico.setSelectable(False)
+				
+		target_ico = QIconViewItem(self.iv, "   Hosts", QPixmap( "gui/icons/case.png" ) )
+		target_ico.setDragEnabled(False)
+		target_ico.setSelectable(False)
+
+		conf_ico = QIconViewItem(self.iv, "Mutations", QPixmap( "gui/icons/wizard.png" ) )
+		conf_ico.setDragEnabled(False)
+		conf_ico.setSelectable(False)
+
+		conf_ico = QIconViewItem(self.iv, "    IDSs", QPixmap( "gui/icons/ids.png" ) )
+		conf_ico.setDragEnabled(False)
+		conf_ico.setSelectable(False)
+
+		conf_ico = QIconViewItem(self.iv, "   Run", QPixmap( "gui/icons/gear.png" ) )
+		conf_ico.setDragEnabled(False)
+		conf_ico.setSelectable(False)
+		
+		self.exploit  = ExploitWidget(self, engine)
+		self.hosts    = HostsWidget(self, engine)
+		self.mutation = MutationWidget(self, engine)
+		self.execute  = ExecuteWidget(self, engine)
+		self.ids      = IDSWidget(self, engine)
+		
+		self.current_widget = self.exploit
+		self.hosts.hide()
+		self.mutation.hide()
+		self.execute.hide()
+		self.ids.hide()
+				
+		self.layout.addWidget(self.iv)
+		self.layout.addWidget(self.current_widget,10)
+						
+	def change_widget(self, item):
+		if item == None:
+			return
+		clicked = str(item.text()).strip()
+		if self.current_widget.exit()==False:
+			return
+		self.layout.remove(self.current_widget)
+		self.current_widget.hide()
+		if clicked=='Exploit':
+			self.current_widget = self.exploit
+		elif clicked=='Hosts':
+			self.current_widget = self.hosts
+		elif clicked=='Mutations':
+			self.current_widget = self.mutation
+		elif clicked=='IDSs':
+			self.current_widget = self.ids
+		elif clicked=='Run':
+			self.current_widget = self.execute
+		
+		self.current_widget.enter()
+		self.layout.addWidget(self.current_widget,10)
+		self.current_widget.show()
+		
+class PM_MainWindow(QMainWindow):
+	def __init__( self, engine ):
+		QMainWindow.__init__( self, None, 'Py-Music' )
+
+		self.engine = engine
+		#self.setupMenuBar()
+		self.setupStatusBar()
+		self.setupCentralWidget()
+
+	def setupMenuBar( self ):
+		self.file = QPopupMenu( self )
+		self.menuBar().insertItem( '&File', self.file )
+
+		self.file.insertItem('&Load Exploit', self.load, Qt.CTRL+Qt.Key_L)
+		self.file.insertItem( '&Quit', qApp, SLOT( 'quit()' ), Qt.CTRL + Qt.Key_Q )
+
+	def setupStatusBar( self ):
+		self.statusBar().message( "Ready", 2000 )
+
+	def setupCentralWidget( self ):
+		self.view = MainW( self, self.engine )
+		#self.view.show()
+		self.setCentralWidget(self.view )
+
+	def closeWindow( self ):
+		close()
+		
+	def load(self):
+		filename = QFileDialog.getOpenFileName('exploits','Exploit (*.py)',self,'Open File','Load Exploit')
+		self.engine.load_exploit(str(filename))
+		self.view.exploit.refresh()
+		
+
+a = QApplication(sys.argv)
+
+engine = engine.Engine()
+
+#if len(sys.argv) == 2:
+#	print "Loading configuration file..."
+#	if engine.load_configuration(sys.argv[1])==False:
+#		print "Error loading configuration file"
+
+mw = PM_MainWindow(engine)
+mw.resize(800,600)
+mw.setMinimumSize(800,600)
+mw.setCaption( 'Sploit' )
+mw.setGeometry(100,100,900,700)
+a.setMainWidget( mw )
+mw.show()
+
+tcp.NEXT_SPORT = random.randint(2000,60000)
+
+a.connect( a, SIGNAL( 'lastWindowClosed()' ), a, SLOT( 'quit()' ) )
+a.exec_loop()
+if len(sys.argv) == 2:
+	print "saving configuration...."
+	engine.save_configuration(sys.argv[1])
+
+engine.clean_up()

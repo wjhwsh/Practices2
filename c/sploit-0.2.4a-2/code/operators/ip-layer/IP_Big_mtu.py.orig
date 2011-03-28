@@ -1,0 +1,68 @@
+#**********************************************************************
+#*                      Sploit Mutation Engine                        *
+#**********************************************************************
+#* Copyright (C) 2006 Davide Balzarotti                               *
+#*                                                                    *
+#* This program is free software; you can redistribute it and/or      *
+#* modify it under the terms of the GNU General Public License        *
+#* as published by the Free Software Foundation; either               *
+#* version 2 of the License, or (at your option) any later            *
+#* version.                                                           *
+#*                                                                    *
+#* This program is distributed in the hope that it will be useful,    *
+#* but WITHOUT ANY WARRANTY; without even the implied warranty of     *
+#* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.               *
+#* See the GNU General Public License for more details.               *
+#*                                                                    *
+#* You should have received a copy of the GNU General Public License  *
+#* along with this program; if not, write to the Free Software        *
+#* Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.          *
+#*********************************************************************/
+
+# Author: Andrea Beretta and Riccardo Bianchi
+# $Id$
+'''
+IP_Big_mtu
+------------
+ A new packet is inserted into the traffic whit a big size and the DF (don't fragment) flag set.
+'''
+
+from IPLayerOperator import IPLayerOperator
+from interfaces.hasparameters import IntParam
+import managers.ip as ip
+import scapy.scapy as scapy
+import random
+import string
+import utils
+
+class Big_mtu(IPLayerOperator):
+	isa_operator      = True  
+	
+	def __init__(self):
+		IPLayerOperator.__init__(self,'IP_Big_mtu','IP Fragmenter with large MTU')	
+		self.add_param(IntParam('bigsize',1000,'Size of the big segment',20))
+		self.add_param(IntParam('numfrag',1,'Fragment to evade',1))
+			
+	def mutate(self, packets):
+		numfrag = self.numfrag
+		bigsize = self.bigsize
+		big_payload=""
+		
+		if utils.check_length(numfrag, packets):
+			return packets 
+
+		#costruire grande_frammento		
+		forged = packets[numfrag-1].copy()
+		del(forged.payload)
+		for i in range(bigsize):
+			big_payload =big_payload + random.choice(string.ascii_letters)
+		forged.add_payload(scapy.Raw(load=big_payload))
+		forged.flags = ip.FLAG_DF
+		
+		#add timeout field
+		#forged.timeout = packets[numfrag-1].timeout
+		packets.insert(numfrag-1, forged)
+
+		return packets
+
+

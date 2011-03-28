@@ -1,0 +1,29 @@
+application: weather-fc
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /3rd-party-apps
+  static_dir: web-app/3rd-party-apps
+
+- url: /css
+  static_dir: web-app/css
+
+- url: /WEB-INF
+  static_dir: web-app/WEB-INF
+
+- url: /iui
+  static_dir: web-app/iui
+
+- url: /qunit
+  static_dir: web-app/qunit
+
+- url: /qtests
+  static_dir: web-app/qtests
+
+- url: /test
+  static_dir: web-app/test
+
+- url: .*
+  script: weather.py

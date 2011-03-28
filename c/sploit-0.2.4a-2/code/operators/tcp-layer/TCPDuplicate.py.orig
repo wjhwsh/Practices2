@@ -1,0 +1,57 @@
+#**********************************************************************
+#*                      Sploit Mutation Engine                        *
+#**********************************************************************
+#* Copyright (C) 2006 Davide Balzarotti                               *
+#*                                                                    *
+#* This program is free software; you can redistribute it and/or      *
+#* modify it under the terms of the GNU General Public License        *
+#* as published by the Free Software Foundation; either               *
+#* version 2 of the License, or (at your option) any later            *
+#* version.                                                           *
+#*                                                                    *
+#* This program is distributed in the hope that it will be useful,    *
+#* but WITHOUT ANY WARRANTY; without even the implied warranty of     *
+#* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.               *
+#* See the GNU General Public License for more details.               *
+#*                                                                    *
+#* You should have received a copy of the GNU General Public License  *
+#* along with this program; if not, write to the Free Software        *
+#* Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.          *
+#*********************************************************************/
+
+# Author: Andrea Beretta and Riccardo Bianchi
+# $Id$
+
+'''
+TCPDuplicate
+ Duplicate one of the packets
+'''
+
+from TCPLayerOperator import TCPLayerOperator
+from interfaces.hasparameters import IntParam
+import utils
+
+class TCPDuplicate(TCPLayerOperator):	
+	isa_operator      = True  
+
+	def __init__(self, size=1):
+		TCPLayerOperator.__init__(self,'TCPDuplicate','TPC packet duplicated')	
+		self.add_param(IntParam('numseg', 2,'Segment to duplicate',1))
+		self.add_param(IntParam('pos', 3, 'Position of duplicated packet', 1))
+ 					
+	def mutate(self, packets):
+		numseg = self.numseg
+		pos = self.pos
+		
+		#Not enough segments, Syn or Ack, return
+		if utils.check_length(numseg, packets) or utils.check_syn(packets[numseg-1]) or utils.check_ack(packets[numseg-1]):
+			return packets	
+			
+		if pos >= len(packets):
+			packets.append(packets[numseg-1])
+			return packets
+		
+		packets.insert(pos-1, packets[numseg-1])
+				
+		return packets
+

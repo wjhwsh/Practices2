@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h3>儲存一筆新書籤</h3>
+<form method="post" action="/post">
+    <fieldset>
+        <p>
+            <label>URL:</label><br>
+            <input type="text" name="url" size="40">
+        </p>
+        <p>
+            <label>標題:</label><br>
+            <input type="text" name="title" size="40">
+        </p>
+        <p>
+            <label>說明:</label><br>
+            <textarea name="desc" rows="3" cols="40"></textarea>
+        </p>
+        <p>
+            <label>標籤:</label><br>
+            <input type="text" name="tags" size="40">
+            <small>(以 , 隔開)</small>
+        </p>
+        <p>
+            <input type="checkbox" name="private"> 隱藏
+        </p>
+        <p>
+            <input type="submit" value="儲存書籤">
+        </p>
+    </fieldset>
+</form>
+{% endblock %}

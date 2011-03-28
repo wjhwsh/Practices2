@@ -1,0 +1,39 @@
+TOpenGLCore
+v7
+r1
+
+N/Users/kordan/Downloads/OpenGLTutorial/Default.png
+c00000000486A99EE0000000000001020
+t1214945774
+s4128
+
+N/Users/kordan/Downloads/OpenGLTutorial/build/Debug/OpenGLCore.app
+t2
+s0
+
+N/Users/kordan/Downloads/OpenGLTutorial/build/Debug/OpenGLCore.app/Contents/Info.plist
+t2
+s0
+
+N/Users/kordan/Downloads/OpenGLTutorial/build/Debug/OpenGLCore.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/kordan/Downloads/OpenGLTutorial/build/Debug/OpenGLCore.app/Contents/Resources/Default.png
+t2
+s0
+
+NInfo.plist
+c00000000486A99EE00000000000002AE
+t1214945774
+s686
+
+CCpResource build/Debug/OpenGLCore.app/Contents/Resources/Default.png Default.png
+r0
+
+CProcessInfoPlistFile /Users/kordan/Downloads/OpenGLTutorial/build/Debug/OpenGLCore.app/Contents/Info.plist Info.plist
+r0
+
+CTouch /Users/kordan/Downloads/OpenGLTutorial/build/Debug/OpenGLCore.app
+r0
+

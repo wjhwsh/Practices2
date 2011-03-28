@@ -1,0 +1,442 @@
+TOpenGLBasics
+v7
+r0
+t316010162.373850
+cCheck dependencies
+cCpResource build/Debug-iphoneos/OpenGLBasics.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/Info.plist OpenGLBasics-Info.plist
+cProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-ehxnayrfeqknnceyhftjrzdeotvx/OpenGLBasics_Prefix.pch.gch OpenGLBasics_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-aehodahktoebihhilwymgyjbcwci/OpenGLBasics_Prefix.pch.gch OpenGLBasics_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/main.o /Users/kordan/Downloads/OpenGLBasics/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/OpenGLBasicsAppDelegate.o /Users/kordan/Downloads/OpenGLBasics/Classes/OpenGLBasicsAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/EAGLView.o /Users/kordan/Downloads/OpenGLBasics/Classes/EAGLView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/main.o /Users/kordan/Downloads/OpenGLBasics/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/OpenGLBasicsAppDelegate.o /Users/kordan/Downloads/OpenGLBasics/Classes/OpenGLBasicsAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/OpenGLBasics normal armv6
+cCompileC build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/EAGLView.o /Users/kordan/Downloads/OpenGLBasics/Classes/EAGLView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/OpenGLBasics normal armv7
+cCreateUniversalBinary /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/OpenGLBasics normal "armv6 armv7"
+cGenerateDSYMFile /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app.dSYM /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/OpenGLBasics
+cProcessProductPackaging "/Users/kordan/Library/MobileDevice/Provisioning Profiles/F58689D7-B334-4D04-B295-E3EE6C049A97.mobileprovision" /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/embedded.mobileprovision
+cTouch /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics.xcent
+cCodeSign /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
+c000000004CC7DC9E0000000000000110
+t1288166558
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+c000000004CB3DFCF00000000000001A7
+t1286856655
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+c000000004CB3DFCF00000000000001E5
+t1286856655
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC10F4700000000003E1F20
+t1287720775
+s4071200
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC10F1C0000000000001466
+t1287720732
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h
+c000000004CC110BE000000000000094F
+t1287721150
+s2383
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGLDrawable.h
+c000000004CC110BE0000000000000A61
+t1287721150
+s2657
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h
+c000000004CC110BE0000000000009369
+t1287721150
+s37737
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h
+c000000004CC110BE0000000000003C4A
+t1287721150
+s15434
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004CC110CB000000000002C650
+t1287721163
+s181840
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004CC1111C00000000000000C4
+t1287721244
+s196
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004CC1127D0000000000267530
+t1287721597
+s2520368
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC11AE60000000000000AA1
+t1287723750
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC11B750000000000C769F0
+t1287723893
+s13068784
+
+N/Users/kordan/Downloads/OpenGLBasics/Classes/EAGLView.h
+c000000004A42C5570000000000000473
+t1245889879
+s1139
+i<UIKit/UIKit.h>
+i<OpenGLES/EAGL.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+
+N/Users/kordan/Downloads/OpenGLBasics/Classes/EAGLView.m
+c000000004A4512900000000000001881
+t1246040720
+s6273
+i<QuartzCore/QuartzCore.h>
+i<OpenGLES/EAGLDrawable.h>
+i"EAGLView.h"
+
+N/Users/kordan/Downloads/OpenGLBasics/Classes/OpenGLBasicsAppDelegate.h
+c000000004A42801A000000000000017B
+t1245872154
+s379
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Downloads/OpenGLBasics/Classes/OpenGLBasicsAppDelegate.m
+c000000004A429BA30000000000000380
+t1245879203
+s896
+i"OpenGLBasicsAppDelegate.h"
+i"EAGLView.h"
+
+N/Users/kordan/Downloads/OpenGLBasics/OpenGLBasics_Prefix.pch
+c000000004A427E9100000000000000B9
+t1245871761
+s185
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app
+t1294317362
+s306
+
+N/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app.dSYM
+t1294317362
+s102
+
+N/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/Info.plist
+t1294317360
+s776
+
+N/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/OpenGLBasics
+t1294317362
+s62500
+
+N/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/PkgInfo
+t1294317360
+s8
+
+N/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/ResourceRules.plist
+t1294317360
+s485
+
+N/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/embedded.mobileprovision
+t1294317362
+s11374
+
+N/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/EAGLView.o
+t1294317361
+s59680
+
+N/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/OpenGLBasics
+t1294317361
+s29736
+
+N/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/OpenGLBasics.LinkFileList
+c000000004D25B730000000000000018B
+t1294317360
+s395
+
+N/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/OpenGLBasicsAppDelegate.o
+t1294317361
+s51996
+
+N/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/main.o
+t1294317361
+s6760
+
+N/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/EAGLView.o
+t1294317361
+s57968
+
+N/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/OpenGLBasics
+t1294317362
+s25636
+
+N/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/OpenGLBasics.LinkFileList
+c000000004D25B730000000000000018B
+t1294317360
+s395
+
+N/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/OpenGLBasicsAppDelegate.o
+t1294317361
+s51368
+
+N/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/main.o
+t1294317361
+s6684
+
+N/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics.xcent
+t1294317362
+s430
+
+N/Users/kordan/Downloads/OpenGLBasics/main.m
+c000000004A443B5D0000000000000140
+t1245985629
+s320
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Library/MobileDevice/Provisioning Profiles/F58689D7-B334-4D04-B295-E3EE6C049A97.mobileprovision
+c000000004D258C370000000000002C6E
+t1294306359
+s11374
+
+N/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-aehodahktoebihhilwymgyjbcwci/OpenGLBasics_Prefix.pch.gch
+t1294317361
+s10446552
+
+N/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-aifgyijbotcswnbfwiifbywwmyic/OpenGLBasics_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-bjvlaabpijwbkngzjbwyzwhppdpo/OpenGLBasics_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-ehxnayrfeqknnceyhftjrzdeotvx/OpenGLBasics_Prefix.pch.gch
+t1294317361
+s9983704
+
+NOpenGLBasics-Info.plist
+c000000004A429AEA0000000000000356
+t1245879018
+s854
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies316010159#316010160#0(0"0(0#1#0"27866456492998768#0"0#
+
+CCodeSign /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app
+s316010162.123205
+e316010162.373692
+r1
+xCodeSign
+x/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app
+lSLF07#2@46"CodeSign build/Debug-iphoneos/OpenGLBasics.app316010162#316010162#0(0"0(0#0#74"/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app8649350016#663"    cd /Users/kordan/Downloads/OpenGLBasics    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Ju Chun Ko (59G6MQ6X2U)" --resource-rules=/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/ResourceRules.plist --entitlements /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics.xcent /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app0#
+
+CCompileC build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/EAGLView.o /Users/kordan/Downloads/OpenGLBasics/Classes/EAGLView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316010161.331967
+e316010161.570907
+r1
+xCompileC
+xbuild/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/EAGLView.o
+x/Users/kordan/Downloads/OpenGLBasics/Classes/EAGLView.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/kordan/Downloads/OpenGLBasics/Classes/EAGLView.m316010161#316010161#0(0"0(0#0#55"/Users/kordan/Downloads/OpenGLBasics/Classes/EAGLView.m8640812800#1810"    cd /Users/kordan/Downloads/OpenGLBasics    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=4.0 -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-generated-files.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-own-target-headers.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-all-target-headers.hmap -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-project-headers.hmap -F/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos -I/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/include -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources/armv6 -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-ehxnayrfeqknnceyhftjrzdeotvx/OpenGLBasics_Prefix.pch -c /Users/kordan/Downloads/OpenGLBasics/Classes/EAGLView.m -o /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/EAGLView.o0#
+
+CCompileC build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/OpenGLBasicsAppDelegate.o /Users/kordan/Downloads/OpenGLBasics/Classes/OpenGLBasicsAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316010161.258764
+e316010161.411954
+r1
+xCompileC
+xbuild/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/OpenGLBasicsAppDelegate.o
+x/Users/kordan/Downloads/OpenGLBasics/Classes/OpenGLBasicsAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/kordan/Downloads/OpenGLBasics/Classes/OpenGLBasicsAppDelegate.m316010161#316010161#0(0"0(0#0#70"/Users/kordan/Downloads/OpenGLBasics/Classes/OpenGLBasicsAppDelegate.m8644259008#1840"    cd /Users/kordan/Downloads/OpenGLBasics    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=4.0 -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-generated-files.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-own-target-headers.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-all-target-headers.hmap -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-project-headers.hmap -F/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos -I/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/include -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources/armv6 -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-ehxnayrfeqknnceyhftjrzdeotvx/OpenGLBasics_Prefix.pch -c /Users/kordan/Downloads/OpenGLBasics/Classes/OpenGLBasicsAppDelegate.m -o /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/OpenGLBasicsAppDelegate.o0#
+
+CCompileC build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/main.o /Users/kordan/Downloads/OpenGLBasics/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316010161.244947
+e316010161.331869
+r1
+xCompileC
+xbuild/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/main.o
+x/Users/kordan/Downloads/OpenGLBasics/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/kordan/Downloads/OpenGLBasics/main.m316010161#316010161#0(0"0(0#0#43"/Users/kordan/Downloads/OpenGLBasics/main.m8645594208#1794"    cd /Users/kordan/Downloads/OpenGLBasics    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=4.0 -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-generated-files.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-own-target-headers.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-all-target-headers.hmap -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-project-headers.hmap -F/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos -I/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/include -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources/armv6 -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-ehxnayrfeqknnceyhftjrzdeotvx/OpenGLBasics_Prefix.pch -c /Users/kordan/Downloads/OpenGLBasics/main.m -o /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/main.o0#
+
+CCompileC build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/EAGLView.o /Users/kordan/Downloads/OpenGLBasics/Classes/EAGLView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316010161.606197
+e316010161.730499
+r1
+xCompileC
+xbuild/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/EAGLView.o
+x/Users/kordan/Downloads/OpenGLBasics/Classes/EAGLView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/kordan/Downloads/OpenGLBasics/Classes/EAGLView.m316010161#316010161#0(0"0(0#0#55"/Users/kordan/Downloads/OpenGLBasics/Classes/EAGLView.m8652659424#1818"    cd /Users/kordan/Downloads/OpenGLBasics    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-generated-files.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-own-target-headers.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-all-target-headers.hmap -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-project-headers.hmap -F/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos -I/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/include -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources/armv7 -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-aehodahktoebihhilwymgyjbcwci/OpenGLBasics_Prefix.pch -c /Users/kordan/Downloads/OpenGLBasics/Classes/EAGLView.m -o /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/EAGLView.o0#
+
+CCompileC build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/OpenGLBasicsAppDelegate.o /Users/kordan/Downloads/OpenGLBasics/Classes/OpenGLBasicsAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316010161.477092
+e316010161.606085
+r1
+xCompileC
+xbuild/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/OpenGLBasicsAppDelegate.o
+x/Users/kordan/Downloads/OpenGLBasics/Classes/OpenGLBasicsAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@78"Compile /Users/kordan/Downloads/OpenGLBasics/Classes/OpenGLBasicsAppDelegate.m316010161#316010161#0(0"0(0#0#70"/Users/kordan/Downloads/OpenGLBasics/Classes/OpenGLBasicsAppDelegate.m8630320576#1848"    cd /Users/kordan/Downloads/OpenGLBasics    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-generated-files.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-own-target-headers.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-all-target-headers.hmap -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-project-headers.hmap -F/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos -I/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/include -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources/armv7 -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-aehodahktoebihhilwymgyjbcwci/OpenGLBasics_Prefix.pch -c /Users/kordan/Downloads/OpenGLBasics/Classes/OpenGLBasicsAppDelegate.m -o /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/OpenGLBasicsAppDelegate.o0#
+
+CCompileC build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/main.o /Users/kordan/Downloads/OpenGLBasics/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316010161.412069
+e316010161.476990
+r1
+xCompileC
+xbuild/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/main.o
+x/Users/kordan/Downloads/OpenGLBasics/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/kordan/Downloads/OpenGLBasics/main.m316010161#316010161#0(0"0(0#0#43"/Users/kordan/Downloads/OpenGLBasics/main.m8637648992#1802"    cd /Users/kordan/Downloads/OpenGLBasics    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-generated-files.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-own-target-headers.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-all-target-headers.hmap -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-project-headers.hmap -F/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos -I/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/include -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources/armv7 -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-aehodahktoebihhilwymgyjbcwci/OpenGLBasics_Prefix.pch -c /Users/kordan/Downloads/OpenGLBasics/main.m -o /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/main.o0#
+
+CCpResource build/Debug-iphoneos/OpenGLBasics.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+s316010160.117800
+e316010160.132889
+r1
+xCpResource
+xbuild/Debug-iphoneos/OpenGLBasics.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist316010160#316010160#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist5994135409057033216#495"    cd /Users/kordan/Downloads/OpenGLBasics    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app0#
+
+CCreateUniversalBinary /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/OpenGLBasics normal "armv6 armv7"
+s316010162.005755
+e316010162.031929
+r1
+xCreateUniversalBinary
+x/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/OpenGLBasics
+xnormal
+xarmv6 armv7
+lSLF07#2@93"CreateUniversalBinary build/Debug-iphoneos/OpenGLBasics.app/OpenGLBasics normal "armv6 armv7"316010162#316010162#0(0"0(0#0#48"/Users/kordan/Downloads/OpenGLBasics/armv6 armv78652815520#550"    cd /Users/kordan/Downloads/OpenGLBasics    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/OpenGLBasics /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/OpenGLBasics -output /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/OpenGLBasics0#
+
+CGenerateDSYMFile /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app.dSYM /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/OpenGLBasics
+s316010162.032046
+e316010162.060491
+r1
+xGenerateDSYMFile
+x/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app.dSYM
+x/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/OpenGLBasics
+lSLF07#2@110"GenerateDSYMFile build/Debug-iphoneos/OpenGLBasics.app.dSYM build/Debug-iphoneos/OpenGLBasics.app/OpenGLBasics316010162#316010162#0(0"0(0#0#87"/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/OpenGLBasics8651791296#371"    cd /Users/kordan/Downloads/OpenGLBasics    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/OpenGLBasics -o /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app.dSYM0#
+
+CLd /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/OpenGLBasics normal armv6
+s316010161.570992
+e316010161.975095
+r1
+xLd
+x/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/OpenGLBasics
+xnormal
+xarmv6
+lSLF07#2@134"Link /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/OpenGLBasics316010161#316010161#0(0"0(0#0#0"8652826112#897"    cd /Users/kordan/Downloads/OpenGLBasics    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos -F/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos -filelist /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/OpenGLBasics.LinkFileList -dead_strip -miphoneos-version-min=4.0 -framework Foundation -framework UIKit -framework OpenGLES -framework QuartzCore -o /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv6/OpenGLBasics0#
+
+CLd /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/OpenGLBasics normal armv7
+s316010161.730703
+e316010162.005656
+r1
+xLd
+x/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/OpenGLBasics
+xnormal
+xarmv7
+lSLF07#2@134"Link /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/OpenGLBasics316010161#316010162#0(0"0(0#0#0"8651779712#897"    cd /Users/kordan/Downloads/OpenGLBasics    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos -F/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos -filelist /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/OpenGLBasics.LinkFileList -dead_strip -miphoneos-version-min=4.0 -framework Foundation -framework UIKit -framework OpenGLES -framework QuartzCore -o /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/Objects-normal/armv7/OpenGLBasics0#
+
+CProcessInfoPlistFile /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/Info.plist OpenGLBasics-Info.plist
+s316010160.119152
+e316010160.133641
+r1
+xProcessInfoPlistFile
+x/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/Info.plist
+xOpenGLBasics-Info.plist
+lSLF07#2@31"Process OpenGLBasics-Info.plist316010160#316010160#0(0"0(0#0#60"/Users/kordan/Downloads/OpenGLBasics/OpenGLBasics-Info.plist8651722912#574"    cd /Users/kordan/Downloads/OpenGLBasics    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility OpenGLBasics-Info.plist -genpkginfo /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/ResourceRules.plist -o /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/Info.plist0#
+
+CProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-aehodahktoebihhilwymgyjbcwci/OpenGLBasics_Prefix.pch.gch OpenGLBasics_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316010160.134820
+e316010161.176155
+r1
+xProcessPCH
+x/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-aehodahktoebihhilwymgyjbcwci/OpenGLBasics_Prefix.pch.gch
+xOpenGLBasics_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile OpenGLBasics_Prefix.pch316010160#316010161#0(0"0(0#0#60"/Users/kordan/Downloads/OpenGLBasics/OpenGLBasics_Prefix.pch8649521216#1697"    cd /Users/kordan/Downloads/OpenGLBasics    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-generated-files.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-own-target-headers.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-all-target-headers.hmap -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-project-headers.hmap -F/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos -I/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/include -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources/armv7 -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources -c /Users/kordan/Downloads/OpenGLBasics/OpenGLBasics_Prefix.pch -o /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-aehodahktoebihhilwymgyjbcwci/OpenGLBasics_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-aifgyijbotcswnbfwiifbywwmyic/OpenGLBasics_Prefix.pch.gch OpenGLBasics_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-bjvlaabpijwbkngzjbwyzwhppdpo/OpenGLBasics_Prefix.pch.gch OpenGLBasics_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-ehxnayrfeqknnceyhftjrzdeotvx/OpenGLBasics_Prefix.pch.gch OpenGLBasics_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316010160.133748
+e316010161.244588
+r1
+xProcessPCH
+x/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-ehxnayrfeqknnceyhftjrzdeotvx/OpenGLBasics_Prefix.pch.gch
+xOpenGLBasics_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile OpenGLBasics_Prefix.pch316010160#316010161#0(0"0(0#0#60"/Users/kordan/Downloads/OpenGLBasics/OpenGLBasics_Prefix.pch8650462912#1689"    cd /Users/kordan/Downloads/OpenGLBasics    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -miphoneos-version-min=4.0 -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-generated-files.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-own-target-headers.hmap -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-all-target-headers.hmap -iquote /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics-project-headers.hmap -F/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos -I/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/include -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources/armv6 -I/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/DerivedSources -c /Users/kordan/Downloads/OpenGLBasics/OpenGLBasics_Prefix.pch -o /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/OpenGLBasics_Prefix-ehxnayrfeqknnceyhftjrzdeotvx/OpenGLBasics_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/kordan/Library/MobileDevice/Provisioning Profiles/F58689D7-B334-4D04-B295-E3EE6C049A97.mobileprovision" /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/embedded.mobileprovision
+s316010162.060592
+e316010162.090219
+r1
+xProcessProductPackaging
+x/Users/kordan/Library/MobileDevice/Provisioning Profiles/F58689D7-B334-4D04-B295-E3EE6C049A97.mobileprovision
+x/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/embedded.mobileprovision
+lSLF07#2@198"ProcessProductPackaging "/Users/kordan/Library/MobileDevice/Provisioning Profiles/F58689D7-B334-4D04-B295-E3EE6C049A97.mobileprovision" build/Debug-iphoneos/OpenGLBasics.app/embedded.mobileprovision316010162#316010162#0(0"0(0#0#99"/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/embedded.mobileprovision8651359168#425"    cd /Users/kordan/Downloads/OpenGLBasics    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/kordan/Library/MobileDevice/Provisioning Profiles/F58689D7-B334-4D04-B295-E3EE6C049A97.mobileprovision" -o /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app/embedded.mobileprovision0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics.xcent
+s316010162.094464
+e316010162.123138
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+x/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics.xcent
+lSLF07#2@190"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics.xcent316010162#316010162#0(0"0(0#0#114"/Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics.xcent8649965728#443"    cd /Users/kordan/Downloads/OpenGLBasics    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/kordan/Downloads/OpenGLBasics/build/OpenGLBasics.build/Debug-iphoneos/OpenGLBasics.build/OpenGLBasics.xcent0#
+
+CTouch /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app
+s316010162.090288
+e316010162.094374
+r1
+xTouch
+x/Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app
+lSLF07#2@80"Touch /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app316010162#316010162#0(0"0(0#0#0"8650919456#265"    cd /Users/kordan/Downloads/OpenGLBasics    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/kordan/Downloads/OpenGLBasics/build/Debug-iphoneos/OpenGLBasics.app0#
+

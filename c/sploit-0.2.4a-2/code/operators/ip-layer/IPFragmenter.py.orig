@@ -1,0 +1,54 @@
+#**********************************************************************
+#*                      Sploit Mutation Engine                        *
+#**********************************************************************
+#* Copyright (C) 2006 Davide Balzarotti                               *
+#*                                                                    *
+#* This program is free software; you can redistribute it and/or      *
+#* modify it under the terms of the GNU General Public License        *
+#* as published by the Free Software Foundation; either               *
+#* version 2 of the License, or (at your option) any later            *
+#* version.                                                           *
+#*                                                                    *
+#* This program is distributed in the hope that it will be useful,    *
+#* but WITHOUT ANY WARRANTY; without even the implied warranty of     *
+#* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.               *
+#* See the GNU General Public License for more details.               *
+#*                                                                    *
+#* You should have received a copy of the GNU General Public License  *
+#* along with this program; if not, write to the Free Software        *
+#* Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.          *
+#*********************************************************************/
+
+
+# Author: Andrea Beretta and Riccardo Bianchi
+# $Id$
+'''
+IPFragmenter
+------------
+  Split the packets in one or more fragments 
+'''
+from IPLayerOperator import IPLayerOperator
+from interfaces.hasparameters import IntParam
+import managers.ip as ip
+import utils
+
+class IPFragmenter(IPLayerOperator):
+	isa_operator      = True  
+	
+	def __init__(self):
+		IPLayerOperator.__init__(self,'IPFragmenter','Simple fragmenter that split IP packets')	
+		self.add_param(IntParam('size',40,'Size of each segment',1))
+		
+	def mutate(self, packets):
+		result = []
+		size = self.size
+		
+		#if SYN do nothing
+		if len(packets)>0:
+			if utils.check_syn(packets[0].payload):
+				return packets
+		
+		for p in packets:
+			result.extend(ip.fragment(p,size))
+		return result
+		

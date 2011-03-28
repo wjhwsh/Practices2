@@ -1,0 +1,3 @@
+all:
+	gcc -lnsl -lsocket -o server server.c readdir.c
+	gcc -lnsl -lsocket -o client client.c 

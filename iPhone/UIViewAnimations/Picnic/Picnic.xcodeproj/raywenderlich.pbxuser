@@ -1,0 +1,200 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* Picnic */ = {
+		activeExec = 0;
+		executables = (
+			E147A77512AFEA380008B4AF /* Picnic */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* PicnicViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {732, 394}}";
+			sepNavSelRange = "{228, 13}";
+			sepNavVisRange = "{0, 512}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* PicnicViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {988, 3432}}";
+			sepNavSelRange = "{6712, 0}";
+			sepNavVisRange = "{5460, 490}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = E147A77512AFEA380008B4AF /* Picnic */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Picnic */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Picnic */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = E147A78112AFEA3C0008B4AF /* Code sense */;
+		executables = (
+			E147A77512AFEA380008B4AF /* Picnic */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					554,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 313518648;
+			PBXWorkspaceStateSaveDate = 313518648;
+		};
+		perUserProjectItems = {
+			E147A83912B00B380008B4AF /* PBXTextBookmark */ = E147A83912B00B380008B4AF /* PBXTextBookmark */;
+			E147A83B12B00B380008B4AF /* PBXTextBookmark */ = E147A83B12B00B380008B4AF /* PBXTextBookmark */;
+			E147A91C12B0179E0008B4AF /* PBXTextBookmark */ = E147A91C12B0179E0008B4AF /* PBXTextBookmark */;
+			E147A94412B01C790008B4AF /* PBXTextBookmark */ = E147A94412B01C790008B4AF /* PBXTextBookmark */;
+			E147A94512B01C790008B4AF /* PBXBookmark */ = E147A94512B01C790008B4AF /* PBXBookmark */;
+			E147A94612B01C790008B4AF /* PlistBookmark */ = E147A94612B01C790008B4AF /* PlistBookmark */;
+			E147A94712B01C790008B4AF /* PlistBookmark */ = E147A94712B01C790008B4AF /* PlistBookmark */;
+		};
+		sourceControlManager = E147A78012AFEA3C0008B4AF /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	E147A77512AFEA380008B4AF /* Picnic */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Picnic;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	E147A78012AFEA3C0008B4AF /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	E147A78112AFEA3C0008B4AF /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	E147A83912B00B380008B4AF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E147A83A12B00B380008B4AF /* UIGestureRecognizer.h */;
+		name = "UIGestureRecognizer.h: 29";
+		rLen = 71;
+		rLoc = 2082;
+		rType = 0;
+		vrLen = 1470;
+		vrLoc = 2961;
+	};
+	E147A83A12B00B380008B4AF /* UIGestureRecognizer.h */ = {
+		isa = PBXFileReference;
+		name = UIGestureRecognizer.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGestureRecognizer.h;
+		sourceTree = "<absolute>";
+	};
+	E147A83B12B00B380008B4AF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E147A83C12B00B380008B4AF /* UITapGestureRecognizer.h */;
+		name = "UITapGestureRecognizer.h: 18";
+		rLen = 19;
+		rLoc = 687;
+		rType = 0;
+		vrLen = 1077;
+		vrLoc = 0;
+	};
+	E147A83C12B00B380008B4AF /* UITapGestureRecognizer.h */ = {
+		isa = PBXFileReference;
+		name = UITapGestureRecognizer.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITapGestureRecognizer.h;
+		sourceTree = "<absolute>";
+	};
+	E147A91C12B0179E0008B4AF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* PicnicViewController.h */;
+		name = "PicnicViewController.h: 12";
+		rLen = 13;
+		rLoc = 228;
+		rType = 0;
+		vrLen = 512;
+		vrLoc = 0;
+	};
+	E147A94412B01C790008B4AF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* PicnicViewController.m */;
+		name = "PicnicViewController.m: 210";
+		rLen = 0;
+		rLoc = 7813;
+		rType = 0;
+		vrLen = 1031;
+		vrLoc = 7573;
+	};
+	E147A94512B01C790008B4AF /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E147A7EA12B001EF0008B4AF /* bug.png */;
+	};
+	E147A94612B01C790008B4AF /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Picnic-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleDisplayName,
+		);
+		name = "/Users/raywenderlich/Projects/Learning Projects/Picnic/Picnic-Info.plist";
+		rLen = 15;
+		rLoc = 0;
+	};
+	E147A94712B01C790008B4AF /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Picnic-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/raywenderlich/Projects/Learning Projects/Picnic/Picnic-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+}

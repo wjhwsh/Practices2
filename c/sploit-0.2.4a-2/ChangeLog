@@ -1,0 +1,92 @@
+-[ Ver. 0.2.4a-2 ]---------[ March 2007 ]----------------------------------------
+	New:
+	 o New operators at TCP and IP layers
+
+	Changes:
+	 o Now the graphic interface randomize the TCP source port at startup
+	 
+	Bug Fixes:
+	 o The Engine didn't reset the collector between two executions
+	     .(problem visible only using the graphic interface) 
+	 o Patched the tcp manager to remove some erroneous packets 
+	   retrasmissions
+	 o Some minor fixes in the TCP, IP, and MAC operators
+	 o Bug in the IP protocol fragmenter
+	 o Removed the __del__ from the HTTP manager
+	 o The TCP manager didn't acknowledge the last FIN packet
+	 
+-[ Ver. 0.2.4 ]---------[ September 2006 ]------------------------------------
+	New:
+	 o Integrated the TCP/IP stack changes done by Andrea Beretta
+	    and Riccardo Bianchi. Thanks guys..
+	 o Exploit layer mutant operators 
+	 o I know that's late... but I start adding test cases :)
+	   I also added a run-test script to run all test cases
+	 o The documentation now has a FAQ page.
+	   Anyway, it is still pretty much empty.
+	 o "create-conf" script added
+	 o Apache chunk encoding attack ported to the new architecture
+	 o The http manager now support requests using chunk encoding
+
+	Changes:
+	 o The --port option can now be used to generate random source
+	   port numbers (through the "random" keyword)
+	 o We now use scapy ver. 1.0.4.24
+	 o Now, running  sploit with "-r all" executes all the mutant
+	 o Now the sploit.py file contains a class and it is much more modular
+	     .(this change has been done to better support test cases)
+	 o IP packets now have incremental IDs
+	 o Small changes in the configuration file save routine
+	 o Class __del__ methods have been changed in something else
+	
+	Bug Fixes:
+	 o Uncatched exception in the send packets method of the userspace socket
+	 o The load_configuration_file crashed if an option contained a '=' char
+	 o The join of the buffer in the TCP manager introduced spaces in
+	   the received data!!
+	 o Minor fixes to the Parameters classes
+	 o Many -import- errors due to the last refactoring
+	 o OpManager.is_selected (the variable "name" was not defined)
+	 o The --noredirect now do not create empty log files
+	 o Typo in the conf-file loading procedure
+	 o The GUI did not correctly save the virtual host
+	   configuration if the ARP was not running         
+
+-[ Ver. 0.2.2 ]---------[ November,17 2005 ]------------------------------------
+
+	Changes:
+	 o The html documentation has been completed
+	 o Now the code is organized in packages: big refactoring
+
+	New Features:
+	 o New http-layer mutant operators
+	 o New attack: asn.py command execution
+	 o The HTTP manager now support chunk encoded responses
+	
+	Bug Fixes:
+	 o In some case, PythonTcpSocket.read returned a wrong 
+	   number of bytes
+
+-[ Ver. 0.2.0 ]---------[ October,1 2005 ]-------------------------------------
+
+	New Features:
+	 o Now, an exploit can raise a "Connection Refused" exception
+	   to point out that it wasn't able to properly connect to the
+	   server. In this case, the engine waits a few seconds
+	   and then retries the same mutant. If the process fails 
+	   3 time in a row, the engine stops the execution and asks the
+	   user to restart the target service.
+	 o Add a mutant operator that wraps the clet shellcode polymophic 
+	   engine 
+
+	Changes:
+	 o Changed the alert collector mechanism
+	 o Extended the command line interface
+	 o Now we have a sketch of a user and a developer guides
+	 o Many auxiliary functions have been moved from the engine to the
+	  utils file.
+	
+	Bug Fixes:
+	 o Tons of bug fixed
+
+

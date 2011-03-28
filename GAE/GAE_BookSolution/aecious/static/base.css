@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 16px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+    text-align: center;
+}
+
+fieldset, img { border: none; }
+
+#page {
+    width: 760px;
+    text-align: left;
+    margin: 50px auto;
+}
+
+#nav {float:right}
+
+#sidebar {
+    float: right;
+    width: 240px;
+}
+
+#content {
+    margin-right: 260px;
+}
+
+form p {
+    margin-bottom: 1em;
+}
+
+h3 {
+    margin: 1em 0;
+}
+
+ul.bookmarks {
+    margin-left: 2em;
+}
+
+.bookmarks li {
+    border-top: 1px solid #ddd;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.bookmarks .desc {
+    background: #ededed;
+    padding: 1em;
+}

@@ -1,0 +1,11 @@
+#LWP-Cookies-2.0
+Set-Cookie3: HSID=A6ZO6sR_ywHvGdWAZ; path="/"; domain=".google.com"; path_spec; domain_dot; discard; HttpOnly=None; version=0
+Set-Cookie3: SID="DQAAAKYAAABYl9gTdfvU1-hxOBYDadAyJbBHPKGkTD8xwMsQ_A1Uy_AdQkydNnOxN7x4tyFxKb4dt_cIDSKuN3Jydqp6tuAxPF_asDOqcmj4RTLuraYW2agkei50x85DWSLI3-mvDcUP2BvLQ9VgDPBkKwIyfW_sXkAL25tLrtye7YwUeCym63dDz_Xs8I8cMAt3mwJemewFsRR4xu4EqYRFyCb82sTaoy_ExXiRuwU44VJ-UeOefg"; path="/"; domain=".google.com"; path_spec; domain_dot; discard; version=0
+Set-Cookie3: SSID=Agpf_rCFFfYBwtEFU; path="/"; domain=".google.com"; path_spec; domain_dot; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: CAL="DQAAAKoAAAArdLxrOqlDv0OAO5TpeulgVCGdBfj6JhM-vujHTAXaqjX-PND1x-6_LD7F93nho0npiEzv_TCYCn6dmFgr3K22aUZM54575l_mOm-ZUiPJyQMjjtIs80KOKM25kXO7BNoMdWZ5eTqFE6cfoQc9G82l_AN_RAQ6C4sh0h5Jr2it-6wz_wtMZJoZcu9WyrKfnoBCxuAKMhZ1C6yWFpQQTznRaL_qFLVn-cHwVJcXrrZK-w"; path="/calendar"; domain=".www.google.com"; path_spec; discard; version=0
+Set-Cookie3: GALX=BHMMsJBXdx4; path="/accounts"; domain="www.google.com"; path_spec; secure; discard; version=0
+Set-Cookie3: GAUSR="modcarl@gmail.com"; path="/accounts"; domain="www.google.com"; path_spec; secure; discard; version=0
+Set-Cookie3: LSID="cl|s.TW:DQAAAKkAAAArdLxrOqlDv0OAO5TpeulgVCGdBfj6JhM-vujHTAXaqjX-PND1x-6_LD7F93nho0lmza3KjKW2QxVVbHvcXvPZcIO4qKgE7UqPqiawMQ-UzLrcPTiZuMT9TW4TODRJMAOurMN7LuTcV-s3lrZZrIVfrtcVqd0EFMYx7LOE2YOGZZcwmvruEZH4Bf6kzBcrU-TgrLX1zyKmYGX6WlmxnZ07weRcHHU1GMW926oVPdqK9g"; path="/accounts"; domain="www.google.com"; path_spec; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: PREF="ID=c05b966153df8fa9:U=e134be5c1dfe6cc5:FF=0:TM=1266857704:LM=1290775297:IG=4:S=KNWazhgjzecjCZGj"; path="/"; domain=".google.com"; path_spec; domain_dot; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: SSID="39=Uoztz5H3a6Y7G7CCCgpDs8kyjOD8VaOeBPAbgJXA3gPRLNUnLgYV9xLc-vDCnFNBd8gk07W2eRnl3cJ512BbTEXerRzysEl7UTRLRPSr6L2aE_wi3cs7p3WmQ1lxdqnS"; path="/"; domain=".google.com"; path_spec; domain_dot; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: SSID="41=qnwRWyxNTHq2RHXpZJRaizBlDhf-rZXMfXiufaYJ1A=EATNOcj11xt3LcI4 "; path="/verify"; domain=".google.com"; path_spec; domain_dot; secure; discard; HttpOnly=None; version=0

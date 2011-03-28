@@ -1,0 +1,31 @@
+
+
+Installation notes
+------------------------------------------------------------------
+
+You should be able to move into the src directory and run 
+sploit (please, refer to the user guide to the details on 
+how to run Sploit) without any particular installation process.
+
+Just check the following requirements:
+ o Python 2.4
+ o To be able to use the graphical interface you need the 
+   Python qt3 library. The library is not necessay to run
+   the command line interface.
+ o Sploit uses the Scapy library for its userland TCP/IP stack.
+   A copy of the library is provided in this archive.
+   If you have any problem, check the Scapy portability page 
+   for instructions on how to run Scapy on your operating system:  
+     http://www.secdev.org/projects/scapy/portability.html
+
+
+Supported OSs
+-------------------------------------------------------------------
+  Linux          Supported 
+  MacOS X      (should works) 
+  Windows      Not Supported
+  BSD               ???
+
+
+
+

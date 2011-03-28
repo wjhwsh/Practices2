@@ -1,0 +1,10 @@
+application: aeblog
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /admin/.*
+  script: admin.py
+- url: /.*
+  script: main.py

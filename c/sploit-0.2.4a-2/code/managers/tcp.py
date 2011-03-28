@@ -1,0 +1,1208 @@
+#**********************************************************************
+#*                      Sploit Mutation Engine                        *
+#**********************************************************************
+#* Copyright (C) 2004-2007 Davide Balzarotti                          *
+#*                                                                    *
+#* This program is free software; you can redistribute it and/or      *
+#* modify it under the terms of the GNU General Public License        *
+#* version 2.                                                         *
+#*                                                                    *
+#* This program is distributed in the hope that it will be useful,    *
+#* but WITHOUT ANY WARRANTY; without even the implied warranty of     *
+#* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.               *
+#* See the GNU General Public License for more details.               *
+#*                                                                    *
+#* You should have received a copy of the GNU General Public License  *
+#* along with this program; if not, write to the Free Software        *
+#* Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.          *
+#*********************************************************************/
+
+# Author: Davide Balzarotti
+# $Id$
+
+import socket, thread, threading, struct, os, sys, string, time
+import scapy.scapy as scapy
+import ip, eth
+
+import logger
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                         DEFAULT VALUES 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEFAULT_TCP_OPERATORS = []
+NEXT_SPORT           	= 2000
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Network Interface
+interface = "eth0"
+#Constants for iss increment
+TCP_ISSINCR = 128000
+PR_SLOWHZ = 2	
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                           PROCESS OUT OPTIONS
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OPEN  = 1
+EOT   = 2
+RESET = 4
+PROBE = 8
+DELAYED_SYN = 16
+
+#----------------------------------------------------------------------
+#                         PROCESS IN OPTIONS
+#----------------------------------------------------------------------
+OUTOFORDER = 1
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                           TCP STATES
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TCPS_CLOSED 		= 11 # closed
+TCPS_LISTEN 		=  0 # listening for connection (passive open)
+TCPS_SYN_SENT		=  1 # have sent SYN (active open)
+TCPS_DELAYED_SYN  	=  2 # delayed SYN + data to be sent
+TCPS_SYN_RECEIVED	=  3 # have sent and received SYN; awaiting ACK
+TCPS_ESTABLISHED	=  4 # established (data transfer)
+TCPS_CLOSE_WAIT		=  5 # received FIN, waiting for application close (data can be sent)
+TCPS_FIN_WAIT_1		=  6 # have closed, sent FIN; awaiting ACK and FIN (data can be received)
+TCPS_CLOSING		=  7 # simultaneous close; awaiting ACK
+TCPS_LAST_ACK		=  8 # received FIN, have closed; awaiting ACK
+TCPS_FIN_WAIT_2		=  9 # have closed; awaiting FIN (data can be received)
+TCPS_TIME_WAIT		= 10 # 2MSL wait state after active close
+
+TCPS = [
+'LISTEN',
+'SYN SENT',
+'DELAYED SYN',
+'SYN RECEIVED',
+'ESTABLISHED',
+'CLOSE WAIT',
+'FIN WAIT (1)',
+'CLOSING',
+'LAST ACK',
+'FIN WAIT (2)',
+'TIME WAIT',
+'CLOSED'
+]
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                            TCP FLAGS 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FLAG_FIN =   1 # fin
+FLAG_SYN =   2 # syn
+FLAG_RST =   4 # reset
+FLAG_PSH =   8 # push
+FLAG_ACK =  16 # acknowledgment
+FLAG_URG =  32 # urgent
+FLAG_ECN =  64 # ecn echo
+FLAG_CWR = 128 # congestion window reduced
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                            TCP TIMERS CONSTANTS
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TCPT_REXMT = 0 		#retrasmission
+TCPT_PERSIST = 1 	#persist timer
+TCPT_NTIMERS = 2   	# elementi dell'aArray con i contatori dei timer. Sarebbero 4, ma noi facciamo solo REXMT e PERSIST
+TCPTV_MIN = 2			#min. retrasmission timer, 1 sec.
+TCPTV_REXMTMAX = 120 	#max retrasmission timer, 60 sec
+TCPTV_PERSMIN = 10		#min persist timer 5 sec.
+TCPTV_PERSMAX = 120		#max persist timer	60 sec.
+TCP_MAXRXTSHIFT = 12 	#max num. di ritrasmissioni
+TCPTV_SRTTBASE = 0		#special value, no measurement yet for connection
+TCPTV_SRTTDFLT = 3		#default RTT when no measuremente yet for connection
+TCP_RTT_SHIFT = 3
+TCP_RTTVAR_SHIFT = 2
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                          TIMER THREADS
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#funzioni spostate sotto UserSpaceTCPSocket, slow_tick e fast_tick
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                          EXCEPTIONS
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+class TrasmissionDenied(Exception):
+    """Raised when one try to send data in a closed socket"""
+    def __init__(self, value):
+        self.value = value
+    def __str__(self):
+        return `self.value`
+
+class InvalidOption(Exception):
+    """Raised when one try to send data with invalid options"""
+    def __init__(self, value):
+        self.value = value
+    def __str__(self):
+        return `self.value`
+
+		
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                          TCP MANAGER
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+class TCPManager:
+
+	def __init__(self, sport, dport):
+		self.sport      = sport
+		self.dport      = dport
+		self.state      = TCPS_CLOSED
+		
+		self.iss			= 2345   # initial sent sequence number
+		self.rcv_last_ack   = 0		 # last ack received	
+		self.rcv_next_seq   = 0		 # waited seq. number 
+		self.sent_next_seq  = 0   	 # next sequence number to send
+		self.sent_last_ack  = 0		 # last ack sent
+		
+		self.rcv_wnd	= 32768	#receive window
+		self.rcv_buffer	= []	#receive buffer
+		
+		self.snd_wnd = 0		# send window
+		self.congestion_wnd = 0	# congestion window
+		self.ssthresh = 0		# slow start threshold
+		
+		self.state_notifier = threading.Condition()
+		self.snd_wnd_notifier = threading.Condition()
+		
+		self.default_max_size   = 1024  # Maximum number of byte in a TCP packet
+		self.rcv_max_size		= 536	# Size of the largest segment the receiver is willing to accept (MSS server)
+		self.default_always_ack = True  # Use ACK in every packets
+		
+		self.delay_syn  = 	False 	# Send data with the Syn packet
+		self.no3whs 	= 	False 	#flag for no3whs op
+		self.post_syn	=	0 	# Post syn
+
+		self.filters = DEFAULT_TCP_OPERATORS
+		self.log     = logger.main.newSource("TCP")
+	
+		self.t_timers = [0, 0, 0, 0]	# contatori timers. Per ora t_timers[0] e' il retrasmission timeout, e 1 il persist
+		self.timer_condition = 1		
+		self.retransmission_queue = []	#sent packets waiting for ack
+		self.t_rxtcur = 12				# RTO, retransmission timeout (6 sec.)
+		self.t_rtt = 0					# Round Trip Time in ticks
+		self.t_rttvar = 24
+		self.t_srtt = TCPTV_SRTTBASE	# smoothed RTT estimator
+		self.t_rttmin = TCPTV_MIN		#min. value in ticks for retransmission timer
+		self.t_rxtshift = 0				#index for tcp_backoff array
+		self.tcp_backoff = [ 1, 2, 4, 8, 16, 32, 64, 64, 64, 64, 64, 64, 64 ]	
+		self.seq_rttseq = 0				#seq. number of the packet measuring RTT
+	
+		self.tcpref = None			#socket reference for no3whs operator
+		
+			
+	def get_state(self):
+		''' Returns the current TCP internal state'''
+		return self.state
+		
+	def change_state(self, newstate):
+		'''This function is called every time the TCP change the internal state'''
+		self.log.debug("Change state from %s to %s"%(TCPS[self.state],TCPS[newstate]))
+		self.state = newstate
+		if ((newstate == TCPS_TIME_WAIT) or (newstate == TCPS_CLOSED)) :
+			self.timer_condition = 0	
+			self.tcp_canceltimers()
+			self.retransmission_queue = []
+		self.state_notifier.acquire()
+		self.state_notifier.notifyAll()
+		self.state_notifier.release()
+	
+	
+	#called by process_in	
+	def sub_process(self,packet, options = 0):
+		'''Internal procedure used by the process_in'''
+		
+		data = []
+		
+		#check payload existence			
+		if packet.payload != None:
+			data = str(packet.payload)
+			data_len = len(data)
+			# Drop out of window packets
+			if data_len > 0:
+				
+				#if out of window drop it		
+				if ((packet.seq + data_len) > (self.sent_last_ack + self.rcv_wnd)):
+					return
+				
+				#Insert packet at right position in receive buffer
+				flag = 0
+				for i,p in enumerate(self.rcv_buffer):
+					#if received packet is retransmitted, return
+					if packet.seq == p.seq:
+						return
+					if packet.seq < p.seq:
+						self.rcv_buffer.insert(i,packet)
+						flag = 1
+						break
+				if (flag == 0):
+					self.rcv_buffer.append(packet)
+				
+				# Received packet is Out of order packet
+				if (options & OUTOFORDER):
+					return
+			
+				# Received right packet
+				self.log.debug("rcv: data {%d bytes}"%data_len)
+				self.rcv_next_seq += data_len
+							
+			
+		#Received packet is an ACKNOWLEDGMENT
+		if (packet.flags & FLAG_ACK): 
+			if packet.ack > self.rcv_last_ack:
+				#acquire lock on send window
+				self.snd_wnd_notifier.acquire()
+				self.rcv_last_ack = packet.ack
+				#refresh send window value
+				self.snd_wnd = packet.window
+				#Slow start
+				if (self.congestion_wnd < self.ssthresh):
+					self.congestion_wnd += self.rcv_max_size # slow start
+				else:
+					#Congestion avoidance
+					self.congestion_wnd += self.rcv_max_size * self.rcv_max_size / self.congestion_wnd #congestion avoidance
+				#release lock on send_window				
+				self.snd_wnd_notifier.notifyAll()
+				self.snd_wnd_notifier.release()
+				
+				#here no lock => already locked by process_in
+				# Received packet is not a SYN
+				if (((packet.flags & FLAG_SYN) == 0) & (self.state != TCPS_TIME_WAIT)):
+					#ack for segment measuring rtt				
+					if (packet.ack > self.seq_rttseq):
+						#update RTT estimators
+						self.tcp_xmit_timer(self.t_rtt)
+					#clean retransmission queue
+					while ((len(self.retransmission_queue) > 0) and (packet.ack > self.retransmission_queue[0].seq)):
+						del(self.retransmission_queue[0])
+					self.t_rxtshift = 0
+					#if all outstanding data acknowledged stop retrasmission timer
+					if (len(self.retransmission_queue)==0):
+						self.t_timers[TCPT_REXMT] = 0
+					#otherwise set it to a new value	
+					elif(self.t_timers[TCPT_PERSIST] == 0):
+						self.t_timers[TCPT_REXMT] = self.t_rxtcur
+
+				#If zero window advertised by other end
+				if (packet.window == 0):
+					#set persist timer
+					self.setpersist()
+					#stop retransmission timer
+					self.t_timers[TCPT_REXMT] = 0
+				else:
+					#stop persist timer
+					self.t_timers[TCPT_PERSIST] = 0
+					self.t_rxtshift = 0						
+					if (len(self.retransmission_queue)):
+						self.t_timers[TCPT_REXMT] = self.t_rxtcur
+		
+		
+	def process_in(self, packet):
+		'''Process incoming TCP packets'''
+
+		self.log.debug("SEQ: %d"%self.rcv_next_seq)
+			
+		# SENT_SYN STATE
+		if  (self.state == TCPS_SYN_SENT) or ((self.state == TCPS_ESTABLISHED) and (self.post_syn == 1)):
+			#received SYN/ACK from server		
+			if (packet.flags & FLAG_SYN) and (packet.flags & FLAG_ACK):
+				
+				#delayed syn, server discarded data
+				if (packet.ack < self.sent_next_seq):
+					if (self.delay_syn == True):
+						self.sent_next_seq = packet.ack	
+					else:
+						self.change_state(TCPS_CLOSED)
+						return				
+				
+				self.log.debug("rec: [syn/ack]")
+				self.rcv_next_seq = packet.seq + 1
+							
+				#check MSS option and set Max Segment Size
+				if hasattr(packet,"options"):
+					for opt in packet.options:
+						if "MSS" in opt:
+							self.rcv_max_size = opt[1]
+				
+				if self.rcv_max_size < self.default_max_size:
+					self.default_max_size = self.rcv_max_size						
+				#set threshold for slow start			
+				self.ssthresh = packet.window	
+				#set post_syn for TCP3whsRst operator
+				if self.post_syn == 1:
+					self.post_syn = 2			
+				#process the packet
+				return self.sub_process(packet)
+				
+			#Received Reset with right ACK => state to TCPS_CLOSED
+			elif (packet.flags & FLAG_RST) and (packet.ack==self.sent_next_seq):
+				self.log.debug("rec: [reset]")
+				self.change_state(TCPS_CLOSED)
+				return
+			
+			else:
+				self.change_state(TCPS_CLOSED)
+				return
+		
+		# OTHERS STATES
+		# Received packet with Wrong Ack --> discard
+		if (packet.flags & FLAG_ACK) and (packet.ack > self.sent_next_seq):			
+			return
+		# Received packet is old --> discard
+		if (packet.seq < self.rcv_next_seq):				
+			# This packet is old --> discard
+			return
+		# Received packet is not the one I was waiting..					
+		elif (packet.seq > self.rcv_next_seq):
+			# TODO: gestire le finestre????
+			return self.sub_process(packet, options = OUTOFORDER)
+		
+		# Ok, process the packet!!
+			
+		# Received RESET => state to TCPS_CLOSED
+		if (packet.flags & FLAG_RST):
+			self.log.debug("rec: [reset]")
+			self.change_state(TCPS_CLOSED)
+			return
+		
+		# Received FIN	
+		if (packet.flags & FLAG_FIN):
+			self.log.debug("rec: [fin]")
+						
+			# change from ESTABLISHED to CLOSE_WAIT and add to receive buffer
+			if self.state == TCPS_ESTABLISHED:
+				self.change_state(TCPS_CLOSE_WAIT)
+				self.rcv_buffer.append(packet)				
+				self.rcv_next_seq += 1
+				self.log.debug("SEQ + fin : %d"%self.rcv_next_seq)
+			#change from FIN_WAIT_1 to CLOSING and add to receive buffer
+			elif self.state == TCPS_FIN_WAIT_1:
+				self.change_state(TCPS_CLOSING)
+				self.rcv_buffer.append(packet)				
+				self.rcv_next_seq += 1
+			#change from FIN_WAIT_2 to TIME_WAIT and add to receive buffer
+			elif self.state == TCPS_FIN_WAIT_2:
+				self.change_state(TCPS_TIME_WAIT)
+				self.rcv_buffer.append(packet)				
+				self.rcv_next_seq += 1
+			
+		#Received the right ACK		
+		if (packet.flags & FLAG_ACK) and (packet.ack == self.sent_next_seq):
+			#change some states...
+			if self.state == TCPS_FIN_WAIT_1:
+				self.change_state(TCPS_FIN_WAIT_2)
+				self.log.debug("received ack for FIN-ACK (current state: %s)"%TCPS[self.state])
+				
+			elif self.state == TCPS_LAST_ACK:
+				self.change_state(TCPS_CLOSED)
+			
+			elif self.state == TCPS_CLOSING:
+				self.change_state(TCPS_TIME_WAIT)
+		#process the packet
+		return self.sub_process(packet)
+					
+						
+	def process_out(self, data=None, options=0):
+		'''Process outgoing TCP packets'''
+		result = []
+		temp_seq = self.sent_next_seq
+			
+		#SYN packet
+		if (options & OPEN):
+			if (self.state != TCPS_CLOSED):
+				raise IllegalOption('OPEN')
+			result.append(scapy.TCP(dport=self.dport, sport=self.sport, flags='S', seq=self.iss, window=self.rcv_wnd,\
+			              options=[('MSS', self.default_max_size)]))
+			self.sent_next_seq = self.iss + 1
+			self.change_state(TCPS_SYN_SENT)		
+		#RESET packet	
+		elif (options & RESET):
+			result.append(scapy.TCP(dport=self.dport, sport=self.sport, flags='R', seq=self.sent_next_seq, ack=self.sent_last_ack, window=self.rcv_wnd))
+			self.change_state(TCPS_CLOSED)
+		# delayed SYN+data packet
+		elif (options & DELAYED_SYN):
+			result.append(scapy.TCP(dport=self.dport, sport=self.sport, flags='S', seq=self.iss, window=self.rcv_wnd, options=[('MSS', self.default_max_size)])/scapy.Raw(data))
+			self.sent_next_seq = self.iss + len(data)
+			self.change_state(TCPS_SYN_SENT)
+		#start processing data	
+		elif data!=None:
+			if (self.state != TCPS_FIN_WAIT_1) and (self.state != TCPS_ESTABLISHED):
+				raise TrasmissionDenied('Current state is %s'%TCPS[self.state]) 
+			# Split data
+			chunks = []
+			n = len(data) 
+			x = 0
+			while x<n:
+				chunks.append(data[x:x+self.default_max_size])
+				x += self.default_max_size
+			#Generate packets
+			self.sent_last_ack = self.rcv_next_seq
+			for d in chunks:
+				result.append(scapy.TCP(dport=self.dport, sport=self.sport, flags='A', seq=self.sent_next_seq, ack=self.sent_last_ack, window=self.rcv_wnd)/scapy.Raw(d))
+				self.sent_next_seq += len(d) 
+		else:
+			# Generate an Ack packet
+			if self.state != TCPS_CLOSED:
+				self.log.debug("Sending just an ACK (current state: %s)"%TCPS[self.state])
+				if self.rcv_next_seq > self.sent_last_ack:
+					self.sent_last_ack = self.rcv_next_seq
+					result.append(scapy.TCP(dport=self.dport, sport=self.sport, flags='A', seq=self.sent_next_seq, ack=self.sent_last_ack, window=self.rcv_wnd))
+		
+		#FIN/ACK packet
+		if (options & EOT):
+			result.append(scapy.TCP(dport=self.dport, sport=self.sport, flags='FA', seq=self.sent_next_seq, ack=self.sent_last_ack, window=self.rcv_wnd))
+			self.sent_next_seq += 1
+			#clear retransmission queue, to avoid useless retransmissions (TCPINterleavedSyn, TCPBadSeqNumbers)
+			self.retransmission_queue = []
+			if self.state == TCPS_ESTABLISHED:
+				self.change_state(TCPS_FIN_WAIT_1)
+			elif self.state == TCPS_CLOSE_WAIT:
+				self.change_state(TCPS_LAST_ACK)
+		
+		#Probe packet
+		if (options & PROBE):
+			#print "PROBE"
+			if ( (self.snd_wnd == 0) and (len(self.retransmission_queue)) ):
+				snumber = self.retransmission_queue[0].seq -1
+				'''A 0 byte zero window probe should look like a keep-alive probe - a
+				segment with zero payload and a sequence number not expected by the
+				receiver to be probed (e.g. the sequence number of the last octet the
+				receiver has acknowledged before shutting down the receiver window).
+				This should guarantee an immediate response by the receiver.
+				The 4.3 BSD send a packet with the sequence number set to snd_una -1 
+				and ack set to rcv_next.'''
+				result.append(scapy.TCP(dport=self.dport, sport=self.sport, flags='A', seq=snumber, ack=self.rcv_next_seq, window=self.rcv_wnd))
+		
+		# TODO : aggiungere ritrasmissione (E' sotto UserSpaceTCPSocket)
+					
+		# add timeout field for and layer 4 manager reference
+		if len(result) > 0:		
+			for x in result:
+				#x.timeout=0
+				x.l4manager = self
+							
+		# Apply the mutations
+		if (len(result) > 0) and ((options & DELAYED_SYN) == 0):
+			for mf in self.filters:
+				result = mf.mutate(result)
+		
+		#add mutated segments to retransmission queue (not SYN and ACKs)
+		if	(((options & OPEN) == 0) and ((options & PROBE) == 0) and ((options & DELAYED_SYN) == 0)\
+			and (self.sent_next_seq > temp_seq)):
+			for x in result:			
+				#ordered insertion in queue
+				index = len(self.retransmission_queue) - 1
+				#if queue is empty
+				if (index < 0):
+					self.retransmission_queue.append(x)
+				else:
+					while (index >= 0):
+						if (x.seq > self.retransmission_queue[index].seq):
+							self.retransmission_queue.insert(index+1, x)
+							break
+						index -= 1				
+				#self.retransmission_queue.append(x)				
+		
+		return result
+	
+	
+	#Called each time a RTT measurement is collected
+	def tcp_xmit_timer(self, rtt):
+		if self.t_srtt != 0:
+			#update smoothed estimators
+			delta = self.t_rtt - 1 - (self.t_srtt >> TCP_RTT_SHIFT) 
+			self.t_srtt += delta
+			if (self.t_srtt <= 0):
+				self.t_srtt = 1
+			if (delta<0):
+				delta =  delta*(-1)
+			delta -= (self.t_rttvar >> TCP_RTTVAR_SHIFT)
+			self.t_rttvar += delta
+			if (self.t_rttvar <= 0):
+				self.t_rttvar = 1	
+		else:
+			#Initialize smoothed estimators on first RTT measurement
+			self.t_srtt = self.t_rtt << TCP_RTT_SHIFT
+			self.t_rttvar = self.t_rtt << (TCP_RTTVAR_SHIFT -1)		
+		#reset rtt counter and shift counter
+		self.t_rtt = 0
+		self.t_rxtshift = 0
+		#next RTO for the connection stored in t_rxtcur
+		self.t_rxtcur = self.tcpt_rangeset(self.tcp_rexmtval(), self.t_rttmin, TCPTV_REXMTMAX)
+				
+				
+	#"Macro" for RTO calc	
+	def tcp_rexmtval (self):
+		rto = (self.t_srtt >> TCP_RTT_SHIFT) + self.t_rttvar
+		return rto
+				
+				
+	#set values and check their limits		
+	def tcpt_rangeset(value, min, max, self=None):
+		if value < min:
+			value=min
+		elif value > max:
+			value=max
+		return value	
+		
+		
+	#Called when entered TIME_WAIT state
+	def tcp_canceltimers ( self ):
+		#set to 0 time counters
+		for i in range(0, TCPT_NTIMERS):
+			self.t_timers[i]=0
+			
+			
+	#Set persist timer
+	def setpersist(self):
+		#calc t
+		t =  ((self.t_srtt >> 2) + self.t_rttvar) >> 1
+		if (self.t_timers[TCPT_REXMT]):
+			#Panic!!!!
+			print "PANIC !!!!!!!!!!!!!!!!"
+		#set persist timer in t_timers with rangeset
+		self.t_timer[TCPT_PERSIST] = self.tcpt_rangeset( (t * self.tcp_backoff[self.t_rxtshift]), TCPTV_PERSMIN, TCPTV_PERSMAX)
+		#increment rtxshift
+		if (self.t_rxtshift < TCP_MAXRXTSHIFT):
+			self.t_rxtshift += 1		
+
+					
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#                          TCP SOCKET
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+class UserSpaceTCPSocket:
+		
+	DEFAULT_L4_MANAGER = TCPManager
+	DEFAULT_L3_MANAGER = ip.IPManager
+	DEFAULT_L2_MANAGER = eth.EthManager
+
+	def __init__(self):
+		self.log     = logger.main.newSource("SOCKET (userspace tcp)")
+		
+		#try:
+		self.wsocket = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.htons(scapy.ETH_P_ALL))
+		self.log.info("The Packet-Socket for output is open")
+		#except:
+		#	print 'ERROR: unable to open a packet socket for output.\r\nDo you have the right permissions?'
+		self.rsocket = None
+		self.l4m     = None
+		self.l3m     = None
+		self.l2m     = None
+		self.buffer  = []
+		self.iface   = interface
+
+		self.lock       = thread.allocate_lock() 
+		self.bufferlock = threading.Condition() 
+		self.sport      = 0
+		self.dport      = 0
+		
+		self.connection_timeout = 8
+		
+		self.recv_count  = 0
+		self.sent_count = 0
+		
+	def log_stats(self):
+		self.log.info("Statistics:\n Packets sent     %d\n Packets received %d"%(self.sent_count, self.recv_count))
+
+	def main_loop(self):
+#		try:
+		self.log.info("Thread starts processing incoming packets...")
+		go = True
+		p = None
+		while go:
+			try:
+				p = self.rsocket.recv(1600)
+			except:
+				self.log.info("(Socket) Main thread stopped")
+				go = False
+			else:
+				try:
+					self.process(p)
+				except:
+					self.log.error(str(sys.exc_info()[1]))
+#		except Exception, msg:
+#			print msg
+			
+			
+	def process(self, packet):
+		self.lock.acquire()
+		#self.log.debug("received: %s"%packet.summary())
+		
+		# Process and validate the link layer packet 
+		l3 = self.l2m.process_in(packet)
+		if l3==None: 
+			self.log.debug("    + link layer    : Discarted")
+			self.lock.release()
+			return
+				
+		self.recv_count += 1
+				
+		# Process and validate the network layer packet
+		tcp = self.l3m.process_in(l3)
+		if tcp==None: 
+			self.log.debug("    + network layer : Discarted or just a Fragment")
+			self.lock.release()
+			return
+
+		# Process and validate the transport layer packet
+		self.l4m.process_in(tcp)
+					
+		#acknowledge syn-ack
+		if (self.l4m.state == TCPS_SYN_SENT):
+			self.l4m.change_state(TCPS_ESTABLISHED)
+			tobesent= self.l4m.process_out()
+			if tobesent != None:
+				self.send_packet(tobesent)
+		
+		#acknowledge fin-ack		
+		if (self.l4m.state == TCPS_TIME_WAIT):
+			tobesent= self.l4m.process_out()
+			if tobesent != None:
+				self.send_packet(tobesent)
+		
+		self.lock.release()
+				
+				
+	def connect(self, dport, sport=None):
+		
+		self.lock.acquire()
+		if (self.l4m != None) and (self.l4m.state == TCPS_ESTABLISHED):
+			self.lock.release()	
+			return True
+		self.lock.release()
+		
+		global NEXT_SPORT
+				
+		if sport == None:
+			self.sport = NEXT_SPORT
+			NEXT_SPORT += 1 
+		else:
+			self.sport = sport
+						
+		self.dport = dport
+			
+		self.log.info("Create managers for layer 4, 3, 2")
+		
+		# Create the managers for the underlaying layers
+		self.l4m = self.DEFAULT_L4_MANAGER(self.sport,self.dport)		
+		self.l3m = self.DEFAULT_L3_MANAGER()
+		self.l2m = self.DEFAULT_L2_MANAGER()
+		#Add tcp socket reference
+		self.l4m.tcpref = self
+		# Create the socket and set the filter 
+		self.dhost = self.l3m.daddr
+		self.shost = self.l3m.saddr
+		
+		filter = 'ip src %s and dst %s and tcp src port %d and dst port %d'%(self.dhost,self.shost,self.dport,self.sport)
+		self.rsocket = scapy.L2ListenSocket(iface=self.iface, filter=filter)
+		self.log.info("The packet-socket for input is open")
+		self.log.info("Filter: %s"%filter)
+		
+		# Send the SYN packet
+		self.log.debug("Sending SYN Packet")
+		packets = self.l4m.process_out(options=OPEN)
+		self.send_packet(packets)
+		
+		# delayed syn set		
+		if (self.l4m.delay_syn == True):
+			self.log.debug("Delayed SYN")			
+			self.l4m.change_state(TCPS_DELAYED_SYN)
+			return True
+		
+		# Start the sniffer..
+		self.start()
+		
+		self.l4m.state_notifier.acquire()
+		temp = self.l4m.state
+		while (temp!=TCPS_ESTABLISHED) and (temp!=TCPS_CLOSED):
+			temp = self.l4m.state
+			self.l4m.state_notifier.wait(self.connection_timeout)
+			if temp == self.l4m.state:
+				temp = -1
+				break
+			temp = self.l4m.state
+		self.l4m.state_notifier.release()
+				
+		if temp == -1:
+			self.log.warning("Connection time-out")
+			self.__closeall__()
+			return False
+		elif temp == TCPS_CLOSED:
+			self.log.warning("Connection Refused")
+			self.__closeall__()
+			return False
+		
+		self.log.info("Connection Established")
+		return True
+		
+		
+	def listen(self, port):
+		self.l3m = self.DEFAULT_L3_MANAGER()
+		self.l2m = self.DEFAULT_L2_MANAGER()
+
+		self.sport = port;
+		self.dhost = self.l3m.daddr
+		self.shost = self.l3m.saddr
+		
+		filter = 'ip src %s and dst %s and tcp dst port %d'%(self.dhost,self.shost,self.sport)
+		self.log.info("filter: %s"%filter)
+		
+		self.rsocket = scapy.L2ListenSocket(iface=self.iface, filter=filter)
+
+
+	def abort(self):
+		# Close immediatly the connection
+		# sending a Reset packet
+		self.lock.acquire()
+		packets = self.l4m.process_out(options=RESET)
+		self.send_packet(packets)
+		self.lock.release()
+		self.__closeall__()
+		
+
+	def half_close(self):
+		# The application have sent all the data 
+		# Send a Fin packet 
+		
+		if self.l4m.get_state() > 5:
+			return
+		self.lock.acquire()
+		packets = self.l4m.process_out(options=EOT)
+		self.send_packet(packets)
+		self.lock.release()
+		
+		
+	def __closeall__(self):
+		self.lock.acquire()
+		self.wsocket.close()
+		self.rsocket.close()
+		self.lock.release()
+		self.log_stats()
+
+	def stop(self):
+		self.lock.acquire()
+		self.rsocket.close()
+		self.lock.release()
+		self.log_stats()
+	
+	
+	#start some threads
+	def start(self):
+		#timer's threads
+		thread.start_new_thread(self.fast_tick, ())		
+		thread.start_new_thread(self.slow_tick, ())
+		#main loop's thread
+		thread.start_new_thread(self.main_loop, ())
+		
+
+	def send(self, data):
+		data_len = len(data)
+		sent = 0
+		
+		if (self.l4m.delay_syn == True):
+			self.log.debug("Sending SYN Packet + data")
+			packets = self.l4m.process_out(data=data, options=DELAYED_SYN)
+			self.send_packet(packets)
+						
+			# Start the sniffer..
+			self.start()
+		
+			self.l4m.state_notifier.acquire()
+			temp = self.l4m.state
+			while (temp!=TCPS_ESTABLISHED) and (temp!=TCPS_CLOSED):
+				temp = self.l4m.state
+				self.l4m.state_notifier.wait(self.connection_timeout)
+				if temp == self.l4m.state:
+					temp = -1
+					break
+				temp = self.l4m.state
+			self.l4m.state_notifier.release()
+			self.l4m.delay_syn = False					
+			return
+		
+		#if no3whs operator,  process_out ignoring windows
+		if (self.l4m.no3whs):
+			self.lock.acquire()
+			self.l4m.process_out(data)
+			self.lock.release()
+			return
+		
+		while (sent < data_len):
+			self.lock.acquire()
+			#calc usable window
+			usable_wnd = self.l4m.rcv_last_ack + min(self.l4m.congestion_wnd, self.l4m.snd_wnd) - self.l4m.sent_next_seq
+			if usable_wnd > 0:			
+				tobesent_data = data[sent:(sent+usable_wnd)]
+				packets = self.l4m.process_out(tobesent_data)
+				self.send_packet(packets)
+				sent += usable_wnd
+			#to continue  wait ack notify (in sub_process)
+			if (sent < data_len):
+				self.l4m.snd_wnd_notifier.acquire()
+				self.lock.release()
+				self.l4m.snd_wnd_notifier.wait()
+				self.l4m.snd_wnd_notifier.release()
+			else:
+				self.lock.release()
+				
+
+	def read(self, maxc=None, blocking = False, timeout=None):
+		self.log.info("Read (max %d chars)"%maxc)
+		
+		if (self.is_open() == False) or (self.l4m.no3whs == True) or (self.l4m.state == TCPS_DELAYED_SYN):
+			return ""		
+		
+		self.bufferlock.acquire()
+		if len(self.buffer) == 0:
+			if blocking == False:
+				self.bufferlock.release()
+				return None
+			self.bufferlock.wait(timeout)
+
+		if len(self.buffer) == 0:
+			self.bufferlock.release()			
+			return None
+		
+		result = string.join(self.buffer,"")
+		if maxc != None:
+			left = result[maxc:]
+			result = result[:maxc]
+			if len(left) > 1: 
+				self.buffer = [left]
+			else:
+				self.buffer = []
+		else:
+			self.buffer = []
+						
+		self.bufferlock.release()
+		
+		return result 
+
+
+	def readline(self, eol='\n', blocking = False, timeout=None):
+		self.log.debug("ReadLine")
+		
+		if (self.is_open() == False) or (self.l4m.no3whs == True) or (self.l4m.state == TCPS_DELAYED_SYN):
+			return ""
+		
+		self.bufferlock.acquire()
+		result = "" 
+		start_time = time.time()
+		waiting = True
+		while waiting:
+			temp = string.join(self.buffer,"")
+			pos = temp.find(eol)
+			if pos == -1:
+				self.buffer = [temp]
+				if blocking:
+					if timeout != None:
+						delta = time.time() - start_time
+						if (timeout-delta) > 1:
+							self.bufferlock.wait(timeout-delta)
+							continue
+					else:						
+						self.bufferlock.wait()
+						continue
+			else:
+				result = temp[:pos]
+				self.buffer = [temp[pos+len(eol):]]
+			waiting = False
+		self.bufferlock.release()
+		return result 
+	
+	
+	#wait if exist timeout, track rtt and send packets
+	def send_packet(self, p):
+		if len(p) == 0:
+			return
+		
+		self.log.debug ("l3 process out")
+		tosend = self.l2m.process_out(self.l3m.process_out(p))	
+		for x in tosend:
+			#wait timeout
+			if hasattr(x, "timeout") and (x.timeout>0):
+				time.sleep(x.timeout)
+			try:						
+				'''if not tracking rtt, start and calculate a new one,
+				but only if packet contain TCP header and seq field'''
+				if ( (self.l4m.t_rtt == 0) and  (hasattr(x, "seq"))  ):
+					self.l4m.t_rtt = 1
+					#store seq. number used in tracking the RTT
+					self.l4m.seq_rttseq = getattr(x,"seq")
+				#set retransmission counter if zero
+				if (self.l4m.t_timers[TCPT_REXMT] == 0):
+					self.l4m.t_timers[TCPT_REXMT] = self.l4m.t_rxtcur
+				self.wsocket.sendto(str(x),(self.iface,scapy.ETH_P_ALL))
+				self.sent_count += 1
+			except socket.error,msg:
+				self.log.error("send_packets error: %s"%msg)
+			except Exception:
+				self.log.warning("Mmmm, an exception occurred in the packet transmission routine.. I'll try to continue anyway");
+
+
+	def is_open(self):
+		if self.l4m == None:
+			return False
+		state = self.l4m.get_state()
+		if state >= TCPS_FIN_WAIT_1:
+			return False
+		else:
+			return True
+	
+	
+	#Called in a thread. Calls tcp_slowtimo every 500 msec.
+	def slow_tick (self):
+		while (self.l4m.timer_condition):
+			time.sleep(0.5)			
+			self.tcp_slowtimo()			
+			
+			
+	#Called in a thread. Calls tcp_fasttimo every 200 msec.	
+	def fast_tick (self):
+		while (self.l4m.timer_condition):
+			time.sleep(0.2)			
+			self.tcp_fasttimo()	
+
+
+	#Called by slow_tick every 500 ms 
+	def tcp_slowtimo(self):		
+		self.lock.acquire()		
+		if self.l4m.timer_condition != 0:
+			#check and decrement all timers
+			for i in range(0, TCPT_NTIMERS):
+				if (self.l4m.t_timers[i]):			
+					self.l4m.t_timers[i] -= 1
+					#call tcp_timers if counter less then zero
+					if (self.l4m.t_timers[i]<=0):
+						self.tcp_timers(i)						
+			#increment RTT counter
+			if (self.l4m.t_rtt > 0):
+				self.l4m.t_rtt +=1
+			#increment initial send sequence number
+			#self.l4m.iss += TCP_ISSINCR/PR_SLOWHZ	
+		self.lock.release()
+		
+	
+	#Called by fast_tick every 200 ms 
+	def tcp_fasttimo(self):
+		self.lock.acquire()
+		if self.l4m.timer_condition != 0:
+			if len(self.l4m.rcv_buffer) > 0:
+				temp_seq = self.l4m.rcv_buffer[0].seq
+				while ((len(self.l4m.rcv_buffer) > 0) and (temp_seq == self.l4m.rcv_buffer[0].seq)):
+					#Fin packet					
+					if (self.l4m.rcv_buffer[0].flags & FLAG_FIN):			
+						temp_seq += 1
+					
+					#Work on data
+					if self.l4m.rcv_buffer[0].payload != None:
+						data = str(self.l4m.rcv_buffer[0].payload)
+						data_len = len(data)
+						if data_len > 0:
+							temp_seq += len(data)
+						
+						#Add data to buffer
+						self.bufferlock.acquire()
+						self.buffer.append(data)
+						self.bufferlock.notifyAll()
+						self.bufferlock.release()				
+					
+					del(self.l4m.rcv_buffer[0])
+					self.l4m.rcv_next_seq = temp_seq				
+			
+			#Send ack
+			tobesent= self.l4m.process_out()
+			self.send_packet(tobesent)
+		
+		self.lock.release()
+	
+	
+	#Called by tcp_slowtimo when a timer counter reaches zero	
+	def tcp_timers(self, timer):
+		#Retransmission timer
+		if ( timer==TCPT_REXMT ):
+			#increment shift count
+			self.l4m.t_rxtshift += 1
+			if (self.l4m.t_rxtshift > TCP_MAXRXTSHIFT):
+				self.l4m.t_rxtshift = TCP_MAXRXTSHIFT
+				#send reset
+				self.abort()
+				return
+			#calculate new RTO	
+			rexmt=self.l4m.tcp_rexmtval() * self.l4m.tcp_backoff[self.l4m.t_rxtshift]
+			self.l4m.t_rxtcur = self.l4m.tcpt_rangeset(rexmt, self.l4m.t_rttmin, TCPTV_REXMTMAX)
+			self.l4m.t_timers[TCPT_REXMT] = self.l4m.t_rxtcur
+			#clear estimators
+			if (self.l4m.t_rxtshift > TCP_MAXRXTSHIFT / 4):
+				self.l4m.t_rttvar += (self.l4m.t_srtt >> TCP_RTT_SHIFT)
+				self.l4m.t_srtt = 0
+			#stop timing segment rtt (Karn's Algorithm)
+			self.l4m.t_rtt = 0
+			#if len(self.l4m.retransmission_queue) > 0: SE SI INCHIODA DECOMMENTARE
+			#set ssthresh and congestion window after segment loss
+			flightsize = self.l4m.sent_next_seq - self.l4m.rcv_last_ack # amount of outstanding data
+			self.l4m.ssthresh = max (flightsize/2, 2*self.l4m.rcv_max_size)
+			self.l4m.congestion_wnd = self.l4m.default_max_size
+			#force retransmission of  unacknowledged data	in retrasmission queue 	
+			self.xmit_packet()
+		#persist timer
+		elif ( timer == TCPT_PERSIST ):	
+			self.l4m.setpersist()
+			#send window probe
+			packets = self.l4m.process_out(options=PROBE)
+			if tobesent != None:
+				self.send_packet(packets)
+			
+			
+	#Retransmit packets in retransmission_queue
+	def xmit_packet(self):
+		for p in self.l4m.retransmission_queue:
+			p.timeout = 0
+
+		self.log.debug ("l3/l2 process out")
+		#process packet only at IP and ETH layer, because packets in queue already processed at tcp layer 
+		tosend = self.l2m.process_out(self.l3m.process_out(self.l4m.retransmission_queue))		
+		for x in tosend:
+			try:
+				self.wsocket.sendto(str(x),(self.iface,scapy.ETH_P_ALL))
+			except socket.error,msg:
+				self.log.error("%s"%msg)
+								
+				
+
+class PythonTCPSocket:
+	
+	def __init__(self):
+		self.buffer = []
+		self.sock   = None
+		self.sport  = 0
+		self.dport  = 0 
+		self.log    = logger.main.newSource("Socket (python tcp)")
+		
+	def connect(self, dport, sport=None):
+		global NEXT_SPORT
+		if sport == None:
+			self.sport = NEXT_SPORT
+			NEXT_SPORT  += 1 
+		else:
+			self.sport = sport
+		
+		self.dport = dport
+		try:
+			self.sock  = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			self.sock.bind(('',self.sport))
+			self.sock.connect((ip.DEFAULT_TARGET_ADDR, self.dport))
+			self.log.debug("connected to %s port %d"%(ip.DEFAULT_TARGET_ADDR, self.dport))
+		except Exception, msg:
+			return False
+		return True
+		
+	def send(self, data):
+		self.sock.send(data)
+		
+	def read(self, maxc=None, blocking = False, timeout=None):
+		temp = string.join(self.buffer,"")
+		if len(temp) > 0:
+			result = temp[:maxc]
+			self.buffer = [temp[maxc:]]
+			return result
+		self.sock.setblocking(blocking)
+		if blocking:
+			self.sock.settimeout(timeout)
+		try:
+			temp = self.sock.recv(maxc)
+			return temp
+		except Exception, msg:
+			self.log.error("%s"%msg)
+			return None		
+		
+	def readline(self, eol='\n', blocking = False, timeout=None):
+
+		self.sock.setblocking(False)
+		try:
+			self.buffer.append(self.sock.recv(64000))
+		except Exception, msg:
+			pass
+		temp = string.join(self.buffer,"")
+		pos = temp.find(eol)
+		if pos>-1:
+			result = temp[:pos]
+			self.buffer = [temp[pos+len(eol):]]
+			return result
+		else:
+			self.buffer = [temp]
+					
+		if blocking==False:
+			return None
+		
+		if timeout == None:
+			self.sock.setblocking(True)
+			while 1==1:
+				try:
+					self.buffer.append(self.sock.recv(64000))
+				except Exception, msg:
+					pass
+				temp = string.join(self.buffer,"")
+				pos = temp.find(eol)
+				if pos > -1:
+					result = temp[:pos]
+					self.buffer = [temp[pos+len(eol):]]
+					return result
+				else:
+					self.buffer = [temp]
+			
+		else:
+			start_time = time.time()
+			while 1==1:
+				delta = time.time() - start_time
+				if (timeout-delta) > 1:
+					self.sock.settimeout(timeout-delta)
+					try:
+						self.buffer.append(self.sock.recv(64000))
+					except Exception, msg:
+						pass
+					temp = string.join(self.buffer,"")
+					pos = temp.find(eol)
+					if pos > -1:
+						result = temp[:pos]
+						self.buffer = [temp[pos+len(eol):]]
+						return result
+					else:
+						self.buffer = [temp]
+				else:
+					return None
+		
+	def abort(self):
+		self.sock.close()
+				
+	def half_close(self):
+		# The application have sent all the data 
+		# Send a Fin packet 
+		
+		self.sock.shutdown(1)
+	
+	def is_open(self):
+		try:
+			self.sock.sendall('')
+			return True
+		except:
+			return False
+		
+class TCPSocket(object):
+	DEFAULT_SOCKET = PythonTCPSocket
+	def __new__(self):
+		return TCPSocket.DEFAULT_SOCKET()
+	
+	
+
+
+
+
+
+
+
+
+
+

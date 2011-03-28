@@ -1,0 +1,112 @@
+#! /usr/bin/python
+
+#**********************************************************************
+#*                      Sploit Mutation Engine                        *
+#**********************************************************************
+#* Copyright (C) 2006 Davide Balzarotti                               *
+#*                                                                    *
+#* This program is free software; you can redistribute it and/or      *
+#* modify it under the terms of the GNU General Public License        *
+#* as published by the Free Software Foundation; either               *
+#* version 2 of the License, or (at your option) any later            *
+#* version.                                                           *
+#*                                                                    *
+#* This program is distributed in the hope that it will be useful,    *
+#* but WITHOUT ANY WARRANTY; without even the implied warranty of     *
+#* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.               *
+#* See the GNU General Public License for more details.               *
+#*                                                                    *
+#* You should have received a copy of the GNU General Public License  *
+#* along with this program; if not, write to the Free Software        *
+#* Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.          *
+#*********************************************************************/
+
+# Author: Davide Balzarotti
+# $Id: exploit_w.py 36 2005-10-08 09:53:28Z balzarot $
+
+import sys,string
+import engine
+
+YES = 1
+NO  = 0
+
+def yesno(msg, default=YES):
+	if default==YES:
+		choice = "(Y|n)"
+	else:
+		choice = "(y|N)"
+	while True:
+		sys.stdout.write("%s %s"%(msg,choice))
+		res = sys.stdin.readline().strip().upper()
+		if len(res) == 0:
+			return default
+		elif res == "Y" or res== "YES":
+			return YES
+		elif res == "N" or res== "NO":
+			return NO
+
+if len(sys.argv) != 3:
+	print "Config File Creator"
+	print " This tool generate a default configuration file for a given exploit"
+	print " Usage: %s <exploit-file> <conf-file>"%sys.argv[0]
+	sys.exit(1)
+
+exploit = sys.argv[1]
+conf    = sys.argv[2]
+
+e = engine.Engine()
+
+e.load_exploit(exploit)
+if (e.exploit == None):
+	print "Error loading...\r\n%s"%exploit
+	sys.exit(2)
+
+print "%s %s"%("Exploit name:",e.exploit.name)
+print "Exploit Parameters:"
+
+names = e.exploit.get_parameters_names()
+if len(names):
+	for par in names:
+		print"   %s = %s"%(par,e.exploit.get_parameter_value(par))
+	if yesno("Do you want to change these values?", NO):
+		for par in names:
+			sys.stdout.write("   %s [%s] = "%(par,e.exploit.get_parameter_value(par)))
+			res = sys.stdin.readline().strip()
+			if len(res) > 0:
+				e.exploit.set_parameter_value(par,res)
+else:
+	print " no paramaters found"
+	
+print ""
+sys.stdout.write("Target Machine IP [127.0.0.1]: ")
+res = sys.stdin.readline().strip()
+if len(res) > 0:
+	e.setTargetHost(res)
+else:
+	e.setTargetHost("127.0.0.1")
+
+if yesno("Do you want to use the userspace TCP/IP stack?",NO):
+	sys.stdout.write("Virtual Host IP: ")
+	virtualip = sys.stdin.readline().strip()
+	sys.stdout.write("Virtual Host MAC: ")
+	virtualmac = sys.stdin.readline().strip()
+	print "On which network interface do you want to execute the ARP daemon?"
+	ifaces = e.get_interfaces()
+	for x in ifaces:
+		print "  %s"%x
+	sys.stdout.write("[%s]: "%ifaces[0])
+	iface = sys.stdin.readline().strip()
+	if len(iface) == 0:
+		iface = ifaces[0]
+	e.set_iface(iface)
+	e.virtualhost_mac = virtualmac
+	e.virtualhost_ip   = virtualip
+	e.set_userland_socket(True)
+	
+	
+if (e.save_configuration(conf) == False):
+	print "Error saving configuration file"
+	sys.exit(3)
+
+print ""
+print "Please edit the configuration file to enable and configure the Mutant Operators\nand/or change the Mutant Factory" 

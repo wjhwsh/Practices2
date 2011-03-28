@@ -1,0 +1,95 @@
+<html>
+<head>
+  <title>R98922097 HW1</title>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+  <link rel="icon" type="image/png" href="iui/iui-favicon.png">
+  <link rel="apple-touch-icon" href="iui/iui-logo-touch-icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <script type="application/x-javascript" src="iui/iui.js"></script>
+  <link rel="stylesheet" href="iui/iui.css" type="text/css" />
+  <link rel="stylesheet" title="Default" href="iui/t/default/default-theme.css"  type="text/css"/>
+  <link rel="stylesheet" href="css/iui-panel-list.css" type="text/css" />
+  <link rel="stylesheet" href="css/table.css" type="text/css" />
+</head>
+<body>
+    <div class="toolbar">
+        <h1 id="pageTitle"></h1>
+        <a id="backButton" class="button" href="#"></a>
+        <a class="button" href="#about">About</a>
+    </div>
+<ul id="home" title="今日天氣" selected="true">
+  {% for weather in TodayWeathers %}  
+    {% if weather %} 
+    <li><a href={{weather.href}}>{{weather.site}}  {{weather.temporature}}  降雨率:{{weather.probability}}</a></li>
+    {% else %}
+      [no data] 
+    {% endif %}
+  {% endfor %}
+</ul>
+
+{% for area in TodayWeathers %}  
+<div id="area{{forloop.counter0}}" title="一週天氣預測" class="panel">
+<p align=center>{{area.areabelong.0}}</p>
+<table class="itable" width="100%" border="0" cellspacing="0" cellpadding="3">
+        <tr class="header">
+            <th>日期</th>
+            <th>溫度</th>
+            <th class="last">天氣概況</th>
+        </tr>
+        <tr class="reg">
+            <td class="first">{{datelist.0}}</td>
+            <td>              {{area.tlist.0.0 }}</td>
+            <td class="last">"{{area.weatherlist.0 }}</td>
+        </tr>
+        <tr class="alt">
+            <td class="first">{{datelist.1}}</td>
+            <td>              {{area.tlist.1.0 }}</td>
+            <td class="last">"{{area.weatherlist.1 }}</td>
+        </tr>
+        <tr class="reg">
+            <td class="first">{{datelist.2}}</td>
+            <td>              {{area.tlist.2.0 }}</td>
+            <td class="last">"{{area.weatherlist.2 }}</td>
+        </tr>
+        <tr class="alt">
+            <td class="first">{{datelist.3}}</td>
+            <td>              {{area.tlist.3.0 }}</td>
+            <td class="last">"{{area.weatherlist.3 }}</td>
+        </tr>
+        <tr class="reg">
+            <td class="first">{{datelist.4}}</td>
+            <td>              {{area.tlist.4.0 }}</td>
+            <td class="last">"{{area.weatherlist.4 }}</td>
+        </tr>
+        <tr class="alt">
+            <td class="first">{{datelist.5}}</td>
+            <td>              {{area.tlist.5.0 }}</td>
+            <td class="last">"{{area.weatherlist.5 }}</td>
+        </tr>
+        <tr class="reg">
+            <td class="first">{{datelist.6}}</td>
+            <td>              {{area.tlist.6.0 }}</td>
+            <td class="last">"{{area.weatherlist.6 }}</td>
+        </tr>
+</table>
+</div>
+{% endfor %}
+
+<div id="about" class="panel">
+    <h2>About</h2>
+    <form selected="true" title="Login" class="panel" method="post" action="login.php" target="_self">
+    <fieldset>
+        <div class="row">
+            <label>Name</label>
+            <input type="text" name="username" value="歐曜瑋"/>
+        </div>
+        <div class="row">
+            <label>StudentID</label>
+            <input type="text" name="username" value="R98922097"/>
+        </div>
+    </fieldset>
+    </form>
+</div>
+
+</body>
+</html>

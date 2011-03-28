@@ -1,0 +1,62 @@
+<html>
+<head>
+ <title>Sploit</title>
+ <link rel="stylesheet" href="sploit.css" type="text/css">
+</head>
+
+<body>
+
+<br>
+<div id="sheet">
+
+<div id="title">
+ <div ALIGN=center>
+  <font SIZE=7><font COLOR=black>Sploit Mutation Framework</font></font><br>
+  <font SIZE=6><font COLOR=black>Userland TCP/IP Stack</font></font><br>
+ </div>
+</div>
+
+<br><br>
+
+Sploit contains a TCP/IP network stack interely implemented in userspace.
+
+<br><br><br>
+<center>
+<img width="60%" src="pics/stack-arch.png" 
+alt="Virtual Host" border="0">
+</center>
+<br><br>
+
+
+<b>Supported features:</b>
+<ul>
+ <li> TCP, IP, Ethernet protocols
+ <li> Transmission timeout. Adaptative setting of the timeout value
+      using the Jacobson e Karn algorithms, with round-trip time measurement.
+ <li> Retrasmission of all the packets in the queue when the transmission
+      timeout expires. 
+ <li> Persist timer and window probes in case of zero size window
+ <li> Flux control based on the sliding windows mechanism
+ <li>	Out of order segments
+ <li> Cumulative delayed ack
+ <li> MSS negotiation during three-way-handshake
+ <li>	Congestion control: slow start algorithm and congestion avoidance
+ <li> Data sent inside SYN packets
+</ul>
+
+<b>Unsupported features: </b>
+<ul>
+ <li> Congestion control: fast recovery, fast retransmit, Nagle's algorithm for
+      silly window sindrome
+ <li> Connection establishment timer
+ <li> Keepalive timer
+ <li> FIN_WAIT and FIN_WAIT_2 timers
+ <li> Reception of overlapping TCP segments
+ <li> All the TCP options beside the MSS
+ <li> All the IP options
+</ul>
+
+</div>
+
+</body>
+</html>

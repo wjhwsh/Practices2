@@ -1,0 +1,82 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BOARD_HEIGHT	/Users/wclab/Practices/c/tetris/tetris.h	/^#define BOARD_HEIGHT /;"	d
+BOARD_WIDTH	/Users/wclab/Practices/c/tetris/tetris.h	/^#define BOARD_WIDTH /;"	d
+BONUS_CONST	/Users/wclab/Practices/c/tetris/tetris.h	/^#define BONUS_CONST /;"	d
+CC	/Users/wclab/Practices/c/tetris/Makefile	/^CC = gcc$/;"	m
+CFLAGS	/Users/wclab/Practices/c/tetris/Makefile	/^CFLAGS = -Wall -Werror -Os$/;"	m
+COLOR_BLACK_BG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_BLACK_BG /;"	d
+COLOR_BLACK_FG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_BLACK_FG /;"	d
+COLOR_BLUE_BG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_BLUE_BG /;"	d
+COLOR_BLUE_FG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_BLUE_FG /;"	d
+COLOR_CYAN_BG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_CYAN_BG /;"	d
+COLOR_CYAN_FG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_CYAN_FG /;"	d
+COLOR_GREEN_BG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_GREEN_BG /;"	d
+COLOR_GREEN_FG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_GREEN_FG /;"	d
+COLOR_MAGENTA_BG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_MAGENTA_BG /;"	d
+COLOR_MAGENTA_FG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_MAGENTA_FG /;"	d
+COLOR_RED_BG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_RED_BG /;"	d
+COLOR_RED_FG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_RED_FG /;"	d
+COLOR_WHITE_BG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_WHITE_BG /;"	d
+COLOR_WHITE_FG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_WHITE_FG /;"	d
+COLOR_YELLOW_BG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_YELLOW_BG /;"	d
+COLOR_YELLOW_FG	/Users/wclab/Practices/c/tetris/colors.h	/^#define COLOR_YELLOW_FG /;"	d
+HEIGHT	/Users/wclab/Practices/c/tetris/tetris.h	/^#define HEIGHT /;"	d
+LEVEL_CONST	/Users/wclab/Practices/c/tetris/tetris.h	/^#define LEVEL_CONST /;"	d
+LIBS	/Users/wclab/Practices/c/tetris/Makefile	/^LIBS = -lncurses$/;"	m
+NO	/Users/wclab/Practices/c/tetris/tetris.h	/^#define NO /;"	d
+OBJS	/Users/wclab/Practices/c/tetris/Makefile	/^OBJS = \\$/;"	m
+OUTPUT	/Users/wclab/Practices/c/tetris/Makefile	/^OUTPUT = tetris$/;"	m
+REMOVE_SPLASH_TIME	/Users/wclab/Practices/c/tetris/tetris.h	/^#define REMOVE_SPLASH_TIME /;"	d
+SPEED_CONST_1	/Users/wclab/Practices/c/tetris/tetris.h	/^#define SPEED_CONST_1 /;"	d
+SPEED_CONST_2	/Users/wclab/Practices/c/tetris/tetris.h	/^#define SPEED_CONST_2 /;"	d
+WIDTH	/Users/wclab/Practices/c/tetris/tetris.h	/^#define WIDTH /;"	d
+YES	/Users/wclab/Practices/c/tetris/tetris.h	/^#define YES /;"	d
+_BRICK_H	/Users/wclab/Practices/c/tetris/brick.h	/^#define _BRICK_H$/;"	d
+_COLORS_H	/Users/wclab/Practices/c/tetris/colors.h	/^#define _COLORS_H$/;"	d
+_CTRIS_H	/Users/wclab/Practices/c/tetris/tetris.h	/^#define _CTRIS_H$/;"	d
+_GAME_H	/Users/wclab/Practices/c/tetris/game.h	/^#define _GAME_H$/;"	d
+_SCREEN_H	/Users/wclab/Practices/c/tetris/screen.h	/^#define _SCREEN_H$/;"	d
+brick_digit	/Users/wclab/Practices/c/tetris/brick.c	/^char brick_digit[7][4][4] = {$/;"	v
+brick_digit	/Users/wclab/Practices/c/tetris/brick.h	/^char brick_digit[7][4][4];$/;"	v
+calc_level	/Users/wclab/Practices/c/tetris/game.c	/^static void calc_level(const unsigned int score, char *level)$/;"	f	file:
+change_direction	/Users/wclab/Practices/c/tetris/brick.c	/^void change_direction(char board[BOARD_HEIGHT][BOARD_WIDTH], char cur_brick[4][4], const unsigned char x, const unsigned char y, const char i)$/;"	f
+check_brick	/Users/wclab/Practices/c/tetris/brick.c	/^char check_brick(char board[BOARD_HEIGHT][BOARD_WIDTH], char cur_brick[4][4], const unsigned char x, const unsigned char y)$/;"	f
+create_board_win	/Users/wclab/Practices/c/tetris/screen.c	/^WINDOW *create_board_win()$/;"	f
+create_preview_win	/Users/wclab/Practices/c/tetris/screen.c	/^WINDOW *create_preview_win()$/;"	f
+create_score_win	/Users/wclab/Practices/c/tetris/screen.c	/^WINDOW *create_score_win()$/;"	f
+create_win	/Users/wclab/Practices/c/tetris/screen.c	/^WINDOW *create_win(const char b, const char a, const char y, const char x)$/;"	f
+destroy_board_win	/Users/wclab/Practices/c/tetris/screen.c	/^void destroy_board_win(WINDOW *win)$/;"	f
+destroy_preview_win	/Users/wclab/Practices/c/tetris/screen.c	/^void destroy_preview_win(WINDOW *win)$/;"	f
+destroy_score_win	/Users/wclab/Practices/c/tetris/screen.c	/^void destroy_score_win(WINDOW *win)$/;"	f
+draw_to_board	/Users/wclab/Practices/c/tetris/brick.c	/^void draw_to_board(char board[BOARD_HEIGHT][BOARD_WIDTH], char cur_brick[4][4], const char brick_type, const unsigned char x, const unsigned char y)$/;"	f
+find_index	/Users/wclab/Practices/c/tetris/brick.c	/^void find_index(char cur_brick[4][4], unsigned char *x, unsigned char *y)$/;"	f
+get_key	/Users/wclab/Practices/c/tetris/screen.c	/^int get_key(WINDOW *win)$/;"	f
+get_rand	/Users/wclab/Practices/c/tetris/game.c	/^static unsigned char get_rand(const unsigned char i)$/;"	f	file:
+init_board	/Users/wclab/Practices/c/tetris/game.c	/^void init_board(char board[BOARD_HEIGHT][BOARD_WIDTH])$/;"	f
+init_screen	/Users/wclab/Practices/c/tetris/screen.c	/^char init_screen()$/;"	f
+main	/Users/wclab/Practices/c/tetris/tetris.c	/^int main(int argc, char *argv[])$/;"	f
+old_get_key	/Users/wclab/Practices/c/tetris/screen.c	/^int old_get_key(WINDOW *win)$/;"	f
+quit	/Users/wclab/Practices/c/tetris/tetris.c	/^char quit = 0;$/;"	v
+quit	/Users/wclab/Practices/c/tetris/tetris.h	/^char quit;$/;"	v
+quit_sig_handler	/Users/wclab/Practices/c/tetris/tetris.c	/^static void quit_sig_handler(const int code)$/;"	f	file:
+refresh_win	/Users/wclab/Practices/c/tetris/screen.c	/^void refresh_win(WINDOW *win)$/;"	f
+remove_rows	/Users/wclab/Practices/c/tetris/game.c	/^static void remove_rows(WINDOW *win, char board[BOARD_HEIGHT][BOARD_WIDTH], unsigned int *score, const char level)$/;"	f	file:
+remove_this_row	/Users/wclab/Practices/c/tetris/game.c	/^static void remove_this_row(WINDOW *win, char board[BOARD_HEIGHT][BOARD_WIDTH], unsigned char y)$/;"	f	file:
+restore_screen	/Users/wclab/Practices/c/tetris/screen.c	/^void restore_screen()$/;"	f
+rseed	/Users/wclab/Practices/c/tetris/tetris.c	/^unsigned long rseed = 1;$/;"	v
+rseed	/Users/wclab/Practices/c/tetris/tetris.h	/^unsigned long rseed;$/;"	v
+show_board_win	/Users/wclab/Practices/c/tetris/screen.c	/^void show_board_win(WINDOW *win, char board[BOARD_HEIGHT][BOARD_WIDTH], char cur_brick[4][4], const char brick_type, const unsigned char x, const unsigned char y)$/;"	f
+show_brick	/Users/wclab/Practices/c/tetris/screen.c	/^void show_brick(WINDOW *win, char cur_brick[4][4], const char brick_type, const unsigned char x, const unsigned char y)$/;"	f
+show_brick_pice	/Users/wclab/Practices/c/tetris/screen.c	/^void show_brick_pice(WINDOW *win, const char brick_type, const unsigned char x, const unsigned char y)$/;"	f
+show_brick_preview	/Users/wclab/Practices/c/tetris/screen.c	/^void show_brick_preview(WINDOW *win, const char brick_type)$/;"	f
+show_colorized_char	/Users/wclab/Practices/c/tetris/screen.c	/^void show_colorized_char(const unsigned char x, const unsigned char y, const char color, const char c)$/;"	f
+show_game_over	/Users/wclab/Practices/c/tetris/screen.c	/^void show_game_over(WINDOW *win)$/;"	f
+show_remove_row	/Users/wclab/Practices/c/tetris/screen.c	/^void show_remove_row(WINDOW *win, char board[BOARD_HEIGHT][BOARD_WIDTH], const unsigned char y)$/;"	f
+show_score	/Users/wclab/Practices/c/tetris/screen.c	/^void show_score(WINDOW *win, const unsigned int score, const char level)$/;"	f
+start_game	/Users/wclab/Practices/c/tetris/game.c	/^unsigned int start_game()$/;"	f
+wait_for_start	/Users/wclab/Practices/c/tetris/screen.c	/^void wait_for_start(WINDOW *win)$/;"	f

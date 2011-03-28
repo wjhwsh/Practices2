@@ -1,0 +1,84 @@
+<html>
+<head>
+ <title>Sploit</title>
+ <link rel="stylesheet" href="sploit.css" type="text/css">
+</head>
+
+<body>
+
+<br>
+
+<div id="title">
+ <div ALIGN=center>
+  <font SIZE=7><font COLOR=black>Sploit Mutation Framework</font></font><br>
+  <font SIZE=6><font COLOR=black>FAQ</font></font><br>
+ </div>
+</div>
+
+<div id="sheet">
+<br><br>
+
+I've not received so many questions so far, so this section is still
+very rudimentary. It will grow in the future.
+
+<br><br>
+
+<ul>
+ <li> <a href="#1"> Can I use Sploit for Penetration Testing?</a> </li> 
+ <li> <a href="#2"> What's the relation between Sploit and Metasploit?</a> </li> 
+</ul>
+
+<br><br>
+<hr>
+<a name="1"></a>
+<div class="stitle">Can I use Sploit for Penetration Testing?</div>
+<br>
+
+You can do whatever you want, but Sploit has not been designed with
+that purpose in mind.<br> 
+
+For pentesting, you need reliable exploits specifically written to
+work against multiple targets since you cannot be
+sure of what is the right return address in a real environment.
+
+Brute force techniques and other tricks are good for that. Moreover,
+the tester usually want to be able to change the egg behavior on the
+fly, depending on the current situation. <br><br> 
+
+Sploit does not have any of the above features. Since its purpose is
+providing a nice environment to develop new evasion techniques and
+test network-based intrusion detection systems, we can assume that you
+have the target system under your full control and that you can install
+on it the right vulnerable services. <br><br> 
+
+Anyway, if you want to compose mutation techniques to avoid detection
+in your pentest experiment...  feel free to use Sploit. And since it
+is a GPL project, you can always modify it to better match your needs.
+
+<br><br>
+<hr>
+<a name="2"></a>
+<div class="stitle">What's the relation between Sploit and Metasploit?</div>
+<br>
+
+I would say that they are job mates ;)
+<br><br>
+
+They both allow you to write real exploit codes and to execute them
+against real target systems. While Sploit is still in its childhood,
+<a href="www.metasploit.com">Metasploit</a> is a great tool that has
+been available for a while. If you are interested in
+testing/pentesting network services you should definitely have
+Metasploit in your toolkit. Anyway, its focus is not on automatically
+modifying the attacks to evade detection. It does not include any
+tcp/ip stack to allow you to play with the network packets.  It is
+more focused on testing attacks with various shellcodes.  <br><br>
+
+Moreover, Metasploit includes now a large number of reliable exploits.
+Having a large number of attacks is not very important in Sploit, were
+the key components are the mutant operators, and the exploits are just
+a way to test them in the field.
+
+</div>
+</body>
+</html>

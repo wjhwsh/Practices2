@@ -1,0 +1,69 @@
+#**********************************************************************
+#*                      Sploit Mutation Engine                        *
+#**********************************************************************
+#* Copyright (C) 2004-2007 Davide Balzarotti                          *
+#*                                                                    *
+#* This program is free software; you can redistribute it and/or      *
+#* modify it under the terms of the GNU General Public License        *
+#* version 2.                                                         *
+#*                                                                    *
+#* This program is distributed in the hope that it will be useful,    *
+#* but WITHOUT ANY WARRANTY; without even the implied warranty of     *
+#* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.               *
+#* See the GNU General Public License for more details.               *
+#*                                                                    *
+#* You should have received a copy of the GNU General Public License  *
+#* along with this program; if not, write to the Free Software        *
+#* Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.          *
+#*********************************************************************/
+
+# Author: Andrea Beretta and Riccardo Bianchi
+# $Id$
+
+'''
+TCPBadHeaderLength
+ Insert a new packet with random payload and wrong TCP header length 
+'''
+
+from TCPLayerOperator import TCPLayerOperator
+from interfaces.hasparameters import IntParam
+from interfaces.hasparameters import KeyListParam
+import utils
+
+class TCPBadHeaderLength(TCPLayerOperator):
+	isa_operator      = True  
+	
+	def __init__(self):
+		TCPLayerOperator.__init__(self,'TCPBadHeaderLength','Bad Header Length & Payload')
+		#min header length = 20 byte, 5 word	
+		self.add_param(IntParam('numseg',2,'Segment with bad header length & Payload',1))
+		self.add_param(IntParam('thl', 1, 'TCP header length', 1))
+		pos_list = ["before", "after", "last"]
+		self.add_param(KeyListParam('position',pos_list[0], pos_list, 'position of overlapping fragment => before | after | last'))		
+		
+	def mutate(self, packets):
+		numseg = self.numseg
+		thl = self.thl
+		position = self.position
+				
+		#Not enough segments, Syn or Ack, return
+		if utils.check_length(numseg, packets) or utils.check_syn(packets[numseg-1]) or utils.check_ack(packets[numseg-1]):
+			return packets
+			
+		forged = packets[numseg-1].copy()
+		forged = utils.tcp_bad_payload(forged)
+		
+		#modify  data offset in tcp field
+		forged.dataofs = thl
+		
+		#insert forged segment
+		if position == "after":
+			packets.insert(numseg, forged)
+		elif position == "before":	
+			packets.insert(numseg-1, forged)
+		elif position == "last":
+			packets.append(packets[numseg-1])
+			del(packets[numseg-1])
+			packets.insert(numseg-1, forged)
+					
+		return packets

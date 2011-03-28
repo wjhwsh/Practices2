@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>unity.YourCompanyName.PbP Demo</string>
+	<key>CFBundleName</key>
+	<string>PbP Demo</string>
+	<key>CFBundleGetInfoString</key>
+	<string>UnityPlayer version 2.0.2f2, Unity Player Copyright © 2002-2005 by Over the Edge. All rights reserved.</string>
+	<key>CFBundleShortVersionString</key>
+	<string>UnityPlayer version 2.0.2f2</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleExecutable</key>
+	<string>PbP Demo</string>
+	<key>CFBundleVersion</key>
+	<string>2.0.2f2</string>
+	<key>CFBundleIconFile</key>
+	<string>UnityPlayerIcon</string>
+	<key>UnityBuildNumber</key>
+	<string>13443</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>PlayerApplication</string>
+</dict>
+</plist>

@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  {% if articles %}
+      {% for article in articles %}
+      <div class="article">
+        <div class="title"><a href="/article/{{article.key}}">{{article.title}}</a></div>
+        <div class="content">
+          {{article.content|truncatewords_html:20}}
+        </div>
+        <div class="tags">
+        {% for tag in article.tags %}
+          <a href="/tag/{{tag}}">{{tag}}</a>
+        {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+  {% else %}
+    <h3>還沒有文章</h3>
+  {% endif %}
+{% endblock %}

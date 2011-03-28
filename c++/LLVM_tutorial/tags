@@ -1,0 +1,119 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Args	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  vector<ExprAST*> Args;$/;"	m	class:CallExprAST	file:
+Args	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  vector<string> Args;$/;"	m	class:PrototypeAST	file:
+Args	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^  vector<ExprAST*> Args;$/;"	m	class:CallExprAST	file:
+Args	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^  vector<std::string> Args;$/;"	m	class:PrototypeAST	file:
+BinaryExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  BinaryExprAST(char op, ExprAST *lhs, ExprAST *rhs) $/;"	f	class:BinaryExprAST
+BinaryExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^class BinaryExprAST : public ExprAST {$/;"	c	file:
+BinaryExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^  BinaryExprAST(char op, ExprAST *lhs, ExprAST *rhs) $/;"	f	class:BinaryExprAST
+BinaryExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^class BinaryExprAST : public ExprAST {$/;"	c	file:
+BinopPrecedence	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static map<char, int> BinopPrecedence;$/;"	v	file:
+BinopPrecedence	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^static map<char, int> BinopPrecedence;$/;"	v	file:
+Body	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  ExprAST *Body;$/;"	m	class:FunctionAST	file:
+Body	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^  ExprAST *Body;$/;"	m	class:FunctionAST	file:
+CallExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  CallExprAST(const string &callee, vector<ExprAST*> &args)$/;"	f	class:CallExprAST
+CallExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^class CallExprAST : public ExprAST {$/;"	c	file:
+CallExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^  CallExprAST(const std::string &callee, std::vector<ExprAST*> &args)$/;"	f	class:CallExprAST
+CallExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^class CallExprAST : public ExprAST {$/;"	c	file:
+Callee	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  string Callee;$/;"	m	class:CallExprAST	file:
+Callee	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^  string Callee;$/;"	m	class:CallExprAST	file:
+CurTok	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static int CurTok;$/;"	v	file:
+CurTok	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^static int CurTok;$/;"	v	file:
+Error	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^ExprAST *Error(const char *Str) { fprintf(stderr, "Error: %s\\n", Str);return 0;}$/;"	f
+Error	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^ExprAST *Error(const char *Str) { fprintf(stderr, "Error: %s\\n", Str); return 0; }$/;"	f
+ErrorF	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^FunctionAST *ErrorF(const char *Str) { Error(Str); return 0; }$/;"	f
+ErrorF	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^FunctionAST *ErrorF(const char *Str) { Error(Str); return 0; }$/;"	f
+ErrorP	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^PrototypeAST *ErrorP(const char *Str) { Error(Str); return 0; }$/;"	f
+ErrorP	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^PrototypeAST *ErrorP(const char *Str) { Error(Str); return 0; }$/;"	f
+ExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^class ExprAST {$/;"	c	file:
+ExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^class ExprAST {$/;"	c	file:
+FunctionAST	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  FunctionAST(PrototypeAST *proto, ExprAST *body)$/;"	f	class:FunctionAST
+FunctionAST	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^class FunctionAST {$/;"	c	file:
+FunctionAST	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^  FunctionAST(PrototypeAST *proto, ExprAST *body)$/;"	f	class:FunctionAST
+FunctionAST	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^class FunctionAST {$/;"	c	file:
+GetTokPrecedence	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static int GetTokPrecedence() {$/;"	f	file:
+GetTokPrecedence	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^static int GetTokPrecedence() {$/;"	f	file:
+HandleDefinition	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static void HandleDefinition() {$/;"	f	file:
+HandleExtern	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static void HandleExtern() {$/;"	f	file:
+HandleTopLevelExpression	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static void HandleTopLevelExpression() {$/;"	f	file:
+IdentifierStr	/Users/wclab/Practices/c++/LLVM_tutorial/lex.cpp	/^static string IdentifierStr;$/;"	v	file:
+IdentifierStr	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static string IdentifierStr;  \/\/ Filled in if tok_identifier$/;"	v	file:
+IdentifierStr	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^static string IdentifierStr;$/;"	v	file:
+LHS	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  ExprAST *LHS, *RHS;$/;"	m	class:BinaryExprAST	file:
+LHS	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^  ExprAST *LHS, *RHS;$/;"	m	class:BinaryExprAST	file:
+MainLoop	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static void MainLoop() {$/;"	f	file:
+Name	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  string Name;$/;"	m	class:PrototypeAST	file:
+Name	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  string Name;$/;"	m	class:VariableExprAST	file:
+Name	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^    string Name;$/;"	m	class:VariableExprAST	file:
+Name	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^  string Name;$/;"	m	class:PrototypeAST	file:
+NumVal	/Users/wclab/Practices/c++/LLVM_tutorial/lex.cpp	/^static double NumVal;$/;"	v	file:
+NumVal	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static double NumVal;              \/\/ Filled in if tok_number$/;"	v	file:
+NumVal	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^static double NumVal;$/;"	v	file:
+NumberExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  NumberExprAST(double val) : Val(val) {}$/;"	f	class:NumberExprAST
+NumberExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^class NumberExprAST : public ExprAST {$/;"	c	file:
+NumberExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^        NumberExprAST(double val): Val(val) {}$/;"	f	class:NumberExprAST
+NumberExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^class NumberExprAST: public ExprAST {$/;"	c	file:
+Op	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  char Op;$/;"	m	class:BinaryExprAST	file:
+Op	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^  char Op;$/;"	m	class:BinaryExprAST	file:
+ParseBinOpRHS	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static ExprAST *ParseBinOpRHS(int ExprPrec, ExprAST *LHS) {$/;"	f	file:
+ParseBinOpRHS	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^static ExprAST *ParseBinOpRHS(int ExprPrec, ExprAST *LHS) {$/;"	f	file:
+ParseDefinition	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static FunctionAST *ParseDefinition() {$/;"	f	file:
+ParseExpression	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static ExprAST *ParseExpression() {$/;"	f	file:
+ParseExpression	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^static ExprAST *ParseExpression() {$/;"	f	file:
+ParseExtern	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static PrototypeAST *ParseExtern() {$/;"	f	file:
+ParseIdentifierExpr	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static ExprAST *ParseIdentifierExpr() {$/;"	f	file:
+ParseIdentifierExpr	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^static ExprAST *ParseIdentifierExpr() {$/;"	f	file:
+ParseNumberExpr	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static ExprAST *ParseNumberExpr() {$/;"	f	file:
+ParseNumberExpr	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^static ExprAST *ParseNumberExpr() {$/;"	f	file:
+ParseParenExpr	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static ExprAST *ParseParenExpr() {$/;"	f	file:
+ParseParenExpr	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^static ExprAST *ParseParenExpr() {$/;"	f	file:
+ParsePrimary	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static ExprAST *ParsePrimary() {$/;"	f	file:
+ParsePrototype	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static PrototypeAST *ParsePrototype() {$/;"	f	file:
+ParseTopLevelExpr	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static FunctionAST *ParseTopLevelExpr() {$/;"	f	file:
+Proto	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  PrototypeAST *Proto;$/;"	m	class:FunctionAST	file:
+Proto	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^  PrototypeAST *Proto;$/;"	m	class:FunctionAST	file:
+PrototypeAST	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  PrototypeAST(const string &name, const vector<string> &args)$/;"	f	class:PrototypeAST
+PrototypeAST	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^class PrototypeAST {$/;"	c	file:
+PrototypeAST	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^  PrototypeAST(const std::string &name, const std::vector<std::string> &args)$/;"	f	class:PrototypeAST
+PrototypeAST	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^class PrototypeAST {$/;"	c	file:
+RHS	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  ExprAST *LHS, *RHS;$/;"	m	class:BinaryExprAST	file:
+RHS	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^  ExprAST *LHS, *RHS;$/;"	m	class:BinaryExprAST	file:
+Token	/Users/wclab/Practices/c++/LLVM_tutorial/lex.cpp	/^enum Token {$/;"	g	file:
+Token	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^enum Token {$/;"	g	file:
+Token	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^enum Token {$/;"	g	file:
+Val	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  double Val;$/;"	m	class:NumberExprAST	file:
+Val	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^    double Val;$/;"	m	class:NumberExprAST	file:
+VariableExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  VariableExprAST(const string &name) : Name(name) {}$/;"	f	class:VariableExprAST
+VariableExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^class VariableExprAST : public ExprAST {$/;"	c	file:
+VariableExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^        VariableExprAST(const string &name): Name(name) {}$/;"	f	class:VariableExprAST
+VariableExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^class VariableExprAST: public ExprAST {$/;"	c	file:
+getNextToken	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static int getNextToken() {$/;"	f	file:
+getNextToken	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^static int getNextToken() {$/;"	f	file:
+gettok	/Users/wclab/Practices/c++/LLVM_tutorial/lex.cpp	/^static int gettok() {$/;"	f	file:
+gettok	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^static int gettok() {$/;"	f	file:
+gettok	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^static int gettok() {$/;"	f	file:
+main	/Users/wclab/Practices/c++/LLVM_tutorial/lex.cpp	/^int main( int argc, char **argv) {$/;"	f
+main	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^int main() {$/;"	f
+main	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^int main( int argc, char **argv) {$/;"	f
+tok_def	/Users/wclab/Practices/c++/LLVM_tutorial/lex.cpp	/^    tok_def = -2,$/;"	e	enum:Token	file:
+tok_def	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  tok_def = -2, tok_extern = -3,$/;"	e	enum:Token	file:
+tok_def	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^    tok_def = -2,$/;"	e	enum:Token	file:
+tok_eof	/Users/wclab/Practices/c++/LLVM_tutorial/lex.cpp	/^    tok_eof = -1,$/;"	e	enum:Token	file:
+tok_eof	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  tok_eof = -1,$/;"	e	enum:Token	file:
+tok_eof	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^    tok_eof = -1,$/;"	e	enum:Token	file:
+tok_extern	/Users/wclab/Practices/c++/LLVM_tutorial/lex.cpp	/^    tok_extern = -3,$/;"	e	enum:Token	file:
+tok_extern	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  tok_def = -2, tok_extern = -3,$/;"	e	enum:Token	file:
+tok_extern	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^    tok_extern = -3,$/;"	e	enum:Token	file:
+tok_identifier	/Users/wclab/Practices/c++/LLVM_tutorial/lex.cpp	/^    tok_identifier = -4,$/;"	e	enum:Token	file:
+tok_identifier	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  tok_identifier = -4, tok_number = -5$/;"	e	enum:Token	file:
+tok_identifier	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^    tok_identifier = -4,$/;"	e	enum:Token	file:
+tok_number	/Users/wclab/Practices/c++/LLVM_tutorial/lex.cpp	/^    tok_number = -5,$/;"	e	enum:Token	file:
+tok_number	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  tok_identifier = -4, tok_number = -5$/;"	e	enum:Token	file:
+tok_number	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^    tok_number = -5,$/;"	e	enum:Token	file:
+~ExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/toy.cpp	/^  virtual ~ExprAST() {}$/;"	f	class:ExprAST
+~ExprAST	/Users/wclab/Practices/c++/LLVM_tutorial/xx.cpp	/^        virtual ~ExprAST() {}$/;"	f	class:ExprAST

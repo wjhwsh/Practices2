@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn_ebook/!svn/ver/29/trunk2/ePubTest
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn_ebook/!svn/ver/29/trunk2/ePubTest/main.m
+END
+ePubTest_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn_ebook/!svn/ver/29/trunk2/ePubTest/ePubTest_Prefix.pch
+END
+ePubTestViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn_ebook/!svn/ver/29/trunk2/ePubTest/ePubTestViewController.xib
+END
+MainWindow.xib
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn_ebook/!svn/ver/29/trunk2/ePubTest/MainWindow.xib
+END
+ePubTest-Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn_ebook/!svn/ver/29/trunk2/ePubTest/ePubTest-Info.plist
+END

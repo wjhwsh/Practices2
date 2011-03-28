@@ -1,0 +1,677 @@
+TAVCam
+v7
+r0
+t323002501.415824
+cCheck dependencies
+cCpResource build/Debug-iphoneos/AVCam.app/ResourceRules.plist "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist"
+cProcessInfoPlistFile /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Info.plist AVCam-Info.plist
+cCompileXIB /Users/kordan/Practices/iPhone/AVCam/Resources/MainWindow.xib
+cCompileXIB /Users/kordan/Practices/iPhone/AVCam/Resources/AVCamViewController.xib
+cCopyPNGFile /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Icon.png Resources/Icon.png
+cCopyPNGFile /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Icon@2x.png Resources/Icon@2x.png
+cProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-ekjcroywhiehthaowyyukwcpemkd/AVCam_Prefix.pch.gch AVCam_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-apqktgvvwogxfobyljxxtnlfefht/AVCam_Prefix.pch.gch AVCam_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/main.o /Users/kordan/Practices/iPhone/AVCam/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamAppDelegate.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamViewController.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamCaptureManager.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamCaptureManager.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/ExpandyButton.o /Users/kordan/Practices/iPhone/AVCam/Classes/ExpandyButton.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamPreviewView.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamPreviewView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/main.o /Users/kordan/Practices/iPhone/AVCam/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamAppDelegate.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamViewController.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCam normal armv6
+cCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamCaptureManager.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamCaptureManager.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/ExpandyButton.o /Users/kordan/Practices/iPhone/AVCam/Classes/ExpandyButton.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamPreviewView.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamPreviewView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCam normal armv7
+cCreateUniversalBinary /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/AVCam normal "armv6 armv7"
+cGenerateDSYMFile /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app.dSYM /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/AVCam
+cProcessProductPackaging "/Users/kordan/Library/MobileDevice/Provisioning Profiles/1D7A60B3-2DE2-42AC-8471-2325FCC6A62F.mobileprovision" /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/embedded.mobileprovision
+cTouch /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app
+cProcessProductPackaging "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist" /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam.xcent
+cCodeSign /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app
+
+N/Users/kordan/Library/MobileDevice/Provisioning Profiles/1D7A60B3-2DE2-42AC-8471-2325FCC6A62F.mobileprovision
+c000000004D8B0B240000000000001BFD
+t1300957988
+s7165
+
+N/Users/kordan/Practices/iPhone/AVCam/AVCam_Prefix.pch
+c000000004C129F990000000000000A2C
+t1276288921
+s2604
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamAppDelegate.h
+c000000004C129F990000000000000B3C
+t1276288921
+s2876
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamAppDelegate.m
+c000000004C129F990000000000001437
+t1276288921
+s5175
+i"AVCamAppDelegate.h"
+i"AVCamViewController.h"
+i"AVCamCaptureManager.h"
+i<AVFoundation/AVFoundation.h>
+
+N/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamCaptureManager.h
+c000000004C129F9900000000000015F8
+t1276288921
+s5624
+i<Foundation/Foundation.h>
+i<AVFoundation/AVFoundation.h>
+
+N/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamCaptureManager.m
+c000000004C129F9900000000000075E1
+t1276288921
+s30177
+i"AVCamCaptureManager.h"
+i<MobileCoreServices/UTCoreTypes.h>
+i<AssetsLibrary/AssetsLibrary.h>
+
+N/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamPreviewView.h
+c000000004C129F990000000000000BB3
+t1276288921
+s2995
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamPreviewView.m
+c000000004C129F9900000000000010AF
+t1276288921
+s4271
+i"AVCamPreviewView.h"
+
+N/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamViewController.h
+c000000004C129F990000000000001905
+t1276288921
+s6405
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamViewController.m
+c000000004C129F99000000000000E848
+t1276288921
+s59464
+i"AVCamViewController.h"
+i"AVCamCaptureManager.h"
+i"ExpandyButton.h"
+i"AVCamPreviewView.h"
+i<AVFoundation/AVFoundation.h>
+
+N/Users/kordan/Practices/iPhone/AVCam/Classes/ExpandyButton.h
+c000000004C129F990000000000000D03
+t1276288921
+s3331
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/AVCam/Classes/ExpandyButton.m
+c000000004C129F99000000000000273D
+t1276288921
+s10045
+i"ExpandyButton.h"
+i<QuartzCore/QuartzCore.h>
+
+N/Users/kordan/Practices/iPhone/AVCam/Resources/AVCamViewController.xib
+c000000004C0D68C600000000000117B8
+t1275947206
+s71608
+
+N/Users/kordan/Practices/iPhone/AVCam/Resources/Icon.png
+c000000004C0D68C60000000000000B79
+t1275947206
+s2937
+
+N/Users/kordan/Practices/iPhone/AVCam/Resources/Icon@2x.png
+c000000004C0D68C60000000000002A77
+t1275947206
+s10871
+
+N/Users/kordan/Practices/iPhone/AVCam/Resources/MainWindow.xib
+c000000004C0D68C60000000000004CFF
+t1275947206
+s19711
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam.xcent
+t1301309700
+s416
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCam
+t1301309700
+s141860
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCam.LinkFileList
+c000000004D9068FD00000000000002D3
+t1301309693
+s723
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamAppDelegate.o
+t1301309697
+s54800
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamCaptureManager.o
+t1301309698
+s84180
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamPreviewView.o
+t1301309698
+s45192
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamViewController.o
+t1301309699
+s181308
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/ExpandyButton.o
+t1301309698
+s62616
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/main.o
+t1301309697
+s6532
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCam
+t1301309700
+s137324
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCam.LinkFileList
+c000000004D9068FD00000000000002D3
+t1301309693
+s723
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamAppDelegate.o
+t1301309699
+s54712
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamCaptureManager.o
+t1301309700
+s82780
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamPreviewView.o
+t1301309700
+s45076
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamViewController.o
+t1301309699
+s174656
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/ExpandyButton.o
+t1301309700
+s61816
+
+N/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/main.o
+t1301309698
+s6516
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app
+t1301309701
+s442
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app.dSYM
+t1301309700
+s102
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/AVCam
+t1301309700
+s284780
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/AVCamViewController.nib
+t1301309694
+s8849
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Icon.png
+t1301309694
+s3353
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Icon@2x.png
+t1301309694
+s9162
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Info.plist
+t1301309693
+s859
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/MainWindow.nib
+t1301309693
+s1754
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/PkgInfo
+t1301309693
+s8
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/ResourceRules.plist
+t1301309693
+s485
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/embedded.mobileprovision
+t1301309700
+s7165
+
+N/Users/kordan/Practices/iPhone/AVCam/main.m
+c000000004C129F990000000000000ACC
+t1276288921
+s2764
+i<UIKit/UIKit.h>
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk
+c000000004D7401890000000000000110
+t1299448201
+s272
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist
+c000000004D4F6A4700000000000001A7
+t1297050183
+s423
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+c000000004D4F6A4700000000000001E5
+t1297050183
+s485
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004D5EBED1000000000022E2B0
+t1298054865
+s2286256
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.h
+c000000004D5EBEC500000000000007D0
+t1298054853
+s2000
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+c000000004D5EC03D000000000001E5C0
+t1298055229
+s124352
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/AssetsLibrary.framework/Headers/AssetsLibrary.h
+c000000004D5EC0390000000000000134
+t1298055225
+s308
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54D18C00000000003532A0
+t1297404300
+s3486368
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c000000004D5C99E400000000000EBFA0
+t1297914340
+s966560
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000004D54D2D00000000000030F30
+t1297404624
+s200496
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54D1F500000000003E22F0
+t1297404405
+s4072176
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54D1DD0000000000001466
+t1297404381
+s5222
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c000000004D5DEAE900000000003A84E0
+t1298000617
+s3835104
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/MobileCoreServices.framework/Headers/UTCoreTypes.h
+c000000004D54D32C000000000000520D
+t1297404716
+s21005
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000004D54D32D0000000000094C50
+t1297404717
+s609360
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004D54D49500000000000000C4
+t1297405077
+s196
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004D54D608000000000026CB10
+t1297405448
+s2542352
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5A28AB0000000000000AA1
+t1297754283
+s2721
+
+N/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5A292A0000000000CA2AE0
+t1297754410
+s13249248
+
+N/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-apqktgvvwogxfobyljxxtnlfefht/AVCam_Prefix.pch.gch
+t1301309697
+s10651548
+
+N/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-ekjcroywhiehthaowyyukwcpemkd/AVCam_Prefix.pch.gch
+t1301309697
+s10180508
+
+NAVCam-Info.plist
+c000000004C0D68C600000000000003CF
+t1275947206
+s975
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies323002493#323002493#0(290"[BWARN]Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: YaoWei Ou (A3A9677248)', 'iPhone Developer: Yao-Wei Ou (79C58ELQVD)', 'iPhone Developer: Ju Chun Ko (59G6MQ6X2U)' -- 'iPhone Developer: YaoWei Ou (A3A9677248)' will be used.1(22@282"Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: YaoWei Ou (A3A9677248)', 'iPhone Developer: Yao-Wei Ou (79C58ELQVD)', 'iPhone Developer: Ju Chun Ko (59G6MQ6X2U)' -- 'iPhone Developer: YaoWei Ou (A3A9677248)' will be used.323002493#18446744073709551615#0#0(1@0"0(0#1#0"8031999980899289088#0"0#
+
+CCodeSign /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app
+s323002500.979513
+e323002501.415634
+r1
+xCodeSign
+x/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app
+lSLF07#2@39"CodeSign build/Debug-iphoneos/AVCam.app323002500#323002501#0(0"0(0#0#67"/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app8617630240#695"    cd /Users/kordan/Practices/iPhone/AVCam    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate"    /usr/bin/codesign -f -s "iPhone Developer: YaoWei Ou (A3A9677248)" --resource-rules=/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/ResourceRules.plist --entitlements /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam.xcent /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app0#
+
+CCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamAppDelegate.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s323002497.308067
+e323002497.770561
+r1
+xCompileC
+xbuild/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamAppDelegate.o
+x/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamAppDelegate.m323002497#323002497#0(0"0(0#0#63"/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamAppDelegate.m8617785408#1786"    cd /Users/kordan/Practices/iPhone/AVCam    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-generated-files.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-project-headers.hmap -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-ekjcroywhiehthaowyyukwcpemkd/AVCam_Prefix.pch -c /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamAppDelegate.m -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamAppDelegate.o0#
+
+CCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamCaptureManager.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamCaptureManager.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s323002497.770658
+e323002498.326548
+r1
+xCompileC
+xbuild/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamCaptureManager.o
+x/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamCaptureManager.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamCaptureManager.m323002497#323002498#0(0"0(0#0#66"/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamCaptureManager.m8617841120#1792"    cd /Users/kordan/Practices/iPhone/AVCam    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-generated-files.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-project-headers.hmap -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-ekjcroywhiehthaowyyukwcpemkd/AVCam_Prefix.pch -c /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamCaptureManager.m -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamCaptureManager.o0#
+
+CCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamPreviewView.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamPreviewView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s323002498.566447
+e323002498.675060
+r1
+xCompileC
+xbuild/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamPreviewView.o
+x/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamPreviewView.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamPreviewView.m323002498#323002498#0(0"0(0#0#63"/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamPreviewView.m8617741856#1786"    cd /Users/kordan/Practices/iPhone/AVCam    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-generated-files.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-project-headers.hmap -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-ekjcroywhiehthaowyyukwcpemkd/AVCam_Prefix.pch -c /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamPreviewView.m -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamPreviewView.o0#
+
+CCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamViewController.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s323002497.433318
+e323002499.052587
+r1
+xCompileC
+xbuild/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamViewController.o
+x/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamViewController.m323002497#323002499#0(0"0(0#0#66"/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamViewController.m8614736736#1792"    cd /Users/kordan/Practices/iPhone/AVCam    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-generated-files.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-project-headers.hmap -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-ekjcroywhiehthaowyyukwcpemkd/AVCam_Prefix.pch -c /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamViewController.m -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCamViewController.o0#
+
+CCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/ExpandyButton.o /Users/kordan/Practices/iPhone/AVCam/Classes/ExpandyButton.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s323002498.326643
+e323002498.566337
+r1
+xCompileC
+xbuild/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/ExpandyButton.o
+x/Users/kordan/Practices/iPhone/AVCam/Classes/ExpandyButton.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/kordan/Practices/iPhone/AVCam/Classes/ExpandyButton.m323002498#323002498#0(0"0(0#0#60"/Users/kordan/Practices/iPhone/AVCam/Classes/ExpandyButton.m8613687488#1780"    cd /Users/kordan/Practices/iPhone/AVCam    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-generated-files.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-project-headers.hmap -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-ekjcroywhiehthaowyyukwcpemkd/AVCam_Prefix.pch -c /Users/kordan/Practices/iPhone/AVCam/Classes/ExpandyButton.m -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/ExpandyButton.o0#
+
+CCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/main.o /Users/kordan/Practices/iPhone/AVCam/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s323002497.305943
+e323002497.433221
+r1
+xCompileC
+xbuild/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/main.o
+x/Users/kordan/Practices/iPhone/AVCam/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/kordan/Practices/iPhone/AVCam/main.m323002497#323002497#0(0"0(0#0#43"/Users/kordan/Practices/iPhone/AVCam/main.m8618010688#1754"    cd /Users/kordan/Practices/iPhone/AVCam    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-generated-files.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-project-headers.hmap -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-ekjcroywhiehthaowyyukwcpemkd/AVCam_Prefix.pch -c /Users/kordan/Practices/iPhone/AVCam/main.m -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/main.o0#
+
+CCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamAppDelegate.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s323002498.788519
+e323002499.013396
+r1
+xCompileC
+xbuild/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamAppDelegate.o
+x/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamAppDelegate.m323002498#323002499#0(0"0(0#0#63"/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamAppDelegate.m8617619136#1786"    cd /Users/kordan/Practices/iPhone/AVCam    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-generated-files.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-project-headers.hmap -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources/armv7 -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-apqktgvvwogxfobyljxxtnlfefht/AVCam_Prefix.pch -c /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamAppDelegate.m -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamAppDelegate.o0#
+
+CCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamCaptureManager.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamCaptureManager.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s323002499.676157
+e323002500.059213
+r1
+xCompileC
+xbuild/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamCaptureManager.o
+x/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamCaptureManager.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamCaptureManager.m323002499#323002500#0(0"0(0#0#66"/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamCaptureManager.m8617916352#1792"    cd /Users/kordan/Practices/iPhone/AVCam    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-generated-files.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-project-headers.hmap -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources/armv7 -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-apqktgvvwogxfobyljxxtnlfefht/AVCam_Prefix.pch -c /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamCaptureManager.m -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamCaptureManager.o0#
+
+CCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamPreviewView.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamPreviewView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s323002500.259257
+e323002500.370413
+r1
+xCompileC
+xbuild/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamPreviewView.o
+x/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamPreviewView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamPreviewView.m323002500#323002500#0(0"0(0#0#63"/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamPreviewView.m8614820288#1786"    cd /Users/kordan/Practices/iPhone/AVCam    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-generated-files.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-project-headers.hmap -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources/armv7 -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-apqktgvvwogxfobyljxxtnlfefht/AVCam_Prefix.pch -c /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamPreviewView.m -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamPreviewView.o0#
+
+CCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamViewController.o /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s323002499.013495
+e323002499.676048
+r1
+xCompileC
+xbuild/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamViewController.o
+x/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamViewController.m323002499#323002499#0(0"0(0#0#66"/Users/kordan/Practices/iPhone/AVCam/Classes/AVCamViewController.m8617568096#1792"    cd /Users/kordan/Practices/iPhone/AVCam    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-generated-files.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-project-headers.hmap -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources/armv7 -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-apqktgvvwogxfobyljxxtnlfefht/AVCam_Prefix.pch -c /Users/kordan/Practices/iPhone/AVCam/Classes/AVCamViewController.m -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCamViewController.o0#
+
+CCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/ExpandyButton.o /Users/kordan/Practices/iPhone/AVCam/Classes/ExpandyButton.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s323002500.059313
+e323002500.259144
+r1
+xCompileC
+xbuild/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/ExpandyButton.o
+x/Users/kordan/Practices/iPhone/AVCam/Classes/ExpandyButton.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/kordan/Practices/iPhone/AVCam/Classes/ExpandyButton.m323002500#323002500#0(0"0(0#0#60"/Users/kordan/Practices/iPhone/AVCam/Classes/ExpandyButton.m8618182944#1780"    cd /Users/kordan/Practices/iPhone/AVCam    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-generated-files.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-project-headers.hmap -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources/armv7 -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-apqktgvvwogxfobyljxxtnlfefht/AVCam_Prefix.pch -c /Users/kordan/Practices/iPhone/AVCam/Classes/ExpandyButton.m -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/ExpandyButton.o0#
+
+CCompileC build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/main.o /Users/kordan/Practices/iPhone/AVCam/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s323002498.675255
+e323002498.788317
+r1
+xCompileC
+xbuild/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/main.o
+x/Users/kordan/Practices/iPhone/AVCam/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/kordan/Practices/iPhone/AVCam/main.m323002498#323002498#0(0"0(0#0#43"/Users/kordan/Practices/iPhone/AVCam/main.m8618221088#1754"    cd /Users/kordan/Practices/iPhone/AVCam    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-generated-files.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-project-headers.hmap -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources/armv7 -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-apqktgvvwogxfobyljxxtnlfefht/AVCam_Prefix.pch -c /Users/kordan/Practices/iPhone/AVCam/main.m -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/main.o0#
+
+CCompileXIB /Users/kordan/Practices/iPhone/AVCam/Resources/AVCamViewController.xib
+s323002493.344350
+e323002494.511035
+r1
+xCompileXIB
+x/Users/kordan/Practices/iPhone/AVCam/Resources/AVCamViewController.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@44"CompileXIB Resources/AVCamViewController.xib323002493#323002494#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#70"/Users/kordan/Practices/iPhone/AVCam/Resources/AVCamViewController.xib8618092864#654"    cd /Users/kordan/Practices/iPhone/AVCam    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/usr/bin/ibtool" --errors --warnings --notices --output-format human-readable-text --compile /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/AVCamViewController.nib /Users/kordan/Practices/iPhone/AVCam/Resources/AVCamViewController.xib --sdk "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk"0#
+
+CCompileXIB /Users/kordan/Practices/iPhone/AVCam/Resources/MainWindow.xib
+s323002493.343393
+e323002494.026982
+r1
+xCompileXIB
+x/Users/kordan/Practices/iPhone/AVCam/Resources/MainWindow.xib
+lSLF07#2@35"CompileXIB Resources/MainWindow.xib323002493#323002494#0(0"0(0#0#61"/Users/kordan/Practices/iPhone/AVCam/Resources/MainWindow.xib8618195680#636"    cd /Users/kordan/Practices/iPhone/AVCam    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/usr/bin/ibtool" --errors --warnings --notices --output-format human-readable-text --compile /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/MainWindow.nib /Users/kordan/Practices/iPhone/AVCam/Resources/MainWindow.xib --sdk "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk"0#
+
+CCopyPNGFile /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Icon.png Resources/Icon.png
+s323002494.027083
+e323002494.212909
+r1
+xCopyPNGFile
+x/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Icon.png
+xResources/Icon.png
+lSLF07#2@70"CopyPNGFile build/Debug-iphoneos/AVCam.app/Icon.png Resources/Icon.png323002494#323002494#0(0"0(0#0#55"/Users/kordan/Practices/iPhone/AVCam/Resources/Icon.png8617777376#524"    cd /Users/kordan/Practices/iPhone/AVCam    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/kordan/Practices/iPhone/AVCam/Resources/Icon.png /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Icon.png0#
+
+CCopyPNGFile /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Icon@2x.png Resources/Icon@2x.png
+s323002494.213004
+e323002494.297077
+r1
+xCopyPNGFile
+x/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Icon@2x.png
+xResources/Icon@2x.png
+lSLF07#2@76"CopyPNGFile build/Debug-iphoneos/AVCam.app/Icon@2x.png Resources/Icon@2x.png323002494#323002494#0(0"0(0#0#58"/Users/kordan/Practices/iPhone/AVCam/Resources/Icon@2x.png8617290048#530"    cd /Users/kordan/Practices/iPhone/AVCam    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/kordan/Practices/iPhone/AVCam/Resources/Icon@2x.png /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Icon@2x.png0#
+
+CCpResource build/Debug-iphoneos/AVCam.app/ResourceRules.plist "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist"
+s323002493.272553
+e323002493.343307
+r1
+xCpResource
+xbuild/Debug-iphoneos/AVCam.app/ResourceRules.plist
+x/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+lSLF07#2@116"Copy /Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist323002493#323002493#0(0"0(0#0#111"/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist8245922092775395328#580"    cd /Users/kordan/Practices/iPhone/AVCam    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp" -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist" /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app0#
+
+CCreateUniversalBinary /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/AVCam normal "armv6 armv7"
+s323002500.845970
+e323002500.858283
+r1
+xCreateUniversalBinary
+x/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/AVCam
+xnormal
+xarmv6 armv7
+lSLF07#2@79"CreateUniversalBinary build/Debug-iphoneos/AVCam.app/AVCam normal "armv6 armv7"323002500#323002500#0(0"0(0#0#48"/Users/kordan/Practices/iPhone/AVCam/armv6 armv78618188320#538"    cd /Users/kordan/Practices/iPhone/AVCam    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCam /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCam -output /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/AVCam0#
+
+CGenerateDSYMFile /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app.dSYM /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/AVCam
+s323002500.858392
+e323002500.962340
+r1
+xGenerateDSYMFile
+x/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app.dSYM
+x/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/AVCam
+lSLF07#2@89"GenerateDSYMFile build/Debug-iphoneos/AVCam.app.dSYM build/Debug-iphoneos/AVCam.app/AVCam323002500#323002500#0(0"0(0#0#73"/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/AVCam8617766208#418"    cd /Users/kordan/Practices/iPhone/AVCam    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/usr/bin/dsymutil" /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/AVCam -o /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app.dSYM0#
+
+CLd /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCam normal armv6
+s323002499.052680
+e323002500.364070
+r1
+xLd
+x/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCam
+xnormal
+xarmv6
+lSLF07#2@113"Link /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCam323002499#323002500#0(0"0(0#0#0"8613593472#1095"    cd /Users/kordan/Practices/iPhone/AVCam    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -arch armv6 -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -L/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -filelist /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCam.LinkFileList -dead_strip -miphoneos-version-min=4.3 -framework Foundation -framework UIKit -framework CoreGraphics -framework AVFoundation -framework QuartzCore -framework MediaPlayer -framework CoreMedia -framework CoreVideo -framework MobileCoreServices -framework AssetsLibrary -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv6/AVCam0#
+
+CLd /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCam normal armv7
+s323002500.370507
+e323002500.845872
+r1
+xLd
+x/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCam
+xnormal
+xarmv7
+lSLF07#2@113"Link /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCam323002500#323002500#0(0"0(0#0#0"8617485024#1095"    cd /Users/kordan/Practices/iPhone/AVCam    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -arch armv7 -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -L/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -filelist /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCam.LinkFileList -dead_strip -miphoneos-version-min=4.3 -framework Foundation -framework UIKit -framework CoreGraphics -framework AVFoundation -framework QuartzCore -framework MediaPlayer -framework CoreMedia -framework CoreVideo -framework MobileCoreServices -framework AssetsLibrary -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/Objects-normal/armv7/AVCam0#
+
+CProcessInfoPlistFile /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Info.plist AVCam-Info.plist
+s323002493.295195
+e323002493.319438
+r1
+xProcessInfoPlistFile
+x/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Info.plist
+xAVCam-Info.plist
+lSLF07#2@24"Process AVCam-Info.plist323002493#323002493#0(0"0(0#0#53"/Users/kordan/Practices/iPhone/AVCam/AVCam-Info.plist8617527552#590"    cd /Users/kordan/Practices/iPhone/AVCam    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility AVCam-Info.plist -genpkginfo /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/ResourceRules.plist -o /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/Info.plist0#
+
+CProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-apqktgvvwogxfobyljxxtnlfefht/AVCam_Prefix.pch.gch AVCam_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s323002494.513264
+e323002497.305846
+r1
+xProcessPCH
+x/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-apqktgvvwogxfobyljxxtnlfefht/AVCam_Prefix.pch.gch
+xAVCam_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@27"Precompile AVCam_Prefix.pch323002494#323002497#0(0"0(0#0#53"/Users/kordan/Practices/iPhone/AVCam/AVCam_Prefix.pch8618063168#1656"    cd /Users/kordan/Practices/iPhone/AVCam    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-generated-files.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-project-headers.hmap -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources/armv7 -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources -c /Users/kordan/Practices/iPhone/AVCam/AVCam_Prefix.pch -o /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-apqktgvvwogxfobyljxxtnlfefht/AVCam_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-ekjcroywhiehthaowyyukwcpemkd/AVCam_Prefix.pch.gch AVCam_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s323002494.511232
+e323002497.263637
+r1
+xProcessPCH
+x/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-ekjcroywhiehthaowyyukwcpemkd/AVCam_Prefix.pch.gch
+xAVCam_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@27"Precompile AVCam_Prefix.pch323002494#323002497#0(0"0(0#0#53"/Users/kordan/Practices/iPhone/AVCam/AVCam_Prefix.pch8618160000#1656"    cd /Users/kordan/Practices/iPhone/AVCam    setenv LANG en_US.US-ASCII    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-generated-files.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam-project-headers.hmap -F/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/DerivedSources -c /Users/kordan/Practices/iPhone/AVCam/AVCam_Prefix.pch -o /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/AVCam_Prefix-ekjcroywhiehthaowyyukwcpemkd/AVCam_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/kordan/Library/MobileDevice/Provisioning Profiles/1D7A60B3-2DE2-42AC-8471-2325FCC6A62F.mobileprovision" /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/embedded.mobileprovision
+s323002500.962442
+e323002500.963573
+r1
+xProcessProductPackaging
+x/Users/kordan/Library/MobileDevice/Provisioning Profiles/1D7A60B3-2DE2-42AC-8471-2325FCC6A62F.mobileprovision
+x/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/embedded.mobileprovision
+lSLF07#2@191"ProcessProductPackaging "/Users/kordan/Library/MobileDevice/Provisioning Profiles/1D7A60B3-2DE2-42AC-8471-2325FCC6A62F.mobileprovision" build/Debug-iphoneos/AVCam.app/embedded.mobileprovision323002500#323002500#0(0"0(0#0#92"/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/embedded.mobileprovision8614821696#462"    cd /Users/kordan/Practices/iPhone/AVCam    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/kordan/Library/MobileDevice/Provisioning Profiles/1D7A60B3-2DE2-42AC-8471-2325FCC6A62F.mobileprovision" -o /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app/embedded.mobileprovision0#
+
+CProcessProductPackaging "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist" /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam.xcent
+s323002500.970918
+e323002500.979443
+r1
+xProcessProductPackaging
+x/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist
+x/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam.xcent
+lSLF07#2@193"ProcessProductPackaging "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist" build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam.xcent323002500#323002500#0(0"0(0#0#93"/Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam.xcent8613544672#490"    cd /Users/kordan/Practices/iPhone/AVCam    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist" -entitlements -format xml -o /Users/kordan/Practices/iPhone/AVCam/build/AVCam.build/Debug-iphoneos/AVCam.build/AVCam.xcent0#
+
+CTouch /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app
+s323002500.963633
+e323002500.970815
+r1
+xTouch
+x/Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app
+lSLF07#2@73"Touch /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app323002500#323002500#0(0"0(0#0#0"8614428480#302"    cd /Users/kordan/Practices/iPhone/AVCam    setenv PATH "/Volumes/Macintosh HD/XCode 3.26/Platforms/iPhoneOS.platform/Developer/usr/bin:/Volumes/Macintosh HD/XCode 3.26/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/kordan/Practices/iPhone/AVCam/build/Debug-iphoneos/AVCam.app0#
+

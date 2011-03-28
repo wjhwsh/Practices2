@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+<h2>編輯部落格資料</h2>
+<form method="post" action="/admin/edit_blog">
+  <fieldset>
+    <p>
+      <label>部落格標題:</label><br>
+      <input type="text" name="title" size="30" value="{{blog.title}}">
+    </p>
+    <p>
+      <label>部落格說明:</label><br>
+      <textarea name="description" rows="3" cols="30">{{blog.description}}</textarea>
+    </p>
+    <p>
+      <label>每一頁顯示文章數:</label><br>
+      <input type="text" name="articles_per_page" value="{{blog.articles_per_page}}">
+    </p>
+    <p><input type="submit" value="修改"></p>
+  </fieldset>
+</form>
+{% endblock %}

@@ -1,0 +1,149 @@
+// !$*UTF8*$!
+{
+	1D3623250D0F684500981E51 /* ePubTestAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {980, 741}}";
+			sepNavSelRange = "{696, 0}";
+			sepNavVisRange = "{29, 759}";
+			sepNavWindowFrame = "{{38, 23}, {1039, 729}}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* ePubTest */ = {
+		activeExec = 0;
+		executables = (
+			D78480A411664EFD00A16094 /* ePubTest */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* ePubTestViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {980, 578}}";
+			sepNavSelRange = "{316, 0}";
+			sepNavVisRange = "{0, 336}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* ePubTestViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1140, 1444}}";
+			sepNavSelRange = "{935, 0}";
+			sepNavVisRange = "{543, 1095}";
+			sepNavWindowFrame = "{{15, 44}, {1039, 729}}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = D78480A411664EFD00A16094 /* ePubTest */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* ePubTest */;
+		codeSenseManager = D78480B511664F0300A16094 /* Code sense */;
+		executables = (
+			D78480A411664EFD00A16094 /* ePubTest */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 291985104;
+			PBXWorkspaceStateSaveDate = 291985104;
+		};
+		perUserProjectItems = {
+			D7848149116754B600A16094 /* PBXTextBookmark */ = D7848149116754B600A16094 /* PBXTextBookmark */;
+			D78481531167559E00A16094 /* PBXTextBookmark */ = D78481531167559E00A16094 /* PBXTextBookmark */;
+			D784815E1167570600A16094 /* PBXTextBookmark */ = D784815E1167570600A16094 /* PBXTextBookmark */;
+		};
+		sourceControlManager = D78480B411664F0300A16094 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	D78480A411664EFD00A16094 /* ePubTest */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = ePubTest;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	D78480B411664F0300A16094 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	D78480B511664F0300A16094 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	D7848149116754B600A16094 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* ePubTestViewController.h */;
+		name = "ePubTestViewController.h: 16";
+		rLen = 0;
+		rLoc = 316;
+		rType = 0;
+		vrLen = 336;
+		vrLoc = 0;
+	};
+	D78481531167559E00A16094 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* ePubTestViewController.m */;
+		name = "ePubTestViewController.m: 51";
+		rLen = 0;
+		rLoc = 1457;
+		rType = 0;
+		vrLen = 1086;
+		vrLoc = 653;
+	};
+	D784815E1167570600A16094 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* ePubTestViewController.m */;
+		name = "ePubTestViewController.m: 36";
+		rLen = 0;
+		rLoc = 935;
+		rType = 0;
+		vrLen = 1095;
+		vrLoc = 543;
+	};
+}

@@ -1,0 +1,10 @@
+#LWP-Cookies-2.0
+Set-Cookie3: HSID="AswCjH7x9w8u33JtK"; path="/"; domain=".google.com.tw"; path_spec; domain_dot; discard; HttpOnly=None; version=0
+Set-Cookie3: SID="DQAAAKoAAACiy7sSiPvLMTWUXZ_gjKlbAVQh0PQLzGcyZlD13yv635yv8csvEBVAQTq-4kUGMZ4hXJhMTUCcHv3GehzJfeuQcDvc_2uSFLtR5NQaOq0tDEYSkh7PrBojtXqmws7JjWR4if94BeA7cabSC3-n2rH9s-rFbqy8ASy72irKQuM3xJGGSlfRGBOsVVwidJWG0xLb-q0PUrAdiYWI4YGW6nLq7YEDERYY7E5dZeJSMdTP0A"; path="/"; domain=".google.com.tw"; path_spec; domain_dot; discard; version=0
+Set-Cookie3: SSID=A3QKhpp4fQWU486Hh; path="/"; domain=".google.com"; path_spec; domain_dot; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: CAL="DQAAAKgAAAB-NA2eYZTT0ftsQQsWEEENb8bDXKVTcWbfK0YZBi-AAu56Xl9HGV2bGuvQwaRL1oqVS7aKa1uJX2y6rwmqo9UWE-8r6CCaTlFzi7mPLI2-KG2B_L9Yh4NvcGGvv80f-R7hwzgGhEGbkX2QayAOhrPoLmZNdaPI-ItiiHQkr26mK6596uNhZzS-3m0YNvH_6QeXmOgbVIxMR9eQH3DS42EdxHw1Yt8TOKadcXnz7mAi3A"; path="/calendar"; domain=".www.google.com"; path_spec; discard; version=0
+Set-Cookie3: GALX=FZrcHlB5_1c; path="/accounts"; domain="www.google.com"; path_spec; secure; discard; version=0
+Set-Cookie3: GAUSR="modcarl@gmail.com"; path="/accounts"; domain="www.google.com"; path_spec; secure; discard; version=0
+Set-Cookie3: LSID="cl|s.TW:DQAAAKkAAAB-NA2eYZTT0ftsQQsWEEENb8bDXKVTcWbfK0YZBi-AAu56Xl9HGV2bGuvQwaRL1ooAFT3EEpv6iK97PoSvn87LUmDnCyogjCODA56Pl7bEcvHkaglw5BZzih4k-GFdHCKiZ9B1bhG-HnEonnoYi7POh0t8udNWvMwe1DknsV7GnjcitOoUrpfoS8wkXVs1jiTUOVxhUQRDTUIo_Q_GUKhan-RuEFzYztTpXAGIWxlL5g"; path="/accounts"; domain="www.google.com"; path_spec; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: PREF="ID=4c0faedb529ea730:U=c5bb4e218be3b1a3:FF=4:LD=zh-TW:NR=10:TM=1280062337:LM=1283933548:IG=4:S=DqeIscvwQiQ4B9oW"; path="/"; domain=".google.com.tw"; path_spec; domain_dot; discard; HttpOnly=None; version=0
+Set-Cookie3: NID="41=Y6B3FX_movtfZyZr2WgWBPMkAnROJct9HNZwCgTh5awI3uwST59yKDnPC8dRfWa81MEdmaoO9ssqDUeT3HGSFCAUf-cTbDkOO3G2eX0hn-1dTK-0fK9NW8Tc60gukeRP"; path="/"; domain=".google.com.tw"; path_spec; domain_dot; discard; HttpOnly=None; version=0

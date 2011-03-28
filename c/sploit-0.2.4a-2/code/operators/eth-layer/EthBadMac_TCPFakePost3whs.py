@@ -1,0 +1,97 @@
+#**********************************************************************
+#*                      Sploit Mutation Engine                        *
+#**********************************************************************
+#* Copyright (C) 2004-2007 Davide Balzarotti                          *
+#*                                                                    *
+#* This program is free software; you can redistribute it and/or      *
+#* modify it under the terms of the GNU General Public License        *
+#* version 2.                                                         *
+#*                                                                    *
+#* This program is distributed in the hope that it will be useful,    *
+#* but WITHOUT ANY WARRANTY; without even the implied warranty of     *
+#* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.               *
+#* See the GNU General Public License for more details.               *
+#*                                                                    *
+#* You should have received a copy of the GNU General Public License  *
+#* along with this program; if not, write to the Free Software        *
+#* Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.          *
+#*********************************************************************/
+
+# Author: Andrea Beretta and Riccardo Bianchi
+# $Id$
+
+'''
+EthBadMac_TCPPost3whs
+---------------------
+ Add a fake reset followed by a 3whs with a wrong MAC address
+'''
+from EthLayerOperator import EthLayerOperator
+from interfaces.hasparameters import IntParam
+from interfaces.hasparameters import StringParam
+import scapy.scapy as scapy
+import utils
+import managers.ip as ip
+
+
+class EthBadMac_TCPFakePost3whs(EthLayerOperator):
+	isa_operator      = True  
+	
+	def __init__(self):
+		EthLayerOperator.__init__(self,'EthBadMac_TCPFakePost3whs','Create fake reset and 3WHS with correct IP address and bad MAC ')	
+		self.add_param(StringParam('BADMAC','00:10:26:C0:40:01','Mac address to be used'))
+		self.add_param(IntParam('numframe',5,'Position for fake 3WHS',1))
+		self.add_param(IntParam('timer', 2,'Timeout after fake RST packet',0))
+		
+	def mutate(self, packets):
+		BADMAC = self.BADMAC
+		timer = self.timer	
+		numframe = self.numframe
+		#if packet is fragmented,SYN or ACK do nothing
+		if utils.check_length(numframe, packets) or utils.check_syn(packets[numframe-1].payload.payload) or utils.check_ack(packets[numframe-1].payload.payload) or utils.check_fragmentation(packets[numframe-1].payload):
+			return packets
+		#create fake RST	
+		forged = packets[numframe-1].copy()
+		forged.payload.payload = utils.tcp_bad_payload(forged.payload.payload, utils.NOPAYLOAD)
+		forged.dst=BADMAC
+		#set reset flag
+		forged.payload.payload.flags = 'R'
+		#insert fake RST
+		packets.insert(numframe-1, forged)
+		#append original
+		packets.append(packets[numframe])
+		del(packets[numframe])
+		#create fake SYN
+		forged_syn = packets[numframe-1].copy()
+		forged_syn.dst=BADMAC
+		forged_syn.timeout = timer
+		forged_syn.payload.payload.flags = 'S'
+		forged_syn.payload.payload.seq += 103245
+		forged_syn.payload.payload.ack = 0
+		#insert fake SYN
+		packets.insert(numframe, forged_syn)
+		#create fake SYN/ACK
+		forged_synack = packets[numframe-1].copy()
+		forged_synack.dst=BADMAC
+		forged_synack.payload.payload.sport = packets[numframe].payload.payload.dport
+		forged_synack.payload.payload.dport = packets[numframe].payload.payload.sport
+		forged_synack.payload.payload.flags = 'SA'
+		forged_synack.payload.payload.seq += 207654
+		forged_synack.payload.payload.ack = packets[numframe].payload.payload.seq + 1
+		forged_synack.payload.dst = packets[numframe].payload.src
+		forged_synack.payload.src = packets[numframe].payload.dst
+		#insert fake SYN/ACK
+		packets.insert(numframe+1, forged_synack)		
+		#create fake ACK
+		forged_ack = packets[numframe-1].copy()
+		forged_ack.dst=BADMAC
+		forged_ack.payload.payload.flags = 'A'
+		forged_ack.payload.payload.seq = packets[numframe+1].payload.payload.ack
+		forged_ack.payload.payload.ack = packets[numframe+1].payload.payload.seq + 1
+		#insert fake SYN/ACK
+		packets.insert(numframe+2, forged_ack)	
+		
+		#delete reset
+		del(packets[numframe-1])
+
+		return packets
+		

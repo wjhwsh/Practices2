@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% for article in articles %}
+<div class="article">
+  <span class="title">{{article.title}}</span>
+  <a href="/admin/article?action=edit&amp;key={{article.key}}">編輯</a> |
+  <a href="/admin/article?action=delete&amp;key={{article.key}}">刪除</a>
+</div>
+{% endfor %}
+{% endblock %}

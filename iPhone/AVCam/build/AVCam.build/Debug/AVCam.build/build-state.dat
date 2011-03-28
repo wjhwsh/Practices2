@@ -1,0 +1,75 @@
+TAVCam
+v7
+r1
+
+N/Users/kordan/Practices/iPhone/AVCam/Resources/AVCamViewController.xib
+c000000004C0D68C600000000000117B8
+t1275947206
+s71608
+
+N/Users/kordan/Practices/iPhone/AVCam/Resources/Icon.png
+c000000004C0D68C60000000000000B79
+t1275947206
+s2937
+
+N/Users/kordan/Practices/iPhone/AVCam/Resources/Icon@2x.png
+c000000004C0D68C60000000000002A77
+t1275947206
+s10871
+
+N/Users/kordan/Practices/iPhone/AVCam/Resources/MainWindow.xib
+c000000004C0D68C60000000000004CFF
+t1275947206
+s19711
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug/AVCam.app
+t2
+s0
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug/AVCam.app/Contents/Info.plist
+t2
+s0
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug/AVCam.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug/AVCam.app/Contents/Resources/AVCamViewController.nib
+t2
+s0
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug/AVCam.app/Contents/Resources/Icon.png
+t2
+s0
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug/AVCam.app/Contents/Resources/Icon@2x.png
+t2
+s0
+
+N/Users/kordan/Practices/iPhone/AVCam/build/Debug/AVCam.app/Contents/Resources/MainWindow.nib
+t2
+s0
+
+NAVCam-Info.plist
+c000000004C0D68C600000000000003CF
+t1275947206
+s975
+
+CCompileXIB /Users/kordan/Practices/iPhone/AVCam/Resources/AVCamViewController.xib
+r0
+
+CCompileXIB /Users/kordan/Practices/iPhone/AVCam/Resources/MainWindow.xib
+r0
+
+CCpResource build/Debug/AVCam.app/Contents/Resources/Icon.png Resources/Icon.png
+r0
+
+CCpResource build/Debug/AVCam.app/Contents/Resources/Icon@2x.png Resources/Icon@2x.png
+r0
+
+CProcessInfoPlistFile /Users/kordan/Practices/iPhone/AVCam/build/Debug/AVCam.app/Contents/Info.plist AVCam-Info.plist
+r0
+
+CTouch /Users/kordan/Practices/iPhone/AVCam/build/Debug/AVCam.app
+r0
+

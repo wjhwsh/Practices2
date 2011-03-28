@@ -1,0 +1,75 @@
+#! /usr/bin/python
+
+from interfaces.testcase import Fail as Fail
+import string
+import time
+import os
+
+
+OK    = "\033[32;1mOK\033[0m"
+red   = "\033[31;1m%s\033[0m"
+skip  = "\033[33;1mskip\033[0m"
+
+def _my_import(name):
+	mod = __import__(name)
+	components = name.split('.')
+	for comp in components[1:]:
+		mod = getattr(mod, comp)
+	return mod
+
+def load_test_list():
+	res = []
+	import tests
+	for name in tests.__all__:
+		try:
+			mod = _my_import("tests.%s"%name)
+		except ImportError, msg:
+			print "  - %s"%msg
+			continue
+		res+=mod.TESTS
+	return res
+
+
+if __name__ == "__main__":
+	ok = 0
+	failed = 0
+	print "\033[0m---------------------------------------------------------- "
+	print "Loading test cases..."
+	tlist = load_test_list()
+	print "  - %d Tests Loaded"%len(tlist)
+	print "---------------------------------------------------------- "
+	
+	iam_root = False
+	if os.getuid()==0:
+		iam_root = True
+	
+	start = time.time()
+	tot =0
+	for t in tlist:
+		print t.get_name()
+		if t.is_root_required() and iam_root==False:
+			print "%s [%s]"%(string.ljust("  - root privileges required to run this test",50),skip)
+			continue
+		for m in t.__class__.__dict__:
+			if m[:5]== "test_":
+				tot +=1
+				try:
+					res = t.__class__.__dict__[m](t)
+				except Fail, msg:
+					print "%s [%s]"%(string.ljust("  - %s"%m[5:],50),red%msg)
+					failed += 1
+					continue
+				except Exception, msg:
+					msg = "ERROR %s"%msg
+					print "%s [%s]"%(string.ljust("  - %s"%m[5:],50),red%msg)
+					failed += 1
+					continue
+				ok += 1
+				print "%s [%s]"%(string.ljust("  - %s"%m[5:],50),OK)
+	
+	end = time.time()
+	print "---------------------------------------------------------- "
+	
+	print "Tests executed in %d seconds"%(end-start)
+	print "Results:\n %d/%d failed"%(failed,tot)
+

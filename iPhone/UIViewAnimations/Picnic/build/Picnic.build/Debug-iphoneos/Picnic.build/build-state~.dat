@@ -1,0 +1,602 @@
+TPicnic
+v7
+r0
+t317637662.868727
+cCheck dependencies
+cCpResource build/Debug-iphoneos/Picnic.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Info.plist Picnic-Info.plist
+cCompileXIB /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/MainWindow.xib
+cCompileXIB /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/PicnicViewController.xib
+cCopyPNGFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/door_bottom.png door_bottom.png
+cCopyPNGFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/door_top.png door_top.png
+cCopyPNGFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/fabric_bottom.png fabric_bottom.png
+cCopyPNGFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/fabric_top.png fabric_top.png
+cCopyPNGFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/bug.png bug.png
+cCopyPNGFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/plate_cheese.png plate_cheese.png
+cCpResource build/Debug-iphoneos/Picnic.app/squish.caf squish.caf
+cCopyPNGFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/logo1.png logo1.png
+cProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-aauzsdbtklamsiahiinbhzvoaucu/Picnic_Prefix.pch.gch Picnic_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-delzdcvcrfpulpbfyjwtboxjaudp/Picnic_Prefix.pch.gch Picnic_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/main.o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/PicnicAppDelegate.o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/PicnicViewController.o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/main.o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/PicnicAppDelegate.o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/PicnicViewController.o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/Picnic normal armv6
+cLd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/Picnic normal armv7
+cCreateUniversalBinary /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Picnic normal "armv6 armv7"
+cGenerateDSYMFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app.dSYM /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Picnic
+cProcessProductPackaging "/Users/kordan/Library/MobileDevice/Provisioning Profiles/F58689D7-B334-4D04-B295-E3EE6C049A97.mobileprovision" /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/embedded.mobileprovision
+cTouch /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic.xcent
+cCodeSign /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
+c000000004CC7DC9E0000000000000110
+t1288166558
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+c000000004CB3DFCF00000000000001A7
+t1286856655
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+c000000004CB3DFCF00000000000001E5
+t1286856655
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004CC10EF400000000003B8CB0
+t1287720692
+s3902640
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
+c000000004CC10EB60000000000000A23
+t1287720630
+s2595
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC10EF500000000003532B0
+t1287720693
+s3486384
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC10F4700000000003E1F20
+t1287720775
+s4071200
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC10F1C0000000000001466
+t1287720732
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC11AE60000000000000AA1
+t1287723750
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC11B750000000000C769F0
+t1287723893
+s13068784
+
+N/Users/kordan/Library/MobileDevice/Provisioning Profiles/F58689D7-B334-4D04-B295-E3EE6C049A97.mobileprovision
+c000000004D258C370000000000002C6E
+t1294306359
+s11374
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicAppDelegate.h
+c000000004CFFB2B800000000000001D8
+t1291825848
+s472
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicAppDelegate.m
+c000000004CFFB2B80000000000000A8F
+t1291825848
+s2703
+i"PicnicAppDelegate.h"
+i"PicnicViewController.h"
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.h
+c000000004CFFDDAC0000000000000200
+t1291836844
+s512
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m
+c000000004CFFE4370000000000002465
+t1291838519
+s9317
+i"PicnicViewController.h"
+i<AudioToolbox/AudioToolbox.h>
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/MainWindow.xib
+c000000004CFFB2B80000000000004E1D
+t1291825848
+s19997
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/PicnicViewController.xib
+c000000004CFFE43F0000000000006BE5
+t1291838527
+s27621
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Picnic_Prefix.pch
+c000000004CFFB2B800000000000000B5
+t1291825848
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/bug.png
+c000000004CFFC9800000000000003E58
+t1291831680
+s15960
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app
+t1295944862
+s646
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app.dSYM
+t1295944862
+s102
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Info.plist
+t1295944857
+s812
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/MainWindow.nib
+t1295944858
+s1121
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Picnic
+t1295944862
+s74196
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/PicnicViewController.nib
+t1295944858
+s1953
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/PkgInfo
+t1295944857
+s8
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/ResourceRules.plist
+t1295944857
+s485
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/bug.png
+t1295944860
+s15466
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/door_bottom.png
+t1295944859
+s96482
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/door_top.png
+t1295944859
+s112769
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/embedded.mobileprovision
+t1295944862
+s11374
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/fabric_bottom.png
+t1295944859
+s213057
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/fabric_top.png
+t1295944859
+s237057
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/logo1.png
+t1295944860
+s2879
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/plate_cheese.png
+t1295944860
+s303699
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/squish.caf
+t1295944860
+s129544
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/Picnic
+t1295944862
+s33236
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/Picnic.LinkFileList
+c000000004D3E8C9900000000000001A3
+t1295944857
+s419
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/PicnicAppDelegate.o
+t1295944861
+s50544
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/PicnicViewController.o
+t1295944862
+s67740
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/main.o
+t1295944861
+s6480
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/Picnic
+t1295944862
+s33236
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/Picnic.LinkFileList
+c000000004D3E8C9900000000000001A3
+t1295944857
+s419
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/PicnicAppDelegate.o
+t1295944862
+s50460
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/PicnicViewController.o
+t1295944862
+s67176
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/main.o
+t1295944861
+s6464
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic.xcent
+t1295944862
+s418
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/door_bottom.png
+c000000004CFFBD400000000000018972
+t1291828544
+s100722
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/door_top.png
+c000000004CFFBD5B000000000001C263
+t1291828571
+s115299
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/fabric_bottom.png
+c000000004CFFBC7400000000000319BC
+t1291828340
+s203196
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/fabric_top.png
+c000000004CFFBC390000000000037E53
+t1291828281
+s228947
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/logo1.png
+c000000004B6062410000000000000774
+t1264607809
+s1908
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/main.m
+c000000004CFFB2B80000000000000167
+t1291825848
+s359
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/plate_cheese.png
+c000000004CFFC93B000000000003EA1A
+t1291831611
+s256538
+
+N/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/squish.caf
+c000000004CFFDEC8000000000001FA08
+t1291837128
+s129544
+
+N/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-aauzsdbtklamsiahiinbhzvoaucu/Picnic_Prefix.pch.gch
+t1295944861
+s9983704
+
+N/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-delzdcvcrfpulpbfyjwtboxjaudp/Picnic_Prefix.pch.gch
+t1295944861
+s10446552
+
+NPicnic-Info.plist
+c000000004CFFE4AE0000000000000396
+t1291838638
+s918
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies317637657#317637657#0(0"0(0#1#0"8841077568#0"0#
+
+CCodeSign /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app
+s317637662.635277
+e317637662.868652
+r1
+xCodeSign
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app
+lSLF07#2@40"CodeSign build/Debug-iphoneos/Picnic.app317637662#317637662#0(0"0(0#0#86"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app8840316704#705"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Ju Chun Ko (59G6MQ6X2U)" --resource-rules=/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/ResourceRules.plist --entitlements /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic.xcent /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app0#
+
+CCompileC build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/PicnicAppDelegate.o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s317637661.457320
+e317637661.693893
+r1
+xCompileC
+xbuild/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/PicnicAppDelegate.o
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicAppDelegate.m317637661#317637661#0(0"0(0#0#82"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicAppDelegate.m8836763360#1914"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-generated-files.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-project-headers.hmap -F/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-aauzsdbtklamsiahiinbhzvoaucu/Picnic_Prefix.pch -c /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicAppDelegate.m -o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/PicnicAppDelegate.o0#
+
+CCompileC build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/PicnicViewController.o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s317637661.691625
+e317637662.109386
+r1
+xCompileC
+xbuild/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/PicnicViewController.o
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m: In function '-[PicnicViewController touchesBegan:withEvent:]':
+o/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: no '-presentationLayer' method found
+o/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: (Messages without a matching method signature
+o/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: will be assumed to return 'id' and accept
+o/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: '...' as arguments.)
+lSLF07#2@93"Compile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m317637661#317637662#0(696"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m: In function '-[PicnicViewController touchesBegan:withEvent:]':/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: no '-presentationLayer' method found/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: (Messages without a matching method signature/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: will be assumed to return 'id' and accept/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: '...' as arguments.)2(22@36"No '-presentationLayer' method found317637661#150#137#0(6@85"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m313531319#142#0#142#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)317637661#287#146#0(6@85"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m313531319#142#0#142#0#0"0(0#0#85"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m8844511808#1920"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-generated-files.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-project-headers.hmap -F/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-aauzsdbtklamsiahiinbhzvoaucu/Picnic_Prefix.pch -c /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m -o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/PicnicViewController.o0#
+
+CCompileC build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/main.o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s317637661.455596
+e317637661.691528
+r1
+xCompileC
+xbuild/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/main.o
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/main.m317637661#317637661#0(0"0(0#0#61"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/main.m8841237728#1880"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-generated-files.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-project-headers.hmap -F/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-aauzsdbtklamsiahiinbhzvoaucu/Picnic_Prefix.pch -c /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/main.m -o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/main.o0#
+
+CCompileC build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/PicnicAppDelegate.o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s317637661.771185
+e317637662.081414
+r1
+xCompileC
+xbuild/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/PicnicAppDelegate.o
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicAppDelegate.m317637661#317637662#0(0"0(0#0#82"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicAppDelegate.m8844655328#1914"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-generated-files.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-project-headers.hmap -F/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources/armv7 -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-delzdcvcrfpulpbfyjwtboxjaudp/Picnic_Prefix.pch -c /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicAppDelegate.m -o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/PicnicAppDelegate.o0#
+
+CCompileC build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/PicnicViewController.o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s317637662.081827
+e317637662.328747
+r1
+xCompileC
+xbuild/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/PicnicViewController.o
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m: In function '-[PicnicViewController touchesBegan:withEvent:]':
+o/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: no '-presentationLayer' method found
+o/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: (Messages without a matching method signature
+o/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: will be assumed to return 'id' and accept
+o/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: '...' as arguments.)
+lSLF07#2@93"Compile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m317637662#317637662#0(696"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m: In function '-[PicnicViewController touchesBegan:withEvent:]':/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: no '-presentationLayer' method found/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: (Messages without a matching method signature/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: will be assumed to return 'id' and accept/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m:142: warning: '...' as arguments.)2(22@36"No '-presentationLayer' method found317637662#150#137#0(6@85"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m313531319#142#0#142#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)317637662#287#146#0(6@85"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m313531319#142#0#142#0#0"0(0#0#85"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m8842113984#1920"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-generated-files.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-project-headers.hmap -F/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources/armv7 -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-delzdcvcrfpulpbfyjwtboxjaudp/Picnic_Prefix.pch -c /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Classes/PicnicViewController.m -o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/PicnicViewController.o0#
+
+CCompileC build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/main.o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s317637661.693989
+e317637661.771085
+r1
+xCompileC
+xbuild/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/main.o
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/main.m317637661#317637661#0(0"0(0#0#61"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/main.m8862740928#1880"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-generated-files.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-project-headers.hmap -F/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources/armv7 -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-delzdcvcrfpulpbfyjwtboxjaudp/Picnic_Prefix.pch -c /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/main.m -o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/main.o0#
+
+CCompileXIB /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/MainWindow.xib
+s317637657.823659
+e317637658.500002
+r1
+xCompileXIB
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib317637657#317637658#0(0"0(0#0#69"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/MainWindow.xib8845005120#589"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/MainWindow.nib /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCompileXIB /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/PicnicViewController.xib
+s317637657.824624
+e317637658.570329
+r1
+xCompileXIB
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/PicnicViewController.xib
+lSLF07#2@35"CompileXIB PicnicViewController.xib317637657#317637658#0(0"0(0#0#79"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/PicnicViewController.xib8844519424#609"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/PicnicViewController.nib /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/PicnicViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCopyPNGFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/bug.png bug.png
+s317637660.017519
+e317637660.144952
+r1
+xCopyPNGFile
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/bug.png
+xbug.png
+lSLF07#2@59"CopyPNGFile build/Debug-iphoneos/Picnic.app/bug.png bug.png317637660#317637660#0(0"0(0#0#62"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/bug.png8858574464#601"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/bug.png /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/bug.png0#
+
+CCopyPNGFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/door_bottom.png door_bottom.png
+s317637658.500092
+e317637659.740315
+r1
+xCopyPNGFile
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/door_bottom.png
+xdoor_bottom.png
+lSLF07#2@75"CopyPNGFile build/Debug-iphoneos/Picnic.app/door_bottom.png door_bottom.png317637658#317637659#0(0"0(0#0#70"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/door_bottom.png8860152864#617"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/door_bottom.png /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/door_bottom.png0#
+
+CCopyPNGFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/door_top.png door_top.png
+s317637658.570421
+e317637659.819108
+r1
+xCopyPNGFile
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/door_top.png
+xdoor_top.png
+lSLF07#2@69"CopyPNGFile build/Debug-iphoneos/Picnic.app/door_top.png door_top.png317637658#317637659#0(0"0(0#0#67"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/door_top.png8858638976#611"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/door_top.png /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/door_top.png0#
+
+CCopyPNGFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/fabric_bottom.png fabric_bottom.png
+s317637659.740769
+e317637660.017217
+r1
+xCopyPNGFile
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/fabric_bottom.png
+xfabric_bottom.png
+lSLF07#2@79"CopyPNGFile build/Debug-iphoneos/Picnic.app/fabric_bottom.png fabric_bottom.png317637659#317637660#0(0"0(0#0#72"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/fabric_bottom.png8864304192#621"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/fabric_bottom.png /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/fabric_bottom.png0#
+
+CCopyPNGFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/fabric_top.png fabric_top.png
+s317637659.819215
+e317637660.019748
+r1
+xCopyPNGFile
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/fabric_top.png
+xfabric_top.png
+lSLF07#2@73"CopyPNGFile build/Debug-iphoneos/Picnic.app/fabric_top.png fabric_top.png317637659#317637660#0(0"0(0#0#69"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/fabric_top.png8861107200#615"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/fabric_top.png /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/fabric_top.png0#
+
+CCopyPNGFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/logo1.png logo1.png
+s317637660.146031
+e317637660.193901
+r1
+xCopyPNGFile
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/logo1.png
+xlogo1.png
+lSLF07#2@63"CopyPNGFile build/Debug-iphoneos/Picnic.app/logo1.png logo1.png317637660#317637660#0(0"0(0#0#64"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/logo1.png8844626912#605"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/logo1.png /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/logo1.png0#
+
+CCopyPNGFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/plate_cheese.png plate_cheese.png
+s317637660.019825
+e317637660.369858
+r1
+xCopyPNGFile
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/plate_cheese.png
+xplate_cheese.png
+lSLF07#2@77"CopyPNGFile build/Debug-iphoneos/Picnic.app/plate_cheese.png plate_cheese.png317637660#317637660#0(0"0(0#0#71"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/plate_cheese.png8839322848#619"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/plate_cheese.png /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/plate_cheese.png0#
+
+CCpResource build/Debug-iphoneos/Picnic.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+s317637657.785329
+e317637657.823570
+r1
+xCpResource
+xbuild/Debug-iphoneos/Picnic.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist317637657#317637657#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist8861367104#525"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app0#
+
+CCpResource build/Debug-iphoneos/Picnic.app/squish.caf squish.caf
+s317637660.145039
+e317637660.153220
+r1
+xCpResource
+xbuild/Debug-iphoneos/Picnic.app/squish.caf
+xsquish.caf
+lSLF07#2@15"Copy squish.caf317637660#317637660#0(0"0(0#0#65"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/squish.caf8845945088#501"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/squish.caf /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app0#
+
+CCreateUniversalBinary /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Picnic normal "armv6 armv7"
+s317637662.532494
+e317637662.578520
+r1
+xCreateUniversalBinary
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Picnic
+xnormal
+xarmv6 armv7
+lSLF07#2@81"CreateUniversalBinary build/Debug-iphoneos/Picnic.app/Picnic normal "armv6 armv7"317637662#317637662#0(0"0(0#0#66"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/armv6 armv78846480288#574"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/Picnic /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/Picnic -output /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Picnic0#
+
+CGenerateDSYMFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app.dSYM /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Picnic
+s317637662.578617
+e317637662.612485
+r1
+xGenerateDSYMFile
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app.dSYM
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Picnic
+lSLF07#2@92"GenerateDSYMFile build/Debug-iphoneos/Picnic.app.dSYM build/Debug-iphoneos/Picnic.app/Picnic317637662#317637662#0(0"0(0#0#93"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Picnic8844937792#407"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Picnic -o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app.dSYM0#
+
+CLd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/Picnic normal armv6
+s317637662.109478
+e317637662.159667
+r1
+xLd
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/Picnic
+xnormal
+xarmv6
+lSLF07#2@134"Link /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/Picnic317637662#317637662#0(0"0(0#0#0"8844420800#957"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos -F/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos -filelist /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/Picnic.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -framework AudioToolbox -o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv6/Picnic0#
+
+CLd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/Picnic normal armv7
+s317637662.328843
+e317637662.532302
+r1
+xLd
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/Picnic
+xnormal
+xarmv7
+lSLF07#2@134"Link /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/Picnic317637662#317637662#0(0"0(0#0#0"8841152288#957"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos -F/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos -filelist /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/Picnic.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -framework AudioToolbox -o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Objects-normal/armv7/Picnic0#
+
+CProcessInfoPlistFile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Info.plist Picnic-Info.plist
+s317637657.791847
+e317637657.815561
+r1
+xProcessInfoPlistFile
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Info.plist
+xPicnic-Info.plist
+lSLF07#2@25"Process Picnic-Info.plist317637657#317637657#0(0"0(0#0#72"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Picnic-Info.plist8846293056#622"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Picnic-Info.plist -genpkginfo /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/ResourceRules.plist -o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/Info.plist0#
+
+CProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-aauzsdbtklamsiahiinbhzvoaucu/Picnic_Prefix.pch.gch Picnic_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s317637660.370019
+e317637661.298057
+r1
+xProcessPCH
+x/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-aauzsdbtklamsiahiinbhzvoaucu/Picnic_Prefix.pch.gch
+xPicnic_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile Picnic_Prefix.pch317637660#317637661#0(0"0(0#0#72"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Picnic_Prefix.pch8843842624#1763"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-generated-files.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-project-headers.hmap -F/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources -c /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Picnic_Prefix.pch -o /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-aauzsdbtklamsiahiinbhzvoaucu/Picnic_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-delzdcvcrfpulpbfyjwtboxjaudp/Picnic_Prefix.pch.gch Picnic_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s317637660.371147
+e317637661.455424
+r1
+xProcessPCH
+x/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-delzdcvcrfpulpbfyjwtboxjaudp/Picnic_Prefix.pch.gch
+xPicnic_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile Picnic_Prefix.pch317637660#317637661#0(0"0(0#0#72"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Picnic_Prefix.pch8843291872#1763"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-generated-files.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic-project-headers.hmap -F/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources/armv7 -I/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/DerivedSources -c /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/Picnic_Prefix.pch -o /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Picnic_Prefix-delzdcvcrfpulpbfyjwtboxjaudp/Picnic_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/kordan/Library/MobileDevice/Provisioning Profiles/F58689D7-B334-4D04-B295-E3EE6C049A97.mobileprovision" /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/embedded.mobileprovision
+s317637662.612591
+e317637662.615189
+r1
+xProcessProductPackaging
+x/Users/kordan/Library/MobileDevice/Provisioning Profiles/F58689D7-B334-4D04-B295-E3EE6C049A97.mobileprovision
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/embedded.mobileprovision
+lSLF07#2@192"ProcessProductPackaging "/Users/kordan/Library/MobileDevice/Provisioning Profiles/F58689D7-B334-4D04-B295-E3EE6C049A97.mobileprovision" build/Debug-iphoneos/Picnic.app/embedded.mobileprovision317637662#317637662#0(0"0(0#0#111"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/embedded.mobileprovision8843202848#455"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/kordan/Library/MobileDevice/Provisioning Profiles/F58689D7-B334-4D04-B295-E3EE6C049A97.mobileprovision" -o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app/embedded.mobileprovision0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic.xcent
+s317637662.620120
+e317637662.635210
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic.xcent
+lSLF07#2@172"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic.xcent317637662#317637662#0(0"0(0#0#114"/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic.xcent8836911008#461"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Picnic.build/Debug-iphoneos/Picnic.build/Picnic.xcent0#
+
+CTouch /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app
+s317637662.615252
+e317637662.620021
+r1
+xTouch
+x/Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app
+lSLF07#2@92"Touch /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app317637662#317637662#0(0"0(0#0#0"8842284768#295"    cd /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/kordan/Practices/iPhone/UIViewAnimations/Picnic/build/Debug-iphoneos/Picnic.app0#
+

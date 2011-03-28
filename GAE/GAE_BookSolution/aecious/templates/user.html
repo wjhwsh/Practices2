@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}GAE Bookmarks - {{title}}{% endblock %}
+
+{% block content %}
+<h3>{{title}}</h3>
+{% if bookmarks.get %}
+<ul class="bookmarks">
+    {% for bookmark in bookmarks %}
+    <li><h4><a href="{{bookmark.url}}">{{bookmark.title}}</a></h4>
+        <div class="desc">{{bookmark.desc}}</div>
+        <div class="tags">
+            標籤:
+            <small>
+            {% for tag in bookmark.tags %}
+            <a href="/tag/{{tag}}">{{tag}}</a>
+            {% endfor %}
+            </small>            
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<h4>無資料</h4>
+{% endif %}
+{% endblock %}

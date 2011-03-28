@@ -1,0 +1,54 @@
+#**********************************************************************
+#*                      Sploit Mutation Engine                        *
+#**********************************************************************
+#* Copyright (C) 2004-2007 Davide Balzarotti                          *
+#*                                                                    *
+#* This program is free software; you can redistribute it and/or      *
+#* modify it under the terms of the GNU General Public License        *
+#* version 2.                                                         *
+#*                                                                    *
+#* This program is distributed in the hope that it will be useful,    *
+#* but WITHOUT ANY WARRANTY; without even the implied warranty of     *
+#* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.               *
+#* See the GNU General Public License for more details.               *
+#*                                                                    *
+#* You should have received a copy of the GNU General Public License  *
+#* along with this program; if not, write to the Free Software        *
+#* Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.          *
+#*********************************************************************/
+
+# Author: Davide Balzarotti
+# $Id$
+
+'''
+TCPClearAck
+ Remove the ACK flag from one of the packets
+'''
+
+from TCPLayerOperator import TCPLayerOperator
+from interfaces.hasparameters import IntParam
+from interfaces.hasparameters import KeyListParam
+import utils
+
+class TCPClearAck(TCPLayerOperator):	
+	isa_operator      = True  
+
+	def __init__(self, size=1):
+		TCPLayerOperator.__init__(self,'TCPClearAck','TCP packet with ack flag cleared')	
+		self.add_param(IntParam('numseg',1,'Segmnent with ack cleared',0))
+					
+	def mutate(self, packets):
+		result = []
+		
+		#Not enough segments, Syn or Ack, return
+		if utils.check_length(self.numseg, packets) or utils.check_syn(packets[self.numseg-1]) or utils.check_ack(packets[self.numseg-1]):
+			return packets
+		
+		count = 0
+		for p in packets:
+			if count == self.numseg:
+				p.flags = 0
+			result.append(p)
+			count +=1
+		return result
+

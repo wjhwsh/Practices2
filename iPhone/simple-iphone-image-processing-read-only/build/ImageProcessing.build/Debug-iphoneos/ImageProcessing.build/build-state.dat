@@ -1,0 +1,533 @@
+TImageProcessing
+v7
+r0
+t315999497.510453
+cCheck dependencies
+cCpResource build/Debug-iphoneos/ImageProcessing.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/Info.plist Info.plist
+cCompileXIB /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/RootViewController.xib
+cCompileXIB /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/MainWindow.xib
+cCompileXIB /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ResultViewController.xib
+cCpResource build/Debug-iphoneos/ImageProcessing.app/me.jpg me.jpg
+cCompileXIB /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ListBundleImagesViewController.xib
+cCpResource build/Debug-iphoneos/ImageProcessing.app/elmo.jpg elmo.jpg
+cProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-hisymgsnyitygrgokqwuokmsnqij/ImageProcessing_Prefix.pch.gch ImageProcessing_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH++ /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-bstlgvutewqjmsfzikzlqmqfzibl/ImageProcessing_Prefix.pch.gch ImageProcessing_Prefix.pch normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/main.o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ImageProcessingAppDelegate.o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ImageProcessingAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/RootViewController.o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/RootViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ListBundleImagesViewController.o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ResultViewController.o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ResultViewController.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/Image.o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/Image.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+cLd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ImageProcessing normal armv6
+cGenerateDSYMFile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app.dSYM /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ImageProcessing
+cProcessProductPackaging "/Users/kordan/Library/MobileDevice/Provisioning Profiles/88C4B794-9268-408E-B901-435D6207DEE0.mobileprovision" /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/embedded.mobileprovision
+cTouch /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing.xcent
+cCodeSign /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
+c000000004CC7DC9E0000000000000110
+t1288166558
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+c000000004CB3DFCF00000000000001A7
+t1286856655
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+c000000004CB3DFCF00000000000001E5
+t1286856655
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC10EF500000000003532B0
+t1287720693
+s3486384
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC10F4700000000003E1F20
+t1287720775
+s4071200
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC10F1C0000000000001466
+t1287720732
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImage.h
+c000000004CC11AE60000000000000E89
+t1287723750
+s3721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC11AE60000000000000AA1
+t1287723750
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC11B750000000000C769F0
+t1287723893
+s13068784
+
+N/Users/kordan/Library/MobileDevice/Provisioning Profiles/88C4B794-9268-408E-B901-435D6207DEE0.mobileprovision
+c000000004D258C270000000000001C6C
+t1294306343
+s7276
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/Image.h
+c000000004D0871790000000000000C5A
+t1292398969
+s3162
+i<UIKit/UIImage.h>
+i<vector>
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/Image.mm
+c000000004D0871790000000000006264
+t1292398969
+s25188
+i"Image.h"
+i<stack>
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ImageProcessingAppDelegate.h
+c000000004D08717900000000000001B5
+t1292398969
+s437
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ImageProcessingAppDelegate.m
+c000000004D0871790000000000000295
+t1292398969
+s661
+i"ImageProcessingAppDelegate.h"
+i"RootViewController.h"
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.h
+c000000004D0871790000000000000108
+t1292398969
+s264
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm
+c000000004D0871790000000000001209
+t1292398969
+s4617
+i"ListBundleImagesViewController.h"
+i"ResultViewController.h"
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ResultViewController.h
+c000000004D08717900000000000001A0
+t1292398969
+s416
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ResultViewController.mm
+c000000004D08717900000000000007BE
+t1292398969
+s1982
+i"ResultViewController.h"
+i"Image.h"
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/RootViewController.h
+c000000004D08717900000000000000BD
+t1292398969
+s189
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/RootViewController.m
+c000000004D0871790000000000000EF5
+t1292398969
+s3829
+i"RootViewController.h"
+i"ImageProcessingAppDelegate.h"
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ImageProcessing_Prefix.pch
+c000000004D08717900000000000000C7
+t1292398969
+s199
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ListBundleImagesViewController.xib
+c000000004D0871790000000000001AB3
+t1292398969
+s6835
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/MainWindow.xib
+c000000004D0871790000000000002C87
+t1292398969
+s11399
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ResultViewController.xib
+c000000004D087179000000000000240A
+t1292398969
+s9226
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/RootViewController.xib
+c000000004D0871790000000000001E0B
+t1292398969
+s7691
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app
+t1294306697
+s510
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app.dSYM
+t1294306381
+s102
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ImageProcessing
+t1294306381
+s46384
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/Info.plist
+t1294306375
+s825
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ListBundleImagesViewController.nib
+t1294306377
+s979
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/MainWindow.nib
+t1294306376
+s1554
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/PkgInfo
+t1294306375
+s8
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ResourceRules.plist
+t1294306375
+s485
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ResultViewController.nib
+t1294306377
+s1189
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/RootViewController.nib
+t1294306376
+s1077
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/elmo.jpg
+t1294306377
+s9823
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/embedded.mobileprovision
+t1294306381
+s7276
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/me.jpg
+t1294306377
+s204310
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing.xcent
+t1294306381
+s436
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/Image.o
+t1294306380
+s135820
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ImageProcessing.LinkFileList
+c000000004D258C47000000000000042D
+t1294306375
+s1069
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ImageProcessingAppDelegate.o
+t1294306380
+s50652
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ListBundleImagesViewController.o
+t1294306380
+s45896
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ResultViewController.o
+t1294306380
+s54388
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/RootViewController.o
+t1294306380
+s40820
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/main.o
+t1294306380
+s6512
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/elmo.jpg
+c000000004D087179000000000000265F
+t1292398969
+s9823
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/main.m
+c000000004D087179000000000000013B
+t1292398969
+s315
+i<UIKit/UIKit.h>
+
+N/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/me.jpg
+c000000004D0871790000000000031E16
+t1292398969
+s204310
+
+N/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-azxtmuvzwpfkmtewdvfvjlxcvuqn/ImageProcessing_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-bstlgvutewqjmsfzikzlqmqfzibl/ImageProcessing_Prefix.pch.gch
+t1294306379
+s10585704
+
+N/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-ekrhpcdmvtalzkayjlyuiovufdmf/ImageProcessing_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-hisymgsnyitygrgokqwuokmsnqij/ImageProcessing_Prefix.pch.gch
+t1294306379
+s9983704
+
+NInfo.plist
+c000000004D0871790000000000000386
+t1292398969
+s902
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies315999497#315999497#0(0"0(0#1#0"8631628832#0"0#
+
+CCodeSign /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app
+s315999497.315948
+e315999497.510417
+r1
+xCodeSign
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app
+o/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app: replacing existing signature
+lSLF07#2@49"CodeSign build/Debug-iphoneos/ImageProcessing.app315999497#315999497#0(143"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app: replacing existing signature0(0#0#112"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app8632762496#818"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Ju Chun Ko (59G6MQ6X2U)" --resource-rules=/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ResourceRules.plist --entitlements /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing.xcent /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app0#
+
+CCompileC build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/Image.o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/Image.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+s315999180.265379
+e315999180.999204
+r1
+xCompileC
+xbuild/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/Image.o
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/Image.mm
+xnormal
+xarmv6
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@96"Compile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/Image.mm315999180#315999180#0(0"0(0#0#88"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/Image.mm8630303552#2279"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-generated-files.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-project-headers.hmap -F/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-bstlgvutewqjmsfzikzlqmqfzibl/ImageProcessing_Prefix.pch -c /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/Image.mm -o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/Image.o0#
+
+CCompileC build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ImageProcessingAppDelegate.o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ImageProcessingAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s315999179.903594
+e315999180.141512
+r1
+xCompileC
+xbuild/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ImageProcessingAppDelegate.o
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ImageProcessingAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@116"Compile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ImageProcessingAppDelegate.m315999179#315999180#0(0"0(0#0#108"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ImageProcessingAppDelegate.m8628905664#2299"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-generated-files.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-project-headers.hmap -F/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-hisymgsnyitygrgokqwuokmsnqij/ImageProcessing_Prefix.pch -c /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ImageProcessingAppDelegate.m -o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ImageProcessingAppDelegate.o0#
+
+CCompileC build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ListBundleImagesViewController.o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+s315999180.141601
+e315999180.237784
+r1
+xCompileC
+xbuild/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ListBundleImagesViewController.o
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm
+xnormal
+xarmv6
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+o/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm: In function 'void -[ListBundleImagesViewController viewDidLoad](ListBundleImagesViewController*, objc_selector*)':
+o/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm:28: warning: 'directoryContentsAtPath:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h:164)
+o/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm: In function 'UITableViewCell* -[ListBundleImagesViewController tableView:cellForRowAtIndexPath:](ListBundleImagesViewController*, objc_selector*, UITableView*, NSIndexPath*)':
+o/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm:95: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)
+lSLF07#2@121"Compile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm315999180#315999180#0(1156"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm: In function 'void -[ListBundleImagesViewController viewDidLoad](ListBundleImagesViewController*, objc_selector*)':/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm:28: warning: 'directoryContentsAtPath:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h:164)/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm: In function 'UITableViewCell* -[ListBundleImagesViewController tableView:cellForRowAtIndexPath:](ListBundleImagesViewController*, objc_selector*, UITableView*, NSIndexPath*)':/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm:95: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)2(22@199"'directoryContentsAtPath:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h:164)315999180#230#327#0(6@113"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm314091769#28#0#28#0#33"'*' is deprecated (declared at *)0(22@180"'setText:' is deprecated (declared at /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)315999180#848#308#0(6@113"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm314091769#95#0#95#0#33"'*' is deprecated (declared at *)0(0#0#113"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm8632450112#2329"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-generated-files.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-project-headers.hmap -F/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-bstlgvutewqjmsfzikzlqmqfzibl/ImageProcessing_Prefix.pch -c /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ListBundleImagesViewController.mm -o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ListBundleImagesViewController.o0#
+
+CCompileC build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ResultViewController.o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ResultViewController.mm normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+s315999180.237886
+e315999180.705460
+r1
+xCompileC
+xbuild/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ResultViewController.o
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ResultViewController.mm
+xnormal
+xarmv6
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@111"Compile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ResultViewController.mm315999180#315999180#0(0"0(0#0#103"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ResultViewController.mm8631509472#2309"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-generated-files.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-project-headers.hmap -F/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-bstlgvutewqjmsfzikzlqmqfzibl/ImageProcessing_Prefix.pch -c /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/ResultViewController.mm -o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ResultViewController.o0#
+
+CCompileC build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/RootViewController.o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/RootViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s315999180.140087
+e315999180.265271
+r1
+xCompileC
+xbuild/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/RootViewController.o
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/RootViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@108"Compile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/RootViewController.m315999180#315999180#0(0"0(0#0#100"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/RootViewController.m8603438656#2283"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-generated-files.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-project-headers.hmap -F/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-hisymgsnyitygrgokqwuokmsnqij/ImageProcessing_Prefix.pch -c /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Classes/RootViewController.m -o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/RootViewController.o0#
+
+CCompileC build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/main.o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s315999179.902524
+e315999180.139981
+r1
+xCompileC
+xbuild/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/main.o
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/main.m315999179#315999180#0(0"0(0#0#78"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/main.m8628001984#2247"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-generated-files.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-project-headers.hmap -F/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources -include /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-hisymgsnyitygrgokqwuokmsnqij/ImageProcessing_Prefix.pch -c /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/main.m -o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/main.o0#
+
+CCompileXIB /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ListBundleImagesViewController.xib
+s315999176.989022
+e315999177.457637
+r1
+xCompileXIB
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ListBundleImagesViewController.xib
+lSLF07#2@45"CompileXIB ListBundleImagesViewController.xib315999176#315999177#0(0"0(0#0#106"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ListBundleImagesViewController.xib8630281824#689"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ListBundleImagesViewController.nib /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ListBundleImagesViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCompileXIB /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/MainWindow.xib
+s315999175.910788
+e315999176.986856
+r1
+xCompileXIB
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib315999175#315999176#0(0"0(0#0#86"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/MainWindow.xib8629711552#649"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/MainWindow.nib /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCompileXIB /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ResultViewController.xib
+s315999176.920732
+e315999177.466531
+r1
+xCompileXIB
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ResultViewController.xib
+lSLF07#2@35"CompileXIB ResultViewController.xib315999176#315999177#0(0"0(0#0#96"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ResultViewController.xib8631091008#669"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ResultViewController.nib /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ResultViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCompileXIB /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/RootViewController.xib
+s315999175.910016
+e315999176.920645
+r1
+xCompileXIB
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/RootViewController.xib
+lSLF07#2@33"CompileXIB RootViewController.xib315999175#315999176#0(0"0(0#0#94"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/RootViewController.xib8629999360#665"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/RootViewController.nib /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/RootViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCpResource build/Debug-iphoneos/ImageProcessing.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+s315999175.873758
+e315999175.909817
+r1
+xCpResource
+xbuild/Debug-iphoneos/ImageProcessing.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist315999175#315999175#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist8631284704#568"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app0#
+
+CCpResource build/Debug-iphoneos/ImageProcessing.app/elmo.jpg elmo.jpg
+s315999177.457850
+e315999177.466692
+r1
+xCpResource
+xbuild/Debug-iphoneos/ImageProcessing.app/elmo.jpg
+xelmo.jpg
+lSLF07#2@13"Copy elmo.jpg315999177#315999177#0(0"0(0#0#80"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/elmo.jpg8628077440#559"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/elmo.jpg /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app0#
+
+CCpResource build/Debug-iphoneos/ImageProcessing.app/me.jpg me.jpg
+s315999176.986940
+e315999177.053079
+r1
+xCpResource
+xbuild/Debug-iphoneos/ImageProcessing.app/me.jpg
+xme.jpg
+lSLF07#2@11"Copy me.jpg315999176#315999177#0(0"0(0#0#78"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/me.jpg8630491392#557"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/me.jpg /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app0#
+
+CGenerateDSYMFile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app.dSYM /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ImageProcessing
+s315999181.542172
+e315999181.569743
+r1
+xGenerateDSYMFile
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app.dSYM
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ImageProcessing
+lSLF07#2@119"GenerateDSYMFile build/Debug-iphoneos/ImageProcessing.app.dSYM build/Debug-iphoneos/ImageProcessing.app/ImageProcessing315999181#315999181#0(0"0(0#0#128"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ImageProcessing8632036768#485"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ImageProcessing -o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app.dSYM0#
+
+CLd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ImageProcessing normal armv6
+s315999180.999304
+e315999181.541936
+r1
+xLd
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ImageProcessing
+xnormal
+xarmv6
+lSLF07#2@133"Link /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ImageProcessing315999180#315999181#0(0"0(0#0#0"8629258624#1027"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/g++-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos -F/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos -filelist /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/Objects-normal/armv6/ImageProcessing.LinkFileList -dead_strip -miphoneos-version-min=4.0 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ImageProcessing0#
+
+CProcessInfoPlistFile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/Info.plist Info.plist
+s315999175.874811
+e315999175.880767
+r1
+xProcessInfoPlistFile
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist315999175#315999175#0(0"0(0#0#82"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/Info.plist8631011616#710"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Info.plist -genpkginfo /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/ResourceRules.plist -o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/Info.plist0#
+
+CProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-azxtmuvzwpfkmtewdvfvjlxcvuqn/ImageProcessing_Prefix.pch.gch ImageProcessing_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-hisymgsnyitygrgokqwuokmsnqij/ImageProcessing_Prefix.pch.gch ImageProcessing_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s315999177.466802
+e315999179.653175
+r1
+xProcessPCH
+x/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-hisymgsnyitygrgokqwuokmsnqij/ImageProcessing_Prefix.pch.gch
+xImageProcessing_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@37"Precompile ImageProcessing_Prefix.pch315999177#315999179#0(0"0(0#0#98"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ImageProcessing_Prefix.pch8595015648#2104"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-generated-files.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-project-headers.hmap -F/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources -c /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ImageProcessing_Prefix.pch -o /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-hisymgsnyitygrgokqwuokmsnqij/ImageProcessing_Prefix.pch.gch0#
+
+CProcessPCH++ /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-bstlgvutewqjmsfzikzlqmqfzibl/ImageProcessing_Prefix.pch.gch ImageProcessing_Prefix.pch normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+s315999177.467818
+e315999179.902364
+r1
+xProcessPCH++
+x/var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-bstlgvutewqjmsfzikzlqmqfzibl/ImageProcessing_Prefix.pch.gch
+xImageProcessing_Prefix.pch
+xnormal
+xarmv6
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@37"Precompile ImageProcessing_Prefix.pch315999177#315999179#0(0"0(0#0#98"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ImageProcessing_Prefix.pch8630464128#2125"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++-header -arch armv6 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-generated-files.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-own-target-headers.hmap -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-all-target-headers.hmap -iquote /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing-project-headers.hmap -F/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/include -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources/armv6 -I/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/DerivedSources -c /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/ImageProcessing_Prefix.pch -o /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-bstlgvutewqjmsfzikzlqmqfzibl/ImageProcessing_Prefix.pch.gch0#
+
+CProcessPCH++ /var/folders/vL/vLOubmXxGGCsoakYnrZ0Rk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/ImageProcessing_Prefix-ekrhpcdmvtalzkayjlyuiovufdmf/ImageProcessing_Prefix.pch.gch ImageProcessing_Prefix.pch normal armv6 objective-c++ com.apple.compilers.gcc.4_2
+r0
+
+CProcessProductPackaging "/Users/kordan/Library/MobileDevice/Provisioning Profiles/88C4B794-9268-408E-B901-435D6207DEE0.mobileprovision" /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/embedded.mobileprovision
+s315999181.569989
+e315999181.572557
+r1
+xProcessProductPackaging
+x/Users/kordan/Library/MobileDevice/Provisioning Profiles/88C4B794-9268-408E-B901-435D6207DEE0.mobileprovision
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/embedded.mobileprovision
+lSLF07#2@201"ProcessProductPackaging "/Users/kordan/Library/MobileDevice/Provisioning Profiles/88C4B794-9268-408E-B901-435D6207DEE0.mobileprovision" build/Debug-iphoneos/ImageProcessing.app/embedded.mobileprovision315999181#315999181#0(0"0(0#0#137"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/embedded.mobileprovision8631087680#498"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/kordan/Library/MobileDevice/Provisioning Profiles/88C4B794-9268-408E-B901-435D6207DEE0.mobileprovision" -o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app/embedded.mobileprovision0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing.xcent
+s315999181.591251
+e315999181.610010
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing.xcent
+lSLF07#2@199"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing.xcent315999181#315999181#0(0"0(0#0#158"/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing.xcent8629693568#522"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/ImageProcessing.build/Debug-iphoneos/ImageProcessing.build/ImageProcessing.xcent0#
+
+CTouch /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app
+s315999181.572941
+e315999181.591149
+r1
+xTouch
+x/Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app
+lSLF07#2@118"Touch /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app315999181#315999181#0(0"0(0#0#0"8630095744#338"    cd /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/kordan/Practices/iPhone/simple-iphone-image-processing-read-only/build/Debug-iphoneos/ImageProcessing.app0#
+

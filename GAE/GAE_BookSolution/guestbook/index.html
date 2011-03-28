@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>我的留言板</title>
+  </head>
+  <body>
+    <h1>留言板</h1>
+    <form method="post" action="/submit">
+      <fieldset>
+        <p>
+          <label>名稱:</label><br>
+          <input type="text" name="name">
+        </p>
+        <p>
+          <label>留言:</label><br>
+          <textarea name="comment" rows="5" cols="40"></textarea>
+        </p>
+        <p>
+          <input type="submit" value="送出">
+        </p>
+      </fieldset>
+    </form>
+    <hr>
+    <h3>留言：</h3>
+    {% for msg in messages %}
+    <p class="message">
+        <div class="author">{{ msg.name }}</div>
+        <div class="comment">{{ msg.comment }}</div>
+        <div class="time">{{ msg.created }}</div>
+    </p>
+    {% endfor %}
+    <p>
+    <b>頁碼:</b><br>
+    {% for p in total_page_list %}
+      <a href="/{{p}}">{{p}}</a>
+    {% endfor %}
+    </p>
+  </body>
+</html>
