@@ -1,0 +1,2 @@
+all:
+	xelatex chinese.tex
