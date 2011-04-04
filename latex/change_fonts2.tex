@@ -1,0 +1,57 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% XeLaTeX 測試範例
+% 以上是設定使用 XeLaTeX 編譯，並內設 unicode 編碼，以便 TeXShop 自動辨識
+
+\documentclass[12pt]{article}
+
+\usepackage{fontspec}
+% XeTeX 配合 fontspec 時，字形非常容易設定 
+
+\setromanfont[Mapping=tex-text, %
+Ligatures={Required,Common}, %
+ItalicFont={Times Italic}, %
+BoldFont={Apple LiGothic Medium}]%
+{BiauKai}
+% 預設字形：這裡設內文為標楷，
+% 沿用 latex 的一些標點的轉換，如 en-dash 以兩個減號表示，
+% 如果此字型檔裡有 ligatures 的定義，則啟動
+% 斜體字以 Times Iatlic (只有英文有斜體)
+% 粗體字以黑體字表現
+% 此為 fontspec 套件的指令
+
+\setmonofont[Scale=0.8]{AppleGothic Regular} 
+% 設定等寬字形
+
+\XeTeXlinebreaklocale "zh" 
+\XeTeXlinebreakskip = 0pt plus 1pt 
+% 讓中文正確斷行的設定
+
+\newfontfamily\rmfont{Times}
+\newcommand{\nc}[1]{{\rmfont #1}}
+% 在中文裡用英文字體顯示英文的命令
+% 詳見底下的範例
+
+\begin{document}
+
+自此，就是內文了。可以自由的使用。
+
+我們再來試試換預設字形的方法：只在大括號內局部之字串有效。
+
+{
+\fontspec{Hiragino Mincho Pro W6}
+% \fontspec 用法和前面預設字形之 \setromanfont 一樣，只是可更自由地使用
+這是用日文字形的測試。只要打正常中文即可。可能會缺字就是了。
+}
+
+再來就回到正常字形，就用正常 \LaTeX\ 的寫法使用就行了。
+
+如果，在中、英文夾雜時，英文想用不同的字型，則可以使用開頭時定義的 nc 指令
+
+\nc{This is Times font.  The 『field' contains ligatures.} 
+
+應該與中文字型裡的英文字不同：
+This is Chinese font. The `field' does not have ligatures.
+
+\end{document}
