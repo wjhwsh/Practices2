@@ -1,0 +1,286 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name: XeTeX+xeCJK日常使用模板
+% Author: Lox Freeman
+% Email: xiaohanyu1988@gmail.com
+% Homepage: http://cnlox.is-programmer.com
+% 
+% 本文檔可以自由轉載、修改，希望能給廣大TeXer的中文之路提供一些方便。
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, 12pt, titlepage]{article}
+% 設定紙張大小為A4, 基本字體大小為12pt, 文章題目單獨為一頁， 
+% 文檔類型為article
+
+%%%%%%%%%%%%%%%%%%%%%%%%%xeCJK相關宏包%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xltxtra,fontspec,xunicode}
+\usepackage[slantfont, boldfont, CJKaddspaces]{xeCJK} 
+% \CJKsetecglue{\hskip 0.15em plus 0.05em minus 0.05em}
+% slanfont: 允許斜體
+% boldfont: 允許粗體
+% CJKnormalspaces: 僅忽略漢字之間的空白,但保留中英文之間的空白。 
+% CJKchecksingle: 避免單個漢字單獨佔一行。
+% CJKaddspaces: [備選]忽略漢字之間的空白,並且自動在中英文轉換時插入空白。
+
+\XeTeXlinebreaklocale "zh"             % 針對中文進行斷行
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+                                       % 給予TeX斷行一定自由度
+%%%%%%%%%%%%%%%%%%%%%%%%%xeCJK%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%日常所用宏包、通通放在一起%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 什麼常用的宏包都可以放這裡。下面是我常用的宏包，每個都給出了簡要註釋
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}                               
+                                     % 控制頁邊距
+\usepackage{enumerate}               % 控制項目列表
+\usepackage{multicol}                % 多欄顯示
+
+\usepackage[%
+    pdfstartview=FitH,%
+    CJKbookmarks=true,%
+    bookmarks=true,%
+    bookmarksnumbered=true,%
+    bookmarksopen=true,%
+    colorlinks=true,%
+    citecolor=blue,%
+    linkcolor=blue,%
+    anchorcolor=green,%
+    urlcolor=blue%
+]{hyperref}                          % hyperref宏包，生成可定位點擊的超鏈接
+
+
+\usepackage{titlesec}                % 控制標題
+\usepackage{booktabs}                % 控制表格樣式
+\usepackage{titletoc}                % 控制目錄
+\usepackage{type1cm}                 % 控制字體大小
+\usepackage{indentfirst}             % 首行縮進，用\noindent取消某段縮進
+\usepackage{color,xcolor}            % 支持彩色文本、底色、文本框等
+\usepackage{amsmath}                 % AMS LaTeX宏包
+% \usepackage{bbding}                % 一些特殊符號
+% \usepackage{cite}                  % 支持引用
+% \usepackage{latexsym}              % LaTeX一些特殊符號宏包
+% \usepackage{bm}                    % 數學公式中的黑斜體
+% \usepackage{relsize}               % 調整公式字體大小：\mathsmaller, \mathlarger
+% \makeindex                         % 生成索引
+
+%%%%%%%%%%%%%%%%%%%%%%%%%基本插圖方法%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}                % 圖形宏包
+\usepackage{subfig}                  % 多個圖形並排，參加lnotes.pdf
+% \begin{figure}[htbp]               % 控制插圖位置
+%   \setlength{\abovecaptionskip}{0pt}    
+%   \setlength{\belowcaptionskip}{10pt}
+                                     % 控制圖形和上下文的距離
+%   \centering                       % 使圖形居中顯示
+%   \includegraphics[width=0.8\textwidth]{CTeXLive2008.jpg}
+                                     % 控制圖形顯示寬度為0.8\textwidth
+%   \caption{CTeXLive2008安裝過程} \label{fig:CTeXLive2008}
+                                     % 圖形題目和交叉引用標籤
+% \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%插圖方法結束%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%pgf/tikz繪圖宏包設置%%%%%%%%%%%%%%%%%%%%
+\usepackage{pgf,tikz}
+\usetikzlibrary{shapes,automata,snakes,backgrounds,arrows}
+\usetikzlibrary{mindmap} 
+% \usepackage[shell,pgf,outputdir={docgraphs/}]{dot2texi}
+                                     % 直接在latex文檔中使用graphviz/dot語言
+                                     % 也可以用dot2tex工具將dot文件轉換成tex文件再include進來
+%%%%%%%%%%%%%%%%%%%%pgf/tikz end%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%fancyhdr設置頁眉頁腳%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}                % 頁眉頁腳
+\pagestyle{plain}                    % 頁眉頁腳風格
+\setlength{\headheight}{15pt}        % 有時會出現\headheight too small的warning
+%\fancyhf{}                          % 清空當前頁眉頁腳的默認設置
+%%%%%%%%%%%%%%%%%%%%%%%%%fancyhdr設置結束%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%listings宏包粘貼源碼%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings}                % 方便粘貼源代碼，部分代碼高亮功能
+\lstloadlanguages{}                  % 所要粘貼代碼的編程語言
+
+%%%%設置listings宏包的一些全局樣式%%%%
+%%%%參見http://hi.baidu.com/shawpinlee/blog/item/9ec431cbae28e41cbe09e6e4.html%%%%
+\lstset{
+showstringspaces=false               % 設定是否顯示代碼之間的空格符號
+numbers=left,                        % 在左邊顯示行號
+numberstyle=\tiny,                   % 設定行號字體的大小
+basicstyle=\tiny,                    % 設定字體大小\tiny, \small, \Large等等
+keywordstyle=\color{blue!70}, commentstyle=\color{red!50!green!50!blue!50},
+                                     % 關鍵字高亮
+frame=shadowbox,                     % 給代碼加框
+rulesepcolor=\color{red!20!green!20!blue!20},
+escapechar=`,                        % 中文逃逸字符，用於中英混排
+xleftmargin=2em,xrightmargin=2em, aboveskip=1em,
+breaklines,                          % 這條命令可以讓LaTeX自動將長的代碼行換行排版
+extendedchars=false                  % 這一條命令可以解決代碼跨頁時，章節標題，頁眉等漢字不顯示的問題
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%listings宏包設置結束%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%附錄設置%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[title,titletoc,header]{appendix}
+%%%%%%%%%%%%%%%%%%%%%%%%%附錄設置結束%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%xeCJK字體設置%%%%%%%%%%%%%%%%%%%%%%%%%
+\punctstyle{kaiming}                                        % 設置中文標點樣式
+                                                            % 支持quanjiao、banjiao、kaiming等多種方式
+\setCJKmainfont[BoldFont=Adobe Heiti Std]{Adobe Song Std}   % 設置缺省中文字體
+\setCJKsansfont[BoldFont=Adobe Heiti Std]{Adobe Kaiti Std}  % 設置中文無襯線字體
+\setCJKmonofont{Adobe Heiti Std}                            % 設置等寬字體
+\setmainfont{DejaVu Serif}                                  % 英文襯線字體
+\setmonofont{DejaVu Sans Mono}                              % 英文等寬字體
+\setsansfont{DejaVu Sans}                                   % 英文無襯線字體
+
+%%%%定義新字體%%%%
+\setCJKfamilyfont{song}{Adobe Song Std}                     
+\setCJKfamilyfont{kai}{Adobe Kaiti Std}
+\setCJKfamilyfont{hei}{Adobe Heiti Std}
+\setCJKfamilyfont{fangsong}{Adobe Fangsong Std}
+\setCJKfamilyfont{lisu}{LiSu}
+\setCJKfamilyfont{youyuan}{YouYuan}
+
+\newcommand{\song}{\CJKfamily{song}}                       % 自定義宋體
+\newcommand{\kai}{\CJKfamily{kai}}                         % 自定義楷體
+\newcommand{\hei}{\CJKfamily{hei}}                         % 自定義黑體
+\newcommand{\fangsong}{\CJKfamily{fangsong}}               % 自定義仿宋體
+\newcommand{\lisu}{\CJKfamily{lisu}}                       % 自定義隸書
+\newcommand{\youyuan}{\CJKfamily{youyuan}}                 % 自定義幼圓
+
+\newcommand{\yihao}{\fontsize{26pt}{36pt}\selectfont}       % 一號, 1.4倍行距
+\newcommand{\erhao}{\fontsize{22pt}{28pt}\selectfont}       % 二號, 1.25倍行距
+\newcommand{\xiaoer}{\fontsize{18pt}{18pt}\selectfont}      % 小二, 單倍行距
+\newcommand{\sanhao}{\fontsize{16pt}{24pt}\selectfont}      % 三號, 1.5倍行距
+\newcommand{\xiaosan}{\fontsize{15pt}{22pt}\selectfont}     % 小三, 1.5倍行距
+\newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}       % 四號, 1.5倍行距
+\newcommand{\bansi}{\fontsize{13pt}{19.5pt}\selectfont}     % 半四, 1.5倍行距
+\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}      % 小四, 1.5倍行距
+\newcommand{\dawu}{\fontsize{11pt}{11pt}\selectfont}        % 大五, 單倍行距
+\newcommand{\wuhao}{\fontsize{10.5pt}{10.5pt}\selectfont}   % 五號, 單倍行距
+%%%%%%%%%%%%%%%%%%%%%%%%%xeCJK字體設置結束%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%一些關於中文文檔的重定義%%%%%%%%%%%%%%%%%
+
+%%%%%數學公式定理的重定義%%%%
+\newtheorem{example}{例}                                   % 整體編號
+\newtheorem{algorithm}{算法}
+\newtheorem{theorem}{定理}[section]                         % 按 section 編號
+\newtheorem{definition}{定義}
+\newtheorem{axiom}{公理}
+\newtheorem{property}{性質}
+\newtheorem{proposition}{命題}
+\newtheorem{lemma}{引理}
+\newtheorem{corollary}{推論}
+\newtheorem{remark}{註解}
+\newtheorem{condition}{條件}
+\newtheorem{conclusion}{結論}
+\newtheorem{assumption}{假設}
+
+%%%%章節等名稱重定義%%%%
+\renewcommand{\contentsname}{目錄}     
+\renewcommand{\abstractname}{摘要}
+\renewcommand{\indexname}{索引}
+\renewcommand{\listfigurename}{插圖目錄}
+\renewcommand{\listtablename}{表格目錄}
+\renewcommand{\figurename}{圖}
+\renewcommand{\tablename}{表}
+\renewcommand{\appendixname}{附錄}
+\renewcommand{\appendixpagename}{附錄}
+\renewcommand{\appendixtocname}{附錄}
+\renewcommand\refname{參考文獻} 
+
+%%%%設置chapter、section與subsection的格式%%%%
+\titleformat{\chapter}{\centering\huge}{第\thechapter{}篇}{1em}{\textbf}
+\titleformat{\section}{\centering\sihao}{\thesection}{1em}{\textbf}
+\titleformat{\subsection}{\xiaosi}{\thesubsection}{1em}{\textbf}
+\titleformat{\subsubsection}{\xiaosi}{\thesubsubsection}{1em}{\textbf}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%中文重定義結束%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%一些個性設置%%%%%%%%%%%%%%%%%%%%%%
+% \renewcommand{\baselinestretch}{1.3}     % 效果同\linespread{1.3}
+% \pagenumbering{arabic}                   % 設定頁碼方式，包括arabic、roman等方式
+% \sloppy                                  % 有時LaTeX無從斷行，產生overfull的錯誤，
+                                           % 這條命令降低LaTeX斷行標準
+\setlength{\parskip}{0.5\baselineskip}     % 設定段間距
+\linespread{1}                             % 設定行距
+\newcommand{\pozhehao}{\kern0.3ex\rule[0.8ex]{2em}{0.1ex}\kern0.3ex}
+                                           % 中文破折號，據說來自清華模板
+%%%%%%%%%%%%%%%%%%%%%%%%%個性設置結束%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%bibtex設置%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{plain}                  % 設定參考文獻顯示風格
+%%%%%%%%%%%%%%%%%%%%%%%%%bibtex設置結束%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%正文部分%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\renewcommand{\normalsize}{\sihao}         % 設定正文字體大小
+\setlength{\parindent}{2em}                    
+% 設定首行縮進為2em。注意此設置一定要在document環境之中。
+% 這可能與\setlength作用範圍相關
+
+\title{\XeTeX ~and xeCJK 日常使用模板 }
+\author{Lox}
+\maketitle
+%%%%%titlepage%%%%
+% 自己定義標題頁
+% \begin{titlepage}      
+% \vspace{20pt}
+% \erhao{\textbf{浙江大學本科生院教學研究處\\浙江大學數學建模實踐基地}}
+% \end{center}
+%%%%titlepage end%%%%
+
+\begin{abstract}
+\kai{這裡是摘要。}
+\end{abstract}
+
+\tableofcontents                           % 製作目錄
+%listoffigures                             % 圖目錄
+%listoftables                              % 表目錄
+
+\section{This is Section}
+\label{sec:this-section}
+這是第~\ref{sec:this-section}節，你可以設定不同的{\color{blue}字}{\color{red}體}{\color{yellow}顏}色和{\hei 字體}{\Large 大}{\tiny 小}
+
+\subsection{This is SubSection}
+\label{sec:this-subsection}
+這是第~\ref{sec:this-subsection}節，你可以方便的輸入數學公式並方便的得到完美的排版效果。總體來說，\LaTeXe 的數學公式分為兩種排版格式：
+
+\begin{itemize}
+\item 行內模式(inline)，就是公式高度和行內文字基本保持一致。
+\item 行間模式(display)，另起一行，可以單獨編號(也可以不編號的公式)。
+\end{itemize}
+
+比較：$\sum_{i=1}^n = \frac{n(n+1)}{2}$
+
+和
+
+\begin{equation}
+  \label{eq:sum}
+  \sum_{i=1}^n = \frac{n(n+1)}{2}
+\end{equation}
+
+\subsubsection{This is Study Resources}
+這裡有一些\LaTeX 的學習資源：
+
+\begin{itemize}
+\item \href{http://tobi.oetiker.ch/lshort/lshort.pdf}{lshort}：半天時間可以入門\LaTeX
+\item \href{http://www.ctan.org/get/info/lnotes/lnotes.pdf}{lnotes}：非常風趣的筆記，裡面有一些歷史糾葛的敘述，非常珍貴。
+\item \href{http://www.ctex.org/CTeXFAQ}{CTeX FAQ}：可以作為手頭查詢用。
+\item \href{http://zzg34b.w3.c361.com/index.htm}{\LaTeX 編輯部} 很全的一個網站。
+\item \href{http://latex.yo2.cn/}{\LaTeX 學習}：很好的一個個人博客。
+\item \href{http://bbs.ctex.org/}{CTeX論壇}：高手如雲。
+\item \href{http://cohomo.blogbus.com/}{無題}：不錯的一個博客。
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%加入附錄%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \appendix    
+% \appendixpage
+% \addappheadtotoc
+                                         % 將附錄條目添加到contents
+%%%%%%%%%%%%%%%%%%%%%%%%%附錄設置結束%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \newpage
+
+% \bibliography{math}                    % 加入參考文獻，需要bibtex支持
+
+\end{document}
+
