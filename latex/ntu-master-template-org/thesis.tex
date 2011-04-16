@@ -1,0 +1,87 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[a4paper, 12pt]{book}
+
+\usepackage{times}
+\usepackage{verbatim}
+\usepackage{color}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{fontspec} % for Xelatex
+%\usepackage{xCJK} % CJK for Xelatex
+
+% uncomment this if you want to indent the first paragraph
+%\usepackage{indentfirst}
+
+% uncomment this if you want to make pdf file with hyperlink
+% \usepackage[dvipdf,colorlinks=false,unicode]{hyperref}
+
+% uncomment the following and correct them if you want to set 
+% set the pdf properties
+%\hypersetup{
+%	pdfauthor={Tz-Huan Huang},
+%	pdftitle={A Benchmark for Region-of-Interest Detection in Images},
+%	pdfsubject={Master Thesis}
+%}
+
+\usepackage{ntu}
+
+\setcounter{tocdepth}{2}
+
+\pagestyle{plain}
+
+\begin{document}
+
+% cover page
+\maketitle
+
+% side page, used for printing on spline.
+\makeside
+
+\frontmatter
+
+\setromanfont{Times New Roman} % 預設為儷黑Pro
+\setmonofont{Courier New} % 等寬字型
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+\font\ming="新細明體"
+\font\kai="BiauKai" 
+%\begin{CJK}{UTF8}{nkai}
+\CJKhorz
+%\makecertification
+
+% comment one of the following unless you are sure you want to 
+% have both english and chinese acknowledgements in your thesis
+\input{acknowledgementsEN}
+\input{acknowledgementsCH}
+
+\input{abstractCH}
+\input{abstractEN}
+\tableofcontents
+%\end{CJK}
+\listoffigures
+\listoftables
+
+\mainmatter
+
+% input your thesis here
+\input{introduction}
+%\input{related}
+%\input{photoshoot}
+%\input{modeling}
+%\input{application}
+%\input{conclusion}
+
+\backmatter
+
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliographystyle{abbrv}
+
+% input your reference here
+\bibliography{thesis}
+
+\appendix
+
+\end{document}
