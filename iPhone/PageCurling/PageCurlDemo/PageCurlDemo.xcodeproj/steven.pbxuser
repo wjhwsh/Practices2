@@ -1,0 +1,165 @@
+// !$*UTF8*$!
+{
+	1D3623250D0F684500981E51 /* PageCurlDemoAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1673, 931}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 578}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* PageCurlDemo */ = {
+		activeExec = 0;
+		executables = (
+			B097D1AA1129B5660019E2C4 /* PageCurlDemo */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = B097D1AA1129B5660019E2C4 /* PageCurlDemo */;
+		activeSDKPreference = iphoneos3.0;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* PageCurlDemo */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* PageCurlDemo */,
+		);
+		codeSenseManager = B097D1BC1129B5830019E2C4 /* Code sense */;
+		executables = (
+			B097D1AA1129B5660019E2C4 /* PageCurlDemo */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					576,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 287946086;
+			PBXWorkspaceStateSaveDate = 287946086;
+		};
+		perUserProjectItems = {
+			B097D1D31129B6600019E2C4 /* XCBuildMessageTextBookmark */ = B097D1D31129B6600019E2C4 /* XCBuildMessageTextBookmark */;
+			B097D1D41129B6600019E2C4 /* PBXTextBookmark */ = B097D1D41129B6600019E2C4 /* PBXTextBookmark */;
+			B097D2021129BA190019E2C4 /* PBXTextBookmark */ = B097D2021129BA190019E2C4 /* PBXTextBookmark */;
+		};
+		sourceControlManager = B097D1BB1129B5830019E2C4 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	B097D1AA1129B5660019E2C4 /* PageCurlDemo */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = PageCurlDemo;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	B097D1BB1129B5830019E2C4 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	B097D1BC1129B5830019E2C4 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	B097D1C71129B6530019E2C4 /* ReadPDFView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1673, 929}}";
+			sepNavSelRange = "{211, 0}";
+			sepNavVisRange = "{0, 398}";
+		};
+	};
+	B097D1C81129B6530019E2C4 /* ReadPDFView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1673, 2288}}";
+			sepNavSelRange = "{152, 0}";
+			sepNavVisRange = "{0, 1804}";
+		};
+	};
+	B097D1C91129B6530019E2C4 /* ReadPDFInternalView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1673, 929}}";
+			sepNavSelRange = "{276, 0}";
+			sepNavVisRange = "{0, 328}";
+			sepNavWindowFrame = "{{15, 713}, {1419, 700}}";
+		};
+	};
+	B097D1CA1129B6530019E2C4 /* ReadPDFInternalView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1673, 929}}";
+			sepNavSelRange = "{653, 0}";
+			sepNavVisRange = "{0, 2026}";
+		};
+	};
+	B097D1D31129B6600019E2C4 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "UIBookViewController.h: No such file or directory";
+		fRef = B097D1C71129B6530019E2C4 /* ReadPDFView.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 10;
+		rType = 1;
+	};
+	B097D1D41129B6600019E2C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B097D1C71129B6530019E2C4 /* ReadPDFView.h */;
+		name = "ReadPDFView.h: 14";
+		rLen = 0;
+		rLoc = 247;
+		rType = 0;
+		vrLen = 303;
+		vrLoc = 86;
+	};
+	B097D2021129BA190019E2C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B097D1C71129B6530019E2C4 /* ReadPDFView.h */;
+		name = "ReadPDFView.h: 14";
+		rLen = 0;
+		rLoc = 247;
+		rType = 0;
+		vrLen = 214;
+		vrLoc = 86;
+	};
+}
