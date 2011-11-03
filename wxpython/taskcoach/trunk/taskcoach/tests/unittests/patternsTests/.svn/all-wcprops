@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/patternsTests
+END
+MetaClassTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/patternsTests/MetaClassTest.py
+END
+CommandTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/patternsTests/CommandTest.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/patternsTests/__init__.py
+END
+CompositeTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/patternsTests/CompositeTest.py
+END
+SingletonTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/patternsTests/SingletonTest.py
+END
+ObservableTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/patternsTests/ObservableTest.py
+END

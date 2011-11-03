@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/disttests/win32/sendinput
+END
+sendinput.pyd
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/3891/trunk/taskcoach/tests/disttests/win32/sendinput/sendinput.pyd
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/disttests/win32/sendinput/setup.py
+END
+sendinput.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/disttests/win32/sendinput/sendinput.c
+END

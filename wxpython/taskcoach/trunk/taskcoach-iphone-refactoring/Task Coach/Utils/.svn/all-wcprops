@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/4149/trunk/taskcoach-iphone-refactoring/Task%20Coach/Utils
+END
+AlertPrompt.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/taskcoach/!svn/ver/4114/trunk/taskcoach-iphone-refactoring/Task%20Coach/Utils/AlertPrompt.h
+END
+AlertPrompt.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/taskcoach/!svn/ver/4114/trunk/taskcoach-iphone-refactoring/Task%20Coach/Utils/AlertPrompt.m
+END
+DateUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/4149/trunk/taskcoach-iphone-refactoring/Task%20Coach/Utils/DateUtils.h
+END
+NSDateUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/taskcoach/!svn/ver/4131/trunk/taskcoach-iphone-refactoring/Task%20Coach/Utils/NSDateUtils.h
+END
+String+Utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/taskcoach/!svn/ver/4053/trunk/taskcoach-iphone-refactoring/Task%20Coach/Utils/String+Utils.h
+END
+DateUtils.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/4149/trunk/taskcoach-iphone-refactoring/Task%20Coach/Utils/DateUtils.m
+END
+NSDateUtils.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/taskcoach/!svn/ver/4131/trunk/taskcoach-iphone-refactoring/Task%20Coach/Utils/NSDateUtils.m
+END
+String+Utils.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/taskcoach/!svn/ver/4053/trunk/taskcoach-iphone-refactoring/Task%20Coach/Utils/String+Utils.m
+END

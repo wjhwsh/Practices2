@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3641/trunk/taskcoach/build.in/portableapps/Other/Source
+END
+AppSource.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/2527/trunk/taskcoach/build.in/portableapps/Other/Source/AppSource.txt
+END
+License.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/2527/trunk/taskcoach/build.in/portableapps/Other/Source/License.txt
+END
+TaskCoachPortable.nsi
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/taskcoach/!svn/ver/2527/trunk/taskcoach/build.in/portableapps/Other/Source/TaskCoachPortable.nsi
+END
+PortableApps.comInstallerConfig.nsh
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/taskcoach/!svn/ver/2527/trunk/taskcoach/build.in/portableapps/Other/Source/PortableApps.comInstallerConfig.nsh
+END
+ReplaceInFileWithTextReplace.nsh
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/taskcoach/!svn/ver/2527/trunk/taskcoach/build.in/portableapps/Other/Source/ReplaceInFileWithTextReplace.nsh
+END
+TaskCoachPortable.ini
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/taskcoach/!svn/ver/2527/trunk/taskcoach/build.in/portableapps/Other/Source/TaskCoachPortable.ini
+END
+TaskCoachPortable.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/taskcoach/!svn/ver/3641/trunk/taskcoach/build.in/portableapps/Other/Source/TaskCoachPortable.jpg
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/2527/trunk/taskcoach/build.in/portableapps/Other/Source/Readme.txt
+END
+ReadINIStrWithDefault.nsh
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/taskcoach/!svn/ver/2527/trunk/taskcoach/build.in/portableapps/Other/Source/ReadINIStrWithDefault.nsh
+END
+PortableApps.comLauncherLANG_ENGLISH.nsh
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/taskcoach/!svn/ver/2527/trunk/taskcoach/build.in/portableapps/Other/Source/PortableApps.comLauncherLANG_ENGLISH.nsh
+END

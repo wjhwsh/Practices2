@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/thirdparty/timeline
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/1773/trunk/taskcoach/taskcoachlib/thirdparty/timeline/license.txt
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/1773/trunk/taskcoach/taskcoachlib/thirdparty/timeline/__init__.py
+END
+timeline.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/thirdparty/timeline/timeline.py
+END

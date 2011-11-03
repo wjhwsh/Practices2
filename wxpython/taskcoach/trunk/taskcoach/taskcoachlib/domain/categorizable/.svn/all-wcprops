@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/categorizable
+END
+categorizable.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/categorizable/categorizable.py
+END
+categorizablecontainer.py
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/categorizable/categorizablecontainer.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/categorizable/__init__.py
+END

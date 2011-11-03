@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/taskcoach/!svn/ver/4303/trunk/taskcoach/tests/unittests/guiTests
+END
+SplashScreenTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/SplashScreenTest.py
+END
+EffortEditorTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/4303/trunk/taskcoach/tests/unittests/guiTests/EffortEditorTest.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/__init__.py
+END
+AttachmentEditorTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/AttachmentEditorTest.py
+END
+CategoryViewerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/CategoryViewerTest.py
+END
+TaskBarIconTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/4303/trunk/taskcoach/tests/unittests/guiTests/TaskBarIconTest.py
+END
+ViewerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/tests/unittests/guiTests/ViewerTest.py
+END
+UpdatePerSecondViewerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/tests/unittests/guiTests/UpdatePerSecondViewerTest.py
+END
+EffortViewerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/tests/unittests/guiTests/EffortViewerTest.py
+END
+TaskEditorTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/4154/trunk/taskcoach/tests/unittests/guiTests/TaskEditorTest.py
+END
+AttachmentViewerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/AttachmentViewerTest.py
+END
+TemplatesDialogTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/TemplatesDialogTest.py
+END
+DateTimeEntryTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/DateTimeEntryTest.py
+END
+RenderTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/RenderTest.py
+END
+PrinterTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/PrinterTest.py
+END
+TaskViewerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/tests/unittests/guiTests/TaskViewerTest.py
+END
+AmountEntryTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/AmountEntryTest.py
+END
+NoteViewerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/NoteViewerTest.py
+END
+PreferencesTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/PreferencesTest.py
+END
+ToolBarTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/ToolBarTest.py
+END
+IPhoneDialogTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/IPhoneDialogTest.py
+END
+ViewerContainerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/4303/trunk/taskcoach/tests/unittests/guiTests/ViewerContainerTest.py
+END
+MenuTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/MenuTest.py
+END
+VersionDialogTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/tests/unittests/guiTests/VersionDialogTest.py
+END
+ReminderControllerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/tests/unittests/guiTests/ReminderControllerTest.py
+END
+IOControllerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/tests/unittests/guiTests/IOControllerTest.py
+END
+UICommandTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/tests/unittests/guiTests/UICommandTest.py
+END
+MainWindowTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/4303/trunk/taskcoach/tests/unittests/guiTests/MainWindowTest.py
+END
+TaskViewerStatusMessagesTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/tests/unittests/guiTests/TaskViewerStatusMessagesTest.py
+END
+TreeViewerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/TreeViewerTest.py
+END
+CategoryEditorTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/guiTests/CategoryEditorTest.py
+END
+EditorTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/4303/trunk/taskcoach/tests/unittests/guiTests/EditorTest.py
+END

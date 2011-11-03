@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/templates.in
+END
+dueTomorrow.tsktmpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3018/trunk/taskcoach/templates.in/dueTomorrow.tsktmpl
+END
+make.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/templates.in/make.py
+END
+dueToday.tsktmpl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/3018/trunk/taskcoach/templates.in/dueToday.tsktmpl
+END

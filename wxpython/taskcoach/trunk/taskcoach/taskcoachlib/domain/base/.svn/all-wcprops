@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/base
+END
+owner.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/base/owner.py
+END
+collection.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/base/collection.py
+END
+sorter.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/base/sorter.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/base/__init__.py
+END
+changetracker.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/base/changetracker.py
+END
+attribute.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/base/attribute.py
+END
+filter.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/base/filter.py
+END
+object.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/base/object.py
+END

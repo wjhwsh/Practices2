@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/thirdparty/dateutil
+END
+rrule.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/thirdparty/dateutil/rrule.py
+END
+tzwin.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/thirdparty/dateutil/tzwin.py
+END
+parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/thirdparty/dateutil/parser.py
+END
+tz.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/thirdparty/dateutil/tz.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/thirdparty/dateutil/__init__.py
+END
+easter.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/thirdparty/dateutil/easter.py
+END
+relativedelta.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/thirdparty/dateutil/relativedelta.py
+END

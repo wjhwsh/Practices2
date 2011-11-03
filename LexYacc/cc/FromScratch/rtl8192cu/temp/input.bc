@@ -1,0 +1,9 @@
+if ( (BOARD_TYPE == HighPower || BOARD_TYPE == Minicard || BOARD_TYPE == Slim) &&
+     (DEV_BUS_TYPE == PCIE || DEV_BUS_TYPE == SDIO) &&
+     (SW_TEAM_TYPE == PCIE || SW_TEAM_TYPE == USB) ) { 
+    0x80000000 <- 0xABCDEF01; // 0xFF03050E 
+    0x80000010 <- 0xABCDEF02; // 0xFF03050E
+} else if ((BOARD_TYPE == HighPower || BOARD_TYPE == Slim) && DEV_BUS_TYPE == SDIO )
+    0x80000020 <- 0xABCDEF03; // 0xFFFF040A
+else
+    0x80000030 <- 0xABCDEF04; // 0xFFFFFFFF

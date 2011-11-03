@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/4241/trunk/taskcoach/taskcoachlib/thirdparty/calendar
+END
+wxReportScheduler.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/taskcoach/!svn/ver/3473/trunk/taskcoach/taskcoachlib/thirdparty/calendar/wxReportScheduler.py
+END
+wxSchedulerPaint.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/taskcoach/!svn/ver/4103/trunk/taskcoach/taskcoachlib/thirdparty/calendar/wxSchedulerPaint.py
+END
+wxSchedulerConstants.py
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/taskcoach/!svn/ver/3998/trunk/taskcoach/taskcoachlib/thirdparty/calendar/wxSchedulerConstants.py
+END
+wxSchedulerPrint.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/taskcoach/!svn/ver/3459/trunk/taskcoach/taskcoachlib/thirdparty/calendar/wxSchedulerPrint.py
+END
+wxSchedule.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/4103/trunk/taskcoach/taskcoachlib/thirdparty/calendar/wxSchedule.py
+END
+wxScheduleUtils.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/taskcoach/!svn/ver/2768/trunk/taskcoach/taskcoachlib/thirdparty/calendar/wxScheduleUtils.py
+END
+wxScheduler.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/4241/trunk/taskcoach/taskcoachlib/thirdparty/calendar/wxScheduler.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/2793/trunk/taskcoach/taskcoachlib/thirdparty/calendar/__init__.py
+END
+wxDrawer.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/3998/trunk/taskcoach/taskcoachlib/thirdparty/calendar/wxDrawer.py
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/2761/trunk/taskcoach/taskcoachlib/thirdparty/calendar/readme.txt
+END
+wxSchedulerCore.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/taskcoach/!svn/ver/3876/trunk/taskcoach/taskcoachlib/thirdparty/calendar/wxSchedulerCore.py
+END

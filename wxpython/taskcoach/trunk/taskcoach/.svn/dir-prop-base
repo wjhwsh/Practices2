@@ -1,0 +1,40 @@
+K 10
+svn:ignore
+V 183
+INSTALL.txt
+output.html
+LICENSE.txt
+.project
+@webchecker.pickle
+CHANGES.txt
+*.pyc
+build
+.settings
+README.txt
+MANIFEST
+website.out
+nbproject
+*.out
+.pydevproject
+dist
+changelog_content
+
+K 13
+svn:mergeinfo
+V 633
+/branches/Feature_iPhone_2/taskcoach:2646-2662,2692-2702,2720
+/branches/Release0_71_Branch:1585-1715
+/branches/Release0_72_Branch:1724-1792
+/branches/Release0_73_Branch:2018-2300
+/branches/Release0_74_Branch:2306-2529
+/branches/Release0_75_Branch:2536-2559
+/branches/Release0_76_Branch:2561-2606
+/branches/Release0_77_Branch:2613-2693
+/branches/Release0_78_Branch:2695-2904
+/branches/Release1_0_Branch:2906-2909
+/branches/Release1_0_Branch/taskcoach:2906-3520
+/branches/Release1_1_Branch/taskcoach:3318-3676
+/branches/Release1_2_Branch/taskcoach:3574-4331
+/branches/Release1_3_Branch/taskcoach:3683-4332
+/tags/Release0_73_0:2028-2034
+END

@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/taskcoach/!svn/ver/3785/trunk/taskcoach-iphone/Classes/CoreData
+END
+CDCategory.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/3785/trunk/taskcoach-iphone/Classes/CoreData/CDCategory.m
+END
+Migration.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3133/trunk/taskcoach-iphone/Classes/CoreData/Migration.h
+END
+CDFile.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3785/trunk/taskcoach-iphone/Classes/CoreData/CDFile.m
+END
+CDEffort.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3785/trunk/taskcoach-iphone/Classes/CoreData/CDEffort.h
+END
+Migration.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3709/trunk/taskcoach-iphone/Classes/CoreData/Migration.m
+END
+CDEffort+Addons.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/3125/trunk/taskcoach-iphone/Classes/CoreData/CDEffort+Addons.h
+END
+CDEffort.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3785/trunk/taskcoach-iphone/Classes/CoreData/CDEffort.m
+END
+CDHierarchicalDomainObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/taskcoach/!svn/ver/3785/trunk/taskcoach-iphone/Classes/CoreData/CDHierarchicalDomainObject.h
+END
+CDEffort+Addons.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/3403/trunk/taskcoach-iphone/Classes/CoreData/CDEffort+Addons.m
+END
+CDDomainObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/taskcoach/!svn/ver/3785/trunk/taskcoach-iphone/Classes/CoreData/CDDomainObject.h
+END
+CDHierarchicalDomainObject+Addons.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/taskcoach/!svn/ver/3147/trunk/taskcoach-iphone/Classes/CoreData/CDHierarchicalDomainObject+Addons.h
+END
+CDHierarchicalDomainObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/taskcoach/!svn/ver/3785/trunk/taskcoach-iphone/Classes/CoreData/CDHierarchicalDomainObject.m
+END
+CDDomainObject+Addons.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/3314/trunk/taskcoach-iphone/Classes/CoreData/CDDomainObject+Addons.h
+END
+CDTask.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3785/trunk/taskcoach-iphone/Classes/CoreData/CDTask.h
+END
+CDDomainObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/taskcoach/!svn/ver/3785/trunk/taskcoach-iphone/Classes/CoreData/CDDomainObject.m
+END
+CDHierarchicalDomainObject+Addons.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/taskcoach/!svn/ver/3147/trunk/taskcoach-iphone/Classes/CoreData/CDHierarchicalDomainObject+Addons.m
+END
+CDTask+Addons.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3159/trunk/taskcoach-iphone/Classes/CoreData/CDTask+Addons.h
+END
+CDDomainObject+Addons.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/3314/trunk/taskcoach-iphone/Classes/CoreData/CDDomainObject+Addons.m
+END
+CDTask.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3785/trunk/taskcoach-iphone/Classes/CoreData/CDTask.m
+END
+CDTask+Addons.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3401/trunk/taskcoach-iphone/Classes/CoreData/CDTask+Addons.m
+END
+CDCategory.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/3785/trunk/taskcoach-iphone/Classes/CoreData/CDCategory.h
+END
+CDFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3785/trunk/taskcoach-iphone/Classes/CoreData/CDFile.h
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/taskcoach/!svn/ver/4303/trunk/taskcoach/taskcoachlib/help
+END
+uicommand.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/4103/trunk/taskcoach/taskcoachlib/help/uicommand.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/4303/trunk/taskcoach/taskcoachlib/help/__init__.py
+END
+tips.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/taskcoach/!svn/ver/4303/trunk/taskcoach/taskcoachlib/help/tips.py
+END

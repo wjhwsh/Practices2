@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/taskcoachlib/thirdparty/lockfile
+END
+lockfile.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/2941/trunk/taskcoach/taskcoachlib/thirdparty/lockfile/lockfile.py
+END
+ACKS
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/1899/trunk/taskcoach/taskcoachlib/thirdparty/lockfile/ACKS
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/taskcoach/!svn/ver/1899/trunk/taskcoach/taskcoachlib/thirdparty/lockfile/LICENSE
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/1899/trunk/taskcoach/taskcoachlib/thirdparty/lockfile/MANIFEST
+END
+RELEASE-NOTES
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/1899/trunk/taskcoach/taskcoachlib/thirdparty/lockfile/RELEASE-NOTES
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/taskcoachlib/thirdparty/lockfile/__init__.py
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/1899/trunk/taskcoach/taskcoachlib/thirdparty/lockfile/setup.py
+END
+PKG-INFO
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/1899/trunk/taskcoach/taskcoachlib/thirdparty/lockfile/PKG-INFO
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/1899/trunk/taskcoach/taskcoachlib/thirdparty/lockfile/README
+END

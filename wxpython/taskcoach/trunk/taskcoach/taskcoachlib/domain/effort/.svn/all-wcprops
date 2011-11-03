@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/taskcoach/!svn/ver/4154/trunk/taskcoach/taskcoachlib/domain/effort
+END
+reducer.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/effort/reducer.py
+END
+base.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/effort/base.py
+END
+sorter.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/3970/trunk/taskcoach/taskcoachlib/domain/effort/sorter.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/effort/__init__.py
+END
+effortlist.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/domain/effort/effortlist.py
+END
+composite.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/domain/effort/composite.py
+END
+effort.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/4154/trunk/taskcoach/taskcoachlib/domain/effort/effort.py
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/tests/unittests/persistenceTests
+END
+CSVWriterTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/persistenceTests/CSVWriterTest.py
+END
+AutoSaverTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/3998/trunk/taskcoach/tests/unittests/persistenceTests/AutoSaverTest.py
+END
+TemplateXMLWriterTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/taskcoach/!svn/ver/3998/trunk/taskcoach/tests/unittests/persistenceTests/TemplateXMLWriterTest.py
+END
+VCalendarWriterTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/persistenceTests/VCalendarWriterTest.py
+END
+XMLWriterTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/3998/trunk/taskcoach/tests/unittests/persistenceTests/XMLWriterTest.py
+END
+AutoBackupTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/3998/trunk/taskcoach/tests/unittests/persistenceTests/AutoBackupTest.py
+END
+TemplateXMLReaderTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/persistenceTests/TemplateXMLReaderTest.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/persistenceTests/__init__.py
+END
+HTMLWriterTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/tests/unittests/persistenceTests/HTMLWriterTest.py
+END
+TaskFileTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/tests/unittests/persistenceTests/TaskFileTest.py
+END
+VCalendarReaderTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/persistenceTests/VCalendarReaderTest.py
+END
+XMLReaderTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/persistenceTests/XMLReaderTest.py
+END
+XMLReaderWriterIntegrationTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/taskcoach/!svn/ver/3998/trunk/taskcoach/tests/unittests/persistenceTests/XMLReaderWriterIntegrationTest.py
+END
+SyncMLTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/persistenceTests/SyncMLTest.py
+END

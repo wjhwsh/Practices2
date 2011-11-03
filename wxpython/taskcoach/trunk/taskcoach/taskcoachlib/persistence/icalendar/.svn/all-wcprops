@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/4133/trunk/taskcoach/taskcoachlib/persistence/icalendar
+END
+ical.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/4133/trunk/taskcoach/taskcoachlib/persistence/icalendar/ical.py
+END
+writer.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/persistence/icalendar/writer.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/persistence/icalendar/__init__.py
+END

@@ -1,0 +1,671 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/taskcoach/!svn/ver/4048/trunk/taskcoach-iphone/Classes
+END
+TaskCellBig.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/taskcoach/!svn/ver/3782/trunk/taskcoach-iphone/Classes/TaskCellBig.m
+END
+SplitView.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/taskcoach/!svn/ver/3268/trunk/taskcoach-iphone/Classes/SplitView.m
+END
+TaskDetailsRecurrencePeriodPicker.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/3274/trunk/taskcoach-iphone/Classes/TaskDetailsRecurrencePeriodPicker.m
+END
+ConfigurationView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/3713/trunk/taskcoach-iphone/Classes/ConfigurationView.xib
+END
+TextFieldCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/2261/trunk/taskcoach-iphone/Classes/TextFieldCell.m
+END
+BadgedCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/3298/trunk/taskcoach-iphone/Classes/BadgedCell.xib
+END
+TaskDetailsEfforts.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3216/trunk/taskcoach-iphone/Classes/TaskDetailsEfforts.h
+END
+TaskCategoryPickerController.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/3214/trunk/taskcoach-iphone/Classes/TaskCategoryPickerController.h
+END
+TaskDetailsEfforts.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3301/trunk/taskcoach-iphone/Classes/TaskDetailsEfforts.m
+END
+TaskCategoryPickerController.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/3403/trunk/taskcoach-iphone/Classes/TaskCategoryPickerController.m
+END
+ParentTaskViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/3122/trunk/taskcoach-iphone/Classes/ParentTaskViewController.h
+END
+ParentTaskViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/3354/trunk/taskcoach-iphone/Classes/ParentTaskViewController.m
+END
+SimpleDatePicker.xib
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3250/trunk/taskcoach-iphone/Classes/SimpleDatePicker.xib
+END
+PositionStore.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/3235/trunk/taskcoach-iphone/Classes/PositionStore.h
+END
+EntityUploadState.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/EntityUploadState.h
+END
+ChoiceViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3763/trunk/taskcoach-iphone/Classes/ChoiceViewController.xib
+END
+SimpleDatePicker.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/taskcoach/!svn/ver/3250/trunk/taskcoach-iphone/Classes/SimpleDatePicker.h
+END
+PositionStore.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/3403/trunk/taskcoach-iphone/Classes/PositionStore.m
+END
+EntityUploadState.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3403/trunk/taskcoach-iphone/Classes/EntityUploadState.m
+END
+ChoiceViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/3763/trunk/taskcoach-iphone/Classes/ChoiceViewController.h
+END
+SimpleDatePicker.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/taskcoach/!svn/ver/3274/trunk/taskcoach-iphone/Classes/SimpleDatePicker.m
+END
+RecurrencePeriodCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3159/trunk/taskcoach-iphone/Classes/RecurrencePeriodCell.xib
+END
+RegularCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/3763/trunk/taskcoach-iphone/Classes/RegularCell.xib
+END
+KeychainWrapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/1797/trunk/taskcoach-iphone/Classes/KeychainWrapper.h
+END
+TaskDetailsEffortsBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3301/trunk/taskcoach-iphone/Classes/TaskDetailsEffortsBase.h
+END
+ChoiceViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/3763/trunk/taskcoach-iphone/Classes/ChoiceViewController.m
+END
+CategoryTaskViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3268/trunk/taskcoach-iphone/Classes/CategoryTaskViewController.h
+END
+SearchCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/3066/trunk/taskcoach-iphone/Classes/SearchCell.xib
+END
+TaskCelliPad.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/3309/trunk/taskcoach-iphone/Classes/TaskCelliPad.h
+END
+TaskDetailsGeneral.xib
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/3863/trunk/taskcoach-iphone/Classes/TaskDetailsGeneral.xib
+END
+KeychainWrapper.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3335/trunk/taskcoach-iphone/Classes/KeychainWrapper.m
+END
+TaskDetailsEffortsBase.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3403/trunk/taskcoach-iphone/Classes/TaskDetailsEffortsBase.m
+END
+LogUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/taskcoach/!svn/ver/3403/trunk/taskcoach-iphone/Classes/LogUtils.h
+END
+FileChooser.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/taskcoach/!svn/ver/3134/trunk/taskcoach-iphone/Classes/FileChooser.h
+END
+TaskCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/taskcoach/!svn/ver/3309/trunk/taskcoach-iphone/Classes/TaskCell.h
+END
+CategoryTaskViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3783/trunk/taskcoach-iphone/Classes/CategoryTaskViewController.m
+END
+SearchCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/taskcoach/!svn/ver/2926/trunk/taskcoach-iphone/Classes/SearchCell.h
+END
+TaskCelliPad.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/3309/trunk/taskcoach-iphone/Classes/TaskCelliPad.m
+END
+LogUtils.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/taskcoach/!svn/ver/4009/trunk/taskcoach-iphone/Classes/LogUtils.m
+END
+FileChooser.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/taskcoach/!svn/ver/4048/trunk/taskcoach-iphone/Classes/FileChooser.m
+END
+CellFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/taskcoach/!svn/ver/3763/trunk/taskcoach-iphone/Classes/CellFactory.h
+END
+TaskCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/taskcoach/!svn/ver/3783/trunk/taskcoach-iphone/Classes/TaskCell.m
+END
+ReminderController.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3933/trunk/taskcoach-iphone/Classes/ReminderController.h
+END
+SearchCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/taskcoach/!svn/ver/2926/trunk/taskcoach-iphone/Classes/SearchCell.m
+END
+CellFactory.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/taskcoach/!svn/ver/3763/trunk/taskcoach-iphone/Classes/CellFactory.m
+END
+ReminderController.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3933/trunk/taskcoach-iphone/Classes/ReminderController.m
+END
+i18n.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/taskcoach/!svn/ver/2345/trunk/taskcoach-iphone/Classes/i18n.h
+END
+DescriptionCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/2261/trunk/taskcoach-iphone/Classes/DescriptionCell.h
+END
+TaskDetailsDates.xib
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3071/trunk/taskcoach-iphone/Classes/TaskDetailsDates.xib
+END
+DescriptionCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/2264/trunk/taskcoach-iphone/Classes/DescriptionCell.m
+END
+TaskDetailsRecurrenceControlleriPad.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/taskcoach/!svn/ver/3221/trunk/taskcoach-iphone/Classes/TaskDetailsRecurrenceControlleriPad.h
+END
+TaskDetailsDates.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/taskcoach/!svn/ver/3159/trunk/taskcoach-iphone/Classes/TaskDetailsDates.h
+END
+TaskCoachAppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/3189/trunk/taskcoach-iphone/Classes/TaskCoachAppDelegate.h
+END
+TaskDetailsRecurrenceControlleriPad.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/taskcoach/!svn/ver/3314/trunk/taskcoach-iphone/Classes/TaskDetailsRecurrenceControlleriPad.m
+END
+TaskDetailsDates.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/taskcoach/!svn/ver/3774/trunk/taskcoach-iphone/Classes/TaskDetailsDates.m
+END
+SwitchCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/taskcoach/!svn/ver/2261/trunk/taskcoach-iphone/Classes/SwitchCell.h
+END
+TaskCoachAppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/4048/trunk/taskcoach-iphone/Classes/TaskCoachAppDelegate.m
+END
+ConfigurationView.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3764/trunk/taskcoach-iphone/Classes/ConfigurationView.h
+END
+NavigationController.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/2261/trunk/taskcoach-iphone/Classes/NavigationController.h
+END
+SwitchCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/taskcoach/!svn/ver/2264/trunk/taskcoach-iphone/Classes/SwitchCell.m
+END
+PaperHeaderView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3293/trunk/taskcoach-iphone/Classes/PaperHeaderView.xib
+END
+ButtonCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/3071/trunk/taskcoach-iphone/Classes/ButtonCell.xib
+END
+BadgedCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/taskcoach/!svn/ver/3298/trunk/taskcoach-iphone/Classes/BadgedCell.h
+END
+BaseCategoryViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3107/trunk/taskcoach-iphone/Classes/BaseCategoryViewController.h
+END
+ConfigurationView.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3787/trunk/taskcoach-iphone/Classes/ConfigurationView.m
+END
+NavigationController.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/3316/trunk/taskcoach-iphone/Classes/NavigationController.m
+END
+CheckView.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/taskcoach/!svn/ver/2261/trunk/taskcoach-iphone/Classes/CheckView.h
+END
+StringChoiceAlert.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3185/trunk/taskcoach-iphone/Classes/StringChoiceAlert.h
+END
+NSDate+Utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/3086/trunk/taskcoach-iphone/Classes/NSDate+Utils.h
+END
+DatePickerViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/3199/trunk/taskcoach-iphone/Classes/DatePickerViewController.h
+END
+TaskDetailsControlleriPad.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/3272/trunk/taskcoach-iphone/Classes/TaskDetailsControlleriPad.h
+END
+PaperHeaderView.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3293/trunk/taskcoach-iphone/Classes/PaperHeaderView.h
+END
+ButtonCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/taskcoach/!svn/ver/2809/trunk/taskcoach-iphone/Classes/ButtonCell.h
+END
+BadgedCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/taskcoach/!svn/ver/3302/trunk/taskcoach-iphone/Classes/BadgedCell.m
+END
+BaseCategoryViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3561/trunk/taskcoach-iphone/Classes/BaseCategoryViewController.m
+END
+TaskDetailsController.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/3158/trunk/taskcoach-iphone/Classes/TaskDetailsController.h
+END
+CheckView.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/taskcoach/!svn/ver/3274/trunk/taskcoach-iphone/Classes/CheckView.m
+END
+StringChoiceAlert.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3274/trunk/taskcoach-iphone/Classes/StringChoiceAlert.m
+END
+NSDate+Utils.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/3086/trunk/taskcoach-iphone/Classes/NSDate+Utils.m
+END
+DatePickerViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/3274/trunk/taskcoach-iphone/Classes/DatePickerViewController.m
+END
+TaskDetailsControlleriPad.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/3390/trunk/taskcoach-iphone/Classes/TaskDetailsControlleriPad.m
+END
+PaperHeaderView.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3302/trunk/taskcoach-iphone/Classes/PaperHeaderView.m
+END
+NewCategoryiPad.xib
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3230/trunk/taskcoach-iphone/Classes/NewCategoryiPad.xib
+END
+ButtonCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/taskcoach/!svn/ver/2809/trunk/taskcoach-iphone/Classes/ButtonCell.m
+END
+TaskDetailsController.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/3274/trunk/taskcoach-iphone/Classes/TaskDetailsController.m
+END
+NewCategoryiPad.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3230/trunk/taskcoach-iphone/Classes/NewCategoryiPad.h
+END
+TaskDetailsEffortsBase.xib
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/3216/trunk/taskcoach-iphone/Classes/TaskDetailsEffortsBase.xib
+END
+NewCategoryiPad.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3274/trunk/taskcoach-iphone/Classes/NewCategoryiPad.m
+END
+TaskCelliPad.xib
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/taskcoach/!svn/ver/3422/trunk/taskcoach-iphone/Classes/TaskCelliPad.xib
+END
+FileChooser.xib
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/2809/trunk/taskcoach-iphone/Classes/FileChooser.xib
+END
+RecurrencePeriodCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/3159/trunk/taskcoach-iphone/Classes/RecurrencePeriodCell.h
+END
+TaskDetailsViewiPad.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/3300/trunk/taskcoach-iphone/Classes/TaskDetailsViewiPad.h
+END
+TaskViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3713/trunk/taskcoach-iphone/Classes/TaskViewController.h
+END
+RecurrencePeriodCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/3159/trunk/taskcoach-iphone/Classes/RecurrencePeriodCell.m
+END
+TaskDetailsGeneral.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3168/trunk/taskcoach-iphone/Classes/TaskDetailsGeneral.h
+END
+TaskDetailsViewiPad.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/3302/trunk/taskcoach-iphone/Classes/TaskDetailsViewiPad.m
+END
+TaskViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3933/trunk/taskcoach-iphone/Classes/TaskViewController.m
+END
+SyncViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/4009/trunk/taskcoach-iphone/Classes/SyncViewController.h
+END
+TaskDetailsGeneral.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3863/trunk/taskcoach-iphone/Classes/TaskDetailsGeneral.m
+END
+CategoryViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3713/trunk/taskcoach-iphone/Classes/CategoryViewController.h
+END
+DateCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/taskcoach/!svn/ver/3122/trunk/taskcoach-iphone/Classes/DateCell.h
+END
+SyncViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/4009/trunk/taskcoach-iphone/Classes/SyncViewController.m
+END
+CategoryViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/4048/trunk/taskcoach-iphone/Classes/CategoryViewController.m
+END
+DateCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/taskcoach/!svn/ver/3128/trunk/taskcoach-iphone/Classes/DateCell.m
+END
+MainViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/4009/trunk/taskcoach-iphone/Classes/MainViewController.h
+END
+TaskDetailsRecurrenceControlleriPad.xib
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/taskcoach/!svn/ver/3221/trunk/taskcoach-iphone/Classes/TaskDetailsRecurrenceControlleriPad.xib
+END
+TaskCellBig.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/taskcoach/!svn/ver/3122/trunk/taskcoach-iphone/Classes/TaskCellBig.h
+END
+SplitView.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/taskcoach/!svn/ver/3230/trunk/taskcoach-iphone/Classes/SplitView.h
+END
+TaskDetailsRecurrencePeriodPicker.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/3159/trunk/taskcoach-iphone/Classes/TaskDetailsRecurrencePeriodPicker.h
+END
+MainViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/4009/trunk/taskcoach-iphone/Classes/MainViewController.m
+END
+TextFieldCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/2261/trunk/taskcoach-iphone/Classes/TextFieldCell.h
+END

@@ -1,0 +1,2 @@
+double x;
+void f(); 

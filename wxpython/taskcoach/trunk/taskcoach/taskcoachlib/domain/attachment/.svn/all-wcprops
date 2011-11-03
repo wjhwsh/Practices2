@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/4103/trunk/taskcoach/taskcoachlib/domain/attachment
+END
+attachment.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/4103/trunk/taskcoach/taskcoachlib/domain/attachment/attachment.py
+END
+sorter.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/attachment/sorter.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/attachment/__init__.py
+END
+attachmentowner.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/domain/attachment/attachmentowner.py
+END
+attachmentlist.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/domain/attachment/attachmentlist.py
+END

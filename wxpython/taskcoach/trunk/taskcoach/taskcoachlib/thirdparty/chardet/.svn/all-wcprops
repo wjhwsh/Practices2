@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/taskcoach/!svn/ver/1981/trunk/taskcoach/taskcoachlib/thirdparty/chardet
+END
+langcyrillicmodel.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/langcyrillicmodel.py
+END
+langhungarianmodel.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/langhungarianmodel.py
+END
+langhebrewmodel.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/langhebrewmodel.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/__init__.py
+END
+big5prober.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/big5prober.py
+END
+latin1prober.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/latin1prober.py
+END
+universaldetector.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/universaldetector.py
+END
+jisfreq.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/jisfreq.py
+END
+big5freq.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/big5freq.py
+END
+gb2312prober.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/gb2312prober.py
+END
+escsm.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/escsm.py
+END
+chardistribution.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/chardistribution.py
+END
+gb2312freq.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/gb2312freq.py
+END
+langgreekmodel.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/langgreekmodel.py
+END
+charsetgroupprober.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/charsetgroupprober.py
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/COPYING
+END
+mbcharsetprober.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/mbcharsetprober.py
+END
+mbcssm.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/mbcssm.py
+END
+escprober.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/escprober.py
+END
+hebrewprober.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/hebrewprober.py
+END
+sbcharsetprober.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/sbcharsetprober.py
+END
+codingstatemachine.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/codingstatemachine.py
+END
+utf8prober.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/utf8prober.py
+END
+euctwprober.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/euctwprober.py
+END
+charsetprober.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/charsetprober.py
+END
+euctwfreq.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/euctwfreq.py
+END
+jpcntx.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/jpcntx.py
+END
+langthaimodel.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/langthaimodel.py
+END
+mbcsgroupprober.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/mbcsgroupprober.py
+END
+constants.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/constants.py
+END
+eucjpprober.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/eucjpprober.py
+END
+sbcsgroupprober.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/sbcsgroupprober.py
+END
+sjisprober.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/sjisprober.py
+END
+euckrprober.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/euckrprober.py
+END
+langbulgarianmodel.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/langbulgarianmodel.py
+END
+euckrfreq.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/1956/trunk/taskcoach/taskcoachlib/thirdparty/chardet/euckrfreq.py
+END

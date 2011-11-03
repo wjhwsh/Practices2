@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/taskcoach/!svn/ver/4333/trunk/taskcoach/taskcoachlib/meta
+END
+data.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/taskcoach/!svn/ver/4333/trunk/taskcoach/taskcoachlib/meta/data.py
+END
+versionchecker.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/4303/trunk/taskcoach/taskcoachlib/meta/versionchecker.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/meta/__init__.py
+END
+gpl.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/meta/gpl.py
+END
+debug.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/meta/debug.py
+END

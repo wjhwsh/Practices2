@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/taskcoach/!svn/ver/4241/trunk/taskcoach/tests/unittests/metaTests
+END
+VersionCheckerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/tests/unittests/metaTests/VersionCheckerTest.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/metaTests/__init__.py
+END
+MetaDataTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/4241/trunk/taskcoach/tests/unittests/metaTests/MetaDataTest.py
+END

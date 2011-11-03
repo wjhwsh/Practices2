@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/taskcoach/!svn/ver/4325/trunk/taskcoach/taskcoachlib/persistence
+END
+autosaver.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/persistence/autosaver.py
+END
+sessiontempfile.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/persistence/sessiontempfile.py
+END
+autobackup.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/4133/trunk/taskcoach/taskcoachlib/persistence/autobackup.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/persistence/__init__.py
+END
+taskfile.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/taskcoachlib/persistence/taskfile.py
+END
+templatelist.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/taskcoachlib/persistence/templatelist.py
+END

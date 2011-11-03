@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 6
+build
+
+K 13
+svn:mergeinfo
+V 53
+/branches/Feature_iPhone_2/taskcoach-iphone:2645-2808
+END

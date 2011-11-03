@@ -1,0 +1,275 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/taskcoach/!svn/ver/4206/trunk/taskcoach-iphone-refactoring/Task%20Coach
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/4051/trunk/taskcoach-iphone-refactoring/Task%20Coach/main.m
+END
+TaskCellFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/4150/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskCellFactory.h
+END
+Task_CoachAppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/taskcoach/!svn/ver/4055/trunk/taskcoach-iphone-refactoring/Task%20Coach/Task_CoachAppDelegate.h
+END
+TaskView.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/4197/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskView.h
+END
+TaskCellFactory.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/4150/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskCellFactory.m
+END
+Task_CoachAppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/taskcoach/!svn/ver/4135/trunk/taskcoach-iphone-refactoring/Task%20Coach/Task_CoachAppDelegate.m
+END
+TaskHeaderView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/4199/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskHeaderView.xib
+END
+TaskView.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/4201/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskView.m
+END
+TaskHeaderView.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/4120/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskHeaderView.h
+END
+Configuration.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/4116/trunk/taskcoach-iphone-refactoring/Task%20Coach/Configuration.h
+END
+TaskDetailsCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/4203/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskDetailsCell.h
+END
+SmartAlertView.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/4099/trunk/taskcoach-iphone-refactoring/Task%20Coach/SmartAlertView.h
+END
+TaskHeaderView.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/4120/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskHeaderView.m
+END
+Configuration.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/4124/trunk/taskcoach-iphone-refactoring/Task%20Coach/Configuration.m
+END
+SmartActionSheet.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/4126/trunk/taskcoach-iphone-refactoring/Task%20Coach/SmartActionSheet.h
+END
+TaskDetailsCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/4206/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskDetailsCell.m
+END
+ImageButton.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/4130/trunk/taskcoach-iphone-refactoring/Task%20Coach/ImageButton.h
+END
+SmartAlertView.m
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/4100/trunk/taskcoach-iphone-refactoring/Task%20Coach/SmartAlertView.m
+END
+SmartButton.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/4150/trunk/taskcoach-iphone-refactoring/Task%20Coach/SmartButton.h
+END
+SmartActionSheet.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/4126/trunk/taskcoach-iphone-refactoring/Task%20Coach/SmartActionSheet.m
+END
+TaskDetailsCell-iPhone.xib
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/taskcoach/!svn/ver/4206/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskDetailsCell-iPhone.xib
+END
+ImageButton.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/4130/trunk/taskcoach-iphone-refactoring/Task%20Coach/ImageButton.m
+END
+TasklistView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/4114/trunk/taskcoach-iphone-refactoring/Task%20Coach/TasklistView.xib
+END
+TasklistListView.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/4060/trunk/taskcoach-iphone-refactoring/Task%20Coach/TasklistListView.h
+END
+SmartButton.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/4150/trunk/taskcoach-iphone-refactoring/Task%20Coach/SmartButton.m
+END
+TasklistView.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/4115/trunk/taskcoach-iphone-refactoring/Task%20Coach/TasklistView.h
+END
+SimpleChoiceView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/taskcoach/!svn/ver/4099/trunk/taskcoach-iphone-refactoring/Task%20Coach/SimpleChoiceView.xib
+END
+TasklistListView.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/4136/trunk/taskcoach-iphone-refactoring/Task%20Coach/TasklistListView.m
+END
+Task Coach-Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/taskcoach/!svn/ver/4115/trunk/taskcoach-iphone-refactoring/Task%20Coach/Task%20Coach-Info.plist
+END
+TasklistView.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/4115/trunk/taskcoach-iphone-refactoring/Task%20Coach/TasklistView.m
+END
+TaskHeaderViewFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/taskcoach/!svn/ver/4120/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskHeaderViewFactory.h
+END
+SimpleChoiceView.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/4100/trunk/taskcoach-iphone-refactoring/Task%20Coach/SimpleChoiceView.h
+END
+TaskCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/4130/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskCell.h
+END
+TaskHeaderViewFactory.m
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/taskcoach/!svn/ver/4127/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskHeaderViewFactory.m
+END
+SimpleChoiceView.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/4100/trunk/taskcoach-iphone-refactoring/Task%20Coach/SimpleChoiceView.m
+END
+TaskTableView.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/4202/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskTableView.h
+END
+TaskCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/4150/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskCell.m
+END
+TaskTableView.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/4205/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskTableView.m
+END
+MainPageView.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/4059/trunk/taskcoach-iphone-refactoring/Task%20Coach/MainPageView.h
+END
+TaskCell-iPhone.xib
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/taskcoach/!svn/ver/4130/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskCell-iPhone.xib
+END
+Task Coach-Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/taskcoach/!svn/ver/4052/trunk/taskcoach-iphone-refactoring/Task%20Coach/Task%20Coach-Prefix.pch
+END
+i18n.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/4052/trunk/taskcoach-iphone-refactoring/Task%20Coach/i18n.h
+END
+MainPageView.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/4196/trunk/taskcoach-iphone-refactoring/Task%20Coach/MainPageView.m
+END
+MainPageView-iPhone.xib
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/taskcoach/!svn/ver/4129/trunk/taskcoach-iphone-refactoring/Task%20Coach/MainPageView-iPhone.xib
+END
+TaskView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/4201/trunk/taskcoach-iphone-refactoring/Task%20Coach/TaskView.xib
+END

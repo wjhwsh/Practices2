@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/releasetests
+END
+DateTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/releasetests/DateTest.py
+END
+LineEndingsTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/releasetests/LineEndingsTest.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/releasetests/__init__.py
+END
+ManifestTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/releasetests/ManifestTest.py
+END
+ChangeHistoryTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/releasetests/ChangeHistoryTest.py
+END
+MSDownloadTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/releasetests/MSDownloadTest.py
+END
+ProtocolVersionTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/releasetests/ProtocolVersionTest.py
+END

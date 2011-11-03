@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/taskcoachlib/gui/viewer
+END
+attachment.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/4103/trunk/taskcoach/taskcoachlib/gui/viewer/attachment.py
+END
+base.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/taskcoachlib/gui/viewer/base.py
+END
+category.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/4133/trunk/taskcoach/taskcoachlib/gui/viewer/category.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/gui/viewer/__init__.py
+END
+container.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/taskcoachlib/gui/viewer/container.py
+END
+task.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/taskcoachlib/gui/viewer/task.py
+END
+mixin.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/taskcoachlib/gui/viewer/mixin.py
+END
+effort.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/taskcoachlib/gui/viewer/effort.py
+END
+note.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/taskcoach/!svn/ver/4133/trunk/taskcoach/taskcoachlib/gui/viewer/note.py
+END
+refresher.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/taskcoachlib/gui/viewer/refresher.py
+END
+factory.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/gui/viewer/factory.py
+END

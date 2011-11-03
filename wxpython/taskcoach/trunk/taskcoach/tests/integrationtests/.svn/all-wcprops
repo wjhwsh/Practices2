@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/tests/integrationtests
+END
+mock.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/tests/integrationtests/mock.py
+END
+SaveTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/4133/trunk/taskcoach/tests/integrationtests/SaveTest.py
+END
+LoadTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/4133/trunk/taskcoach/tests/integrationtests/LoadTest.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/integrationtests/__init__.py
+END
+PerformanceTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/4133/trunk/taskcoach/tests/integrationtests/PerformanceTest.py
+END
+ModelAndViewerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/4133/trunk/taskcoach/tests/integrationtests/ModelAndViewerTest.py
+END

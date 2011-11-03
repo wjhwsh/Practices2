@@ -1,0 +1,122 @@
+'''
+Task Coach - Your friendly task manager
+Copyright (C) 2004-2011 Task Coach developers <developers@taskcoach.org>
+
+Task Coach is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Task Coach is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+'''
+
+import wx
+from taskcoachlib import widgets, persistence
+from taskcoachlib.i18n import _
+
+
+class TemplatesDialog(widgets.Dialog):
+    def __init__(self, settings, *args, **kwargs):
+        self.settings = settings
+
+        super(TemplatesDialog, self).__init__(*args, **kwargs)
+
+        self.disableOK()
+
+        self.SetSize(wx.Size(400, 350))
+        self.CentreOnParent()
+
+    def createInterior(self):
+        return wx.Panel(self._panel, wx.ID_ANY)
+
+    def fillInterior(self):
+        self._templateList = wx.ListCtrl(self._interior, wx.ID_ANY, style=wx.LC_REPORT)
+        self._templateList.InsertColumn(0, _('Template'))
+        self._templateList.Bind(wx.EVT_LIST_ITEM_SELECTED, self.OnSelectionChanged)
+        self._templateList.Bind(wx.EVT_LIST_ITEM_DESELECTED, self.OnSelectionChanged)
+
+        self._templates = persistence.TemplateList(self.settings.pathToTemplatesDir())
+
+        for task in self._templates.tasks():
+            self._templateList.InsertStringItem(self._templateList.GetItemCount(), task.subject())
+
+        self._templateList.SetColumnWidth(0, -1)
+
+        self._btnDelete = wx.Button(self._interior, wx.ID_ANY, _("Delete"))
+        self._btnDelete.Bind(wx.EVT_BUTTON, self.OnDelete)
+        self._btnDelete.Enable(False)
+
+        self._btnUp = wx.BitmapButton(self._interior, wx.ID_ANY,
+                                     wx.ArtProvider.GetBitmap('arrow_up_icon', size=(32, 32)))
+        self._btnUp.Bind(wx.EVT_BUTTON, self.OnUp)
+        self._btnUp.Enable(False)
+
+        self._btnDown = wx.BitmapButton(self._interior, wx.ID_ANY,
+                                       wx.ArtProvider.GetBitmap('arrow_down_icon', size=(32, 32)))
+        self._btnDown.Bind(wx.EVT_BUTTON, self.OnDown)
+        self._btnDown.Enable(False)
+
+        hsz = wx.BoxSizer(wx.HORIZONTAL)
+        hsz.Add(self._templateList, 1, wx.EXPAND|wx.ALL, 3)
+        vsz = wx.BoxSizer(wx.VERTICAL)
+        vsz.Add(self._btnDelete, 0, wx.ALL, 3)
+        vsz.Add(self._btnUp, 0, wx.ALL|wx.ALIGN_CENTRE, 3)
+        vsz.Add(self._btnDown, 0, wx.ALL|wx.ALIGN_CENTRE, 3)
+        hsz.Add(vsz, 0, wx.ALL, 3)
+        self._interior.SetSizer(hsz)
+
+    def _GetSelection(self):
+        selection = []
+        idx = -1
+        while True:
+            idx = self._templateList.GetNextItem(idx, wx.LIST_NEXT_ALL, wx.LIST_STATE_SELECTED)
+            if idx == -1:
+                break
+            selection.append(idx)
+        return selection
+
+    def OnSelectionChanged(self, event):
+        selection = self._GetSelection()
+        self._btnDelete.Enable(bool(selection))
+        self._btnUp.Enable(len(selection) == 1 and selection != [0])
+        self._btnDown.Enable(len(selection) == 1 and selection != [len(self._templates) - 1])
+
+    def OnDelete(self, event):
+        selection = self._GetSelection()
+        selection.sort(lambda x, y: -cmp(x, y))
+
+        for idx in selection:
+            self._templates.deleteTemplate(idx)
+            self._templateList.DeleteItem(idx)
+
+        self.enableOK()
+
+    def OnUp(self, event):
+        selection = self._GetSelection()[0]
+        self._templates.swapTemplates(selection - 1, selection)
+        self._templateList.SetStringItem(selection, 0, self._templates.tasks()[selection].subject())
+        self._templateList.SetStringItem(selection - 1, 0, self._templates.tasks()[selection - 1].subject())
+        self._templateList.SetItemState(selection, 0, wx.LIST_STATE_SELECTED|wx.LIST_STATE_FOCUSED)
+        self._templateList.SetItemState(selection - 1, wx.LIST_STATE_SELECTED|wx.LIST_STATE_FOCUSED, wx.LIST_STATE_SELECTED|wx.LIST_STATE_FOCUSED)
+
+        self.enableOK()
+
+    def OnDown(self, event):
+        selection = self._GetSelection()[0]
+        self._templates.swapTemplates(selection, selection + 1)
+        self._templateList.SetStringItem(selection, 0, self._templates.tasks()[selection].subject())
+        self._templateList.SetStringItem(selection + 1, 0, self._templates.tasks()[selection + 1].subject())
+        self._templateList.SetItemState(selection, 0, wx.LIST_STATE_SELECTED|wx.LIST_STATE_FOCUSED)
+        self._templateList.SetItemState(selection + 1, wx.LIST_STATE_SELECTED|wx.LIST_STATE_FOCUSED, wx.LIST_STATE_SELECTED|wx.LIST_STATE_FOCUSED)
+
+        self.enableOK()
+
+    def ok(self, event=None):
+        self._templates.save()
+        super(TemplatesDialog, self).ok(event=event)

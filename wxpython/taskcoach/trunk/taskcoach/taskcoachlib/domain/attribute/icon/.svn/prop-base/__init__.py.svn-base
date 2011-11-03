@@ -1,0 +1,18 @@
+K 13
+svn:mergeinfo
+V 1253
+/branches/Feature_iPhone_2/taskcoach/taskcoachlib/domain/attribute/icon/__init__.py:2646-2662,2692-2702,2720
+/branches/Release0_71_Branch/taskcoachlib/domain/attribute/icon/__init__.py:1585-1715
+/branches/Release0_72_Branch/taskcoachlib/domain/attribute/icon/__init__.py:1724-1792
+/branches/Release0_73_Branch/taskcoachlib/domain/attribute/icon/__init__.py:2018-2300
+/branches/Release0_74_Branch/taskcoachlib/domain/attribute/icon/__init__.py:2306-2529
+/branches/Release0_75_Branch/taskcoachlib/domain/attribute/icon/__init__.py:2536-2559
+/branches/Release0_76_Branch/taskcoachlib/domain/attribute/icon/__init__.py:2561-2606
+/branches/Release0_77_Branch/taskcoachlib/domain/attribute/icon/__init__.py:2613-2693
+/branches/Release0_78_Branch/taskcoachlib/domain/attribute/icon/__init__.py:2695-2876
+/branches/Release1_0_Branch/taskcoach/taskcoachlib/domain/attribute/icon/__init__.py:2907-3520
+/branches/Release1_1_Branch/taskcoach/taskcoachlib/domain/attribute/icon/__init__.py:3319-3676
+/branches/Release1_2_Branch/taskcoach/taskcoachlib/domain/attribute/icon/__init__.py:3574-4331
+/branches/Release1_3_Branch/taskcoach/taskcoachlib/domain/attribute/icon/__init__.py:3683-4332
+/tags/Release0_73_0/taskcoachlib/domain/attribute/icon/__init__.py:2028-2034
+END

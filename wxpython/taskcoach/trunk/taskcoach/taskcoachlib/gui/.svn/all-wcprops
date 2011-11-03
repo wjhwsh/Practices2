@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/taskcoach/!svn/ver/4333/trunk/taskcoach/taskcoachlib/gui
+END
+threads.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/gui/threads.py
+END
+splash.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/gui/splash.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/gui/__init__.py
+END
+taskbaricon.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/taskcoach/!svn/ver/4303/trunk/taskcoach/taskcoachlib/gui/taskbaricon.py
+END
+artprovider.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/taskcoachlib/gui/artprovider.py
+END
+toolbar.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/taskcoach/!svn/ver/4133/trunk/taskcoach/taskcoachlib/gui/toolbar.py
+END
+menu.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/taskcoach/!svn/ver/4303/trunk/taskcoach/taskcoachlib/gui/menu.py
+END
+remindercontroller.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/taskcoachlib/gui/remindercontroller.py
+END
+iocontroller.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/4333/trunk/taskcoach/taskcoachlib/gui/iocontroller.py
+END
+mainwindow.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/taskcoachlib/gui/mainwindow.py
+END
+uicommand.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/4333/trunk/taskcoach/taskcoachlib/gui/uicommand.py
+END
+windowdimensionstracker.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/taskcoachlib/gui/windowdimensionstracker.py
+END
+render.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/taskcoach/!svn/ver/4303/trunk/taskcoach/taskcoachlib/gui/render.py
+END
+idlecontroller.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/4154/trunk/taskcoach/taskcoachlib/gui/idlecontroller.py
+END
+iphone.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/gui/iphone.py
+END
+status.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/gui/status.py
+END
+printer.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/gui/printer.py
+END

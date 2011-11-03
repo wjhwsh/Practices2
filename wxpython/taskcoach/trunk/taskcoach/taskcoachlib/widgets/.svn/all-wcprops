@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/taskcoach/!svn/ver/4325/trunk/taskcoach/taskcoachlib/widgets
+END
+ultimatetreectrl.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/taskcoach/!svn/ver/3490/trunk/taskcoach/taskcoachlib/widgets/ultimatetreectrl.py
+END
+frame.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/taskcoachlib/widgets/frame.py
+END
+searchctrl.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3956/trunk/taskcoach/taskcoachlib/widgets/searchctrl.py
+END
+tooltip.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/taskcoach/!svn/ver/3962/trunk/taskcoach/taskcoachlib/widgets/tooltip.py
+END
+syncmlwarning.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/widgets/syncmlwarning.py
+END
+spinctrl.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/widgets/spinctrl.py
+END
+squaremap.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/widgets/squaremap.py
+END
+dialog.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/4325/trunk/taskcoach/taskcoachlib/widgets/dialog.py
+END
+combo.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/widgets/combo.py
+END
+calendarconfig.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/3962/trunk/taskcoach/taskcoachlib/widgets/calendarconfig.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3962/trunk/taskcoach/taskcoachlib/widgets/__init__.py
+END
+panel.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/widgets/panel.py
+END
+listctrl.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/widgets/listctrl.py
+END
+dirchooser.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/widgets/dirchooser.py
+END
+conflict.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/widgets/conflict.py
+END
+datectrl.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/4325/trunk/taskcoach/taskcoachlib/widgets/datectrl.py
+END
+fontpicker.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/widgets/fontpicker.py
+END
+masked.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/widgets/masked.py
+END
+timeline.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/widgets/timeline.py
+END
+autowidth.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/taskcoachlib/widgets/autowidth.py
+END
+calendar.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/4154/trunk/taskcoach/taskcoachlib/widgets/calendar.py
+END
+textctrl.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/4103/trunk/taskcoach/taskcoachlib/widgets/textctrl.py
+END
+colorselect.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/widgets/colorselect.py
+END
+notebook.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/4325/trunk/taskcoach/taskcoachlib/widgets/notebook.py
+END
+itemctrl.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3998/trunk/taskcoach/taskcoachlib/widgets/itemctrl.py
+END
+buttonbox.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/widgets/buttonbox.py
+END
+treectrl.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/4325/trunk/taskcoach/taskcoachlib/widgets/treectrl.py
+END
+draganddrop.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/taskcoach/!svn/ver/3956/trunk/taskcoach/taskcoachlib/widgets/draganddrop.py
+END

@@ -1,0 +1,2 @@
+if (ODM_BOARD_TYPE==ODM_BOARD_TYPE)
+    0xabcd-0xffff;

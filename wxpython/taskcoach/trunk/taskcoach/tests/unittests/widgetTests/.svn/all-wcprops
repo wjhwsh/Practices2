@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/tests/unittests/widgetTests
+END
+TextCtrlTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/widgetTests/TextCtrlTest.py
+END
+ToolTipTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/3962/trunk/taskcoach/tests/unittests/widgetTests/ToolTipTest.py
+END
+WindowDimensionsTrackerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/taskcoach/!svn/ver/4228/trunk/taskcoach/tests/unittests/widgetTests/WindowDimensionsTrackerTest.py
+END
+SpinCtrlTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/widgetTests/SpinCtrlTest.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/widgetTests/__init__.py
+END
+DatePickerCtrlTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/widgetTests/DatePickerCtrlTest.py
+END
+ListCtrlTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/widgetTests/ListCtrlTest.py
+END
+TreeListCtrlTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/widgetTests/TreeListCtrlTest.py
+END
+ItemCtrlTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3998/trunk/taskcoach/tests/unittests/widgetTests/ItemCtrlTest.py
+END
+TimeCtrlTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/widgetTests/TimeCtrlTest.py
+END
+TreeCtrlTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/widgetTests/TreeCtrlTest.py
+END
+DragAndDropTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/widgetTests/DragAndDropTest.py
+END

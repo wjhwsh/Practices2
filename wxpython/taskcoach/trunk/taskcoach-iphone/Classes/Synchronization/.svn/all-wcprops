@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/4048/trunk/taskcoach-iphone/Classes/Synchronization
+END
+InitialState.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/2261/trunk/taskcoach-iphone/Classes/Synchronization/InitialState.h
+END
+TwoWayModifiedEffortsState.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayModifiedEffortsState.m
+END
+TwoWayDeletedTasksState.m
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayDeletedTasksState.m
+END
+TwoWayNewEffortsState.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayNewEffortsState.h
+END
+OneShotItemState.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/OneShotItemState.h
+END
+ItemState.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/ItemState.h
+END
+InitialState.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/4009/trunk/taskcoach-iphone/Classes/Synchronization/InitialState.m
+END
+AuthentificationState.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/taskcoach/!svn/ver/3335/trunk/taskcoach-iphone/Classes/Synchronization/AuthentificationState.h
+END
+TwoWayModifiedCategoriesState.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayModifiedCategoriesState.h
+END
+TwoWayNewEffortsState.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayNewEffortsState.m
+END
+OneShotItemState.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/3395/trunk/taskcoach-iphone/Classes/Synchronization/OneShotItemState.m
+END
+ItemState.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/3403/trunk/taskcoach-iphone/Classes/Synchronization/ItemState.m
+END
+AuthentificationState.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/taskcoach/!svn/ver/3336/trunk/taskcoach-iphone/Classes/Synchronization/AuthentificationState.m
+END
+EndState.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/2261/trunk/taskcoach-iphone/Classes/Synchronization/EndState.h
+END
+TwoWayModifiedCategoriesState.m
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayModifiedCategoriesState.m
+END
+BaseState.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/BaseState.h
+END
+DayHourState.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/DayHourState.h
+END
+EndState.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/Synchronization/EndState.m
+END
+FullFromDesktopCategoryState.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/FullFromDesktopCategoryState.h
+END
+State.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/2261/trunk/taskcoach-iphone/Classes/Synchronization/State.h
+END
+BaseState.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/Synchronization/BaseState.m
+END
+DayHourState.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/Synchronization/DayHourState.m
+END
+FullFromDesktopState.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/FullFromDesktopState.h
+END
+FullFromDesktopCategoryState.m
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/taskcoach/!svn/ver/4010/trunk/taskcoach-iphone/Classes/Synchronization/FullFromDesktopCategoryState.m
+END
+State.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/2261/trunk/taskcoach-iphone/Classes/Synchronization/State.m
+END
+FullFromDesktopState.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/Synchronization/FullFromDesktopState.m
+END
+FullFromDesktopEffortState.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/FullFromDesktopEffortState.h
+END
+TwoWayDeletedCategoriesState.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayDeletedCategoriesState.h
+END
+GUIDState.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/GUIDState.h
+END
+TwoWayState.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayState.h
+END
+FullFromDesktopEffortState.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/taskcoach/!svn/ver/4010/trunk/taskcoach-iphone/Classes/Synchronization/FullFromDesktopEffortState.m
+END
+TwoWayDeletedCategoriesState.m
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayDeletedCategoriesState.m
+END
+GUIDState.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/taskcoach/!svn/ver/4048/trunk/taskcoach-iphone/Classes/Synchronization/GUIDState.m
+END
+TwoWayState.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayState.m
+END
+TwoWayModifiedTasksState.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayModifiedTasksState.h
+END
+ProtocolNegotiationState.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/ProtocolNegotiationState.h
+END
+FullFromDesktopTaskState.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/FullFromDesktopTaskState.h
+END
+TaskFileNameState.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/TaskFileNameState.h
+END
+TwoWayModifiedTasksState.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayModifiedTasksState.m
+END
+ProtocolNegotiationState.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/taskcoach/!svn/ver/3338/trunk/taskcoach-iphone/Classes/Synchronization/ProtocolNegotiationState.m
+END
+FullFromDesktopTaskState.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/taskcoach/!svn/ver/4010/trunk/taskcoach-iphone/Classes/Synchronization/FullFromDesktopTaskState.m
+END
+TaskFileNameState.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/Synchronization/TaskFileNameState.m
+END
+ItemParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/ItemParser.h
+END
+TwoWayNewCategoriesState.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayNewCategoriesState.h
+END
+TwoWayNewTasksState.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayNewTasksState.h
+END
+ItemParser.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3274/trunk/taskcoach-iphone/Classes/Synchronization/ItemParser.m
+END
+TwoWayNewCategoriesState.m
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayNewCategoriesState.m
+END
+TwoWayNewTasksState.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/taskcoach/!svn/ver/3315/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayNewTasksState.m
+END
+Items.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/Items.h
+END
+TwoWayModifiedEffortsState.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayModifiedEffortsState.h
+END
+Items.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/3395/trunk/taskcoach-iphone/Classes/Synchronization/Items.m
+END
+TwoWayDeletedTasksState.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/taskcoach/!svn/ver/3130/trunk/taskcoach-iphone/Classes/Synchronization/TwoWayDeletedTasksState.h
+END

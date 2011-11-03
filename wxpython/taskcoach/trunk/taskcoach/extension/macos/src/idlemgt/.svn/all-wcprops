@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/taskcoach/!svn/ver/4154/trunk/taskcoach/extension/macos/src/idlemgt
+END
+build64.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/taskcoach/!svn/ver/4154/trunk/taskcoach/extension/macos/src/idlemgt/build64.sh
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/4154/trunk/taskcoach/extension/macos/src/idlemgt/main.c
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/taskcoach/!svn/ver/4154/trunk/taskcoach/extension/macos/src/idlemgt/setup.py
+END
+main.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/4154/trunk/taskcoach/extension/macos/src/idlemgt/main.h
+END

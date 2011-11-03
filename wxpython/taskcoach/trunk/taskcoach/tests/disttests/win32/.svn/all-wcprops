@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/disttests/win32
+END
+test.tsk
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/1537/trunk/taskcoach/tests/disttests/win32/test.tsk
+END
+BaseTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/disttests/win32/BaseTest.py
+END
+base.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/disttests/win32/base.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/disttests/win32/__init__.py
+END
+test.ini
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/taskcoach/!svn/ver/1537/trunk/taskcoach/tests/disttests/win32/test.ini
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/taskcoach/!svn/ver/4333/trunk/taskcoach
+END
+.pylintrc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/.pylintrc
+END
+HACKING.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/HACKING.txt
+END
+PUBLICITY.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/PUBLICITY.txt
+END
+make.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/taskcoach/!svn/ver/4325/trunk/taskcoach/make.py
+END
+TODO.tsk
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/taskcoach/!svn/ver/3077/trunk/taskcoach/TODO.tsk
+END
+COPYRIGHT.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/taskcoach/!svn/ver/4325/trunk/taskcoach/COPYRIGHT.txt
+END
+taskcoach.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/taskcoach.py
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/taskcoach/!svn/ver/4154/trunk/taskcoach/setup.py
+END
+release.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/release.py
+END
+nuke.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/nuke.py
+END
+dot.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/dot.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/taskcoach/!svn/ver/4325/trunk/taskcoach/Makefile
+END
+taskcoach.pyw
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoach.pyw
+END

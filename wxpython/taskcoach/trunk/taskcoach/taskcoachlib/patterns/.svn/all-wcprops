@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/patterns
+END
+network.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/patterns/network.py
+END
+metaclass.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/patterns/metaclass.py
+END
+command.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/patterns/command.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/patterns/__init__.py
+END
+composite.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/patterns/composite.py
+END
+singleton.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/patterns/singleton.py
+END
+observer.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/taskcoachlib/patterns/observer.py
+END

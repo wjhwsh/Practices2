@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/tests/unittests/domainTests
+END
+EffortAggregatorTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/EffortAggregatorTest.py
+END
+AttachmentTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/AttachmentTest.py
+END
+OwnerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/OwnerTest.py
+END
+DateTimeTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/DateTimeTest.py
+END
+RecurrenceTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/RecurrenceTest.py
+END
+TaskListTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/TaskListTest.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/__init__.py
+END
+ChangeTrackerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/ChangeTrackerTest.py
+END
+TaskTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/4275/trunk/taskcoach/tests/unittests/domainTests/TaskTest.py
+END
+NoteTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/NoteTest.py
+END
+DomainObjectOwnerMetaclassTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/DomainObjectOwnerMetaclassTest.py
+END
+FontTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/FontTest.py
+END
+EffortCompositeTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/EffortCompositeTest.py
+END
+NoteContainerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/NoteContainerTest.py
+END
+TaskFilterTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/tests/unittests/domainTests/TaskFilterTest.py
+END
+BaseTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/BaseTest.py
+END
+CategorizableTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/CategorizableTest.py
+END
+DateTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/DateTest.py
+END
+CategoryTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/CategoryTest.py
+END
+SorterTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/SorterTest.py
+END
+CategoryContainerTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/CategoryContainerTest.py
+END
+TaskRecurrenceTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/TaskRecurrenceTest.py
+END
+EffortListTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/EffortListTest.py
+END
+EffortCompositePerPeriodTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/EffortCompositePerPeriodTest.py
+END
+CategoryFilterTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/taskcoach/!svn/ver/4044/trunk/taskcoach/tests/unittests/domainTests/CategoryFilterTest.py
+END
+TaskRelationsTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/TaskRelationsTest.py
+END
+FilterTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/FilterTest.py
+END
+EffortTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/taskcoach/!svn/ver/3930/trunk/taskcoach/tests/unittests/domainTests/EffortTest.py
+END

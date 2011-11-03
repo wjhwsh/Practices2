@@ -1,0 +1,116 @@
+10
+
+dir
+4346
+https://taskcoach.svn.sourceforge.net/svnroot/taskcoach/trunk/taskcoach/taskcoachlib
+https://taskcoach.svn.sourceforge.net/svnroot/taskcoach
+
+
+
+2011-05-18T20:49:57.703378Z
+4333
+fniessink
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+648457a2-254a-0410-87ef-a9f7caebb725
+
+i18n
+dir
+
+iphone
+dir
+
+persistence
+dir
+
+gui
+dir
+
+meta
+dir
+
+__init__.py
+file
+
+
+
+
+2011-05-22T04:00:41.000000Z
+cdf1cc49193de2601d576f779a82d0d7
+2011-01-16T15:34:39.006789Z
+3930
+fniessink
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+778
+
+help
+dir
+
+thirdparty
+dir
+
+patterns
+dir
+
+application
+dir
+
+powermgt
+dir
+
+config
+dir
+
+syncml
+dir
+
+widgets
+dir
+
+domain
+dir
+
+notify
+dir
+
+mailer
+dir
+
+bin.in
+dir
+
+command
+dir
+
